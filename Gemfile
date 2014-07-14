@@ -9,3 +9,11 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+group :production do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3", "~> 1.3.0"
+end
