@@ -11,27 +11,21 @@ module ScenarioGenerator
     end
 
     def goals
-      goals = []
-
-      goals.push GOALS.sample
-
-      while rand(100) > 95
-        goals.push GOALS.sample
-      end
-
-      return goals
+      GOALS.sample quantity
     end
 
     def challenges
-      challenges = []
+      CHALLENGES.sample quantity
+    end
 
-      challenges.push CHALLENGES.sample
+    def quantity
+      quantity = 1
 
-      while rand(100) > 95
-        challenges.push CHALLENGES.sample
+      while rand(100) < 5
+        quantity += 1
       end
 
-      return challenges
+      return quantity
     end
 
   end
