@@ -53,7 +53,8 @@ CHALLENGES =
     :"No booze (slow mode)",
     :"Embark with as many towers as possible",
     :"Embark with an aquifer",
-    :"No soldiers, only war animals"
+    :"No soldiers, only war animals",
+    :"All men are soldiers"
   ]
 
 GOALS =
