@@ -15,7 +15,11 @@ module ScenarioGenerator
     end
 
     def challenges
-      CHALLENGES.sample quantity
+      if rand(100) < 1
+        "None"
+      else
+        CHALLENGES.sample quantity
+      end
     end
 
     def quantity

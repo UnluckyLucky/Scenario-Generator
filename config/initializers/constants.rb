@@ -28,7 +28,6 @@ SURROUNDINGS =
 
 CHALLENGES =
   [
-    :"None",
     :"No danger rooms",
     :"No traps",
     :"No walls",
