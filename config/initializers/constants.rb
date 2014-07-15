@@ -23,6 +23,11 @@ SURROUNDINGS =
     :"Sinister",
     :"Haunted",
     :"Terrifying",
+    :"Good",
+    :"Neutral",
+    :"Evil",
+    :"Peaceful",
+    :"Savage",
     :"Free-pick"
   ]
 
