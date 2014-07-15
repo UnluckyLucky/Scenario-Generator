@@ -1,4 +1,14 @@
-<%= render partial: 'scenario_section', locals: { title: :Biome, items: @biome } %>
-<%= render partial: 'scenario_section', locals: { title: :Surroundings, items: @surroundings } %>
-<%= render partial: 'scenario_section', locals: { title: :Challenges, items: @challenges } %>
-<%= render partial: 'scenario_section', locals: { title: :Goals, items: @goals } %>
+<div class="row scenario-sections">
+  <div class="col-lg-2 section">
+    <%= render partial: 'scenario_section', locals: { title: :Biome, items: @biome } %>
+  </div>
+  <div class="col-lg-2 col-lg-offset-1 section">
+    <%= render partial: 'scenario_section', locals: { title: :Surroundings, items: @surroundings } %>
+  </div>
+  <div class="col-lg-2 col-lg-offset-1 section">
+    <%= render partial: 'scenario_section', locals: { title: :Challenges, items: @challenges } %>
+  </div>
+  <div class="col-lg-3 col-lg-offset-1 section">
+    <%= render partial: 'scenario_section', locals: { title: :Goals, items: @goals } %>
+  </div>
+</div>

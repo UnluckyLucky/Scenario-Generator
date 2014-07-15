@@ -1,3 +1,47 @@
-.section {
-  margin-bottom: 15px;
+@import 'bootstrap';
+
+.navbar-inner {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.scenario-sections {
+  margin-top: 20px;
+}
+
+body {
+  background: asset-url('background.png');
+  color: black;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+}
+
+.box {
+  text-align: center;
+  background-color: rgba(#DDDDDD, .97);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 2px solid;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+.reroll-button {
+  &:hover {
+    background-color: rgba(#CCCCCC, .97);
+  }
+  &:active {
+    background-color: rgba(#BBBBBB, .97);
+  }
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
