@@ -71,6 +71,5 @@ GOALS =
     :"Unleash hell",
     :"Defeat hell",
     :"Colonise hell",
-    :"Become a barony within 3 years",
-    :"Build a fortress in the air supported by pillars"
+    :"Become a barony within 3 years"
   ]
