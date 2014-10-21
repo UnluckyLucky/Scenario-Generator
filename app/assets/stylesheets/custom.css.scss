@@ -23,6 +23,7 @@ body {
   padding: 10px;
   margin-bottom: 25px;
   border: 2px solid;
+  display: block;
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
 }
 
 .reroll-button {
+  width: 100%;
   &:hover {
     background-color: rgba(#CCCCCC, .97);
   }
