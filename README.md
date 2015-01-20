@@ -1,10 +1,13 @@
-#Dwarf Fortress Scenario Generator
+#Scenario Generator
 
 Pretty simple. Install the gems. Run the server. Visit the domain.
 
-There are current 10 Locations, 14 Surroundings, 62 Challenges, and 45 Goals. Giving us a total of 390,600 total options.
+Currently supported games:
+*Minecraft
+*Dwarf Fortress
 
 You can add to the generator source list in config/initializers/constants.rb
+Just add to the hash in the correct format and give it a background at assets/images/<game_name>.png and it will automatically appear in the index and the generator will work.
 
 Pull requests will be vetted for spelling and grammar. Feel free to correct me if I've messed either up.
 Please remember to increment the counter in the readme.
