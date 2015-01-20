@@ -8,7 +8,6 @@
   margin-top: 20px
 
 body
-  background: asset-url('background.png')
   color: black
   font-size: 17px
   font-family: 'Lato', sans-serif
@@ -16,29 +15,48 @@ body
 .box
   text-align: center
   background-color: rgba(#f5f5f5, .97)
-  border-radius: 4px
   padding: 10px
   margin-bottom: 25px
   border: 2px solid
   display: block
 
 h2
-  font-size: 115%
+  font-weight: bold
+  font-size: 21px
 
+$roll-button-colour: #F59D38
 
-.reroll-button
+.reroll-button, .other-button
+  background: $roll-button-colour
+  font-size: 19px
   width: 100%
   border-radius: 10px
+  border-width: 2px
   color: inherit
+  &:focus
+    text-decoration: none
+    color: inherit
   &:hover
     text-decoration: none
     color: inherit
-    background-color: rgba(#DDD, .97)
+    background-color: darken($roll-button-colour, 5%)
   &:active
-    background-color: rgba(#CCC, .97)
+    background-color: darken($roll-button-colour, 10%)
+
+.other-button
+  margin-top: 27px
 
 .right
   text-align: right
+
+@media(max-width:991px)
+  .right
+    text-align: left
+  .btc
+    font-size: 16px !important
+    text-align: left !important
+  .hide-on-mobile
+    display: none
 
 /* Sticky Footer */
 
@@ -53,7 +71,15 @@ body
   position: absolute
   bottom: 0
   width: 100%
-  height: 60px
   background-color: #f5f5f5
   & > .container
     margin-top: 18px
+
+.btc
+  font-size: 14px
+  text-align: right
+
+.bottom-ad
+  text-align: center
+  ins
+    display: inline

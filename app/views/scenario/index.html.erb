@@ -1,0 +1,5 @@
+<% @games.each do |game_name| %>
+  <div class="generator">
+    <%= link_to game_name, generator_path(game: game_name) %>
+  </div>
+<% end %>

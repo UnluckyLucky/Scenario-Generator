@@ -1,14 +1,17 @@
 <div class="row navbar navbar-inner">
-  <h1 class="col-sm-offset-2 col-sm-8">
+  <div class="col-xs-2">
+    <%= link_to "Other Games", '/' , class: 'box other-button' %>
+  </div>
+  <h1 class="col-xs-8">
     <div class="box">
-      Dwarf Fortress Scenario Generator
+      Challenge Generator for <%= params[:game].titlecase %>
     </div>
   </h1>
 </div>
 
 <div class="row">
-  <div class="col-xs-offset-2 col-xs-8 col-sm-offset-5 col-sm-2">
-    <%= link_to "Click to reroll", root_url, class: 'box reroll-button' %>
+  <div class="col-xs-offset-2 col-xs-8 col-sm-offset-4 col-sm-4">
+    <%= link_to "Click to reroll", '' , class: 'box reroll-button' %>
   </div>
 </div>
 

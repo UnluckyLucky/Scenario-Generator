@@ -2,30 +2,23 @@ module ScenarioGenerator
   
   class << self
 
-    def biome
-      BIOMES.sample
-    end
-
-    def surroundings
-      SURROUNDINGS.sample
-    end
-
-    def goals
-      GOALS.sample quantity
-    end
-
-    def challenges
-      if rand(100) < 1
-        "None"
-      else
-        CHALLENGES.sample quantity
+    def scenario game
+      scenario = {}
+      GAMES[game].each do |key, value|
+        scenario[key] = value[:options].sample quantity(value[:chance_of_multiple])
       end
+
+      return scenario
     end
 
-    def quantity
+    def games
+      GAMES.keys
+    end
+
+    def quantity chance
       quantity = 1
 
-      while rand(100) < 5
+      while rand(100) < chance
         quantity += 1
       end
 

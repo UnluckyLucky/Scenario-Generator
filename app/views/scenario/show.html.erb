@@ -1,14 +1,7 @@
 <div class="row scenario-sections">
-  <div class="col-xs-6 col-sm-3 section">
-    <%= render partial: 'scenario_section', locals: { title: :Location, items: @biome } %>
-  </div>
-  <div class="col-xs-6 col-sm-3 section">
-    <%= render partial: 'scenario_section', locals: { title: :Surroundings, items: @surroundings } %>
-  </div>
-  <div class="col-xs-12 col-sm-3 section">
-    <%= render partial: 'scenario_section', locals: { title: :Challenges, items: @challenges } %>
-  </div>
-  <div class="col-xs-12 col-sm-3">
-    <%= render partial: 'scenario_section', locals: { title: :Goals, items: @goals } %>
-  </div>
+  <% @scenario.each do |key, value| %>
+    <div class="col-xs-10 col-xs-offset-1 <%= column_width_string %>">
+      <%= render partial: 'scenario_section', locals: { title: key, items: value } %>
+    </div>
+  <% end %>
 </div>
