@@ -1,6 +1,8 @@
 GAMES = {
   minecraft: {
-    biomes: {
+    title: 'Minecraft',
+    columns: {
+      biomes: {
       chance_of_multiple: 0,
       options: [
         :"Frozen River",
@@ -51,8 +53,8 @@ GAMES = {
         :"Deep Ocean",
         :"Hills"
       ]
-    },
-    restrictions: {
+      },
+      restrictions: {
       chance_of_multiple: 5,
       options: [
         :"None",
@@ -195,16 +197,19 @@ GAMES = {
         :"No cats",
         :"You may not travel more than 100 blocks from spawn"
       ]
-    },
-    goals: {
+      },
+      goals: {
       chance_of_multiple: 5,
       options: [
         :"Kill 15 golems"
       ]
+      }
     }
   },
   dwarffortress: {
-    biomes: {
+    title: 'Dwarf Fortress',
+    columns: {
+      biomes: {
       chance_of_multiple: 0,
       options: [
         :"Grassy/Forest",
@@ -219,8 +224,8 @@ GAMES = {
         :"Free-pick",
         :"Near a tower"
       ]
-    },
-    surroundings: {
+      },
+      surroundings: {
       chance_of_multiple: 0,
       options: [
         :"Calm",
@@ -239,8 +244,8 @@ GAMES = {
         :"Savage",
         :"Free-pick"
       ]
-    },
-    challenges: {
+      },
+      challenges: {
       chance_of_multiple: 5,
       options: [
         :"No danger rooms",
@@ -307,8 +312,8 @@ GAMES = {
         :"All rooms are max 3x3",
         :"No alcohol"
       ]
-    },
-    goals: {
+      },
+      goals: {
       chance_of_multiple: 5,
       options: [
         :"Kill all Elf and Human caravans",
@@ -358,6 +363,7 @@ GAMES = {
         :"Capture and imprison all supernatural beings that enter your map",
         :"Capture a necromancer in a cage, place him in a the middle of a Colosseum with sight of the surrounding area. Have your military fight enemies you have caught in cage traps in the Colosseum."
       ]
+      }
     }
   }
 }

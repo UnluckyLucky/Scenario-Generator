@@ -1,5 +1,5 @@
-<% @games.each do |game_name| %>
+<% @games.each do |key, value| %>
   <div class="generator">
-    <%= link_to game_name, generator_path(game: game_name) %>
+    <%= link_to value[:title], generator_path(game: key) %>
   </div>
 <% end %>

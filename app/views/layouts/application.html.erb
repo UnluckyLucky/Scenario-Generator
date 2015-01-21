@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Challenge Generator for <%= params[:game] %></title>
+    <title>Challenge Generator for <%= @title %></title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -9,13 +9,24 @@
     <meta name="viewport" content="initial-scale=1">
   </head>
   <body class="generator" style="background: url(<%= asset_path("#{params[:game]}.png") %>)">
+    <div id="wrapper">
+      <%= render 'layouts/sidebar' %>
+    </div>
     <div class="container">
-      <%= render 'layouts/header' %>
-      <%= yield %>
-      <%= render 'layouts/ad' %>
+        <%= render 'layouts/header' %>
+        <%= yield %>
+        <%= render 'layouts/ad' %>
     </div>
   
 
     <%= render 'layouts/footer' %>
+
+    <script>
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
   </body>
 </html>
