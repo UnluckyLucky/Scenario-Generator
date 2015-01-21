@@ -25,6 +25,12 @@
     $(".menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        if(history.pushState) {
+            history.pushState(null, null, '#');
+        }
+        else {
+            location.hash = '#';
+        }
     });
     </script>
 
