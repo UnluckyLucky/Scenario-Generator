@@ -366,18 +366,18 @@ GAMES = {
                         :"Create a set of fully enchanted armour",
                         :"Create a set of fully enchanting diamond armour",
                         :"Write a book about your adventures",
-                        :"Create Pixel Art of Megaman out of cloth blocks",
-                        :"Create Pixel Art of Mario out of cloth blocks",
-                        :"Create Pixel Art of Luigi out of cloth blocks",
-                        :"Create Pixel Art of Samus out of cloth blocks",
-                        :"Create Pixel Art of Kirby out of cloth blocks",
-                        :"Create Pixel Art of Link out of cloth blocks",
-                        :"Create Pixel Art of Pikachu out of cloth blocks",
-                        :"Create Pixel Art of Goku out of cloth blocks",
-                        :"Create Pixel Art of Vegeta out of cloth blocks",
-                        :"Create Pixel Art of Squirtle out of cloth blocks",
-                        :"Create Pixel Art of Charmander out of cloth blocks",
-                        :"Create Pixel Art of Sonic out of cloth blocks"
+                        :"Create pixel art of Megaman out of cloth blocks",
+                        :"Create pixel art of Mario out of cloth blocks",
+                        :"Create pixel art of Luigi out of cloth blocks",
+                        :"Create pixel art of Samus out of cloth blocks",
+                        :"Create pixel art of Kirby out of cloth blocks",
+                        :"Create pixel art of Link out of cloth blocks",
+                        :"Create pixel art of Pikachu out of cloth blocks",
+                        :"Create pixel art of Goku out of cloth blocks",
+                        :"Create pixel art of Vegeta out of cloth blocks",
+                        :"Create pixel art of Squirtle out of cloth blocks",
+                        :"Create pixel art of Charmander out of cloth blocks",
+                        :"Create pixel art of Sonic out of cloth blocks"
                     ]
                 }
         }
