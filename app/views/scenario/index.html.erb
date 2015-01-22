@@ -1,5 +1,8 @@
-<% @games.each do |key, value| %>
-  <div class="generator">
-    <%= link_to value, generator_path(game: key) %>
-  </div>
-<% end %>
+<div class="row generator-links">
+  <% @games.each do |key, value| %>
+    <div class="col-xs-3 generator">
+      <%= link_to content_tag('div', value, class: 'link'), generator_path(game: key) %>
+      <%= link_to image_tag(asset_path("#{key}.png")), generator_path(game: key) %>
+    </div>
+  <% end %>
+</div>

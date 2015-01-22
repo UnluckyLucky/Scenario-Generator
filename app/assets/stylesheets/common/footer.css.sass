@@ -1,0 +1,28 @@
+/* Sticky Footer */
+
+html
+  position: relative
+  min-height: 100%
+
+body
+  margin-bottom: 60px
+
+.footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  background-color: #f5f5f5
+  & > .container
+    margin-top: 18px
+
+.right
+  text-align: right
+
+@media(max-width:991px)
+  .right
+    text-align: left
+  .btc
+    font-size: 16px !important
+    text-align: left !important
+  .hide-on-mobile
+    display: none
