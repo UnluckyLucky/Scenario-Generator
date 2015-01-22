@@ -16,6 +16,12 @@ module ScenarioGenerator
       GAMES.each do |key, value|
         games[key] = value[:title]
       end
+
+      if ENV['shuffle_sidebar']
+        return games.sort {|a, b| rand <=> rand }
+      else
+        return games
+      end
     end
 
     def game_display_name game
