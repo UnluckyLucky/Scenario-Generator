@@ -1,27 +1,29 @@
 @import 'bootstrap'
 
 body
-  background: #212D42
+  background: #476079
+  color: #aabdd1
+  font-family: 'Lato', sans-serif
+
+.title
+  text-align: center
+  font-size: 40px
+  margin: 50px 0px
 
 .generator-links
   .generator
-    margin-top: 50px
+    margin-top: 10px
     overflow: hidden
-    height: 150px
     text-align: center
-    img
-      position: relative
-      right: 100%
-    & > a
-      height: 40px
-      display: block
-      background-color: rgba(255,255,255,0.1)
-      -webkit-border-top-left-radius: 15px
-      -webkit-border-top-right-radius: 15px
-      -moz-border-radius-topleft: 15px
-      -moz-border-radius-topright: 15px
-      border-top-left-radius: 15px
-      border-top-right-radius: 15px
-      .link
+    .link-header
+      height: 50px
+      font-size: 20px
+      background-color: white
+      border-radius: 15px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      &:hover
+        text-decoration: none
+      .link-text
         display: block
-        padding-top: 10px
