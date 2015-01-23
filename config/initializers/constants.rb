@@ -190,7 +190,7 @@ GAMES = {
                     :"Only 5 torches may exist in the world or your inventory at a time. If you find more, leave them",
                     :"Only 2 torches may exist in the world or your inventory at a time. If you find more, destroy them",
                     :"Only 2 torches may exist in the world or your inventory at a time. If you find more, leave them",
-                    :"Build everything out in the open. No walls, No doors, No underground, No fences. Don't try and be clever)",
+                    :"Build everything out in the open. No walls. No doors. No building underground. No fences. Don't try and be clever",
                     :"Build no base, live in villages",
                     :"You can only dig out ores",
                     :"You cannot dig stone or dirt",
