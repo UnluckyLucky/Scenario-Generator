@@ -5,7 +5,8 @@ module ScenarioGenerator
     def scenario game
       scenario = {}
       GAMES[game][:columns].each do |key, value|
-        scenario[key] = value[:options].sample quantity(value[:chance_of_multiple], value[:max])
+        title = value[:title] || key.to_s.titleize
+        scenario[title] = value[:options].sample quantity(value[:chance_of_multiple], value[:max])
       end
 
       return scenario

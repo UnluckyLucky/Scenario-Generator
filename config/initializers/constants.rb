@@ -1,3 +1,34 @@
+def new_vegas_specials
+    options = []
+    total = 40
+    (1..10).each do |s|
+        (1..10).each do |p|
+            (1..10).each do |e|
+                (1..10).each do |c|
+                    next if s + p + e + c + 30 < 40
+                    break if s + p + e + c + 3 > 40
+                    (1..10).each do |i|
+                        next if s + p + e + c + i + 20 < 40
+                        break if s + p + e + c + i + 2 > 40
+                        (1..10).each do |a|
+                            next if s + p + e + c + i + a + 10 < 40
+                            break if s + p + e + c + i + a + 1 > 40
+                            (1..10).each do |l|
+                                if s + p + e + c + i + a + l == 40
+                                    string = "#{s} #{p} #{e} #{c} #{i} #{a} #{l}"
+                                    options.append string
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    return options
+end
+
 GAMES = {
     minecraft: {
         title: 'Minecraft',
@@ -1265,6 +1296,111 @@ GAMES = {
                     :"Whenever your spouse cheats, seduce their lover's spouse",
                     :"Whenever your spouse cheats, get a divorce",
                     :'Always have an antipope'
+                ]
+            }
+        }
+    },
+    falloutnewvegas: {
+        title: 'Fallout: New Vegas',
+        background: 'newvegas.jpg',
+        columns: {
+            special: {
+                title: 'SPECIAL',
+                chance_of_multiple: 0,
+                max: 1,
+                options: new_vegas_specials()
+            },
+            tag_skills: {
+                chance_of_multiple: 100,
+                max: 3,
+                options: [
+                    :"Barter",
+                    :"Energy Weapons",
+                    :"Explosives",
+                    :"Guns",
+                    :"Lockpick",
+                    :"Medicine",
+                    :"Melee Weapons",
+                    :"Repair",
+                    :"Science",
+                    :"Sneak",
+                    :"Speech",
+                    :"Survival",
+                    :"Unarmed"
+                ]
+            },
+            traits: {
+                chance_of_multiple: 100,
+                max: 2,
+                options: [
+                    :"Built to Destroy",
+                    :"Fast Shot",
+                    :"Four Eyes",
+                    :"Good Natured ",
+                    :"Heavy Handed",
+                    :"Kamikaze",
+                    :"Loose Cannon",
+                    :"Small Frame",
+                    :"Trigger Discipline",
+                    :"Wild Wasteland",
+                    :"Claustrophobia",
+                    :"Early Bird",
+                    :"Hoarder",
+                    :"Hot Blooded",
+                    :"Logan's Loophole",
+                    :"Skilled"
+                ]
+            },
+            primary_weapon: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :"Energy: Pistols",
+                    :"Energy: Rifles",
+                    :"Energy: Heavy",
+                    :"Explosives",
+                    :"Melee: Bladed",
+                    :"Melee: Blunt",
+                    :"Melee: Thrown",
+                    :"Guns: Pistols",
+                    :"Guns: Shotguns",
+                    :"Guns: SMGs",
+                    :"Guns: Rifles",
+                    :"Guns: Heavy",
+                    :"Unarmed: Knuckles/Gauntlet/Gloves/Power Fists",
+                    :"Unarmed: Bare Fists",
+                    :"Pacifist"
+                ]
+            },
+            faction: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :"NCR",
+                    :"Caesar's Legion",
+                    :"House",
+                    :"Yes Man"
+                ]
+            },
+            human_companion: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :"Arcade",
+                    :"Boone",
+                    :"Lily",
+                    :"Raul",
+                    :"Cass",
+                    :"Veronica"
+                ]
+            },
+            non_human_companion: {
+                title: 'Non-Human Companion',
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'ED-E',
+                    :'Rex'
                 ]
             }
         }

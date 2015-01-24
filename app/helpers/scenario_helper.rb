@@ -13,4 +13,30 @@ module ScenarioHelper
     end
   end
 
+  def column_width_row_divisor
+    case @scenario.keys.size
+    when 1
+      1
+    when 2
+      1
+    when 3
+      3
+    else
+      3
+    end
+  end
+
+  def column_width_row_remainder
+    case @scenario.keys.size
+    when 1
+      0
+    when 2
+      1
+    when 3
+      2
+    else
+      3
+    end
+  end
+
 end

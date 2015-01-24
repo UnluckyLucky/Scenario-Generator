@@ -1,7 +1,13 @@
-<div class="row scenario-sections">
-  <% @scenario.each do |key, value| %>
+<div class="row scenario-sections" id="scenario">
+  <% @scenario.each_with_index do |(key, value), index| %>
+    <% if index % (12 / column_width_row_divisor) == 0 %>
+      <div class="row">
+    <% end %>
     <div class="col-xs-10 col-xs-offset-1 <%= column_width_string %>">
       <%= render partial: 'scenario_section', locals: { title: key, items: value } %>
     </div>
+    <% if index % (12 / column_width_row_divisor) == column_width_row_remainder || index == @scenario.length - 1 %>
+      </div>
+    <% end %>
   <% end %>
 </div>
