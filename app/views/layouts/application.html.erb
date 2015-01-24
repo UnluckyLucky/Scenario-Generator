@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="initial-scale=1">
   </head>
-  <body class="generator" style="background: url(<%= asset_path("#{params[:game]}.png") %>)">
+  <body class="generator" style="background: url(<%= asset_path(@background) %>)">
     <div id="wrapper">
       <%= render 'layouts/sidebar' %>
     </div>

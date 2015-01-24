@@ -12,6 +12,7 @@ class ScenarioController < ApplicationController
     if ScenarioGenerator.games.include? params[:game].to_sym
       @scenario = ScenarioGenerator.scenario params[:game].to_sym
       @title = ScenarioGenerator.game_display_name params[:game].to_sym
+      @background = ScenarioGenerator.game_background params[:game].to_sym
     else
       redirect_to root_path
     end

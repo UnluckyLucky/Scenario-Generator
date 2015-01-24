@@ -29,6 +29,11 @@ module ScenarioGenerator
       game[:title]
     end
 
+    def game_background game
+      game = GAMES[game]
+      game[:background]
+    end
+
     def quantity chance, max
       quantity = 1
 
