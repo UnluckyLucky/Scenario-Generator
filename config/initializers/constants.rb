@@ -600,6 +600,7 @@ GAMES = {
         background: 'crusaderkings.jpg',
         columns: {
             duchies: {
+                title: 'Starting Duchy',
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
