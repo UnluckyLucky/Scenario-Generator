@@ -1351,6 +1351,23 @@ GAMES = {
                     :"Skilled"
                 ]
             },
+            hardcore: {
+                title: 'Hardcore Mode?',
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'On',
+                    :'On',
+                    :'Off',
+                    :'Off',
+                    :'Off',
+                    :'Off',
+                    :'Off',
+                    :'Off',
+                    :'Off',
+                    :'Off'
+                ]
+            },
             primary_weapon: {
                 chance_of_multiple: 0,
                 max: 1,
@@ -1386,6 +1403,7 @@ GAMES = {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
+                    :"None",
                     :"Arcade",
                     :"Boone",
                     :"Lily",
@@ -1399,6 +1417,7 @@ GAMES = {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
+                    :"None",
                     :'ED-E',
                     :'Rex'
                 ]
