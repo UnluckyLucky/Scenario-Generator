@@ -1404,6 +1404,7 @@ GAMES = {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
+                    :"None",
                     :"Arcade",
                     :"Boone",
                     :"Lily",
@@ -1417,6 +1418,7 @@ GAMES = {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
+                    :"None",
                     :'ED-E',
                     :'Rex'
                 ]
