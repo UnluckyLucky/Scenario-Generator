@@ -13,19 +13,20 @@ class ScenarioController < ApplicationController
       @scenario = ScenarioGenerator.scenario params[:game].to_sym
       @title = ScenarioGenerator.game_display_name params[:game].to_sym
       @background = ScenarioGenerator.game_background params[:game].to_sym
+      @game_name = params[:game]
     else
       redirect_to root_path
     end
   end
 
   def reroll_column
-    game_name = params[:game_name].gsub(/#/,"").to_sym
-    if ScenarioGenerator.games.include? game_name
-      @sub_scenario = ScenarioGenerator.sub_scenario game_name, params[:column_name].downcase.tr(" ", "_")
+    @game_name = params[:game_name].gsub(/#/,"").to_sym
+    if ScenarioGenerator.games.include? @game_name
+      @sub_scenario = ScenarioGenerator.sub_scenario @game_name, params[:column_name].downcase.tr(" ", "_")
       @scenario = construct_hash_from_params
 
-      @title = ScenarioGenerator.game_display_name game_name
-      @background = ScenarioGenerator.game_background game_name
+      @title = ScenarioGenerator.game_display_name @game_name
+      @background = ScenarioGenerator.game_background @game_name
 
       render :show
     else
