@@ -29,6 +29,38 @@ def new_vegas_specials
     return options
 end
 
+# Reference for how to build nested columns.
+
+# test_game: {
+#     title: 'test',
+#     columns: {
+#         top_column: {
+#             chance_of_multiple: 100,
+#             max: 2,
+#             options: [
+#                 {
+#                     sub_column_1: {
+#                         chance_of_multiple: 0,
+#                         max: 1,
+#                         options: [
+#                            {
+#                                 sub_column_2: {
+#                                     chance_of_multiple: 0,
+#                                     max: 1,
+#                                     options: [
+#                                         :'yes'
+#                                     ]
+#                                 }
+#                             }
+#                         ]
+#                     }
+#                 },
+#                 :'not a column'
+#             ]
+#         }
+#     }
+# }
+
 GAMES = {
     minecraft: {
         title: 'Minecraft',
@@ -572,7 +604,7 @@ GAMES = {
         title: 'Crusader Kings 2',
         background: 'crusaderkings.jpg',
         columns: {
-            duchies: {
+            starting_duchy: {
                 title: 'Starting Duchy',
                 chance_of_multiple: 0,
                 max: 1,
@@ -934,57 +966,125 @@ GAMES = {
                 chance_of_multiple: 75,
                 max: 5,
                 options: [
-                    :'Convert to Catholic',
-                    :'Convert to Orthodox',
-                    :'Convert to Miaphysite',
-                    :'Convert to Nestorian',
-                    :'Convert to Sunni',
-                    :'Convert to Shia',
-                    :'Convert to Ibadi',
-                    :'Convert to Judaism',
-                    :'Convert to Zoroastrian',
-                    :'Convert to Hinduism',
-                    :'Convert to Buddhism',
-                    :'Convert to Jainism',
-                    :'Convert to Germanic',
-                    :'Convert to Reformed Germanic',
-                    :'Convert to Reformed Slavic',
-                    :'Convert to Tengri',
-                    :'Convert to Reformed Tengri',
-                    :'Convert to Reformed Romuva',
-                    :'Convert to Suomenusko',
-                    :'Convert to Reformed Suomenusko',
-                    :'Convert to West African ',
-                    :'Convert to Reformed West African',
-                    :'Convert to Aztec',
-                    :'Convert to Reformed Aztec',
-                    :'Convert to Zunist',
-                    :'Convert to Reformed Zunist',
-                    :'Convert to Cathar',
-                    :'Convert to Fraticelli',
-                    :'Convert to Waldensian',
-                    :'Convert to Lollard',
-                    :'Convert to Monophysite',
-                    :'Convert to Messalian ',
-                    :'Convert to Bogomilist',
-                    :'Convert to Monothelite',
-                    :'Convert to Iconoclast',
-                    :'Convert to Paulician',
-                    :'Convert to Zikri',
-                    :'Convert to Yazidi',
-                    :'Convert to Druze',
-                    :'Convert to Hurufi',
-                    :'Convert to Mazdaki',
-                    :'Convert to Samaritan',
-                    :'Convert to Karaite',
-                    :'Convert to Old Germanic',
-                    :'Convert to Old Slavic',
-                    :'Convert to Old Tengri',
-                    :'Convert to Old Romuva',
-                    :'Convert to Old Suomenusko',
-                    :'Convert to Old West African',
-                    :'Convert to Old Aztec',
-                    :'Convert to Old Zunist',
+                    {
+                        target_religion: {
+                            title: 'Target Religion',
+                            option_title: 'Convert to the Target Religion',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Catholic',
+                                :'Orthodox',
+                                :'Miaphysite',
+                                :'Nestorian',
+                                :'Sunni',
+                                :'Shia',
+                                :'Ibadi',
+                                :'Judaism',
+                                :'Zoroastrian',
+                                :'Hinduism',
+                                :'Buddhism',
+                                :'Jainism',
+                                :'Germanic',
+                                :'Reformed Germanic',
+                                :'Reformed Slavic',
+                                :'Tengri',
+                                :'Reformed Tengri',
+                                :'Reformed Romuva',
+                                :'Suomenusko',
+                                :'Reformed Suomenusko',
+                                :'West African ',
+                                :'Reformed West African',
+                                :'Aztec',
+                                :'Reformed Aztec',
+                                :'Zunist',
+                                :'Reformed Zunist',
+                                :'Cathar',
+                                :'Fraticelli',
+                                :'Waldensian',
+                                :'Lollard',
+                                :'Monophysite',
+                                :'Messalian ',
+                                :'Bogomilist',
+                                :'Monothelite',
+                                :'Iconoclast',
+                                :'Paulician',
+                                :'Zikri',
+                                :'Yazidi',
+                                :'Druze',
+                                :'Hurufi',
+                                :'Mazdaki',
+                                :'Samaritan',
+                                :'Karaite',
+                                :'Old Germanic',
+                                :'Old Slavic',
+                                :'Old Tengri',
+                                :'Old Romuva',
+                                :'Old Suomenusko',
+                                :'Old West African',
+                                :'Old Aztec',
+                                :'Old Zunist'
+                            ]
+                        }
+                    },
+                    {
+                        target_empire: {
+                            title: 'Target Empire',
+                            option_title: 'Own the Target Empire without starting in it',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'The Germanian Empire',
+                                :'The Byzantine Empire',
+                                :'The Italia Empire',
+                                :'The Scandinavia Empire',
+                                :'The Wendish Empire',
+                                :'The Russian Empire',
+                                :'The Tartarian Empire',
+                                :'The Persian Empire',
+                                :'The Carpathian Empire',
+                                :'The Francia Empire',
+                                :'The Hispania Empire',
+                                :'The Arabian Empire',
+                                :'The Britannia Empire',
+                                :'The Mali Empire',
+                                :'The Bengal Empire',
+                                :'The Deccan Empire',
+                                :'The Roman Empire',
+                                :'The Latin Empire',
+                                :'The Indian Empire'
+                            ]
+                        }
+                    },
+                    {
+                        target_empire: {
+                            title: 'Target Empire',
+                            option_title: 'Own the Target Empire',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'The Germanian Empire',
+                                :'The Byzantine Empire',
+                                :'The Italia Empire',
+                                :'The Scandinavia Empire',
+                                :'The Wendish Empire',
+                                :'The Russian Empire',
+                                :'The Tartarian Empire',
+                                :'The Persian Empire',
+                                :'The Carpathian Empire',
+                                :'The Francia Empire',
+                                :'The Hispania Empire',
+                                :'The Arabian Empire',
+                                :'The Britannia Empire',
+                                :'The Mali Empire',
+                                :'The Bengal Empire',
+                                :'The Deccan Empire',
+                                :'The Roman Empire',
+                                :'The Latin Empire',
+                                :'The Indian Empire'
+                            ]
+                        }
+                    },
                     :'Kill the white stag',
                     :'Own every Kingdom that is a part of the Brittania Empire',
                     :'Reform a Pagan Religion',
@@ -1154,45 +1254,7 @@ GAMES = {
                     :'Own a province in India as an Aztec',
                     :'Sacrifice the pope as a pagan or Kali worshipper',
                     :'Sacrifice a king as a pagan or Kali worshipper',
-                    :'Sacrifice an emperor as a pagan or Kali worshipper',
-                    :'Form the Germanian Empire',
-                    :'Form the Byzantine Empire',
-                    :'Form the Italian Empire',
-                    :'Form the Scandinavian Empire',
-                    :'Form the Wendish Empire',
-                    :'Form the Russian Empire',
-                    :'Form the Tartarian Empire',
-                    :'Form the Persian Empire',
-                    :'Form the Carpathian Empire',
-                    :'Form the Francia Empire',
-                    :'Form the Hispania Empire',
-                    :'Form the Arabian Empire',
-                    :'Form the Britannia Empire',
-                    :'Form the Mali Empire',
-                    :'Form the Bengal Empire',
-                    :'Form the Deccan Empire',
-                    :'Form the Roman Empire',
-                    :'Form the Latin Empire',
-                    :'Form the Indian Empire',
-                    :'Own the Germanian Empire without starting in it',
-                    :'Own the Byzantine Empire without starting in it',
-                    :'Own the Italia Empire without starting in it',
-                    :'Own the Scandinavia Empire without starting in it',
-                    :'Own the Wendish Empire without starting in it',
-                    :'Own the Russian Empire without starting in it',
-                    :'Own the Tartarian Empire without starting in it',
-                    :'Own the Persian Empire without starting in it',
-                    :'Own the Carpathian Empire without starting in it',
-                    :'Own the Francia Empire without starting in it',
-                    :'Own the Hispania Empire without starting in it',
-                    :'Own the Arabian Empire without starting in it',
-                    :'Own the Britannia Empire without starting in it',
-                    :'Own the Mali Empire without starting in it',
-                    :'Own the Bengal Empire without starting in it',
-                    :'Own the Deccan Empire without starting in it',
-                    :'Own the Roman Empire without starting in it',
-                    :'Own the Latin Empire without starting in it',
-                    :'Own the Indian Empire without starting in it'
+                    :'Sacrifice an emperor as a pagan or Kali worshipper'
                 ]
             },
             restrictions: {
@@ -1279,7 +1341,6 @@ GAMES = {
         background: 'newvegas.jpg',
         columns: {
             special: {
-                title: 'SPECIAL',
                 chance_of_multiple: 0,
                 max: 1,
                 options: new_vegas_specials()
@@ -1325,8 +1386,8 @@ GAMES = {
                     :"Skilled"
                 ]
             },
-            hardcore: {
-                title: 'Hardcore Mode?',
+            hardcore_mode: {
+                title: 'Hardcore Mode',
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
