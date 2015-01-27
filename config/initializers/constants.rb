@@ -1397,10 +1397,6 @@ GAMES = {
                     :'Off',
                     :'Off',
                     :'Off',
-                    :'Off',
-                    :'Off',
-                    :'Off',
-                    :'Off',
                     :'Off'
                 ]
             },
