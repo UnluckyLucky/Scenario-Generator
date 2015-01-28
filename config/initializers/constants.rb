@@ -62,6 +62,215 @@ end
 # }
 
 GAMES = {
+    skyrim: {
+        title: 'Skyrim',
+        background: 'skyrim.jpg',
+        columns: {
+            race: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Altmer',
+                    :'Argonian',
+                    :'Bosmer',
+                    :'Breton',
+                    :'Dunmer',
+                    :'Imperial',
+                    :'Khajiit',
+                    :'Nord',
+                    :'Orsimer',
+                    :'Redguard'
+                ]
+            },
+            birthsign: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'The Apprentice',
+                    :'The Atronach',
+                    :'The Lady',
+                    :'The Lord',
+                    :'The Lover',
+                    :'The Mage',
+                    :'The Ritual',
+                    :'The Serpent',
+                    :'The Shadow',
+                    :'The Steed',
+                    :'The Thief',
+                    :'The Tower',
+                    :'The Warrior'
+                ]
+            },
+            focus_skills: {
+                chance_of_multiple: 100,
+                max: 3,
+                options: [
+                    :'Illusion',
+                    :'Conjuration',
+                    :'Restoration',
+                    :'Alteration',
+                    :'Enchanting',
+                    :'Smithing',
+                    :'Block',
+                    :'Sneak',
+                    :'Lockpicking',
+                    :'Pickpocket',
+                    :'Speech',
+                    :'Alchemy'
+                ]
+            },
+            factions_to_join: {
+                chance_of_multiple: 50,
+                max: 5,
+                options: [
+                    :"Bard's College",
+                    :'College of Winterhold',
+                    :'The Companions',
+                    :'Dark Brotherhood',
+                    :'Thieves Guild'
+                ]
+            },
+            weapons: {
+                chance_of_multiple: 100,
+                max: 2,
+                options: [
+                    [
+                        :'Daggers',
+                        :'Dagger and Shield'
+                    ],
+                    [
+                        :'Maces',
+                        :'Mace and Shield'
+                    ],
+                    [
+                        :'One Handed Swords',
+                        :'Sword and Shield'
+                    ],
+                    [
+                        :'War Axes',
+                        :'War Axe and Shield'
+                    ],
+                    [
+                        :'Destruction',
+                        :'Destruction and Shield'
+                    ],
+                    :'Battleaxes',
+                    :'Greatswords',
+                    :'Warhammers',
+                    :'Bows',
+                    :'Destruction',
+                    :'Crossbows',
+                ]
+            },
+            armour: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Heavy',
+                    :'Heavy',
+                    :'Heavy',
+                    :'Light',
+                    :'Light',
+                    :'Light',
+                    :'Regular Clothes',
+                    :'Robes'
+                ]
+            },
+            civil_war_side: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Imperial Legion',
+                    :'Stormcloaks',
+                    :'Greybeard Treaty'
+                ]
+            },
+            dawnguard_side: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'The Volkihar Clan',
+                    :'The Dawnguard'
+                ]
+            },
+            home: {
+                chance_of_multiple: 20,
+                max: 8,
+                options: [
+                    :'Breezehome (Whiterun)',
+                    :'Honeyside (Riften)',
+                    :'Vlindrel Hall (Markarth)',
+                    :'Hjerim (Windhelm)',
+                    :'Proudspire Manor (Solitude)',
+                    :'Heljarchen Hall (Dawnstar)',
+                    :'Lakeview Manor (Falkreath)',
+                    :'Windstad Manor (Morthal)',
+                ]
+            },
+            companion: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Housecarl for your home city',
+                    :'Belrand',
+                    :'Erik the Slayer',
+                    :'Jenassa',
+                    :'Marcurio',
+                    :'Stenvar',
+                    :'Teldryn',
+                    :'Vorstag',
+                    :'Adelaisa Vendicci ',
+                    :'Ahtar',
+                    :'Annekke Crag-Jumper',
+                    :'Aranea Ienith',
+                    :'Eola',
+                    :'Erandur',
+                    :'Faendal',
+                    :'Frea',
+                    :'Golldir',
+                    :'Illia',
+                    :'Kharjo',
+                    :'Lob',
+                    :'Mjoll the Lioness',
+                    :'Ogol',
+                    :'Ralis Sedarys',
+                    :'Roggi Knot-Beard',
+                    :'Serana',
+                    :'Sven',
+                    :'Talvas Fathryon',
+                    :'Ugor',
+                    :'Benor',
+                    :'Borgakh the Steel Heart',
+                    :'Cosnach',
+                    :'Derkeethus',
+                    :'Ghorbash the Iron Hand',
+                    :'Uthgerd the Unbroken',
+                    :'Meeko',
+                    :'Vigilance'
+                ]
+            },
+            freelance_theft: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'No freelance theft',
+                    :"If its too tempting to resist",
+                    :'Habitual',
+                    :"If it's not nailed down, it's yours"
+                ]
+            },
+            unprovoked_murder: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'No murder',
+                    :'Occasional',
+                    :'Frequent',
+                    :'Constant rampage'
+                ]
+            }
+        }
+    },
     minecraft: {
         title: 'Minecraft',
         background: 'minecraft.png',
@@ -393,25 +602,6 @@ GAMES = {
                     :"Create an automatic Egg Collector",
                     :"Farm every crop: Wheat, Melons, Pumpkins, Sugar Cane, Potatoes, Carrots, and Cocoa Beans",
                     :"Grow a giant mushroom",
-                    :"Build your base inside a mountain",
-                    :"Build your base on a mountain",
-                    :"Hollow out a mountain",
-                    :"Build your base in a Ravine",
-                    :"Build your base over a Ravine",
-                    :"Build your base on a Floating Island",
-                    :"Build your base on a hill",
-                    :"Build your base in an abandoned Mineshaft",
-                    :"Build your base in a Stronghold",
-                    :"Build your base over a Lava pool",
-                    :"Build your base over a lake",
-                    :"Build your base over a pond",
-                    :"Build your base in a dungeon",
-                    :"Build your base in a huge mushroom",
-                    :"Build your base near a desert well",
-                    :"Build your base in a Village",
-                    :"Build your base in a Temple",
-                    :"Build your base in an Ocean monument",
-                    :"Build your base in a Nether Fortress",
                     :"Mine the Dragon Egg",
                     :"Discover 5 Dungeons",
                     :"Discover a Stronghold",
@@ -538,7 +728,7 @@ GAMES = {
                     :"Embark near a tower. Construct no walls, gates, doors, or bridges",
                     :"All dwarves must serve in the military for at least 1 year and at most 3 years before retiring",
                     :"Enable no new labors. Dwarves can only ever work the jobs they came with",
-                    :"You have one year to dig the framework of your fortress, after that you may not build and more constructions or dig any more tiles",
+                    :"You have one year to dig the framework of your fortress, after that you may not build any more constructions or dig any more tiles",
                     :"Only legendary miners may enter the main fort. Construct a training fort outside your main walls where immigrants train",
                     :"No lethal traps",
                     :"Kill all non-dwarf sentients",
@@ -1351,18 +1541,14 @@ GAMES = {
                 max: 3,
                 options: [
                     :"Barter",
-                    :"Energy Weapons",
-                    :"Explosives",
-                    :"Guns",
                     :"Lockpick",
                     :"Medicine",
-                    :"Melee Weapons",
                     :"Repair",
                     :"Science",
                     :"Sneak",
                     :"Speech",
                     :"Survival",
-                    :"Unarmed"
+                    :'Appropriate for your primary weapon'
                 ]
             },
             traits: {

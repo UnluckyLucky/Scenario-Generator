@@ -72,6 +72,10 @@ module ScenarioGenerator
           # and any possible subcolumns it may have
           add_column column_name, chosen_option[chosen_option.keys[0]]
         # Otherwise the option being checked is just a symbol
+        elsif chosen_option.class == Array
+          chosen_option_from_array = chosen_option.sample(1)[0]
+
+          column_name_titleized = chosen_option_from_array.to_s
         else
           # Titlize it
           column_name_titleized = chosen_option.to_s
