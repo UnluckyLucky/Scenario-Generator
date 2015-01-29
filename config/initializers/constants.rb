@@ -419,7 +419,7 @@ GAMES = {
                     :'Light',
                     :'Light',
                     :'Regular Clothes',
-                    :'Robes'
+                    :'Robes',
                     :'Robes'
                 ]
             },
