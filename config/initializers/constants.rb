@@ -210,7 +210,6 @@ GAMES = {
                     :'Oracle',
                     :'Parthenon',
                     :'Petra',
-                    :'Archaeology',
                     :'Terracotta Army',
                     :'Alhambra',
                     :'Angkor Wat',
