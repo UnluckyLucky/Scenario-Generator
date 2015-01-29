@@ -411,10 +411,15 @@ GAMES = {
                     :'Heavy',
                     :'Heavy',
                     :'Heavy',
+                    :'Heavy',
+                    :'Heavy',
+                    :'Light',
+                    :'Light',
                     :'Light',
                     :'Light',
                     :'Light',
                     :'Regular Clothes',
+                    :'Robes'
                     :'Robes'
                 ]
             },
