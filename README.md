@@ -8,6 +8,7 @@ Currently supported games:
 * Fallout: New Vegas
 * Skyrim
 * Crusader Kings 2
+* Civilization 5
 
 You can add to the generator source list in config/initializers/constants.rb
 Just add to the hash in the correct format and give it a background at assets/images/<game_name>.png and it will automatically appear in the index and the generator will work.

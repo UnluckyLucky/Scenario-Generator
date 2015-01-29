@@ -62,6 +62,197 @@ end
 # }
 
 GAMES = {
+    civilization_v: {
+        title: 'Civilization V',
+        background: 'civ5.jpg',
+        columns: {
+            civilization: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'America',
+                    :'Arabia',
+                    :'Assyria',
+                    :'Austria',
+                    :'Aztecs',
+                    :'Babylon',
+                    :'Brazil',
+                    :'Byzantium',
+                    :'Carthage',
+                    :'Celts',
+                    :'China',
+                    :'Denmark',
+                    :'Egypt',
+                    :'England',
+                    :'Ethiopia',
+                    :'France',
+                    :'Germany',
+                    :'Greece',
+                    :'Huns',
+                    :'Inca',
+                    :'India',
+                    :'Indonesia',
+                    :'Iroquois',
+                    :'Japan',
+                    :'Korea',
+                    :'Maya',
+                    :'Mongolia',
+                    :'Morocco',
+                    :'Netherlands',
+                    :'Ottomans',
+                    :'Persia',
+                    :'Poland',
+                    :'Polynesia ',
+                    :'Portugal',
+                    :'Rome',
+                    :'Russia',
+                    :'Shoshone',
+                    :'Siam',
+                    :'Songhai',
+                    :'Spain',
+                    :'Sweden',
+                    :'Venice',
+                    :'Zulus'
+                ]
+            },
+            victory_type: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Domination',
+                    :'Science',
+                    :'Cultural',
+                    :'Diplomatic'
+                ]
+            },
+            ideology: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Freedom',
+                    :'Autocracy',
+                    :'Order'
+                ]
+            },
+            personality: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Hostile',
+                    :'Friendly',
+                    :'Deceptive',
+                    :'Guarded',
+                    :'Neutral',
+                    :'Warmonger',
+                    :'Friendly to trade partners',
+                    :'Friendly to those who share your religion',
+                    :'Friendly to those of your ideology'
+                ]
+            },
+            required_policy_trees: {
+                chance_of_multiple: 33,
+                max: 3,
+                options: [
+                    :'Liberty',
+                    :'Tradition',
+                    :'Honor',
+                    :'Piety',
+                    :'Patronage',
+                    :'Commerce',
+                    :'Rationalism'
+                ]
+            },
+            religion: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Buddism',
+                    :'Catholicism',
+                    :'Confucianism',
+                    :'Eastern Orthodoxy',
+                    :'Hinduism ',
+                    :'Islam',
+                    :'Judaism',
+                    :'Protestantism',
+                    :'Shinto',
+                    :'Sikhism',
+                    :'Taoism',
+                    :'Tengriism',
+                    :'Zoroastrianism'
+                ]
+            },
+            tall_or_wide: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Tall',
+                    :'Wide',
+                    :'Middleground'
+                ]
+            },
+            goal_wonders: {
+                chance_of_multiple: 45,
+                max: 7,
+                options: [
+                    :'Great Library',
+                    :'Library',
+                    :'Mausoleum of Halicarnassus',
+                    :'Pyramids',
+                    :'Workers',
+                    :'Statue of Zeus',
+                    :'Stonehenge',
+                    :'Temple of Artemis',
+                    :'Colossus',
+                    :'Great Lighthouse',
+                    :'Lighthouse',
+                    :'Great Wall',
+                    :'Hanging Gardens',
+                    :'Oracle',
+                    :'Parthenon',
+                    :'Petra',
+                    :'Archaeology',
+                    :'Terracotta Army',
+                    :'Alhambra',
+                    :'Angkor Wat',
+                    :'Borobudur',
+                    :'Chichen Itza',
+                    :'Great Mosque of Djenne',
+                    :'Mosque',
+                    :'Hagia Sophia',
+                    :'Machu Picchu',
+                    :'Notre Dame',
+                    :'Forbidden Palace',
+                    :'Globe Theatre',
+                    :'Himeji Castle',
+                    :'Leaning Tower of Pisa',
+                    :'Porcelain Tower',
+                    :'Red Fort',
+                    :'Sistine Chapel',
+                    :'Taj Mahal',
+                    :'Uffizi',
+                    :'Big Ben',
+                    :'Brandenburg Gate',
+                    :'Louvre',
+                    :'Broadway',
+                    :'Eiffel Tower',
+                    :'Kremlin',
+                    :'Neuschwanstein',
+                    :'Prora',
+                    :'Statue of Liberty',
+                    :'Cristo Redentor',
+                    :'Great Firewall',
+                    :'The Internet',
+                    :'Pentagon',
+                    :'Sydney Opera House',
+                    :'CN Tower',
+                    :'Hubble Space Telescope',
+                    :'Spaceship Factory',
+                    :'International Space Station',
+                    :'United Nations'
+                ]
+            }
+        }
+    },
     skyrim: {
         title: 'Skyrim',
         background: 'skyrim.jpg',
