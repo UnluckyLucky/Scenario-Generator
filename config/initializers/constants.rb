@@ -243,8 +243,7 @@ GAMES = {
                     :'CN Tower',
                     :'Hubble Space Telescope',
                     :'Spaceship Factory',
-                    :'International Space Station',
-                    :'United Nations'
+                    :'International Space Station'
                 ]
             },
             game_pace: {
