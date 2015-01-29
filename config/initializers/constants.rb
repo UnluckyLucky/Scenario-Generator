@@ -249,6 +249,63 @@ GAMES = {
                     :'International Space Station',
                     :'United Nations'
                 ]
+            },
+            game_pace: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Free Pick',
+                    :'Quick',
+                    :'Standard',
+                    :'Epic',
+                    :'Marathon'
+                ]
+            },
+            map_size: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Free Pick',
+                    :'Duel',
+                    :'Tiny',
+                    :'Small',
+                    :'Standard',
+                    :'Large',
+                    :'Huge'
+                ]
+            },
+            map_type: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Free Pick',
+                    :'Archipelago',
+                    :'Continents',
+                    :'4 Corners',
+                    :'Fractal',
+                    :'Great Plains',
+                    :'Highlands',
+                    :'Ice Age',
+                    :'Inland Sea',
+                    :'Lakes',
+                    :'North V South',
+                    :'Oval',
+                    :'Pangea',
+                    :'Skirmish',
+                    :'Small Continents',
+                    :'Terra',
+                    :'Tiny Islands',
+                    :'West V East',
+                    :'Amazon Plus',
+                    :'Arborea',
+                    :'Boreal',
+                    :'Europe',
+                    :'Frontier',
+                    :'Great Plains Plus',
+                    :'Hemispheres',
+                    :'Rainforest',
+                    :'Tilted Axis'
+                ]
             }
         }
     },
