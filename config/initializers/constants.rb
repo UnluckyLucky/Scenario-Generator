@@ -1514,7 +1514,6 @@ GAMES = {
                     :'Survive depression',
                     :'Live to 90',
                     :'Play a full game',
-                    :'Own all dlc',
                     :'Convert to Aztec',
                     :'Convert the de jure provinces of a European Empire to Aztec',
                     :'Own Rome as an Aztec',
