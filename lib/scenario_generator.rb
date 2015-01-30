@@ -20,8 +20,8 @@ module ScenarioGenerator
         @column_name, @options = find_column(wanted_column, column_name, options)
         if @column_name == wanted_column
           add_column @column_name, @options
-
-          return @scenario
+          
+          return @scenario, @options[:sub_trees]
         end
       end
     end
@@ -29,6 +29,8 @@ module ScenarioGenerator
     def find_column wanted_column, column_name, options
       if column_name == wanted_column
         return column_name, options
+      elsif options[:title] && options[:title].downcase.to_sym == wanted_column
+        return options[:title].downcase.to_sym, options
       else
         options[:options].each do |option|
           if option.class == Hash
