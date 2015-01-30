@@ -1876,12 +1876,15 @@ GAMES = {
                     :"Veronica"
                 ]
             },
-            non_human_companion: {
-                title: 'Non-Human Companion',
+            other_companion: {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
                     :"None",
+                    :'ED-E',
+                    :'Rex',
+                    :'ED-E',
+                    :'Rex',
                     :'ED-E',
                     :'Rex'
                 ]
