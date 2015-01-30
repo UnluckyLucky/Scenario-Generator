@@ -67,7 +67,7 @@ GAMES = {
         background: 'witcher2.jpg',
         spoilers: true,
         columns: {
-            i: {
+            aryan: {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
@@ -75,14 +75,14 @@ GAMES = {
                     :'Save'
                 ]
             },
-            a_or_b: {
-                sub_trees: [:y, :x],
+            roche_or_iorveth: {
+                sub_trees: [:hensalt, :stennis],
                 chance_of_multiple: 0,
                 max:1,
                 options: [
                     {
-                        a: {
-                            title: 'Y',
+                        roche: {
+                            title: 'Hensalt',
                             chance_of_multiple: 0,
                             max: 1,
                             options: [
@@ -92,8 +92,8 @@ GAMES = {
                         }
                     },
                     {
-                        b: {
-                            title: 'X',
+                        iorveth: {
+                            title: 'Stennis',
                             chance_of_multiple: 0,
                             max: 1,
                             options: [
@@ -104,12 +104,12 @@ GAMES = {
                     }
                 ]
             },
-            c_or_d: {
+            saskia_or_triss: {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
-                    :'c',
-                    :'d'
+                    :'Saskia',
+                    :'Triss'
                 ]
             }
         }
