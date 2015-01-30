@@ -62,6 +62,58 @@ end
 # }
 
 GAMES = {
+    the_witcher_2: {
+        title: 'The Witcher 2',
+        background: 'witcher2.jpg',
+        spoilers: true,
+        columns: {
+            i: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Kill',
+                    :'Save'
+                ]
+            },
+            a_or_b: {
+                sub_trees: [:y, :x],
+                chance_of_multiple: 0,
+                max:1,
+                options: [
+                    {
+                        a: {
+                            title: 'Y',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Kill',
+                                :'Save'
+                            ]
+                        }
+                    },
+                    {
+                        b: {
+                            title: 'X',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Kill',
+                                :'Save'
+                            ]
+                        }
+                    }
+                ]
+            },
+            c_or_d: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'c',
+                    :'d'
+                ]
+            }
+        }
+    },
     civilization_v: {
         title: 'Civilization V',
         background: 'civ5.jpg',
