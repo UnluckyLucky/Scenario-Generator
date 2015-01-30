@@ -18,9 +18,9 @@ class ScenarioController < ApplicationController
 
       unless session[@game_name]
         @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
+        session[@game_name] = true
       end
 
-      session[@game_name] = true
     else
       redirect_to root_path
     end
@@ -34,7 +34,10 @@ class ScenarioController < ApplicationController
 
       @title = ScenarioGenerator.game_display_name @game_name
       @background = ScenarioGenerator.game_background @game_name
-      @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
+
+      unless session[@game_name]
+        @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
+      end
 
       render :show
     else

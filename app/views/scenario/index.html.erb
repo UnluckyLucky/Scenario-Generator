@@ -8,9 +8,20 @@
   <% @games.each do |key, value| %>
     <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator">
 
-      <%= link_to content_tag('div', value, class: 'link-text'), 
-        generator_path(game: key),
-        class: 'link-header' %>
+      <% 
+        className = 'link-header'
+        if ScenarioGenerator.spoiler key
+          className = className + ' spoiler'
+          value = value
+          spoiler_text_class = 'show'
+        end
+      %>
+      <a href="/game/<%= key %>" class="<%= className %>">
+        <div class="link-text">
+          <%= value %>
+          <div class="spoiler-text <%= spoiler_text_class %>">Spoilers</div>
+        </div>
+      </a>
 
     </div>
   <% end %>
