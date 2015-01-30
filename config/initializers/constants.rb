@@ -141,7 +141,7 @@ GAMES = {
                     :'Hostile',
                     :'Friendly',
                     :'Deceptive',
-                    :'Guarded',
+                    :'Cautious',
                     :'Neutral',
                     :'Warmonger',
                     :'Friendly to trade partners',
