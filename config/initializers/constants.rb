@@ -63,6 +63,7 @@ end
 
 GAMES = {
     the_witcher_2: {
+        spoiler: true,
         title: 'The Witcher 2',
         background: 'witcher2.jpg',
         spoilers: true,
@@ -75,8 +76,25 @@ GAMES = {
                     :'Save'
                 ]
             },
+            malena: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Accuse',
+                    :'Accuse and Follow',
+                    :'Side with her'
+                ]
+            },
+            iorveth_sword: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Give him his sword',
+                    :'Punch him in the throat'
+                ]
+            },
             roche_or_iorveth: {
-                sub_trees: [:hensalt, :stennis],
+                sub_trees: [:hensalt, :stennis, :hero_or_avenger, :triss_or_temeria, :saskia_or_triss],
                 chance_of_multiple: 0,
                 max:1,
                 options: [
@@ -89,6 +107,14 @@ GAMES = {
                                 :'Kill',
                                 :'Save'
                             ]
+                        },
+                        triss_or_temeria: {
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Triss',
+                                :'Temeria'
+                            ]
                         }
                     },
                     {
@@ -100,16 +126,33 @@ GAMES = {
                                 :'Kill',
                                 :'Save'
                             ]
+                        },
+                        hero_or_avenger: {
+                            title: 'Hero or Avenger',
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Go after Loredo',
+                                :'Save the Elven women'
+                            ]
+                        },
+                        saskia_or_triss: {
+                            chance_of_multiple: 0,
+                            max: 1,
+                            options: [
+                                :'Saskia',
+                                :'Triss'
+                            ]
                         }
                     }
                 ]
             },
-            saskia_or_triss: {
+            the_flawed_diamond: {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
-                    :'Saskia',
-                    :'Triss'
+                    :'Remove the diamond',
+                    :'Leave the diamond'
                 ]
             }
         }

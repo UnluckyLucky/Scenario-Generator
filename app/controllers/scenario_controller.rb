@@ -9,11 +9,13 @@ class ScenarioController < ApplicationController
   end
 
   def show
-    if ScenarioGenerator.games.include? params[:game].to_sym
-      @scenario = ScenarioGenerator.scenario params[:game].to_sym
-      @title = ScenarioGenerator.game_display_name params[:game].to_sym
-      @background = ScenarioGenerator.game_background params[:game].to_sym
-      @game_name = params[:game]
+    @game_name = params[:game].to_sym
+    if ScenarioGenerator.games.include? @game_name
+      @scenario = ScenarioGenerator.scenario @game_name
+
+      @title = ScenarioGenerator.game_display_name @game_name
+      @background = ScenarioGenerator.game_background @game_name
+      @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
     else
       redirect_to root_path
     end
@@ -27,6 +29,7 @@ class ScenarioController < ApplicationController
 
       @title = ScenarioGenerator.game_display_name @game_name
       @background = ScenarioGenerator.game_background @game_name
+      @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
 
       render :show
     else

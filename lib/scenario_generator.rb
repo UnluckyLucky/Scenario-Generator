@@ -72,7 +72,9 @@ module ScenarioGenerator
 
           # Then pass the column name and its options to add_column to recursively add the subcolumn
           # and any possible subcolumns it may have
-          add_column column_name, chosen_option[chosen_option.keys[0]]
+          chosen_option.each do |key, value|
+            add_column key, value
+          end
         # Otherwise the option being checked is just a symbol
         elsif chosen_option.class == Array
           chosen_option_from_array = chosen_option.sample(1)[0]
@@ -103,13 +105,15 @@ module ScenarioGenerator
     end
 
     def game_display_name game
-      game = GAMES[game]
-      game[:title]
+      GAMES[game][:title]
     end
 
     def game_background game
-      game = GAMES[game]
-      game[:background]
+      GAMES[game][:background]
+    end
+
+    def spoiler game
+      GAMES[game][:spoiler]
     end
 
     def quantity chance, max
