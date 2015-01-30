@@ -55,8 +55,9 @@ class ScenarioController < ApplicationController
           @sub_scenario.each do |sub_key, sub_value|
             returned_hash[sub_key.titleize] = sub_value
           end
+        else
+          returned_hash[cleared_key.titleize] = cleared_value
         end
-        returned_hash[cleared_key.titleize] = cleared_value
       end
 
       return returned_hash
