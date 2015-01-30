@@ -18,33 +18,51 @@ body
   border: 2px solid
   display: block
   &.spoiler-alert
-    margin-bottom: 500px
     .title
       font-size: 30px
     .text
       font-size: 18px
 
+.spoiler-scenarios
+  display: none
+
 h2
   font-weight: bold
   font-size: 21px
 
-.reroll-button, .other-button, .reroll-column-button
+a:focus
+  text-decoration: none !important
+  color: black !important
+a:hover
+  text-decoration: none !important
+  color: black !important
+  background-color: darken($roll-button-colour, 5%) !important
+a:active
+  background-color: darken($roll-button-colour, 10%) !important
+
+
+.button, a .button
   cursor: pointer
   background: $roll-button-colour
   font-size: 19px
   width: 100%
   border-radius: 10px
   border-width: 2px
-  color: inherit
+  color: black
+  border: solid 2px black
   &:focus
-    text-decoration: none
-    color: inherit
+    text-decoration: none !important
+    color: black !important
   &:hover
-    text-decoration: none
-    color: inherit
-    background-color: darken($roll-button-colour, 5%)
+    text-decoration: none !important
+    color: black !important
+    background-color: darken($roll-button-colour, 5%) !important
   &:active
-    background-color: darken($roll-button-colour, 10%)
+    background-color: darken($roll-button-colour, 10%) !important
+
+a .spoiler-button
+  margin-top: 25px
+
 
 .reroll-column-button-button
   font-size: 12px

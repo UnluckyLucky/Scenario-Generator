@@ -1,6 +1,6 @@
 <div class="row navbar navbar-inner">
   <div class="col-xs-4 col-sm-2">
-    <%= link_to "Other Games", '' , class: 'box other-button menu-toggle' %>
+    <%= link_to "Other Games", '' , class: 'box button other-button menu-toggle' %>
     <span class="twitter">
       <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this challenge generator for <%= @title %>">Tweet</a>
     </span>
@@ -16,7 +16,7 @@
   <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-        <%= link_to "Click to reroll", generator_path(game: @game_name), class: 'box reroll-button' %>
+        <%= link_to "Click to reroll", generator_path(game: @game_name), class: 'box button reroll-button' %>
       </div>
     </div>
     <div class="row">

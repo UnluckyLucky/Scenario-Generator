@@ -18,7 +18,6 @@ class ScenarioController < ApplicationController
 
       unless session[@game_name]
         @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
-        session[@game_name] = true
       end
 
     else
@@ -43,6 +42,12 @@ class ScenarioController < ApplicationController
     else
       redirect_to root_path
     end
+  end
+
+  def accept
+    @game_name = params[:game].to_sym
+    session[@game_name] = true
+    redirect_to generator_path(game: @game_name)
   end
 
   private

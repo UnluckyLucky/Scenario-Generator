@@ -1,4 +1,8 @@
-<div class="row scenario-sections" id="scenario">
+<% if @spoiler_alert_display %>
+  <div class="row scenario-sections spoiler-scenarios" id="scenario">
+<% else %>
+  <div class="row scenario-sections" id="scenario">
+<% end %>
   <% @scenario.each_with_index do |(key, value), index| %>
     <% if index % (12 / column_width_row_divisor) == 0 %>
       <div class="row">
