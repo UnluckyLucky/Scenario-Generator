@@ -282,13 +282,15 @@ GAMES = {
                 max: 1,
                 options: [
                     :'Tall',
-                    :'Wide',
+                    :'Tall',
                     :'Tall',
                     :'Wide',
-                    :'Tall',
                     :'Wide',
-                    :'One City Challenge',
-                    :'Balanced'
+                    :'Wide',
+                    :'Balanced',
+                    :'Balanced',
+                    :'Balanced',
+                    :'One City Challenge'
                 ]
             },
             goal_wonders: {
