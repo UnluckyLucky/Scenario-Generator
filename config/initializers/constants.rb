@@ -62,7 +62,7 @@ end
 # }
 
 GAMES = {
-    kerbal_space_program: {
+    kerbalspaceprogram: {
         title: 'Kerbal Space Program',
         background: 'ksp.jpg',
         columns: {
