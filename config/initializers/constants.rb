@@ -277,13 +277,18 @@ GAMES = {
                     :'Zoroastrianism'
                 ]
             },
-            tall_or_wide: {
+            expansion_policy: {
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
                     :'Tall',
                     :'Wide',
-                    :'Middleground'
+                    :'Tall',
+                    :'Wide',
+                    :'Tall',
+                    :'Wide',
+                    :'One City Challenge',
+                    :'Balanced'
                 ]
             },
             goal_wonders: {
