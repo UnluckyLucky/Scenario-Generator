@@ -62,12 +62,65 @@ end
 # }
 
 GAMES = {
+    kerbal_space_program: {
+        title: 'Kerbal Space Program',
+        background: 'ksp.jpg',
+        columns: {
+            target_body: {
+                chance_of_multiple: 0,
+                max: 1,
+                options: [
+                    :'Kerbol',
+                    :'Moho',
+                    :'Eve',
+                    :'Gilly',
+                    :'Kerbin',
+                    :'Mun',
+                    :'Minmus',
+                    :'Duna',
+                    :'Ike',
+                    :'Dres',
+                    :'Jool',
+                    :'Laythe',
+                    :'Vall',
+                    :'Tylo',
+                    :'Bop',
+                    :'Pol',
+                    :'Eeloo',
+                    :'A meteor'
+                ]
+            },
+            :'mission_for_target_body' => {
+                chance_of_multiple: 50,
+                max: 5,
+                options: [
+                    :'Achieve Orbit around the target body',
+                    :'Achieve an Equatorial orbit around the target body',
+                    :'Achieve a Polar orbit around the target body',
+                    :'Perform a rendevous above the target body',
+                    :'Achieve a Geosynchronous orbit around the target body',
+                    :'Send a Probe to the target body',
+                    :'Send a Capsule to the target body',
+                    :'Send an Aircraft to the target body',
+                    :'Construct a Multi-Part Ship on the target body',
+                    :'Construct a Space Station above the target body',
+                    :"Enter the target body's sphere of influence",
+                    :'Kill a Kerbal on the target body',
+                    :'Rescue a Kerbal from the target body',
+                    :'Visit and return from the target body',
+                    :'Land on and return from the target body',
+                    :'Plant a flag on the target body',
+                    :'Construct a base on the target body',
+                    :'Send a rover to the target body'
+                ]
+            }
+        }
+    },
     the_witcher_2: {
         disabled: true,
         spoiler: true,
         title: 'The Witcher 2',
         background: 'witcher2.jpg',
-        spoilers: true,
         columns: {
             aryan: {
                 chance_of_multiple: 0,
