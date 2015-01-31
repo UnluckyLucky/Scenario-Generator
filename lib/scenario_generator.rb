@@ -94,7 +94,9 @@ module ScenarioGenerator
     def games
       games = {}
       GAMES.each do |key, value|
-        games[key] = value[:title]
+        unless value[:disabled]
+          games[key] = value[:title]
+        end
       end
 
       if ENV['shuffle_sidebar']

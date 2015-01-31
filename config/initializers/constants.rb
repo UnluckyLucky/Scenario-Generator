@@ -63,6 +63,7 @@ end
 
 GAMES = {
     the_witcher_2: {
+        disabled: true,
         spoiler: true,
         title: 'The Witcher 2',
         background: 'witcher2.jpg',
