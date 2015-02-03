@@ -14,7 +14,7 @@ module ScenarioGenerator
     def sub_scenario game, column
       @scenario = {}
       game = game.to_sym
-      wanted_column = column.to_sym
+      wanted_column = standard_column_name(column)
 
       GAMES[game][:columns].each do |column_name, options|
         @column_name, @options = find_column(wanted_column, column_name, options)
@@ -26,21 +26,48 @@ module ScenarioGenerator
       end
     end
 
+    # Find a column hash recursively within a given column
     def find_column wanted_column, column_name, options
-      if column_name == wanted_column
-        return column_name, options
-      elsif options[:title] && options[:title].downcase.to_sym == wanted_column
-        return options[:title].downcase.to_sym, options
+      # Check the column's name for a match
+      if same_column?(column_name, wanted_column)
+        return standard_column_name(column_name), options
+      # Check the column's specific title for a match
+      elsif options[:title] && same_column?(options[:title], wanted_column)
+        return standard_column_name(options[:title]), options
+      # Otherwise there is no match, so go down a level and continue the search 
       else
+        # Iterate through all the options for the given column
         options[:options].each do |option|
+          # If it's a hash then it is an option containing at least one sub-column
           if option.class == Hash
-            returned_column_name, returned_options = find_column wanted_column, option.keys[0], option[option.keys[0]]
-            if returned_column_name == wanted_column
-              return returned_column_name, returned_options
+            # Since an option with sub-columns can have multiple sub-columns we need to iterate through 
+            # all of them to do the search.
+            option.each do |key, value|
+              # Call find_column for each of the sub-columns
+              returned_column_name, returned_options = find_column wanted_column, key, value
+              # If the returned value matches the wanted_column then pass it up the recursion chain
+              if returned_column_name == wanted_column
+                return returned_column_name, returned_options
+              end
             end
           end
         end
       end
+
+      # No match
+      return false, false
+    end
+
+    # Columns appear in different formats throughout constants and as input from the api.
+    # This converts them all into spaced, downcased symbols for comparison
+    def standard_column_name column_name
+      column_name.to_s.gsub(/_/, ' ').downcase.to_sym
+    end
+
+    # Compare two column names and return whether they are the same column
+    # Convert both columns to the same format
+    def same_column? column_1, column_2
+      standard_column_name(column_1) == standard_column_name(column_2)
     end
 
     # Recursive algorithm to sample options from a column and then if they themselves have columns
@@ -55,7 +82,7 @@ module ScenarioGenerator
       @scenario[title] = []
 
       # Sample the column options array for the needed quantity of options
-      quantity = quantity(options[:chance_of_multiple], options[:max])
+      quantity = quantity(options[:chance_of_multiple], options[:max], options[:min])
       chosen_options = options[:options].sample(quantity)
 
       # Iterate through all the chosen options
@@ -91,6 +118,7 @@ module ScenarioGenerator
 
     end
 
+    # Return list of games
     def games
       games = {}
       GAMES.each do |key, value|
@@ -118,8 +146,27 @@ module ScenarioGenerator
       GAMES[game][:spoiler]
     end
 
-    def quantity chance, max
-      quantity = 1
+    def quantity chance, max, min
+      # Ensure we always have a chance variable. Default = 0
+      chance = 0 unless chance
+      # Ensure we always have a min variable. Default = 1
+      min = 1 unless min
+      # Ensure we always have a max variable. Default = min
+      max = min unless max
+      # If that'd put it below 1 then set it to 1
+      max = 1 if max < 1
+
+      quantity = min
+
+      # If chance is 100% then just use max since we'll hit it anyway
+      if chance == 100
+        return max
+      end
+
+      # If chance is 100% then just use max since we'll hit it anyway
+      if chance == 0
+        return min
+      end
 
       while rand(100) < chance && quantity < max
         quantity += 1

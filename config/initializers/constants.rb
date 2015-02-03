@@ -29,89 +29,464 @@ def new_vegas_specials
     return options
 end
 
-# Reference for how to build nested columns.
-
-# test_game: {
-#     title: 'test',
-#     columns: {
-#         top_column: {
-#             chance_of_multiple: 100,
-#             max: 2,
-#             options: [
-#                 {
-#                     sub_column_1: {
-#                         chance_of_multiple: 0,
-#                         max: 1,
-#                         options: [
-#                            {
-#                                 sub_column_2: {
-#                                     chance_of_multiple: 0,
-#                                     max: 1,
-#                                     options: [
-#                                         :'yes'
-#                                     ]
-#                                 }
-#                             }
-#                         ]
-#                     }
-#                 },
-#                 :'not a column'
-#             ]
-#         }
-#     }
-# }
-
 GAMES = {
     kerbalspaceprogram: {
         title: 'Kerbal Space Program',
         background: 'ksp.jpg',
         columns: {
             target_body: {
-                chance_of_multiple: 0,
-                max: 1,
+                sub_trees: [
+                                :goal_for_kerbol,
+                                :goal_for_moho,
+                                :goal_for_eve,
+                                :goal_for_gilly,
+                                :goal_for_kerbin,
+                                :goal_for_the_mun,
+                                :goal_for_minmus,
+                                :goal_for_duna,
+                                :goal_for_ike,
+                                :goal_for_dres,
+                                :goal_for_jool,
+                                :goal_for_laythe,
+                                :goal_for_vall,
+                                :goal_for_tylo,
+                                :goal_for_bop,
+                                :goal_for_pol,
+                                :goal_for_eeloo,
+                                :goal_for_an_asteroid
+                            ],
+                chance_of_multiple: 5,
+                min: 1,
+                max: 8,
                 options: [
-                    :'Kerbol',
-                    :'Moho',
-                    :'Eve',
-                    :'Gilly',
-                    :'Kerbin',
-                    :'Mun',
-                    :'Minmus',
-                    :'Duna',
-                    :'Ike',
-                    :'Dres',
-                    :'Jool',
-                    :'Laythe',
-                    :'Vall',
-                    :'Tylo',
-                    :'Bop',
-                    :'Pol',
-                    :'Eeloo',
-                    :'A meteor'
-                ]
-            },
-            :'mission_for_target_body' => {
-                chance_of_multiple: 50,
-                max: 5,
-                options: [
-                    :'Achieve Orbit around the target body',
-                    :'Achieve an Equatorial orbit around the target body',
-                    :'Achieve a Polar orbit around the target body',
-                    :'Perform a rendevous above the target body',
-                    :'Achieve a Geosynchronous orbit around the target body',
-                    :'Send a Probe to the target body',
-                    :'Send a Capsule to the target body',
-                    :'Send an Aircraft to the target body',
-                    :'Construct a Multi-Part Ship on the target body',
-                    :'Construct a Space Station above the target body',
-                    :"Enter the target body's sphere of influence",
-                    :'Kill a Kerbal on the target body',
-                    :'Rescue a Kerbal from the target body',
-                    :'Visit and return from the target body',
-                    :'Land on and return from the target body',
-                    :'Plant a flag on the target body',
-                    :'Construct a base on the target body',
-                    :'Send a rover to the target body'
+                    {
+                        :'Kerbol' => {
+                            title: 'Goal For Kerbol',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Achieve a geosynchronous orbit above Kerbol',
+                                :'Construct a Space Station in orbit of Kerbol',
+                                :"Enter Kerbol's sphere of influence",
+                                :'Kill a Kerbal on the surface of the sun',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Moho' => {
+                            title: 'Goal For Moho',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Construct a Multi-Part Ship on or above Moho',
+                                :'Construct a Space Station in orbit',
+                                :"Enter Moho's sphere of influence",
+                                :'Kill a Kerbal on Moho',
+                                :'Rescue a Kerbal from Moho',
+                                :'Visit and return',
+                                :'Land on and return',
+                                :'Plant a flag',
+                                :'Construct a base',
+                                :'Land a rover on the surface',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Eve' => {
+                            title: 'Goal For Eve',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Achieve a geosynchronous orbit above Eve',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Construct a Multi-Part Ship on or above Eve',
+                                :'Construct a Space Station in orbit',
+                                :"Enter Eve's sphere of influence",
+                                :'Kill a Kerbal on Eve',
+                                :'Rescue a Kerbal from Eve',
+                                :'Visit and return',
+                                :'Land on and return',
+                                :'Plant a flag',
+                                :'Construct a base',
+                                :'Land a rover on the surface',
+                                :'Send a plane to Eve',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Gilly' => {
+                            title: 'Goal For Gilly',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Construct a Space Station',
+                                :"Enter Gilly's sphere of influence",
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Gilly',
+                                :'Visit and return from Gilly',
+                                :'Land on and return',
+                                :'Plant a flag',
+                                :'Construct a base',
+                                :'Land a rover on the surface',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Kerbin' => {
+                            title: 'Goal For Kerbin',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Achieve a geosynchronous orbit above Kerbin',
+                                :'Put a satellite in orbit',
+                                :'Send a capsule to the north pole',
+                                :'Send a capsule to the south pole',
+                                :'Land a plane on the island airstrip',
+                                :'Discover an anomaly',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to the launchpad',
+                                :'Construct a base at the north pole',
+                                :'Send a rover to the north pole',
+                                :'Construct a base at the south pole',
+                                :'Send a rover to the south pole',
+                                :"Leave Kerbin's sphere of influence"
+                            ]
+                        }
+                    },
+                    {
+                        :'Mun' => {
+                            title: 'Goal For The Mun',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on the Mun',
+                                :'Discover an anomaly',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Minmus' => {
+                            title: 'Goal For Minmus',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve orbit with a jetpack',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on Minmus',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Duna' => {
+                            title: 'Goal For Duna',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Achieve a geosynchronous orbit above Duna',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Send a plane to Duna',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Land a rover on Duna',
+                                :'Construct a base',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Ike' => {
+                            title: 'Goal For Ike',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Land a rover on Ike',
+                                :'Construct a base',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Dres' => {
+                            title: 'Goal For Dres',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Land a rover on Dres',
+                                :'Construct a base',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Jool' => {
+                            title: 'Goal For Jool',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Achieve a geosynchronous orbit above Jool',
+                                :'Put a satellite in orbit',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Laythe' => {
+                            title: 'Goal For Laythe',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Send a capsule with a Kerbal to Laythe',
+                                :'Land a plane on the island airstrip',
+                                :'Construct a space station in orbit over multiple launches',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin',
+                                :'Construct a base',
+                                :'Land a boat on Laythe'
+                            ]
+                        }
+                    },
+                    {
+                        :'Vall' => {
+                            title: 'Goal For Vall',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on the Vall',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Vall with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Tylo' => {
+                            title: 'Goal For Tylo',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on the Tylo',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Tylo with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Bop' => {
+                            title: 'Goal For Bop',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on Bop',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Bop with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Pol' => {
+                            title: 'Goal For Pol',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on Pol',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Pol with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Eeloo' => {
+                            title: 'Goal For Eeloo',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Achieve orbit',
+                                :'Achieve an equatorial orbit',
+                                :'Achieve a polar orbit',
+                                :'Perform a rendevous between two ships',
+                                :'Perform a rendevous and dock two ships',
+                                :'Put a satellite in orbit',
+                                :'Land a capsule containing a Kerbal',
+                                :'Land a rover on Eeloo',
+                                :'Construct a space station in orbit',
+                                :'Kill a Kerbal',
+                                :'Rescue a Kerbal from Eeloo with a different ship to the one that put him there',
+                                :'Achieve orbit and return safely to Kerbin'
+                            ]
+                        }
+                    },
+                    {
+                        :'Asteroid' => {
+                            title: 'Goal For an Asteroid',
+                            chance_of_multiple: 25,
+                            min: 1,
+                            max: 5,
+                            options: [
+                                :'Perform a rendevous with an asteroid',
+                                :'Land a capsule containing a Kerbal on an asteroid',
+                                :'Land a rover on an asteroid',
+                                :'Kill a Kerbal on an asteroid',
+                                :'Perform a rendevous with an asteroid and return to Kerbin',
+                                :'Crash an asteroid into a planet',
+                                :'Bring an asteroid back to Kerbin',
+                                :'Bring an asteroid back to Kerbin and put it in a stable orbit',
+                                :'Bring an asteroid back to Kerbin and put it in a stable orbit, construct a space station around it',
+                                :'Dock with an asteroid',
+                                :'Destroy a building at the KSC using an asteroid'
+                            ]
+                        }
+                    }
                 ]
             }
         }
@@ -123,6 +498,7 @@ GAMES = {
         columns: {
             aryan: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Kill',
@@ -149,12 +525,14 @@ GAMES = {
             roche_or_iorveth: {
                 sub_trees: [:hensalt, :stennis, :hero_or_avenger, :triss_or_temeria, :saskia_or_triss],
                 chance_of_multiple: 0,
-                max:1,
+                min: 1,
+                max: 1,
                 options: [
                     {
                         roche: {
                             title: 'Hensalt',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Kill',
@@ -163,6 +541,7 @@ GAMES = {
                         },
                         triss_or_temeria: {
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Triss',
@@ -174,6 +553,7 @@ GAMES = {
                         iorveth: {
                             title: 'Stennis',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Kill',
@@ -181,8 +561,8 @@ GAMES = {
                             ]
                         },
                         hero_or_avenger: {
-                            title: 'Hero or Avenger',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Go after Loredo',
@@ -191,6 +571,7 @@ GAMES = {
                         },
                         saskia_or_triss: {
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Saskia',
@@ -202,6 +583,7 @@ GAMES = {
             },
             the_flawed_diamond: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Remove the diamond',
@@ -216,6 +598,7 @@ GAMES = {
         columns: {
             civilization: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'America',
@@ -265,6 +648,7 @@ GAMES = {
             },
             victory_type: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Domination',
@@ -275,6 +659,7 @@ GAMES = {
             },
             ideology: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Freedom',
@@ -284,6 +669,7 @@ GAMES = {
             },
             personality: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Hostile',
@@ -299,6 +685,7 @@ GAMES = {
             },
             required_policy_trees: {
                 chance_of_multiple: 33,
+                min: 1,
                 max: 3,
                 options: [
                     :'Liberty',
@@ -312,6 +699,7 @@ GAMES = {
             },
             religion: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Buddism',
@@ -331,6 +719,7 @@ GAMES = {
             },
             expansion_policy: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Tall',
@@ -347,6 +736,7 @@ GAMES = {
             },
             goal_wonders: {
                 chance_of_multiple: 45,
+                min: 1,
                 max: 7,
                 options: [
                     :'The Great Library',
@@ -399,6 +789,7 @@ GAMES = {
             },
             game_pace: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Free Pick',
@@ -410,6 +801,7 @@ GAMES = {
             },
             map_size: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Free Pick',
@@ -423,6 +815,7 @@ GAMES = {
             },
             map_type: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Free Pick',
@@ -462,6 +855,7 @@ GAMES = {
         columns: {
             race: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Altmer',
@@ -478,6 +872,7 @@ GAMES = {
             },
             birthsign: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'The Apprentice',
@@ -497,6 +892,7 @@ GAMES = {
             },
             focus_skills: {
                 chance_of_multiple: 100,
+                min: 3,
                 max: 3,
                 options: [
                     :'Illusion',
@@ -515,6 +911,7 @@ GAMES = {
             },
             factions_to_join: {
                 chance_of_multiple: 50,
+                min: 1,
                 max: 5,
                 options: [
                     :"Bard's College",
@@ -526,6 +923,7 @@ GAMES = {
             },
             weapons: {
                 chance_of_multiple: 100,
+                min: 2,
                 max: 2,
                 options: [
                     [
@@ -558,6 +956,7 @@ GAMES = {
             },
             armour: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Heavy',
@@ -577,6 +976,7 @@ GAMES = {
             },
             civil_war_side: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Imperial Legion',
@@ -586,6 +986,7 @@ GAMES = {
             },
             dawnguard_side: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'The Volkihar Clan',
@@ -594,6 +995,7 @@ GAMES = {
             },
             home: {
                 chance_of_multiple: 20,
+                min: 1,
                 max: 8,
                 options: [
                     :'Breezehome (Whiterun)',
@@ -608,6 +1010,7 @@ GAMES = {
             },
             companion: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Housecarl for your home city',
@@ -650,6 +1053,7 @@ GAMES = {
             },
             freelance_theft: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'No freelance theft',
@@ -660,6 +1064,7 @@ GAMES = {
             },
             unprovoked_murder: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'No murder',
@@ -676,6 +1081,7 @@ GAMES = {
         columns: {
             biome: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"Frozen River",
@@ -729,6 +1135,7 @@ GAMES = {
             },
             restrictions: {
                 chance_of_multiple: 5,
+                min: 1,
                 max: 2,
                 options: [
                     :"No axes",
@@ -861,6 +1268,7 @@ GAMES = {
             },
             goals: {
                 chance_of_multiple: 75,
+                min: 1,
                 max: 5,
                 options: [
                     :"Fill a chest with Iron",
@@ -1030,6 +1438,7 @@ GAMES = {
         columns: {
             biome: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"Grassy/Forest",
@@ -1047,6 +1456,7 @@ GAMES = {
             },
             surroundings: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"Calm",
@@ -1068,6 +1478,7 @@ GAMES = {
             },
             challenges: {
                 chance_of_multiple: 5,
+                min: 1,
                 max: 3,
                 options: [
                     :"No danger rooms",
@@ -1137,6 +1548,7 @@ GAMES = {
             },
             goals: {
                 chance_of_multiple: 15,
+                min: 1,
                 max: 2,
                 options: [
                     :"Kill all Elf and Human caravans",
@@ -1196,6 +1608,7 @@ GAMES = {
             starting_duchy: {
                 title: 'Starting Duchy',
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'Afar',
@@ -1554,6 +1967,7 @@ GAMES = {
             },
             restrictions: {
                 chance_of_multiple: 5,
+                min: 1,
                 max: 3,
                 options: [
                     :'No usurping',
@@ -1631,6 +2045,7 @@ GAMES = {
             },
             goals: {
                 chance_of_multiple: 75,
+                min: 1,
                 max: 5,
                 options: [
                     {
@@ -1638,6 +2053,7 @@ GAMES = {
                             title: 'Target Religion',
                             option_title: 'Convert to the Target Religion',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'Catholic',
@@ -1699,6 +2115,7 @@ GAMES = {
                             title: 'Target Empire',
                             option_title: 'Own the Target Empire without starting in it',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'The Germanian Empire',
@@ -1728,6 +2145,7 @@ GAMES = {
                             title: 'Target Empire',
                             option_title: 'Own the Target Empire',
                             chance_of_multiple: 0,
+                            min: 1,
                             max: 1,
                             options: [
                                 :'The Germanian Empire',
@@ -1931,11 +2349,13 @@ GAMES = {
         columns: {
             special: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: new_vegas_specials()
             },
             tag_skills: {
                 chance_of_multiple: 100,
+                min: 3,
                 max: 3,
                 options: [
                     :"Barter",
@@ -1951,6 +2371,7 @@ GAMES = {
             },
             traits: {
                 chance_of_multiple: 100,
+                min: 2,
                 max: 2,
                 options: [
                     :"Built to Destroy",
@@ -1974,6 +2395,7 @@ GAMES = {
             hardcore_mode: {
                 title: 'Hardcore Mode',
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :'On',
@@ -1986,6 +2408,7 @@ GAMES = {
             },
             primary_weapon: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"Energy: Pistols",
@@ -2007,6 +2430,7 @@ GAMES = {
             },
             faction: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"NCR",
@@ -2017,6 +2441,7 @@ GAMES = {
             },
             human_companion: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"None",
@@ -2030,6 +2455,7 @@ GAMES = {
             },
             other_companion: {
                 chance_of_multiple: 0,
+                min: 1,
                 max: 1,
                 options: [
                     :"None",
@@ -2044,17 +2470,3 @@ GAMES = {
         }
     }
 }
-
-#    game: {
-#        title: '',
-#        columns: {
-#            column: {
-#                chance_of_multiple: 0,
-#                max: 1,
-#                options: [
-#                    :'',
-#                    :''
-#                ]
-#            }
-#        }
-#    }

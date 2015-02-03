@@ -67,7 +67,7 @@ class ScenarioController < ApplicationController
       returned_hash = {}
 
       cleared_hash.each do |cleared_key, cleared_value|
-        if cleared_key.to_sym == @sub_scenario.keys[0].to_sym
+        if cleared_key.downcase.to_sym == @sub_scenario.keys[0].downcase.to_sym
           @sub_scenario.each do |sub_key, sub_value|
             returned_hash[sub_key.titleize] = sub_value
           end
