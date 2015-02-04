@@ -1,8 +1,23 @@
 <div class="row">
-  <div class="col-xs-12 title">
-    Scenario Generator Index
+  <div class="col-xs-8 col-xs-offset-2 col-lg-offset-3 col-lg-6">
+    <div class="title">Scenario Generator Index</div>
+  </div>
+  <div class="col-xs-4 col-lg-3 xs-hidden">
+    <%= form_for Alert.new, url: alert_subscribe_path do |f| %>
+      <div class="box subscribe-box">
+        <div class="subscribe-title">
+          Get alerts when new games are added
+        </div>
+        <div class="errors">
+          <%= flash[:notice][0] if flash[:notice] %>
+        </div>
+        <%= f.text_field :email, placeholder: 'Email Address' %>
+        <%= f.submit 'Subscribe', class: 'button' %>
+      </div>
+    <% end %>
   </div>
 </div>
+
 
 <div class="row generator-links">
   <% @games.each do |key, value| %>

@@ -1,0 +1,42 @@
+$roll-button-colour: #F59D38
+
+.button, a .button
+  cursor: pointer
+  background: $roll-button-colour
+  font-size: 19px
+  width: 100%
+  border-radius: 10px
+  border-width: 2px
+  color: black
+  border: solid 2px black
+  &:focus
+    text-decoration: none !important
+    color: black !important
+  &:hover
+    text-decoration: none !important
+    color: black !important
+    background-color: darken($roll-button-colour, 5%) !important
+  &:active
+    background-color: darken($roll-button-colour, 10%) !important
+
+a .spoiler-button
+  margin-top: 25px
+
+input
+  width: 100%
+  margin-top: 10px
+  margin-bottom: 10px
+
+.errors
+  color: red
+  font-size: 14px
+
+a:focus
+  text-decoration: none !important
+  color: black !important
+a:hover
+  text-decoration: none !important
+  color: black !important
+  background-color: darken($roll-button-colour, 5%) !important
+a:active
+  background-color: darken($roll-button-colour, 10%) !important
