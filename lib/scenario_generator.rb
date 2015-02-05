@@ -134,6 +134,22 @@ module ScenarioGenerator
       end
     end
 
+    def next_game game
+      if GAMES[game][:next_game]
+        title = GAMES[GAMES[game][:next_game]][:title]
+        link = GAMES[game][:next_game]
+        return title, link
+      end
+    end
+
+    def previous_game game
+      if GAMES[game][:previous_game]
+        title = GAMES[GAMES[game][:previous_game]][:title]
+        link = GAMES[game][:previous_game]
+        return title, link
+      end
+    end
+
     def game_display_name game
       GAMES[game][:title]
     end

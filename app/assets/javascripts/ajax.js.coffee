@@ -1,5 +1,6 @@
 ready = ->
-  $(document).on 'click', '.reroll-column-button', ->
+  $('.reroll-column-button').click ->
+    console.log 'CLICKED'
     column_name_to_reroll = $(@).parent().attr('id')
     game_name = document.URL.split('/')[4].split('#')[0]
 
@@ -11,8 +12,6 @@ ready = ->
       items = $(column).children('.item').map( ->
         $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
       ).get()
-      console.log column_name
-      console.log items
       existing_data[column_name] = items
 
     data = {
@@ -28,6 +27,7 @@ ready = ->
       document.write(data)
       document.close()
     )
+
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

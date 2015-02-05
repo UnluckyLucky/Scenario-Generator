@@ -15,6 +15,8 @@ class ScenarioController < ApplicationController
 
       @title = ScenarioGenerator.game_display_name @game_name
       @background = ScenarioGenerator.game_background @game_name
+      @next_title, @next_link = ScenarioGenerator.next_game @game_name
+      @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
 
       unless session[@game_name]
         @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
@@ -33,6 +35,8 @@ class ScenarioController < ApplicationController
 
       @title = ScenarioGenerator.game_display_name @game_name
       @background = ScenarioGenerator.game_background @game_name
+      @next_title, @next_link = ScenarioGenerator.next_game @game_name
+      @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
 
       unless session[@game_name]
         @spoiler_alert_display = ScenarioGenerator.spoiler @game_name
@@ -58,7 +62,9 @@ class ScenarioController < ApplicationController
 
     def construct_hash_from_params
       cleared_hash = {}
+      puts @sub_trees_to_remove.inspect
       params[:existing_data].each do |param_key, param_value|
+        puts param_key.to_sym
         unless @sub_trees_to_remove && @sub_trees_to_remove.include?(param_key.to_sym)
           cleared_hash[param_key.titleize] = param_value
         end
