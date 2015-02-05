@@ -3,11 +3,7 @@ class AlertController < ApplicationController
   def subscribe
     @alert = Alert.new(email: params[:alert][:email])
 
-    if @alert.save
-      flash[:notice] = "#{params[:email]} successfully subscribed"
-    else
-      flash[:notice] = @alert.errors.full_messages
-    end
+    flash[:success] = "#{params[:alert][:email]} successfully subscribed"
 
     redirect_to :back
   end
@@ -22,8 +18,8 @@ class AlertController < ApplicationController
       @alert.destroy
     end
 
-    flash[:notice] = "#{params[:alert][:email]} successfully removed"
-    redirect_to :back
+    flash[:error] = "#{params[:alert][:email]} successfully removed"
+    redirect_to alert_emails_path
   end
 
 end

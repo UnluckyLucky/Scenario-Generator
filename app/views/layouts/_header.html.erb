@@ -42,7 +42,7 @@
           Get alerts when new games are added
         </div>
         <div class="errors">
-          <%= flash[:notice][0] if flash[:notice] %>
+          <%= flash[:success] %>
         </div>
         <%= f.text_field :email, placeholder: 'Email Address' %>
         <%= f.submit 'Subscribe', class: 'button' %>
