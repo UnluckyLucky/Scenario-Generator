@@ -24,6 +24,22 @@ $roll-button-colour: #F59D38
   &.next
     margin-top: -5px
     margin-bottom: 0px
+  a:hover
+    color: black !important
+    background-color: darken($roll-button-colour, 5%) !important
+  a:active
+    background-color: darken($roll-button-colour, 10%) !important
+
+.title 
+  a
+    color: #aabdd1
+    &:focus
+      text-decoration: none !important
+      color: darken(#aabdd1, 5%)
+    &:hover
+      text-decoration: none !important
+      color: darken(#aabdd1, 5%)
+
 
 a .spoiler-button
   margin-top: 25px
@@ -42,13 +58,3 @@ input
 .errors
   color: green
   font-size: 14px
-
-a:focus
-  text-decoration: none !important
-  color: black !important
-a:hover
-  text-decoration: none !important
-  color: black !important
-  background-color: darken($roll-button-colour, 5%) !important
-a:active
-  background-color: darken($roll-button-colour, 10%) !important
