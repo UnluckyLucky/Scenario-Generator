@@ -12,11 +12,17 @@ class AlertController < ApplicationController
     redirect_to :back
   end
 
+  def emails
+  end
+
   def unsubscribe
-    @alert = Alert.find_by(email: params[:email])
+    @alert = Alert.find_by(email: params[:alert][:email])
 
-    @alert.destroy
+    if @alert 
+      @alert.destroy
+    end
 
+    flash[:notice] = "#{params[:alert][:email]} successfully removed"
     redirect_to :back
   end
 
