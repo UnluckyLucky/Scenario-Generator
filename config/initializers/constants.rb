@@ -96,7 +96,7 @@ GAMES = {
                                 :'Construct a Multi-Part Ship on or above Moho',
                                 :'Construct a Space Station in orbit',
                                 :"Enter Moho's sphere of influence",
-                                :'Kill a Kerbal on Moho',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Moho',
                                 :'Visit and return',
                                 :'Land on and return',
@@ -125,7 +125,7 @@ GAMES = {
                                 :'Construct a Multi-Part Ship on or above Eve',
                                 :'Construct a Space Station in orbit',
                                 :"Enter Eve's sphere of influence",
-                                :'Kill a Kerbal on Eve',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Eve',
                                 :'Visit and return',
                                 :'Land on and return',
@@ -153,7 +153,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Construct a Space Station',
                                 :"Enter Gilly's sphere of influence",
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Gilly',
                                 :'Visit and return from Gilly',
                                 :'Land on and return',
@@ -183,7 +183,7 @@ GAMES = {
                                 :'Land a plane on the island airstrip',
                                 :'Discover an anomaly',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to the launchpad',
                                 :'Construct a base at the north pole',
@@ -211,7 +211,7 @@ GAMES = {
                                 :'Land a rover on the Mun',
                                 :'Discover an anomaly',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -234,7 +234,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on Minmus',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -257,7 +257,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Send a plane to Duna',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Land a rover on Duna',
                                 :'Construct a base',
@@ -280,7 +280,7 @@ GAMES = {
                                 :'Put a satellite in orbit',
                                 :'Land a capsule containing a Kerbal',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Land a rover on Ike',
                                 :'Construct a base',
@@ -303,7 +303,7 @@ GAMES = {
                                 :'Put a satellite in orbit',
                                 :'Land a capsule containing a Kerbal',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Land a rover on Dres',
                                 :'Construct a base',
@@ -326,7 +326,7 @@ GAMES = {
                                 :'Achieve a geosynchronous orbit above Jool',
                                 :'Put a satellite in orbit',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -348,7 +348,7 @@ GAMES = {
                                 :'Send a capsule with a Kerbal to Laythe',
                                 :'Land a plane on the island airstrip',
                                 :'Construct a space station in orbit over multiple launches',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin',
                                 :'Construct a base',
@@ -372,7 +372,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on the Vall',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Vall with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -394,7 +394,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on the Tylo',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Tylo with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -416,7 +416,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on Bop',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Bop with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -438,7 +438,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on Pol',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Pol with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -460,7 +460,7 @@ GAMES = {
                                 :'Land a capsule containing a Kerbal',
                                 :'Land a rover on Eeloo',
                                 :'Construct a space station in orbit',
-                                :'Kill a Kerbal',
+                                :'Kill a Kerbal in style',
                                 :'Rescue a Kerbal from Eeloo with a different ship to the one that put him there',
                                 :'Achieve orbit and return safely to Kerbin'
                             ]
@@ -476,7 +476,7 @@ GAMES = {
                                 :'Perform a rendevous with an asteroid',
                                 :'Land a capsule containing a Kerbal on an asteroid',
                                 :'Land a rover on an asteroid',
-                                :'Kill a Kerbal on an asteroid',
+                                :'Kill a Kerbal in style on an asteroid',
                                 :'Perform a rendevous with an asteroid and return to Kerbin',
                                 :'Crash an asteroid into a planet',
                                 :'Bring an asteroid back to Kerbin',
