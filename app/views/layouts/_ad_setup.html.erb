@@ -14,5 +14,12 @@
 
   $(document).ready(ready);
   $(document).on('page:load', ready);
+  
+  if (window.attachEvent){
+    window.attachEvent('DOMContentLoaded',ready);
+    window.attachEvent('onload',ready);}
+  else{
+    window.addEventListener('DOMContentLoaded',ready,false);
+    window.addEventListener('load',ready,false);}})();
 </script>
 <!-- End Project Wonderful Ad Box Loader -->
