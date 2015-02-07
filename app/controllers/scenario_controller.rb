@@ -1,7 +1,7 @@
 class ScenarioController < ApplicationController
   include ScenarioGenerator
 
-  layout 'generator', only: [:show]
+  layout 'generator', only: [:show, :reroll_column]
 
   before_action :load_games
 
