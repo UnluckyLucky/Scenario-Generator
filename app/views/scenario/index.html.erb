@@ -2,18 +2,9 @@
   <% @games.each do |key, value| %>
     <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator">
 
-      <% 
-        className = 'link-header'
-        if ScenarioGenerator.spoiler key
-          className = className + ' spoiler'
-          value = value
-          spoiler_text_class = 'show'
-        end
-      %>
-      <a href="/game/<%= key %>" class="<%= className %>">
+      <a href="/game/<%= key %>" class="link-header">
         <div class="link-text">
           <%= value %>
-          <div class="spoiler-text <%= spoiler_text_class %>">Spoilers</div>
         </div>
       </a>
 
