@@ -30,6 +30,182 @@ def new_vegas_specials
 end
 
 GAMES = {
+    mass_effect: {
+        title: 'Mass Effect',
+        background: 'masseffect1.jpg',
+        columns: {
+            background: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Spacer',
+                    :'Colonist',
+                    :'Earthborn'
+                ]
+            },
+            psychological_profile: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'War Hero',
+                    :'Sole Survivor',
+                    :'Ruthless'
+                ]
+            },
+            morality: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Paragon',
+                    :'Renegade',
+                    :'Balanced'
+                ]
+            },
+            class: {
+                sub_trees: [:specialization],
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        adept: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Bastion,
+                                :Nemesis
+                            ]
+                        }
+                    },
+                    {
+                        soldier: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Commando,
+                                :'Shock Trooper'
+                            ]
+                        }
+                    },
+                    {
+                        engineer: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Medic,
+                                :Operative
+                            ]
+                        }
+                    },
+                    {
+                        vanguard: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Nemesis,
+                                :'Shock Trooper'
+                            ]
+                        }
+                    },
+                    {
+                        sentinel: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Medic,
+                                :Bastion
+                            ]
+                        }
+                    },
+                    {
+                        infiltrator: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Commando,
+                                :Operative
+                            ]
+                        }
+                    }
+                ]
+            },
+            rachni_queen: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Kill',
+                    :'Release'
+                ]
+            },
+            bring_down_the_sky: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Let Balek go and save the hostages',
+                    :'Kill Balek and let the hostages die'
+                ]
+            },
+            wrex_on_virmire: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Talk Wrex down',
+                    :'Kill Wrex'
+                ]
+            },
+            ashley_or_kaidan: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Ashley,
+                    :Kaidan
+                ]
+            },
+            the_council: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Save them',
+                    :'Let them die'
+                ]
+            },
+            human_council_member: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Anderson,
+                    :Udina
+                ]
+            }
+        }
+    },
     kerbalspaceprogram: {
         title: 'Kerbal Space Program',
         background: 'ksp.jpg',
