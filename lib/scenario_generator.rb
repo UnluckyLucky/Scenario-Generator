@@ -3,7 +3,7 @@ module ScenarioGenerator
   class << self
 
     def scenario game
-      @scenario = {}
+      @scenario = { regular: {}, spoiler: {} }
       GAMES[game][:columns].each do |column_name, options|
         add_column(column_name, options)
       end
@@ -12,7 +12,7 @@ module ScenarioGenerator
     end
 
     def sub_scenario game, column
-      @scenario = {}
+      @scenario = { regular: {}, spoiler: {} }
       game = game.to_sym
       wanted_column = standard_column_name(column)
 
@@ -78,8 +78,12 @@ module ScenarioGenerator
       # If it doesn't then just titleize the key
       title = options[:title] || column_name.to_s.titleize
 
+      # Figure out whether this column is a spoiler column or not
+      spoiler_symbol = :regular
+      spoiler_symbol = :spoiler if options[:spoiler] == true
+
       # Instantiate the array that'll hold the column's options
-      @scenario[title] = []
+      @scenario[spoiler_symbol][title] = []
 
       # Sample the column options array for the needed quantity of options
       quantity = quantity(options[:chance_of_multiple], options[:max], options[:min])
@@ -113,7 +117,7 @@ module ScenarioGenerator
         end
 
         # Add the option that we created in one of the two ways above to the current column's options array
-        @scenario[title].append(column_name_titleized)
+        @scenario[spoiler_symbol][title].append(column_name_titleized)
       end
 
     end

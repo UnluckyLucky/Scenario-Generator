@@ -498,6 +498,7 @@ GAMES = {
         next_game: :the_witcher_2,
         columns: {
             triss_or_vesemir: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -507,6 +508,7 @@ GAMES = {
                 ]
             },
             the_escort: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -516,6 +518,7 @@ GAMES = {
                 ]
             },
             racist_encounter: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -525,6 +528,7 @@ GAMES = {
                 ]
             },
             arms: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -535,6 +539,7 @@ GAMES = {
                 ]
             },
             lesser_evil: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -544,6 +549,7 @@ GAMES = {
                 ]
             },
             seigfried: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -553,6 +559,7 @@ GAMES = {
                 ]
             },
             force_recon: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -563,6 +570,7 @@ GAMES = {
                 ]
             },
             guardian: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -572,6 +580,7 @@ GAMES = {
                 ]
             },
             thaler: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -581,6 +590,7 @@ GAMES = {
                 ]
             },
             werewolf: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -595,6 +605,7 @@ GAMES = {
                     :vodyenoi_conflict, :forgiveness, 
                     :"continue_with_the_scoia'tael?", :'continue_with_the_order?'
                 ],
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -602,6 +613,7 @@ GAMES = {
                     {
                         :"Side with the Scoia'tael" => {
                             title: 'Vodyenoi Conflict',
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -612,6 +624,7 @@ GAMES = {
                             ]
                         },
                         forgiveness: {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -621,6 +634,7 @@ GAMES = {
                             ]
                         },
                         :"Continue with the Scoia'tael?" => {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -633,6 +647,7 @@ GAMES = {
                     {
                         :'Side with the Order' => {
                             title: 'Vodyenoi Conflict',
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -643,6 +658,7 @@ GAMES = {
                             ]
                         },
                         forgiveness: {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -652,6 +668,7 @@ GAMES = {
                             ]
                         },
                         :'Continue with the Order?' => {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -664,6 +681,7 @@ GAMES = {
                 ]
             },
             striga: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -673,6 +691,7 @@ GAMES = {
                 ]
             },
             king_of_the_wild_hunt: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -690,6 +709,7 @@ GAMES = {
         previous_game: :the_witcher,
         columns: {
             aryan: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -699,6 +719,7 @@ GAMES = {
                 ]
             },
             malena: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
@@ -708,6 +729,7 @@ GAMES = {
                 ]
             },
             iorveth_sword: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 max: 1,
                 options: [
@@ -716,6 +738,7 @@ GAMES = {
                 ]
             },
             roche_or_iorveth: {
+                spoiler: true,
                 sub_trees: [:hensalt, :stennis, :hero_or_avenger, :triss_or_temeria, :saskia_or_triss],
                 chance_of_multiple: 0,
                 min: 1,
@@ -723,6 +746,7 @@ GAMES = {
                 options: [
                     {
                         roche: {
+                            spoiler: true,
                             title: 'Hensalt',
                             chance_of_multiple: 0,
                             min: 1,
@@ -733,6 +757,7 @@ GAMES = {
                             ]
                         },
                         triss_or_temeria: {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -745,6 +770,7 @@ GAMES = {
                     {
                         iorveth: {
                             title: 'Stennis',
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -754,6 +780,7 @@ GAMES = {
                             ]
                         },
                         hero_or_avenger: {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -763,6 +790,7 @@ GAMES = {
                             ]
                         },
                         saskia_or_triss: {
+                            spoiler: true,
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -775,6 +803,7 @@ GAMES = {
                 ]
             },
             the_flawed_diamond: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -1173,8 +1202,7 @@ GAMES = {
                 max: 1,
                 options: [
                     :'Imperial Legion',
-                    :'Stormcloaks',
-                    :'Greybeard Treaty'
+                    :'Stormcloaks'
                 ]
             },
             dawnguard_side: {
@@ -2622,6 +2650,7 @@ GAMES = {
                 ]
             },
             faction: {
+                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,

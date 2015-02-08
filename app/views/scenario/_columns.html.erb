@@ -1,0 +1,18 @@
+<% if @spoiler_alert_display && column_type == :spoiler %>
+  <div class="row scenario-sections spoiler-scenarios" id="scenario">
+<% else %>
+  <div class="row scenario-sections" id="scenario">
+<% end %>
+  <% @scenario[column_type].each_with_index do |(key, value), index| %>
+    <% if index % (12 / column_width_row_divisor(column_type)) == 0 %>
+      <div class="row">
+    <% end %>
+    <div  class="col-xs-10 col-xs-offset-1 <%= column_width_string(column_type) %> column <%= column_type %>" 
+          id="<%= key.to_s.downcase.tr(" ", "_") %>">
+      <%= render partial: 'scenario_section', locals: { title: key, items: value } %>
+    </div>
+    <% if index % (12 / column_width_row_divisor(column_type)) == column_width_row_remainder(column_type) || index == @scenario[column_type].length - 1 %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,18 +1,27 @@
 ready = ->
   $('.reroll-column-button').click ->
-    console.log 'CLICKED'
     column_name_to_reroll = $(@).parent().attr('id')
     game_name = document.URL.split('/')[4].split('#')[0]
 
-    existing_data = {}
-    columns = $('.column')
+    existing_data = { regular: {}, spoiler: {} }
+    columns = $('.column.regular')
 
     $(columns).each (key, column) ->
       column_name = $(column).attr('id')
       items = $(column).children('.item').map( ->
         $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
       ).get()
-      existing_data[column_name] = items
+      existing_data['regular'][column_name] = items
+
+
+    columns = $('.column.spoiler')
+
+    $(columns).each (key, column) ->
+      column_name = $(column).attr('id')
+      items = $(column).children('.item').map( ->
+        $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+      ).get()
+      existing_data['spoiler'][column_name] = items
 
     data = {
       game_name: game_name,

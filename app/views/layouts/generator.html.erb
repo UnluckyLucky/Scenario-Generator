@@ -15,9 +15,6 @@
     <div class="container">
         <%= render 'layouts/header' %>
         <%= render 'layouts/ad' %>
-        <% if @spoiler_alert_display %>
-            <%= render 'layouts/spoiler_alert' %>
-        <% end %>
         <%= yield %>
     </div>
   
