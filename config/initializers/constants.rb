@@ -475,42 +475,17 @@ GAMES = {
             },
             :"Normandy Upgrades" => {
                 spoiler: true,
-                chance_of_multiple: 100,
-                min: 3,
-                max: 3,
-                options: [
-                    [
-                        :'Cannon upgraded',
-                        :'Cannon not upgraded'
-                    ],
-                    [
-                        :'Armour upgraded',
-                        :'Armour not upgraded'
-                    ],
-                    [
-                        :'Shield upgraded',
-                        :'Shield not upgraded'
-                    ]
-                ]
-            },
-            :"Shield Upgraded?" => {
-                spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
                 options: [
-                    :Yes,
-                    :No
-                ]
-            },
-            :"Cannon Upgraded?" => {
-                spoiler: true,
-                chance_of_multiple: 0,
-                min: 1,
-                max: 1,
-                options: [
-                    :Yes,
-                    :No
+                    :Cannon,
+                    :Armour,
+                    :Shield,
+                    :'Cannon and Armour',
+                    :'Cannon and Shield',
+                    :'Armour and Shield',
+                    :'Armour, Shield, and Cannon'
                 ]
             },
             :"Vent Specialist" => {
