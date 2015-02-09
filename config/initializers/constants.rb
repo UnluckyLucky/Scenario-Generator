@@ -66,14 +66,17 @@ GAMES = {
                 ]
             },
             class: {
-                sub_trees: [:specialization],
+                sub_trees: [
+                    :vanguard_specialization, :adept_specialization, :soldier_specialization,
+                    :engineer_specialization, :sentinel_specialization, :infiltrator_specialization
+                ],
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
                 options: [
                     {
                         adept: {
-                            title: 'Specialization',
+                            title: 'Adept Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -85,7 +88,7 @@ GAMES = {
                     },
                     {
                         soldier: {
-                            title: 'Specialization',
+                            title: 'Soldier Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -97,7 +100,7 @@ GAMES = {
                     },
                     {
                         engineer: {
-                            title: 'Specialization',
+                            title: 'Engineer Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -109,7 +112,7 @@ GAMES = {
                     },
                     {
                         vanguard: {
-                            title: 'Specialization',
+                            title: 'Vanguard Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -121,7 +124,7 @@ GAMES = {
                     },
                     {
                         sentinel: {
-                            title: 'Specialization',
+                            title: 'Sentinel Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -133,7 +136,7 @@ GAMES = {
                     },
                     {
                         infiltrator: {
-                            title: 'Specialization',
+                            title: 'Infiltrator Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -233,14 +236,17 @@ GAMES = {
                 ]
             },
             class: {
-                sub_trees: [:specialization],
+                sub_trees: [
+                    :vanguard_specialization, :adept_specialization, :soldier_specialization,
+                    :engineer_specialization, :sentinel_specialization, :infiltrator_specialization
+                ],
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
                 options: [
                     {
                         adept: {
-                            title: 'Specialization',
+                            title: 'Adept Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -252,7 +258,7 @@ GAMES = {
                     },
                     {
                         soldier: {
-                            title: 'Specialization',
+                            title: 'Soldier Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -264,7 +270,7 @@ GAMES = {
                     },
                     {
                         engineer: {
-                            title: 'Specialization',
+                            title: 'Engineer Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -276,7 +282,7 @@ GAMES = {
                     },
                     {
                         vanguard: {
-                            title: 'Specialization',
+                            title: 'Vanguard Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -288,7 +294,7 @@ GAMES = {
                     },
                     {
                         sentinel: {
-                            title: 'Specialization',
+                            title: 'Sentinel Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -300,7 +306,7 @@ GAMES = {
                     },
                     {
                         infiltrator: {
-                            title: 'Specialization',
+                            title: 'Infiltrator Specialization',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
