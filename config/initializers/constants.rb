@@ -328,7 +328,7 @@ GAMES = {
                     :'Send to Cerberus'
                 ]
             },
-            :"Mordin's Loyalty Mission" => {
+            :"Mordin Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 100,
                 min: 2,
@@ -344,7 +344,7 @@ GAMES = {
                     ]
                 ]
             },
-            :"Jacob's Loyalty Mission" => {
+            :"Jacob Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -354,7 +354,7 @@ GAMES = {
                     :'Take his father into custody'
                 ]
             },
-            :"Miranda's Loyalty Mission" => {
+            :"Miranda Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -364,7 +364,7 @@ GAMES = {
                     :'Tell her sister'
                 ]
             },
-            :"Jack's Loyalty Mission" => {
+            :"Jack Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -374,7 +374,7 @@ GAMES = {
                     :'Kill Aresh'
                 ]
             },
-            :"Garrus's Loyalty Mission" => {
+            :"Garrus Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -384,7 +384,7 @@ GAMES = {
                     :"Don't kill Sidonis"
                 ]
             },
-            :"Samara's Loyalty Mission" => {
+            :"Samara Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -394,7 +394,7 @@ GAMES = {
                     :'Side with Morinth'
                 ]
             },
-            :"Tali's Loyalty Mission" => {
+            :"Tali Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -405,7 +405,7 @@ GAMES = {
                     :'Convince the Board to let Tali go free'
                 ]
             },
-            :"Legion's Loyalty Mission" => {
+            :"Legion Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -415,7 +415,7 @@ GAMES = {
                     :"Brainwash the traitors"
                 ]
             },
-            :"Zaeed's Loyalty Mission" => {
+            :"Zaeed Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -425,7 +425,7 @@ GAMES = {
                     :"Let Vido go"
                 ]
             },
-            :"Kasumi's Loyalty Mission" => {
+            :"Kasumi Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -467,7 +467,7 @@ GAMES = {
                     :'Convince both'
                 ]
             },
-            :"The Normandy's Crew" => {
+            :"Normandy Crew" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -526,7 +526,7 @@ GAMES = {
                     :'Zaeed'
                 ]
             },
-            :"First Fire Team" => {
+            :"1st Fire Team" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -579,7 +579,7 @@ GAMES = {
                     :'Thane'
                 ]
             },
-            :"Second Fire Team" => {
+            :"2nd Fire Team" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -639,7 +639,7 @@ GAMES = {
                     :'Zaeed'
                 ]
             },
-            :"Final Battle Squad" => {
+            :"Final Battle" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 2,
