@@ -31,6 +31,7 @@ end
 
 GAMES = {
     mass_effect: {
+        disabled: true,
         title: 'Mass Effect',
         background: 'masseffect1.jpg',
         next_game: :mass_effect_2,
@@ -221,6 +222,7 @@ GAMES = {
         }
     },
     mass_effect_2: {
+        disabled: true,
         title: 'Mass Effect 2',
         background: 'masseffect2.jpg',
         previous_game: :mass_effect,
@@ -328,7 +330,7 @@ GAMES = {
                     :'Send to Cerberus'
                 ]
             },
-            :"Mordin Loyalty Mission" => {
+            :"Mordin's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 100,
                 min: 2,
@@ -344,7 +346,7 @@ GAMES = {
                     ]
                 ]
             },
-            :"Jacob Loyalty Mission" => {
+            :"Jacob's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -354,7 +356,7 @@ GAMES = {
                     :'Take his father into custody'
                 ]
             },
-            :"Miranda Loyalty Mission" => {
+            :"Miranda's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -364,7 +366,7 @@ GAMES = {
                     :'Tell her sister'
                 ]
             },
-            :"Jack Loyalty Mission" => {
+            :"Jack's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -374,7 +376,7 @@ GAMES = {
                     :'Kill Aresh'
                 ]
             },
-            :"Garrus Loyalty Mission" => {
+            :"Garrus's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -384,7 +386,7 @@ GAMES = {
                     :"Don't kill Sidonis"
                 ]
             },
-            :"Samara Loyalty Mission" => {
+            :"Samara's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -394,7 +396,7 @@ GAMES = {
                     :'Side with Morinth'
                 ]
             },
-            :"Tali Loyalty Mission" => {
+            :"Tali's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -405,7 +407,7 @@ GAMES = {
                     :'Convince the Board to let Tali go free'
                 ]
             },
-            :"Legion Loyalty Mission" => {
+            :"Legion's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -415,7 +417,7 @@ GAMES = {
                     :"Brainwash the traitors"
                 ]
             },
-            :"Zaeed Loyalty Mission" => {
+            :"Zaeed's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -425,7 +427,7 @@ GAMES = {
                     :"Let Vido go"
                 ]
             },
-            :"Kasumi Loyalty Mission" => {
+            :"Kasumi's Loyalty Mission" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -467,7 +469,7 @@ GAMES = {
                     :'Convince both'
                 ]
             },
-            :"Normandy Crew" => {
+            :"The Normandy's Crew" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -526,7 +528,7 @@ GAMES = {
                     :'Zaeed'
                 ]
             },
-            :"1st Fire Team" => {
+            :"First Fire Team" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -579,7 +581,7 @@ GAMES = {
                     :'Thane'
                 ]
             },
-            :"2nd Fire Team" => {
+            :"Second Fire Team" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -639,7 +641,7 @@ GAMES = {
                     :'Zaeed'
                 ]
             },
-            :"Final Battle" => {
+            :"Final Battle Squad" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 2,
