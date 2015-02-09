@@ -33,6 +33,7 @@ GAMES = {
     mass_effect: {
         title: 'Mass Effect',
         background: 'masseffect1.jpg',
+        next_game: :mass_effect_2,
         columns: {
             background: {
                 chance_of_multiple: 0,
@@ -144,6 +145,16 @@ GAMES = {
                     }
                 ]
             },
+            :"garrus's morality" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Push towards Paragon',
+                    :'Push towards Renegade'
+                ]
+            },
             rachni_queen: {
                 spoiler: true,
                 chance_of_multiple: 0,
@@ -202,6 +213,447 @@ GAMES = {
                 options: [
                     :Anderson,
                     :Udina
+                ]
+            }
+        }
+    },
+    mass_effect_2: {
+        title: 'Mass Effect 2',
+        background: 'masseffect2.jpg',
+        previous_game: :mass_effect,
+        columns: {
+            morality: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Paragon',
+                    :'Renegade',
+                    :'Balanced'
+                ]
+            },
+            class: {
+                sub_trees: [:specialization],
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        adept: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Bastion,
+                                :Nemesis
+                            ]
+                        }
+                    },
+                    {
+                        soldier: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Commando,
+                                :'Shock Trooper'
+                            ]
+                        }
+                    },
+                    {
+                        engineer: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Mechanic,
+                                :Demolisher
+                            ]
+                        }
+                    },
+                    {
+                        vanguard: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Champion,
+                                :Destroyer
+                            ]
+                        }
+                    },
+                    {
+                        sentinel: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Guardian,
+                                :Raider
+                            ]
+                        }
+                    },
+                    {
+                        infiltrator: {
+                            title: 'Specialization',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Agent,
+                                :Assassin
+                            ]
+                        }
+                    }
+                ]
+            },
+            Veetor: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Send to the Migrant Fleet',
+                    :'Send to Cerberus'
+                ]
+            },
+            :"Mordin's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 100,
+                min: 2,
+                max: 2,
+                options: [
+                    [
+                        :'Let Mordin shoot Maelon',
+                        :'Save Maelon'
+                    ],
+                    [
+                        :'Destroy the data',
+                        :'Save the data'
+                    ]
+                ]
+            },
+            :"Jacob's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Leave his father',
+                    :'Take his father into custody'
+                ]
+            },
+            :"Miranda's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Don't tell her sister",
+                    :'Tell her sister'
+                ]
+            },
+            :"Jack's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Let Aresh go',
+                    :'Kill Aresh'
+                ]
+            },
+            :"Garrus's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Kill Sidonis',
+                    :"Don't kill Sidonis"
+                ]
+            },
+            :"Samara's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Side with Samara',
+                    :'Side with Morinth'
+                ]
+            },
+            :"Tali's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Reveal the evidence",
+                    :"Don't reveal the evidence",
+                    :'Convince the Board to let Tali go free'
+                ]
+            },
+            :"Legion's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Kill the traitors",
+                    :"Brainwash the traitors"
+                ]
+            },
+            :"Zaeed's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Chase Vido",
+                    :"Let Vido go"
+                ]
+            },
+            :"Kasumi's Loyalty Mission" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Destroy the Greybox",
+                    :"Keep the Greybox"
+                ]
+            },
+            :"Project Overlord" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Save David",
+                    :"Leave David with Gavin"
+                ]
+            },
+            :"Jack vs. Miranda" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Side with Jack",
+                    :"Side with Miranda",
+                    :'Convince both'
+                ]
+            },
+            :"Legion vs. Tali" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Side with Legion",
+                    :"Side with Tali",
+                    :'Convince both'
+                ]
+            },
+            :"The Normandy's Crew" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :"Rush to save them",
+                    :"Rush to save them",
+                    :"Rush to save them",
+                    :"Don't rush to save them"
+                ]
+            },
+            :"Normandy Upgrades" => {
+                spoiler: true,
+                chance_of_multiple: 100,
+                min: 3,
+                max: 3,
+                options: [
+                    [
+                        :'Cannon upgraded',
+                        :'Cannon not upgraded'
+                    ],
+                    [
+                        :'Armour upgraded',
+                        :'Armour not upgraded'
+                    ],
+                    [
+                        :'Shield upgraded',
+                        :'Shield not upgraded'
+                    ]
+                ]
+            },
+            :"Shield Upgraded?" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Yes,
+                    :No
+                ]
+            },
+            :"Cannon Upgraded?" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Yes,
+                    :No
+                ]
+            },
+            :"Vent Specialist" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Kasumi',
+                    :'Legion',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Legion',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Legion',
+                    :'Tali',
+                    :'Garrus',
+                    :'Grunt',
+                    :'Jack',
+                    :'Jacob',
+                    :'Miranda',
+                    :'Mordin',
+                    :'Samara/Morinth',
+                    :'Thane',
+                    :'Zaeed'
+                ]
+            },
+            :"First Fire Team" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Kasumi',
+                    :'Legion',
+                    :'Tali',
+                    :'Grunt',
+                    :'Jack',
+                    :'Mordin',
+                    :'Samara/Morinth',
+                    :'Thane',
+                    :'Zaeed'
+                ]
+            },
+            :"Biotic Specialist" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Samara/Morinth',
+                    :'Jack',
+                    :'Samara/Morinth',
+                    :'Jack',
+                    :'Samara/Morinth',
+                    :'Jack',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Thane'
+                ]
+            },
+            :"Second Fire Team" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Kasumi',
+                    :'Legion',
+                    :'Tali',
+                    :'Grunt',
+                    :'Jack',
+                    :'Mordin',
+                    :'Samara/Morinth',
+                    :'Thane',
+                    :'Zaeed'
+                ]
+            },
+            :"Escort" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Mordin',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Jack',
+                    :'Mordin',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Jack',
+                    :'Mordin',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Jack',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Legion',
+                    :'Grunt',
+                    :'Samara/Morinth',
+                    :'Thane',
+                    :'Zaeed'
+                ]
+            },
+            :"Final Battle Squad" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 2,
+                max: 2,
+                options: [
+                    :'Mordin',
+                    :'Tali',
+                    :'Kasumi',
+                    :'Jack',
+                    :'Garrus',
+                    :'Miranda',
+                    :'Jacob',
+                    :'Legion',
+                    :'Grunt',
+                    :'Samara/Morinth',
+                    :'Thane',
+                    :'Zaeed'
                 ]
             }
         }
