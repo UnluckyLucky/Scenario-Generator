@@ -658,6 +658,16 @@ GAMES = {
                     :'Thane',
                     :'Zaeed'
                 ]
+            },
+            :"Collector Base" => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Destroy it',
+                    :'Give it to Cerberus'
+                ]
             }
         }
     },
