@@ -155,6 +155,7 @@ GAMES = {
                 options: [
                     {
                         male: {
+                            spoiler: true,
                             title: 'Love Interest (Male)',
                             chance_of_multiple: 0,
                             min: 1,
@@ -168,6 +169,7 @@ GAMES = {
                     },
                     {
                         female: {
+                            spoiler: true,
                             title: 'Love Interest (Female)',
                             chance_of_multiple: 0,
                             min: 1,
