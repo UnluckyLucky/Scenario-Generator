@@ -148,6 +148,39 @@ GAMES = {
                     }
                 ]
             },
+            gender: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        male: {
+                            title: 'Love Interest (male)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Ashley,
+                                :Liara,
+                                :None
+                            ]
+                        }
+                    },
+                    {
+                        female: {
+                            title: 'Love Interest (female)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Kaidan,
+                                :Liara,
+                                :None
+                            ]
+                        }
+                    }
+                ]
+            },
             :"garrus's morality" => {
                 spoiler: true,
                 chance_of_multiple: 0,
@@ -224,6 +257,7 @@ GAMES = {
         title: 'Mass Effect 2',
         background: 'masseffect2.jpg',
         previous_game: :mass_effect,
+        next_game: :mass_effect_3,
         columns: {
             morality: {
                 chance_of_multiple: 0,
@@ -313,6 +347,45 @@ GAMES = {
                             options: [
                                 :Agent,
                                 :Assassin
+                            ]
+                        }
+                    }
+                ]
+            },
+            gender: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        male: {
+                            spoiler: true,
+                            title: 'Love Interest (male)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Miranda,
+                                :Tali,
+                                :Jack,
+                                :Kelly,
+                                :None
+                            ]
+                        }
+                    },
+                    {
+                        female: {
+                            spoiler: true,
+                            title: 'Love Interest (female)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :Jacob,
+                                :Garrus,
+                                :Thane,
+                                :Kelly,
+                                :None
                             ]
                         }
                     }
@@ -652,6 +725,166 @@ GAMES = {
                 options: [
                     :'Destroy it',
                     :'Give it to Cerberus'
+                ]
+            }
+        }
+    },
+    mass_effect_3: {
+        title: 'Mass Effect 3',
+        background: 'masseffect3.jpg',
+        previous_game: :mass_effect_2,
+        columns: {
+            morality: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Paragon,
+                    :Renegade,
+                    :Balanced
+                ]
+            },
+            class: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Adept',
+                    :'Soldier',
+                    :'Engineer',
+                    :'Sentinel',
+                    :'Infiltrator',
+                    :'Vanguard'
+                ]
+            },
+            gender: {
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        male: {
+                            spoiler: true,
+                            title: 'Love Interest (male)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'If Romanced in ME2, Miranda. Otherwise reroll',
+                                :'If Romanced in ME2, Tali. Otherwise reroll',
+                                :'If Romanced in ME2, Jack. Otherwise reroll',
+                                :'If Romanced in ME2, Kelly. Otherwise reroll',
+                                :Ashley,
+                                :'Steve Cortez',
+                                :Kaiden,
+                                :Liara,
+                                :None
+                            ]
+                        }
+                    },
+                    {
+                        female: {
+                            spoiler: true,
+                            title: 'Love Interest (female)',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'If Romanced in ME2, Thane. Otherwise reroll',
+                                :'If Romanced in ME2, Garrus. Otherwise reroll',
+                                :'If Romanced in ME2, Kelly. Otherwise reroll',
+                                :Samantha,
+                                :Kaiden,
+                                :Liara,
+                                :None
+                            ]
+                        }
+                    }
+                ]
+            },
+            rachni_queen: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Save the Rachni Queen',
+                    :'Save the Krogan Squad'
+                ]
+            },
+            samara: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Let Samara kill herself, kill Falere',
+                    :'Let Samara kill herself, do not kill Falere',
+                    :'Stop Samara from killing herself',
+                    :'Stop Samara from killing herself'
+                ]
+            },
+            :'Omega: The Reactor' => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Slowly reroute the power',
+                    :'Kill the power'
+                ]
+            },
+            :'Omega: General Petrovsky' => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Convince Aria to spare him',
+                    :'Let Aria kill him'
+                ]
+            },
+            the_genophage: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Cure the genophage',
+                    :'Do not cure the genophage'
+                ]
+            },
+            :'Quarians and the Geth' => {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :'Give the Geth True Intelligence',
+                    :'Side with the Quarians',
+                    :'If possible, negotiate a ceasefire. If not, reroll'
+                ]
+            },
+            party_theme: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Quiet,
+                    :Wild
+                ]
+            },
+            ending: {
+                spoiler: true,
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    :Control,
+                    :Synthesize,
+                    :Destroy,
+                    :Refuse
                 ]
             }
         }
