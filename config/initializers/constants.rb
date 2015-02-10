@@ -31,7 +31,6 @@ end
 
 GAMES = {
     mass_effect: {
-        disabled: true,
         title: 'Mass Effect',
         background: 'masseffect1.jpg',
         next_game: :mass_effect_2,
@@ -222,7 +221,6 @@ GAMES = {
         }
     },
     mass_effect_2: {
-        disabled: true,
         title: 'Mass Effect 2',
         background: 'masseffect2.jpg',
         previous_game: :mass_effect,
@@ -475,25 +473,10 @@ GAMES = {
                 min: 1,
                 max: 1,
                 options: [
-                    :"Rush to save them",
-                    :"Rush to save them",
-                    :"Rush to save them",
-                    :"Don't rush to save them"
-                ]
-            },
-            :"Normandy Upgrades" => {
-                spoiler: true,
-                chance_of_multiple: 0,
-                min: 1,
-                max: 1,
-                options: [
-                    :Cannon,
-                    :Armour,
-                    :Shield,
-                    :'Cannon and Armour',
-                    :'Cannon and Shield',
-                    :'Armour and Shield',
-                    :'Armour, Shield, and Cannon'
+                    :"Rush to help",
+                    :"Rush to help",
+                    :"Rush to help",
+                    :"Don't rush to help"
                 ]
             },
             :"Vent Specialist" => {
@@ -2375,7 +2358,7 @@ GAMES = {
                     :"Your only food is fish",
                     :"All resources must be used as soon as possible",
                     :"Everything but stockpiles must be above ground",
-                    :"Perform a science experiment and detail results on reddit",
+                    :"Perform a science experiment and share your results",
                     :"Maintain a 5:1 cat to dwarf ratio at all times. Extra dwarfs must be terminated with extreme prejudice.",
                     :"Start with only an anvil and 2 copper ore",
                     :"Start with 6 jesters and a single skilled dwarf",

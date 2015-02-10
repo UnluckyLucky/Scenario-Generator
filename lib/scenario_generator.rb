@@ -61,7 +61,7 @@ module ScenarioGenerator
     # Columns appear in different formats throughout constants and as input from the api.
     # This converts them all into spaced, downcased symbols for comparison
     def standard_column_name column_name
-      column_name.to_s.gsub(/_/, ' ').downcase.to_sym
+      column_name.to_s.gsub(/ /, '_').downcase.to_sym
     end
 
     # Compare two column names and return whether they are the same column

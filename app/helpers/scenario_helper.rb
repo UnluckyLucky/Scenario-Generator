@@ -1,5 +1,11 @@
 module ScenarioHelper
 
+  # Columns appear in different formats throughout constants and as input from the api.
+  # This converts them all into spaced, downcased symbols for comparison
+  def standard_column_name column_name
+    column_name.to_s.gsub(/ /, '_').downcase.to_sym
+  end
+
   def column_width_string column_type_key
     case @scenario[column_type_key].keys.size
     when 1

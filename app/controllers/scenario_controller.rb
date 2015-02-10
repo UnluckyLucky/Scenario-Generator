@@ -1,9 +1,13 @@
 class ScenarioController < ApplicationController
   include ScenarioGenerator
+  include ScenarioHelper
 
   layout 'generator', only: [:show, :reroll_column]
 
   before_action :load_games
+
+  REGULAR_SYMBOL = :r
+  SPOILER_SYMBOL = :s
 
   def index
   end
@@ -30,7 +34,7 @@ class ScenarioController < ApplicationController
   def reroll_column
     @game_name = params[:game_name].gsub(/#/,"").to_sym
     if ScenarioGenerator.games.include? @game_name
-      @sub_scenario, @sub_trees_to_remove = ScenarioGenerator.sub_scenario @game_name, params[:column_name].downcase.tr(" ", "_")
+      @sub_scenario, @sub_trees_to_remove = ScenarioGenerator.sub_scenario @game_name, standard_column_name(params[:column_name])
       @scenario = construct_hash_from_params
 
       @title = ScenarioGenerator.game_display_name @game_name
@@ -63,15 +67,15 @@ class ScenarioController < ApplicationController
     # TODO: Clean this up
     def construct_hash_from_params
       cleared_hash = { regular: {}, spoiler: {} }
-      params[:existing_data][:regular].each do |param_key, param_value|
-        unless @sub_trees_to_remove && @sub_trees_to_remove.include?(param_key.to_sym)
+      params[REGULAR_SYMBOL].each do |param_key, param_value|
+        unless @sub_trees_to_remove && @sub_trees_to_remove.include?(standard_column_name(param_key))
           cleared_hash[:regular][param_key.titleize] = param_value
         end
       end
 
-      if params[:existing_data][:spoiler] && !params[:existing_data][:spoiler].empty?
-        params[:existing_data][:spoiler].each do |param_key, param_value|
-          unless @sub_trees_to_remove && @sub_trees_to_remove.include?(param_key.to_sym)
+      if params[SPOILER_SYMBOL] && !params[SPOILER_SYMBOL].empty?
+        params[SPOILER_SYMBOL].each do |param_key, param_value|
+          unless @sub_trees_to_remove && @sub_trees_to_remove.include?(standard_column_name(param_key))
             cleared_hash[:spoiler][param_key.titleize] = param_value
           end
         end
@@ -80,7 +84,7 @@ class ScenarioController < ApplicationController
       returned_hash = { regular: {}, spoiler: {} }
 
       cleared_hash[:regular].each do |cleared_key, cleared_value|
-        if !@sub_scenario[:regular].empty? && cleared_key.downcase.to_sym == @sub_scenario[:regular].keys[0].downcase.to_sym
+        if !@sub_scenario[:regular].empty? && standard_column_name(cleared_key) == standard_column_name(@sub_scenario[:regular].keys[0])
           @sub_scenario[:regular].each do |sub_key, sub_value|
             returned_hash[:regular][sub_key.titleize] = sub_value
           end
@@ -90,7 +94,7 @@ class ScenarioController < ApplicationController
       end
 
       cleared_hash[:spoiler].each do |cleared_key, cleared_value|
-        if !@sub_scenario[:spoiler].empty? && cleared_key.downcase.to_sym == @sub_scenario[:spoiler].keys[0].downcase.to_sym
+        if !@sub_scenario[:spoiler].empty? && standard_column_name(cleared_key) == standard_column_name(@sub_scenario[:spoiler].keys[0])
           @sub_scenario[:spoiler].each do |sub_key, sub_value|
             returned_hash[:spoiler][sub_key.titleize] = sub_value
           end

@@ -3,7 +3,8 @@ ready = ->
     column_name_to_reroll = $(@).parent().attr('id')
     game_name = document.URL.split('/')[4].split('#')[0]
 
-    existing_data = { regular: {}, spoiler: {} }
+    regular = {}
+    spoiler = {}
     columns = $('.column.regular')
 
     $(columns).each (key, column) ->
@@ -11,7 +12,7 @@ ready = ->
       items = $(column).children('.item').map( ->
         $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
       ).get()
-      existing_data['regular'][column_name] = items
+      regular[column_name] = items
 
 
     columns = $('.column.spoiler')
@@ -21,12 +22,13 @@ ready = ->
       items = $(column).children('.item').map( ->
         $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
       ).get()
-      existing_data['spoiler'][column_name] = items
+      spoiler[column_name] = items
 
     data = {
       game_name: game_name,
       column_name: column_name_to_reroll,
-      existing_data: existing_data
+      r: regular,
+      s: spoiler
     }
 
     $.get(
