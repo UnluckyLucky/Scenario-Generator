@@ -155,7 +155,7 @@ GAMES = {
                 options: [
                     {
                         male: {
-                            title: 'Love Interest (male)',
+                            title: 'Love Interest (Male)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -168,7 +168,7 @@ GAMES = {
                     },
                     {
                         female: {
-                            title: 'Love Interest (female)',
+                            title: 'Love Interest (Female)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -360,7 +360,7 @@ GAMES = {
                     {
                         male: {
                             spoiler: true,
-                            title: 'Love Interest (male)',
+                            title: 'Love Interest (Male)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -376,7 +376,7 @@ GAMES = {
                     {
                         female: {
                             spoiler: true,
-                            title: 'Love Interest (female)',
+                            title: 'Love Interest (Female)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -765,7 +765,7 @@ GAMES = {
                     {
                         male: {
                             spoiler: true,
-                            title: 'Love Interest (male)',
+                            title: 'Love Interest (Male)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -785,7 +785,7 @@ GAMES = {
                     {
                         female: {
                             spoiler: true,
-                            title: 'Love Interest (female)',
+                            title: 'Love Interest (Female)',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
