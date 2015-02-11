@@ -3,6 +3,8 @@ class AlertController < ApplicationController
   def subscribe
     @alert = Alert.new(email: params[:alert][:email])
 
+    @alert.save
+
     flash[:success] = "#{params[:alert][:email]} successfully subscribed"
 
     redirect_to :back
