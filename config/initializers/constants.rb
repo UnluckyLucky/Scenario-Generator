@@ -43,13 +43,13 @@ GAMES = {
                     :andean_country, :andean_goals, :south_american_country, :south_american_goals, :aachen_goals, :alsace_goals, :anhalt_goals, :ansbach_goals, :aragon_goals,  :armagnac_goals, :augsburg_goals, :austria_goals, :auvergne_goals, :baden_goals, :bavaria_goals, :bohemia_goals, :bourbonnais_goals, :brandenburg_goals, :bremen_goals, :brittany_goals, :brunswick_goals, :burgundy_goals, :castile_goals, :cleves_goals, :cologne_goals, :connact_goals, :denmark_goals, :east_frisia_goals, :england_goals, :ferrara_goals, :foix_goals, :france_goals, :frankfurt_goals, :friesland_goals, :gelre_goals, :genoa_goals, :hesse_goals, :holstein_goals, :leinster_goals, :liege_goals, :livonian_order_goals, :lorraine_goals, :lüneburg_goals, :magdeburg_goals, :mainz_goals, :mantua_goals, :milan_goals, :mecklenburg_goals, :modena_goals, :münster_goals, :munster_goals, :naples_goals, :navarra_goals, :norway_goals, :oldenburg_goals, :orleans_goals, :the_palatinate_goals, :the_papal_state_goals, :pomerania_goals, :portugal_goals, :provence_goals, :riga_goals, :salzburg_goals, :savoy_goals, :saxe_lauenburg_goals, :saxony_goals, :scotland_goals, :siena_goals, :silesia_goals, :sweden_goals, :switzerland_goals,  :the_teutonic_order_goals, :the_hansa_goals, :the_knights_goals, :thuringia_goals, :trier_goals, :tuscany_goals, :tyrone_goals, :ulm_goals, :urbino_goals, :utrecht_goals, :venice_goals, :wurzburg_goals, :wurttemberg_goals, 
                     :albania_goals, :athens_goals, :bosnia_goals, :byzantium_goals, :corfu_goals, :cyprus_goals, :georgia_goals, :hungary_goals, :lithuania_goals, :mazovia_goals, :moldavia_goals, :muscovy_goals, :naxos_goals, :novgorod_goals, :perm_goals, :poland_goals, :pskov_goals, :ragusa_goals, :ryazan_goals, :serbia_goals, :trebizond_goals, :tver_goals, :wallachia_goals, :yaroslavl_goals,
                     :candar_goals, :dulkadir_goals, :karaman_goals, :the_ottomans_goals, :ramazan_goals,
-                    :adal_goals, :algiers_goals, :alodia_goals, :ardalan_goals, :baluchistan_goals, :bohtan_goals, :djerid_goals, :ethiopia_goals, :fezzan_goals, :gazikumukh_goals, :granada_goals, :haasa_goals, :hedjaz_goals, :kaffa_goals, :makuria_goals, :marehan_goals, :the_mamluks_goals, :medri_bahri_goals, :morocco_goals, :mzab_goals, :najd_goals, :oman_goals, :shammar_goals, :shirvan_goals, :tabarestan_goals, :tlemcen_goals, :touggourt_goals, :tripoli_goals, :tunisia_goals, :warsangali_goals, :yemen_goals,
-                    :assam_goals, :ajuuraan_goals, :bagelkhand_goals, :baglana_goals, :bahmanis_goals, :bastar_goals, :bengal_goals, :bundelkhand_goals, :ceylon_goals, :chanda_goals, :delhi_goals, :dhundhar_goals, :garjat_goals, :garhwal_goals, :gondwana_goals, :gujarat_goals, :gwalior_goals, :hadoti_goals, :jaffna_goals, :jaisalmer_goals, :jangladesh_goals, :jaunpur_goals, :jharkhand_goals, :kachar_goals, :kangra_goals, :kashmir_goals, :kathiawar_goals, :khandesh_goals, :kilwa_goals, :koch_goals, :kochin_goals, :ladakh_goals, :madurai_goals, :majeerteen_goals, :malabar_goals, :malindi_goals, :malwa_goals, :manipur_goals, :marwar_goals, :mewar_goals, :mewat_goals, :mogadishu_goals, :mombasa_goals, :multan_goals, :mutapa_goals, :mysore_goals, :nagaur_goals, :nepal_goals, :orissa_goals, :pate_goals, :punjab_goals, :rewa_kantha_goals, :sadiya_goals, :sind_goals, :sofala_goals, :tirhut_goals, :tripura_goals, :venad_goals, :vijayanagar_goals,
-                    :ainu_goals, :arakan_goals, :aceh_goals, :ava_goals, :ayutthaya_goals, :brunei_goals, :buryatia_goals, :buton_goals, :champa_goals, :chavchuveny_goals, :chukchi_goals, :dai_viet_goals, :date_goals, :guge_goals, :hatakeyama_goals, :hosokawa_goals, :hsenwi_goals, :imagawa_goals, :japan_goals, :kamchadals_goals, :kedah_goals, :kham_goals, :khmer_goals, :khodynt_goals, :korea_goals, :kutai_goals, :lan_na_goals, :lan_xang_goals, :ligor_goals, :luwu_goals, :majapahit_goals, :makassar_goals, :malacca_goals, :ming_goals, :mong_yang_goals, :otomo_goals, :ouchi_goals, :pagarruyung_goals, :pasai_goals, :pegu_goals, :perak_goals, :ryukyu_goals, :shan_goals, :shiba_goals, :shimazu_goals, :siak_goals, :sukhothai_goals, :sunda_goals, :takeda_goals, :taungu_goals, :ternate_goals, :tibet_goals, :tidore_goals, :uesugi_goals, :utsang_goals, :yamana_goals, :yarkand_goals,
+                    :adal_goals, :algiers_goals, :alodia_goals, :baluchistan_goals, :djerid_goals, :ethiopia_goals, :fezzan_goals, :gazikumukh_goals, :granada_goals, :haasa_goals, :hedjaz_goals, :kaffa_goals, :makuria_goals, :marehan_goals, :the_mamluks_goals, :medri_bahri_goals, :morocco_goals, :mzab_goals, :najd_goals, :oman_goals, :shammar_goals, :shirvan_goals, :tabarestan_goals, :tlemcen_goals, :touggourt_goals, :tripoli_goals, :tunisia_goals, :warsangali_goals, :yemen_goals,
+                    :assam_goals, :ajuuraan_goals, :bagelkhand_goals, :baglana_goals, :bahmanis_goals, :bastar_goals, :bengal_goals, :bundelkhand_goals, :ceylon_goals, :chanda_goals, :delhi_goals, :dhundhar_goals, :garjat_goals, :garhwal_goals, :gondwana_goals, :gujarat_goals, :gwalior_goals, :hadoti_goals, :jaffna_goals, :jaisalmer_goals, :jangladesh_goals, :jaunpur_goals, :jharkhand_goals, :kachar_goals, :kangra_goals, :kashmir_goals, :kathiawar_goals, :khandesh_goals, :kilwa_goals, :koch_goals, :kochin_goals, :ladakh_goals, :madurai_goals, :malabar_goals, :malindi_goals, :malwa_goals, :manipur_goals, :marwar_goals, :mewar_goals, :mewat_goals, :mogadishu_goals, :mombasa_goals, :multan_goals, :mutapa_goals, :mysore_goals, :nagaur_goals, :nepal_goals, :orissa_goals, :pate_goals, :rewa_kantha_goals, :sadiya_goals, :sind_goals, :sofala_goals, :tirhut_goals, :tripura_goals, :venad_goals, :vijayanagar_goals,
+                    :ainu_goals, :arakan_goals, :aceh_goals, :ava_goals, :ayutthaya_goals, :brunei_goals, :buryatia_goals, :buton_goals, :champa_goals, :chavchuveny_goals, :chukchi_goals, :dai_viet_goals, :date_goals, :guge_goals, :hatakeyama_goals, :hosokawa_goals, :hsenwi_goals, :imagawa_goals, :japan_goals, :kamchadals_goals, :kedah_goals, :kham_goals, :khmer_goals, :khodynt_goals, :korea_goals, :kutai_goals, :lan_na_goals, :lan_xang_goals, :ligor_goals, :luwu_goals, :majapahit_goals, :makassar_goals, :malacca_goals, :ming_goals, :mong_yang_goals, :otomo_goals, :ouchi_goals, :pagarruyung_goals, :pasai_goals, :pegu_goals, :perak_goals, :ryukyu_goals, :shan_goals, :shiba_goals, :shimazu_goals, :siak_goals, :sukhothai_goals, :sunda_goals, :takeda_goals, :taungu_goals, :ternate_goals, :tidore_goals, :uesugi_goals, :utsang_goals, :yamana_goals, :yarkand_goals,
                     :aq_qoyunlu_goals, :chagatai_goals, :crimea_goals, :golden_horde_goals, :haixi_goals, :jianzhou_goals, :kara_del_goals, :kazan_goals, :korchin_goals, :manchu_goals, :mongolia_goals, :nogai_goals, :oirat_goals, :qara_qoyunlu_goals, :sarig_yogir_goals, :timurids_goals, :uzbek_goals, :yeren,
                     :air_goals, :benin_goals, :bonoman_goals, :dagbon_goals, :dahomey_goals, :jolof_goals, :jenné_goals, :kanem_bornu_goals, :kano_goals, :katsina_goals, :kong_goals, :kongo_goals, :loango_goals, :macina_goals, :mali_goals, :mossi_goals, :ndongo_goals, :nupe_goals, :oyo_goals, :songhai_goals, :timbuktu_goals, :yao_goals, :zazzau_goals,
                     :abenaki_goals, :apache_goals, :arapaho_goals, :assiniboine_goals, :blackfoot_goals, :caddo_goals, :cherokee_goals, :cheyenne_goals, :choctaw_goals, :chickasaw_goals, :chinook_goals, :comanche_goals, :cree_goals, :creek_goals, :fox_goals, :haida_goals, :huron_goals, :iroquois_goals, :illiniwek_goals, :kiowa_goals, :lenape_goals, :mahican_goals, :miami_goals, :mikmaq_goals, :navajo_goals, :ojibwe_goals, :osage_goals, :ottawa_goals, :pawnee_goals, :pequot_goals, :pima_goals, :potawatomi_goals, :powhatan_goals, :pueblo_goals, :salish_goals, :shawnee_goals, :shoshone_goals, :sioux_goals, :susquehannock_goals, :wichita_goals,
-                    :aztec_goals, :colima_goals, :cocomes_goals, :itza_goals, :kiche_goals, :maya_goals, :mixtec_goals, :tarascan_goals, :tlapanec_goals, :tlaxcala_goals, :totonac_goals, :xiu_goals, :zapotec_goals,
+                    :aztec_goals, :colima_goals, :cocomes_goals, :itza_goals, :kiche_goals, :mixtec_goals, :tarascan_goals, :tlapanec_goals, :tlaxcala_goals, :totonac_goals, :xiu_goals, :zapotec_goals,
                     :cajamarca, :calchaqui, :chachapoya, :charca, :chimu, :colla, :cusco, :huyla, :inca, :muisca, :quito, :pacajes, :wanka,
                     :arawak_goals, :charrua_goals, :guarani_goals, :mapuche_goals, :potiguara_goals, :tupinamba_goals, :tupiniquim_goals, :tapuia_goals
                 ],
@@ -112,8 +112,8 @@ GAMES = {
                                 {
                                     :'Anhalt' => {
                                       title: 'Anhalt Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -126,8 +126,8 @@ GAMES = {
                                 {
                                     :'Ansbach' => {
                                       title: 'Ansbach Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -140,20 +140,31 @@ GAMES = {
                                 {
                                     :'Aragon' => {
                                       title: 'Aragon Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
-                                        :'Form Spain'
+                                        :'Form Spain',
+                                        :'Conquer Castile'
                                       ]
                                     }
                                 },
-                                :'Armagnac',
+                                {
+                                    :'Armagnac' => {
+                                      title: 'Armagnac Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer France'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Augsburg' => {
                                       title: 'Augsburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -166,22 +177,33 @@ GAMES = {
                                 {
                                     :'Austria' => {
                                       title: 'Austria Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Regain your title as Emperor of the Holy Roman Empire having lost it to another prince',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Unite the House of Habsburg'
                                       ]
                                     }
                                 },
-                                :'Auvergne',
+                                {
+                                    :'Auvergne' => {
+                                      title: 'Auvergne Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer France',
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Baden' => {
                                       title: 'Baden Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -194,8 +216,8 @@ GAMES = {
                                 {
                                     :'Bavaria' => {
                                       title: 'Bavaria Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -208,36 +230,53 @@ GAMES = {
                                 {
                                     :'Bohemia' => {
                                       title: 'Bohemia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
-                                      max: 5,
-                                      options: [
-                                        :'Become Emperor of the Holy Roman Empire',
-                                        :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
-                                      ]
-                                    }
-                                },
-                                :'Bourbonnais',
-                                {
-                                    :'Brandenburg' => {
-                                      title: 'Brandenburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
                                         :'Put a Protestant Emperor on the throne of the HRE',
-                                        :'Form Prussia'
+                                        [
+                                          :'Side with Rome',
+                                          :'Side with the Hussites'
+                                        ]
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Bourbonnais' => {
+                                      title: 'Bourbonnais Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer and replace France'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Brandenburg' => {
+                                      title: 'Brandenburg Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Become Emperor of the Holy Roman Empire',
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        [
+                                          :'Renovatio Imperii - Unite the HRE into one nation',
+                                          :'Form Prussia',
+                                          :'Form Germany'
+                                        ]
                                       ]
                                     }
                                 },
                                 {
                                     :'Bremen' => {
                                       title: 'Bremen Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -247,12 +286,23 @@ GAMES = {
                                       ]
                                     }
                                 },
-                                :'Brittany',
+                                {
+                                    :'Brittany' => {
+                                      title: 'Brittany Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer France',
+                                        :'Conquer England'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Brunswick' => {
                                       title: 'Brunswick Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -265,8 +315,8 @@ GAMES = {
                                 {
                                     :'Burgundy' => {
                                       title: 'Burgundy Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form the Netherlands'
@@ -276,20 +326,23 @@ GAMES = {
                                 {
                                     :'Castile' => {
                                       title: 'Castile Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Discover the Americas first',
-                                        :'Form Spain'
+                                        [
+                                          :'Form Spain Diplomatically',
+                                          :'Form Spain Militarily'
+                                        ]
                                       ]
                                     }
                                 },
                                 {
                                     :'Cleves' => {
                                       title: 'Cleves Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -302,8 +355,8 @@ GAMES = {
                                 {
                                     :'Cologne' => {
                                       title: 'Cologne Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -315,8 +368,8 @@ GAMES = {
                                 {
                                     :'Connacht' => {
                                       title: 'Connact Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Ireland',
@@ -327,20 +380,34 @@ GAMES = {
                                 {
                                     :'Denmark' => {
                                       title: 'Denmark Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Scandinavia'
                                       ]
                                     }
                                 },
-                                :'East Frisia',
+                                {
+                                    :'East Frisia' => {
+                                      title: 'East Frisia Goals',
+                                      chance_of_multiple: 35,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Become Emperor of the Holy Roman Empire',
+                                        :'Become an Elector of the Holy Roman Empire',
+                                        :'Renovatio Imperii - Unite the HRE into one nation',
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Form Germany'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'England' => {
                                       title: 'England Goals',
                                       chance_of_multiple: 35,
-                                      min: 1,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form the United Kingdom',
@@ -362,7 +429,7 @@ GAMES = {
                                     :'Ferrara' => {
                                       title: 'Ferrara Goals',
                                       chance_of_multiple: 35,
-                                      min: 1,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -372,24 +439,35 @@ GAMES = {
                                       ]
                                     }
                                 },
-                                :'Foix',
+                                {
+                                    :'Foix' => {
+                                      title: 'Foix Goals',
+                                      chance_of_multiple: 35,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer France',
+                                        :'Conquer Aragon',
+                                      ]
+                                    }
+                                },
                                 {
                                     :'France' => {
                                       title: 'France Goals',
                                       chance_of_multiple: 35,
-                                      min: 1,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Obtain all French Cores',
-                                        :'Win the Hundred Years War'
+                                        :'Win the Hundred Years War',
                                       ]
                                     }
                                 },
                                 {
                                     :'Frankfurt' => {
                                       title: 'Frankfurt Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -402,8 +480,8 @@ GAMES = {
                                 {
                                     :'Friesland' => {
                                       title: 'Friesland Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -416,8 +494,8 @@ GAMES = {
                                 {
                                     :'Gelre' => {
                                       title: 'Gelre Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -430,8 +508,8 @@ GAMES = {
                                 {
                                     :'Genoa' => {
                                       title: 'Genoa Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -444,36 +522,38 @@ GAMES = {
                                 {
                                     :'Hesse' => {
                                       title: 'Hesse Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Convert the Holy Roman Empire to the Hessian culture'
                                       ]
                                     }
                                 },
                                 {
                                     :'Holstein' => {
                                       title: 'Holstein Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Denmark'
                                       ]
                                     }
                                 },
                                 {
                                     :'Leinster' => {
                                       title: 'Leinster Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Ireland',
@@ -484,22 +564,23 @@ GAMES = {
                                 {
                                     :'Liege' => {
                                       title: 'Liege Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Burgundy'
                                       ]
                                     }
                                 },
                                 {
                                     :'Livonian Order' => {
                                       title: 'Livonian Order Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Kurland'
@@ -509,36 +590,38 @@ GAMES = {
                                 {
                                     :'Lorraine' => {
                                       title: 'Lorraine Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Provence'
                                       ]
                                     }
                                 },
                                 {
                                     :'Lüneburg' => {
                                       title: 'Lüneburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Brunswick'
                                       ]
                                     }
                                 },
                                 {
                                     :'Magdeburg' => {
                                       title: 'Magdeburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -551,8 +634,8 @@ GAMES = {
                                 {
                                     :'Mainz' => {
                                       title: 'Mainz Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -564,22 +647,23 @@ GAMES = {
                                 {
                                     :'Mantua' => {
                                       title: 'Mantua Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer all of Italy'
                                       ]
                                     }
                                 },
                                 {
                                     :'Milan' => {
                                       title: 'Milan Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -593,8 +677,8 @@ GAMES = {
                                 {
                                     :'Mecklenburg' => {
                                       title: 'Mecklenburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -607,22 +691,24 @@ GAMES = {
                                 {
                                     :'Modena' => {
                                       title: 'Modena Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Ferrara',
+                                        :'Conquer all of Italy'
                                       ]
                                     }
                                 },
                                 {
                                     :'Münster' => {
                                       title: 'Münster Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -636,19 +722,22 @@ GAMES = {
                                 {
                                     :'Navarra' => {
                                       title: 'Navarra Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
-                                        :'Form Spain'
+                                        :'Form Spain',
+                                        :'Convert the Iberian peninsula to Basque',
+                                        :'Conquer Aragon',
+                                        :'Conquer Castille'
                                       ]
                                     }
                                 },
                                 {
                                     :'Norway' => {
                                       title: 'Norway Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Scandinavia'
@@ -658,8 +747,8 @@ GAMES = {
                                 {
                                     :'Oldenburg' => {
                                       title: 'Oldenburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -673,36 +762,54 @@ GAMES = {
                                 {
                                     :'The Palatinate' => {
                                       title: 'The Palatinate Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
-                                        :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer France',
+                                        [
+                                          :'Renovatio Imperii - Unite the HRE into one nation',
+                                          :'Form Germany',
+                                          :'Form Westphalia'
+                                        ]
                                       ]
                                     }
                                 },
-                                :'The Papal State',
+                                {
+                                    :'The Papal State' => {
+                                      title: 'The Papal State Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Declare The Kingdom of God'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Pomerania' => {
                                       title: 'Pomerania Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
-                                        :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        [
+                                          :'Renovatio Imperii - Unite the HRE into one nation',
+                                          :'Form Prussia'
+                                        ]
                                       ]
                                     }
                                 },
                                 {
                                     :'Portugal' => {
                                       title: 'Portugal Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Have a colony in Brazil and Africa',
@@ -712,10 +819,25 @@ GAMES = {
                                 },
                                 :'Provence',
                                 {
+                                    :'Provence' => {
+                                      title: 'Provence Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer France',
+                                        [
+                                          :'Help France win the Hundred Years war',
+                                          :'Sabotage the Hundred Years war to help England win'
+                                        ]
+                                      ]
+                                    }
+                                },
+                                {
                                     :'Riga' => {
                                       title: 'Riga Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Kurland'
@@ -725,8 +847,8 @@ GAMES = {
                                 {
                                     :'Salzburg' => {
                                       title: 'Salzburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -739,15 +861,15 @@ GAMES = {
                                 {
                                     :'Savoy' => {
                                       title: 'Savoy Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
-                                        :'Renovatio Imperii - Unite the HRE into one nation',
                                         :'Put a Protestant Emperor on the throne of the HRE',
                                         [
+                                          :'Renovatio Imperii - Unite the HRE into one nation',
                                           :'Form Italy',
                                           :'Form Sardinia-Piedmont'
                                         ]
@@ -757,8 +879,8 @@ GAMES = {
                                 {
                                     :'Saxe Lauenburg' => {
                                       title: 'Saxe Lauenburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -771,8 +893,8 @@ GAMES = {
                                 {
                                     :'Saxony' => {
                                       title: 'Saxony Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -803,30 +925,34 @@ GAMES = {
                                         options: [
                                             :'Become Emperor of the Holy Roman Empire',
                                             :'Become an Elector of the Holy Roman Empire',
-                                            :'Renovatio Imperii - Unite the HRE into one nation',
-                                            :'Put a Protestant Emperor on the throne of the HRE'
+                                            :'Put a Protestant Emperor on the throne of the HRE',
+                                            [
+                                              :'Renovatio Imperii - Unite the HRE into one nation',
+                                              :'Form Italy'
+                                            ]
                                         ]
                                     }
                                 },
                                 {
                                     :'Silesia' => {
                                       title: 'Silesia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Bohemia'
                                       ]
                                     }
                                 },
                                 {
                                     :'Sweden' => {
                                       title: 'Sweden Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Scandinavia',
@@ -837,22 +963,26 @@ GAMES = {
                                 {
                                     :'Switzerland' => {
                                       title: 'Switzerland Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Burgundy',
+                                        :'Conquer France',
+                                        :'Conquer Italy',
+                                        :'Conquer Germany'
                                       ]
                                     }
                                 },
                                 {
                                     :'The Teutonic Order' => {
                                       title: 'The Teutonic Order Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Prussia'
@@ -862,8 +992,8 @@ GAMES = {
                                 {
                                     :'The Hansa' => {
                                       title: 'The Hansa Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -877,22 +1007,23 @@ GAMES = {
                                 {
                                     :'Thuringia' => {
                                       title: 'Thuringia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
                                         :'Become an Elector of the Holy Roman Empire',
                                         :'Renovatio Imperii - Unite the HRE into one nation',
-                                        :'Put a Protestant Emperor on the throne of the HRE'
+                                        :'Put a Protestant Emperor on the throne of the HRE',
+                                        :'Conquer Saxony'
                                       ]
                                     }
                                 },
                                 {
                                     :'Trier' => {
                                       title: 'Trier Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -904,8 +1035,8 @@ GAMES = {
                                 {
                                     :'Tuscany' => {
                                       title: 'Tuscany Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -919,8 +1050,8 @@ GAMES = {
                                 {
                                     :'Tyrone' => {
                                       title: 'Tyrone Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Ireland',
@@ -931,8 +1062,8 @@ GAMES = {
                                 {
                                     :'Ulm' => {
                                       title: 'Ulm Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -946,8 +1077,8 @@ GAMES = {
                                 {
                                     :'Utrecht' => {
                                       title: 'Utrecht Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -957,12 +1088,11 @@ GAMES = {
                                       ]
                                     }
                                 },
-                                :'Venice',
                                 {
-                                    :'Wurzburg' => {
-                                      title: 'Wurzburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                    :'Venice' => {
+                                      title: 'Venice Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -974,11 +1104,12 @@ GAMES = {
                                       ]
                                     }
                                 },
+                                :Wurzburg,
                                 {
                                     :'Wurttemburg' => {
                                       title: 'Wurttemburg Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Become Emperor of the Holy Roman Empire',
@@ -1003,38 +1134,94 @@ GAMES = {
                                 {
                                     :'Albania' => {
                                       title: 'Albania Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
-                                        :'Conquer Iberia and Causcasus'
+                                        :'Conquer Iberia and Causcasus',
+                                        :'Win the initial war with the Ottomans',
+                                        :'Conquer the Ottomans',
+                                        :'Conquer Serbia'
                                       ]
                                     }
                                 },
-                                :'Athens',
-                                :'Bosnia',
-                                :'Byzantium',
-                                :'Corfu',
+                                {
+                                    :'Athens' => {
+                                      title: 'Athens Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :"Conquer all provinces that the Byzantine Empire historically controlled"
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Bosnia' => {
+                                      title: 'Bosnia Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :"Become Emperor of the Holy Roman Empire"
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Byzantium' => {
+                                      title: 'Byzantium Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :"Reconquer your historical provinces: This can be done by starting as another nation and Restoring the Byzantine Empire",
+                                        :'Reestablish the Theme System: This can be done by starting as another nation and Restoring the Byzantine Empire'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Corfu' => {
+                                      title: 'Corfu Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :"Conquer Venice"
+                                      ]
+                                    }
+                                },
                                 :'Cyprus',
                                 :'Georgia',
                                 :'Hungary',
                                 {
                                     :'Lithuania' => {
                                       title: 'Lithuania Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form the Commonwealth'
                                       ]
                                     }
                                 },
-                                :'Mazovia',
+                                {
+                                    :'Mazovia' => {
+                                      title: 'Mazovia Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                          [
+                                              :'Conquer Poland'
+                                          ]
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Moldavia' => {
                                       title: 'Moldavia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                           [
@@ -1044,12 +1231,22 @@ GAMES = {
                                       ]
                                     }
                                 },
-                                :'Naxos',
+                                {
+                                    :'Naxos' => {
+                                      title: 'Novgorod Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                          :'Conquer Venice'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Novgorod' => {
                                       title: 'Novgorod Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                           :'Form Russia'
@@ -1059,8 +1256,8 @@ GAMES = {
                                 {
                                     :'Muscovy' => {
                                       title: 'Muscovy Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                           :'Form Russia'
@@ -1080,16 +1277,48 @@ GAMES = {
                                         ]
                                     }
                                 },
-                                :'Pskov',
-                                :'Ragusa',
+                                {
+                                    :'Pskov' => {
+                                        title: 'Pskov Goals',
+                                        chance_of_multiple: 35,
+                                        min: 1,
+                                        max: 5,
+                                        options: [
+                                            :'Conquer Muscovy'
+                                        ]
+                                    }
+                                },
+                                {
+                                    :'Ragusa' => {
+                                        title: 'Ragusa Goals',
+                                        chance_of_multiple: 35,
+                                        min: 1,
+                                        max: 5,
+                                        options: [
+                                            :'Conquer Italy',
+                                            :'Conquer The Balkans'
+                                        ]
+                                    }
+                                },
                                 :'Ryazan',
-                                :'Serbia',
+                                {
+                                    :'Serbia' => {
+                                        title: 'Serbia Goals',
+                                        chance_of_multiple: 35,
+                                        min: 1,
+                                        max: 5,
+                                        options: [
+                                            :'Conquer Italy',
+                                            :'Become the Emperor of the Holy Roman Empire'
+                                        ]
+                                    }
+                                },
                                 :'Trebizond',
                                 {
                                     :'Theodoro' => {
                                       title: 'Theodoro Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
@@ -1102,8 +1331,8 @@ GAMES = {
                                 {
                                     :'Wallachia' => {
                                       title: 'Wallachia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
@@ -1122,6 +1351,9 @@ GAMES = {
                           max: 5,
                           options: [
                             [
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ]
@@ -1143,13 +1375,14 @@ GAMES = {
                                 {
                                     :'The Ottomans' => {
                                       title: 'The Ottomans Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
                                           :'Own Rome, Moscow and Istanbul'
-                                        ]
+                                        ],
+                                        :'Take Constantinople'
                                       ]
                                     }
                                 },
@@ -1163,6 +1396,9 @@ GAMES = {
                           options: [
                             [
                               :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ]
                           ]
@@ -1171,7 +1407,7 @@ GAMES = {
                     {
                         muslim_country: {
                             sub_trees: [
-                                :adal_goals, :algiers_goals, :alodia_goals, :ardalan_goals, :baluchistan_goals, :bohtan_goals, :djerid_goals, :ethiopia_goals, :fezzan_goals, :gazikumukh_goals, :granada_goals, :haasa_goals, :hedjaz_goals, :kaffa_goals, :makuria_goals, :marehan_goals, :the_mamluks_goals, :medri_bahri_goals, :morocco_goals, :mzab_goals, :najd_goals, :oman_goals, :shammar_goals, :shirvan_goals, :tabarestan_goals, :tlemcen_goals, :touggourt_goals, :tripoli_goals, :tunisia_goals, :warsangali_goals, :yemen_goals
+                                :adal_goals, :algiers_goals, :alodia_goals, :baluchistan_goals, :djerid_goals, :ethiopia_goals, :fezzan_goals, :gazikumukh_goals, :granada_goals, :haasa_goals, :hedjaz_goals, :kaffa_goals, :makuria_goals, :marehan_goals, :the_mamluks_goals, :medri_bahri_goals, :morocco_goals, :mzab_goals, :najd_goals, :oman_goals, :shammar_goals, :shirvan_goals, :tabarestan_goals, :tlemcen_goals, :touggourt_goals, :tripoli_goals, :tunisia_goals, :warsangali_goals, :yemen_goals
                             ],
                             chance_of_multiple: 0,
                             min: 1,
@@ -1181,37 +1417,27 @@ GAMES = {
                                 :'Algiers',
                                 :'Alodia',
                                 {
-                                    :'Ardalan' => {
-                                      title: 'Ardalan Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
-                                      max: 5,
-                                      options: [
-                                        :'Form Persia'
-                                      ]
-                                    }
-                                },
-                                {
                                     :'Baluchistan' => {
                                       title: 'Baluchistan Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Persia'
                                       ]
                                     }
                                 },
-                                :'Bohtan',
                                 :'Djerid',
                                 {
                                     :'Ethiopia' => {
                                       title: 'Ethiopia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
-                                        :'Own Alexandria, Antioch and Constantinople'
+                                        :'Own Alexandria, Antioch and Constantinople',
+                                        :'Conquer all of Africa',
+                                        :'Conquer Rome and Constantinople'
                                       ]
                                     }
                                 },
@@ -1220,8 +1446,8 @@ GAMES = {
                                 {
                                     :'Granada' => {
                                       title: 'Granada Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Spain',
@@ -1237,14 +1463,15 @@ GAMES = {
                                 {
                                     :'The Mamluks' => {
                                       title: 'The Mamluks Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
                                           :'Form Arabia',
                                           :'Form Eygpt'
-                                        ]
+                                        ],
+                                        :'Conquer the Ottomans'
                                       ]
                                     }
                                 },
@@ -1254,8 +1481,8 @@ GAMES = {
                                 {
                                     :'Najd' => {
                                       title: 'Najd Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Arabia'
@@ -1268,8 +1495,8 @@ GAMES = {
                                 {
                                     :'Tabarestan' => {
                                       title: 'Tabarestan Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Persia'
@@ -1282,8 +1509,8 @@ GAMES = {
                                 {
                                     :'Tunisia' => {
                                       title: 'Tunisia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Own Sicily, Sardinia, the Balearic Islands, the coast of Algiers and the southern coast of Spain'
@@ -1302,15 +1529,17 @@ GAMES = {
                             [
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology',
-                              :'Reverse the Reconquista - Retake Iberia'
-                            ]
+                            ],
+                            :'Reverse the Reconquista - Retake Iberia',
+                            :'Conquer Europe',
+                            :'Unite all Muslim provinces under one Muslim sect'
                           ]
                         }
                     },
                     {
                         indian_country: {
                             sub_trees: [
-                                :assam_goals, :ajuuraan_goals, :bagelkhand_goals, :baglana_goals, :bahmanis_goals, :bastar_goals, :bengal_goals, :bundelkhand_goals, :ceylon_goals, :chanda_goals, :delhi_goals, :dhundhar_goals, :garjat_goals, :garhwal_goals, :gondwana_goals, :gujarat_goals, :gwalior_goals, :hadoti_goals, :jaffna_goals, :jaisalmer_goals, :jangladesh_goals, :jaunpur_goals, :jharkhand_goals, :kachar_goals, :kangra_goals, :kashmir_goals, :kathiawar_goals, :khandesh_goals, :kilwa_goals, :koch_goals, :kochin_goals, :ladakh_goals, :madurai_goals, :majeerteen_goals, :malabar_goals, :malindi_goals, :malwa_goals, :manipur_goals, :marwar_goals, :mewar_goals, :mewat_goals, :mogadishu_goals, :mombasa_goals, :multan_goals, :mutapa_goals, :mysore_goals, :nagaur_goals, :nepal_goals, :orissa_goals, :pate_goals, :punjab_goals, :rewa_kantha_goals, :sadiya_goals, :sind_goals, :sofala_goals, :tirhut_goals, :tripura_goals, :venad_goals, :vijayanagar_goals
+                                :assam_goals, :ajuuraan_goals, :bagelkhand_goals, :baglana_goals, :bahmanis_goals, :bastar_goals, :bengal_goals, :bundelkhand_goals, :ceylon_goals, :chanda_goals, :delhi_goals, :dhundhar_goals, :garjat_goals, :garhwal_goals, :gondwana_goals, :gujarat_goals, :gwalior_goals, :hadoti_goals, :jaffna_goals, :jaisalmer_goals, :jangladesh_goals, :jaunpur_goals, :jharkhand_goals, :kachar_goals, :kangra_goals, :kashmir_goals, :kathiawar_goals, :khandesh_goals, :kilwa_goals, :koch_goals, :kochin_goals, :ladakh_goals, :madurai_goals, :malabar_goals, :malindi_goals, :malwa_goals, :manipur_goals, :marwar_goals, :mewar_goals, :mewat_goals, :mogadishu_goals, :mombasa_goals, :multan_goals, :mutapa_goals, :mysore_goals, :nagaur_goals, :nepal_goals, :orissa_goals, :pate_goals, :rewa_kantha_goals, :sadiya_goals, :sind_goals, :sofala_goals, :tirhut_goals, :tripura_goals, :venad_goals, :vijayanagar_goals
                             ],
                             chance_of_multiple: 0,
                             min: 1,
@@ -1320,13 +1549,23 @@ GAMES = {
                                 :'Ajuuraan',
                                 :'Bagelkhand',
                                 :'Baglana',
-                                :'Bahmanis',
+                                {
+                                    :'Bahmanis' => {
+                                      title: 'Bahmanis Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Form Hindustan'
+                                      ]
+                                    }
+                                },
                                 :'Bastar',
                                 {
                                     :'Bengal' => {
                                       title: 'Bengal Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Own Samarkand as a core province'
@@ -1339,8 +1578,8 @@ GAMES = {
                                 {
                                     :'Delhi' => {
                                       title: 'Delhi Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
@@ -1354,7 +1593,17 @@ GAMES = {
                                 :'Garjat',
                                 :'Garhwal',
                                 :'Gondwana',
-                                :'Gujarat',
+                                {
+                                    :'Gujarat' => {
+                                      title: 'Gujarat Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Form Hindustan'
+                                      ]
+                                    }
+                                },
                                 :'Gwalior',
                                 :'Hadoti',
                                 :'Jaffna',
@@ -1367,8 +1616,8 @@ GAMES = {
                                 {
                                     :'Kashmir' => {
                                       title: 'Kashmir Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         [
@@ -1385,7 +1634,6 @@ GAMES = {
                                 :'Kochin',
                                 :'Ladakh',
                                 :'Madurai',
-                                :'Majeerteen',
                                 :'Malabar',
                                 :'Malindi',
                                 :'Malwa',
@@ -1402,20 +1650,6 @@ GAMES = {
                                 :'Nepal',
                                 :'Orissa',
                                 :'Pate',
-                                {
-                                    :'Punjab' => {
-                                      title: 'Punjab Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
-                                      max: 5,
-                                      options: [
-                                        [
-                                          :'Form Hindustan',
-                                          :'Form Hindustan and own Cape, London, Hong Kong and Ottawa'
-                                        ]
-                                      ]
-                                    }
-                                },
                                 :'Rewa Kantha',
                                 :'Sadiya',
                                 :'Sind',
@@ -1433,15 +1667,20 @@ GAMES = {
                           options: [
                             [
                               :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
-                            ]
+                            ],
+                            :'Conquer all of India',
+                            :'Convert Europe to an Indian Religion'
                           ]
                         }
                     },
                     {
                         chinese_country: {
                             sub_trees: [
-                              :ainu_goals, :arakan_goals, :aceh_goals, :ava_goals, :ayutthaya_goals, :brunei_goals, :buryatia_goals, :buton_goals, :champa_goals, :chavchuveny_goals, :chukchi_goals, :dai_viet_goals, :date_goals, :guge_goals, :hatakeyama_goals, :hosokawa_goals, :hsenwi_goals, :imagawa_goals, :japan_goals, :kamchadals_goals, :kedah_goals, :kham_goals, :khmer_goals, :khodynt_goals, :korea_goals, :kutai_goals, :lan_na_goals, :lan_xang_goals, :ligor_goals, :luwu_goals, :majapahit_goals, :makassar_goals, :malacca_goals, :ming_goals, :mong_yang_goals, :otomo_goals, :ouchi_goals, :pagarruyung_goals, :pasai_goals, :pegu_goals, :perak_goals, :ryukyu_goals, :shan_goals, :shiba_goals, :shimazu_goals, :siak_goals, :sukhothai_goals, :sunda_goals, :takeda_goals, :taungu_goals, :ternate_goals, :tibet_goals, :tidore_goals, :uesugi_goals, :utsang_goals, :yamana_goals, :yarkand_goals
+                              :ainu_goals, :arakan_goals, :aceh_goals, :ava_goals, :ayutthaya_goals, :brunei_goals, :buryatia_goals, :buton_goals, :champa_goals, :chavchuveny_goals, :chukchi_goals, :dai_viet_goals, :date_goals, :guge_goals, :hatakeyama_goals, :hosokawa_goals, :hsenwi_goals, :imagawa_goals, :japan_goals, :kamchadals_goals, :kedah_goals, :kham_goals, :khmer_goals, :khodynt_goals, :korea_goals, :kutai_goals, :lan_na_goals, :lan_xang_goals, :ligor_goals, :luwu_goals, :majapahit_goals, :makassar_goals, :malacca_goals, :ming_goals, :mong_yang_goals, :otomo_goals, :ouchi_goals, :pagarruyung_goals, :pasai_goals, :pegu_goals, :perak_goals, :ryukyu_goals, :shan_goals, :shiba_goals, :shimazu_goals, :siak_goals, :sukhothai_goals, :sunda_goals, :takeda_goals, :taungu_goals, :ternate_goals, :tidore_goals, :uesugi_goals, :utsang_goals, :yamana_goals, :yarkand_goals
                             ],
                             chance_of_multiple: 0,
                             min: 1,
@@ -1452,8 +1691,8 @@ GAMES = {
                                 {
                                     :'Aceh' => {
                                       title: 'Aceh Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Malaya'
@@ -1465,8 +1704,8 @@ GAMES = {
                                 {
                                     :'Brunei' => {
                                       title: 'Brunei Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Malaya'
@@ -1478,18 +1717,68 @@ GAMES = {
                                 :'Champa',
                                 :'Chavchuveny',
                                 :'Chukchi',
-                                :'Dai Viet',
-                                :'Date',
+                                {
+                                    :'Dai Viet' => {
+                                      title: 'Dai Viet Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer all of the Vietnam peninsula'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Date' => {
+                                      title: 'Date Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Guge',
-                                :'Hatakeyama',
-                                :'Hosokawa',
+                                {
+                                    :'Hatakeyama' => {
+                                      title: 'Hatakeyama Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Hosokawa' => {
+                                      title: 'Hosokawa Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Hsenwi',
-                                :'Imagawa',
+                                {
+                                    :'Imagawa' => {
+                                      title: 'Imagawa Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Japan' => {
                                       title: 'Japan Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Unite Japan'
@@ -1501,28 +1790,50 @@ GAMES = {
                                 :'Kham',
                                 :'Khmer',
                                 :'Khodynt',
-                                :'Korea',
+                                {
+                                    :'Korea' => {
+                                      title: 'Korea Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer Japan',
+                                        :'Conquer Ming'
+                                      ]
+                                    }
+                                },
                                 :'Kutai',
                                 :'Lan Na',
-                                :'Lan Xang',
+                                {
+                                    :'Lan Xang' => {
+                                      title: 'Lan Xang Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer all of the Vietnam peninsula'
+                                      ]
+                                    }
+                                },
                                 :'Ligor',
                                 :'Luwu',
                                 {
                                     :'Majapahit' => {
                                       title: 'Majapahit Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
-                                        :'Form Malaya'
+                                        :'Form Malaya',
+                                        :'Colonize Australia'
                                       ]
                                     }
                                 },
                                 {
                                     :'Makassar' => {
                                       title: 'Makassar Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Malaya'
@@ -1532,37 +1843,154 @@ GAMES = {
                                 {
                                     :'Malacca' => {
                                       title: 'Malacca Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Malaya'
                                       ]
                                     }
                                 },
-                                :'Ming',
+                                {
+                                    :'Ming' => {
+                                      title: 'Ming Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                          [
+                                              :'Convert to Catholicism',
+                                              :'Prevent Jesuit entry, keep the state religion as Confucianism'
+                                          ],
+                                          :'Repair the Great Wall',
+                                          :'Construct the Forbidden Palace',
+                                          :'Conquer all of Asia'
+                                      ]
+                                    }
+                                },
                                 :'Mong Yang',
-                                :'Otomo',
-                                :'Ouchi',
+                                {
+                                    :'Otomo' => {
+                                      title: 'Otomo Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Ouchi' => {
+                                      title: 'Ouchi Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Pagarruyung',
                                 :'Pasai',
                                 :'Pegu',
                                 :'Perak',
-                                :'Ryukyu',
+                                {
+                                    :'Ryukyu' => {
+                                      title: 'Ryukyu Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer the World',
+                                        :'Conquer Japan',
+                                        :'Conquer Ming'
+                                      ]
+                                    }
+                                },
                                 :'Shan',
-                                :'Shiba',
-                                :'Shimazu',
+                                {
+                                    :'Shiba' => {
+                                      title: 'Shiba Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Shimazu' => {
+                                      title: 'Shimazu Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Siak',
                                 :'Sukhothai',
-                                :'Sunda',
-                                :'Takeda',
-                                :'Taungu',
+                                {
+                                    :'Sunda' => {
+                                      title: 'Sunda Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Annex Majapahit'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Takeda' => {
+                                      title: 'Takeda Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Taungu' => {
+                                      title: 'Taungu Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Vassalize Shan'
+                                      ]
+                                    }
+                                },
                                 :'Ternate',
-                                :'Tibet',
                                 :'Tidore',
-                                :'Uesugi',
+                                {
+                                    :'Uesugi' => {
+                                      title: 'Uesugi Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Utsang',
-                                :'Yamana',
+                                {
+                                    :'Yamana' => {
+                                      title: 'Yamana Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Unite Japan'
+                                      ]
+                                    }
+                                },
                                 :'Yarkand'
                             ]
                         },
@@ -1573,8 +2001,12 @@ GAMES = {
                           options: [
                             [
                               :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
-                            ]
+                            ],
+                            :'Conquer all of Asia'
                           ]
                         }
                     },
@@ -1589,12 +2021,22 @@ GAMES = {
                             options: [
                                 :'Aq Qoyunlu',
                                 :'Chagatai',
-                                :'Crimea',
+                                {
+                                    :'Crimea' => {
+                                      title: 'Crimea Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer russia'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Golden Horde' => {
                                       title: 'Golden Horde Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Conquer or vassalize the Chinese, Russian and Persian regions',
@@ -1605,8 +2047,8 @@ GAMES = {
                                 {
                                     :'Haixi' => {
                                       title: 'Haixi Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Manchu'
@@ -1616,8 +2058,8 @@ GAMES = {
                                 {
                                     :'Jianzhou' => {
                                       title: 'Jianzhou Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Manchu'
@@ -1631,10 +2073,11 @@ GAMES = {
                                 {
                                     :'Mongolia' => {
                                       title: 'Mongolia Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
+                                        :'Conquer Oirat',
                                         :'Conquer or vassalize the Chinese, Russian and Persian regions',
                                         :'Reconquer all provinces that were conquered by the historical Mongol Empire'
                                       ]
@@ -1644,12 +2087,22 @@ GAMES = {
                                 :'Oirat',
                                 :'Qara Qoyunlu',
                                 :'Sarig Yogir',
-                                :'Timurids',
+                                {
+                                    :'Timurids' => {
+                                      title: 'Timurids Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Form Mughals'
+                                      ]
+                                    }
+                                },
                                 {
                                     :'Uzbek' => {
                                       title: 'Uzbek Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Bukhara'
@@ -1659,8 +2112,8 @@ GAMES = {
                                 {
                                     :'Yeren' => {
                                       title: 'Yeren Goals',
-                                      chance_of_multiple: 35,
-                                      min: 1,
+                                      chance_of_multiple: 65,
+                                      min: 0,
                                       max: 5,
                                       options: [
                                         :'Form Manchu'
@@ -1676,6 +2129,9 @@ GAMES = {
                           options: [
                             [
                               :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ]
                           ]
@@ -1690,7 +2146,17 @@ GAMES = {
                             min: 1,
                             max: 1,
                             options: [
-                                :'Air',
+                                {
+                                    :'Air' => {
+                                      title: 'Air Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer Songhai'
+                                      ]
+                                    }
+                                },
                                 :'Benin',
                                 :'Bonoman',
                                 :'Dagbon',
@@ -1709,8 +2175,28 @@ GAMES = {
                                 :'Ndongo',
                                 :'Nupe',
                                 :'Oyo',
-                                :'Songhai',
-                                :'Timbuktu',
+                                {
+                                    :'Songhai' => {
+                                      title: 'Songhai Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer Timbuktu'
+                                      ]
+                                    }
+                                },
+                                {
+                                    :'Timbuktu' => {
+                                      title: 'Timbuktu Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'Conquer Songhai'
+                                      ]
+                                    }
+                                },
                                 :'Yao',
                                 :'Zazzau'
                             ]
@@ -1722,9 +2208,14 @@ GAMES = {
                           options: [
                             [
                               :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
+                              :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ],
-                            :'Own all provinces in Africa'
+                            :'Own all provinces in Africa',
+                            :'Reverse the Colonization - Conquer Europe',
+                            :'Beat back the european colonists'
                           ]
                         }
                     },
@@ -1743,7 +2234,17 @@ GAMES = {
                                 :'Assiniboine',
                                 :'Blackfoot',
                                 :'Caddo',
-                                :'Cherokee',
+                                {
+                                    :'Cherokee' => {
+                                      title: 'Cherokee Goals',
+                                      chance_of_multiple: 65,
+                                      min: 0,
+                                      max: 5,
+                                      options: [
+                                        :'No Trail of Tears - Colonize all the provinces marked as "thirteen colonies"'
+                                      ]
+                                    }
+                                },
                                 :'Cheyenne',
                                 :'Choctaw',
                                 :'Chickasaw',
@@ -1788,13 +2289,15 @@ GAMES = {
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ],
+                            :'Reverse the Colonization - Conquer Europe',
+                            :'Beat back the european colonists'
                           ]
                         }
                     },
                     {
                         :meso_american_country => {
                             sub_trees: [
-                                :aztec_goals, :colima_goals, :cocomes_goals, :itza_goals, :kiche_goals, :maya_goals, :mixtec_goals, :tarascan_goals, :tlapanec_goals, :tlaxcala_goals, :totonac_goals, :xiu_goals, :zapotec_goals
+                                :aztec_goals, :colima_goals, :cocomes_goals, :itza_goals, :kiche_goals, :mixtec_goals, :tarascan_goals, :tlapanec_goals, :tlaxcala_goals, :totonac_goals, :xiu_goals, :zapotec_goals
                             ],
                             chance_of_multiple: 0,
                             min: 1,
@@ -1805,7 +2308,6 @@ GAMES = {
                                 :'Cocomes',
                                 :'Itza',
                                 :'Kiche',
-                                :'Maya',
                                 :'Mixtec',
                                 :'Tarascan',
                                 :'Tlapanec',
@@ -1823,7 +2325,9 @@ GAMES = {
                             [
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
-                            ]
+                            ],
+                            :'Reverse the Colonization - Conquer Europe',
+                            :'Beat back the european colonists'
                           ]
                         }
                     },
@@ -1860,7 +2364,9 @@ GAMES = {
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
                             ],
-                            :'Form Inca'
+                            :'Form Inca',
+                            :'Reverse the Colonization - Conquer Europe',
+                            :'Beat back the european colonists'
                           ]
                         }
                     },
@@ -1891,7 +2397,9 @@ GAMES = {
                             [
                               :'Convert to Western Technology',
                               :'Do not convert to Western Technology'
-                            ]
+                            ],
+                            :'Reverse the Colonization - Conquer Europe',
+                            :'Beat back the european colonists'
                           ]
                         }
                     }
@@ -1976,7 +2484,9 @@ GAMES = {
                 :'Conquer all of China',
                 :'Conquer all of the Arabian Peninsula',
                 :'Dismantle the Holy Roman Empire',
-                :'Own at least 150 provinces that all have the state religion'
+                :'Own at least 150 provinces that all have the state religion',
+                :"Contain Europe - Prevent any european country from keeping it's overseas colonies",
+                :"Conquer the Roman Empire's historical borders"
               ]
             },
             ironman_mode: {
@@ -1988,8 +2498,8 @@ GAMES = {
                 :No
               ]
             }
-        }
-    },
+        } 
+    },  
     mass_effect: {
         title: 'Mass Effect',
         background: 'masseffect1.jpg',
