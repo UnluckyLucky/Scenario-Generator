@@ -87,7 +87,11 @@ module ScenarioGenerator
 
       # Sample the column options array for the needed quantity of options
       quantity = quantity(options[:chance_of_multiple], options[:max], options[:min])
-      chosen_options = options[:options].sample(quantity)
+      if quantity == 0
+        chosen_options = [:none]
+      else
+        chosen_options = options[:options].sample(quantity)
+      end
 
       # Iterate through all the chosen options
       chosen_options.each do |chosen_option|
