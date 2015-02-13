@@ -158,6 +158,15 @@ module ScenarioGenerator
       end
     end
 
+    def help_message game, wanted_column
+      GAMES[game.to_sym][:columns].each do |column_name, options|
+        column_name, options = find_column(wanted_column, column_name, options)
+        if column_name == wanted_column
+          return options[:help]
+        end
+      end
+    end
+
     def game_display_name game
       GAMES[game][:title]
     end

@@ -2406,6 +2406,7 @@ GAMES = {
                 ]
             },
             generic_goals: {
+              help: 'These may be difficult for non-european powers',
               chance_of_multiple: 50,
               min: 1,
               max: 5,
@@ -2526,6 +2527,7 @@ GAMES = {
                 ]
             },
             morality: {
+                help: 'General reaction in conversations, does not overrule story options from below', 
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -2693,14 +2695,14 @@ GAMES = {
                     :'Kill Wrex'
                 ]
             },
-            ashley_or_kaidan: {
+            virmire: {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
                 options: [
-                    :Ashley,
-                    :Kaidan
+                    :'Ashley is left behind',
+                    :'Kaidan is left behind'
                 ]
             },
             the_council: {
@@ -2732,6 +2734,7 @@ GAMES = {
         next_game: :mass_effect_3,
         columns: {
             morality: {
+                help: 'General reaction in conversations, does not overrule story options from below',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -3207,6 +3210,7 @@ GAMES = {
         previous_game: :mass_effect_2,
         columns: {
             morality: {
+                help: 'General reaction in conversations, does not overrule story options from below',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4039,7 +4043,7 @@ GAMES = {
         background: 'witcher2.jpg',
         previous_game: :the_witcher,
         columns: {
-            aryan: {
+            "Prologue: Aryan La Valette": {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -4211,6 +4215,7 @@ GAMES = {
                 ]
             },
             ideology: {
+                help: 'The ideology you must initially pick and attempt to spread. Only swap if absolutely necessary',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4221,6 +4226,7 @@ GAMES = {
                 ]
             },
             personality: {
+                help: 'The overall way you act towards your fellow civilizations',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4237,6 +4243,7 @@ GAMES = {
                 ]
             },
             required_policy_trees: {
+                help: 'Minimum required policy trees, you do not have to go for them immediately. But you do eventually have to complete them',
                 chance_of_multiple: 33,
                 min: 1,
                 max: 3,
@@ -4271,6 +4278,7 @@ GAMES = {
                 ]
             },
             expansion_policy: {
+                help: 'Tall = A few very large cities. Wide = Lots of smaller cities.'
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4444,6 +4452,7 @@ GAMES = {
                 ]
             },
             focus_skills: {
+                help: 'The primary skills you should aim to use and improve',
                 chance_of_multiple: 100,
                 min: 3,
                 max: 3,
@@ -4463,6 +4472,7 @@ GAMES = {
                 ]
             },
             factions_to_join: {
+                help: 'The factions you are required to join, you can join others if you want as well',
                 chance_of_multiple: 50,
                 min: 1,
                 max: 5,
@@ -4631,7 +4641,7 @@ GAMES = {
         title: 'Minecraft',
         background: 'minecraft.png',
         columns: {
-            biome: {
+            main_base_biome: {
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4647,38 +4657,26 @@ GAMES = {
                     :"Taiga",
                     :"Taiga M",
                     :"Mega Taiga",
-                    :"Spruce Taiga M",
                     :"Extreme Hills+",
-                    :"Extreme Hills+ M",
                     :"Stone Beach",
                     :"Plains",
                     :"Sunflower Plains",
                     :"Forest",
                     :"Flower Forest",
                     :"Swampland",
-                    :"Swampland M",
                     :"River",
                     :"Beach",
                     :"Jungle",
-                    :"Jungle M",
                     :"Jungle Edge",
-                    :"Jungle Edge M",
                     :"Birch Forest",
-                    :"Birch Forest M",
                     :"Birch Forest Hills",
-                    :"Birch Forest Hills M",
                     :"Roofed Forest",
-                    :"Roofed Forest M",
                     :"Mushroom Island",
                     :"Mushroom Island Shore",
                     :"Desert",
-                    :"Desert M",
                     :"Savanna",
-                    :"Savanna M",
                     :"Mesa",
-                    :"Mesa (Bryce)",
                     :"Plateau",
-                    :"Plateau M",
                     :"The Nether",
                     :"Ocean",
                     :"Deep Ocean",
@@ -5158,6 +5156,7 @@ GAMES = {
         background: 'crusaderkings.jpg',
         columns: {
             starting_duchy: {
+                help: 'When starting, pick the duke of this duchy, a dejure vassal, or the dejure liege',
                 title: 'Starting Duchy',
                 chance_of_multiple: 0,
                 min: 1,

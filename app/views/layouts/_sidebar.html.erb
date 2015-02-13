@@ -5,7 +5,7 @@
         </li>
         <% @games.each do |key, value| %>
             <li>
-                <%= link_to value, generator_path(game: key) %>
+                <%= link_to value, generator_path(game_name: key) %>
             </li>
         <% end %>
     </ul>

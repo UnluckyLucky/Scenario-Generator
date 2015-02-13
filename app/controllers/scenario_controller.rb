@@ -13,7 +13,7 @@ class ScenarioController < ApplicationController
   end
 
   def show
-    @game_name = params[:game].to_sym
+    @game_name = params[:game_name].to_sym
     if ScenarioGenerator.games.include? @game_name
       @scenario = ScenarioGenerator.scenario @game_name
 
@@ -53,9 +53,9 @@ class ScenarioController < ApplicationController
   end
 
   def accept
-    @game_name = params[:game].to_sym
+    @game_name = params[:game_name].to_sym
     session[@game_name] = true
-    redirect_to generator_path(game: @game_name)
+    redirect_to generator_path(game_name: @game_name)
   end
 
   private

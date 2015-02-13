@@ -1,5 +1,18 @@
 <h2 class='box reroll-column-button button' id='<%= title.to_s.downcase.tr(" ", "_") %>-button'>
-  <%= title %>
-  <div class="reroll-column-button-button">Reroll column</div>
+  <div class="row">
+    <div class="col-xs-2 info-column">
+      <% help = ScenarioGenerator.help_message(params[:game_name], standard_column_name(title)) %>
+      <% if help %>
+        <div class="info-marker">
+          i
+          <div class="info"><%= help %></div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-xs-8">
+      <div class="column-header"><%= title %></div>
+      <div class="reroll-column-button-button">Reroll column</div>
+    </div>
+  </div>
 </h2>
 <%= render partial: 'scenario_item', collection: items %>
