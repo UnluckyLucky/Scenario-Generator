@@ -34,7 +34,7 @@ GAMES = {
         title: 'Europa Universalis IV',
         background: 'eu4.jpg',
         columns: {
-            country_type: {
+            tech_group: {
                 sub_trees: [
                     :western_country, :western_goals, :ottoman_country, :ottoman_goals, :muslim_country, :muslim_goals,
                     :indian_country, :indian_goals, :eastern_country, :eastern_goals, :chinese_country,
