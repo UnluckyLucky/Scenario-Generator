@@ -2411,6 +2411,10 @@ GAMES = {
               min: 1,
               max: 5,
               options: [
+                :'Have the largest army in the world',
+                :'Have the largest fleet in the world',
+                :'Form three colonial nation',
+                :'Form five colonial nation',
                 :"Become Defender of the Faith",
                 :'Complete a full game from 1444 to 1820',
                 :'Form four Trade Companies and get bonus merchants from all of them',
@@ -2431,18 +2435,18 @@ GAMES = {
                 :'Help create the USA',
                 :'Help create Venezuela',
                 :'Accumulate 3000 gold',
-                :'Join a coalition of more than 5 nations',
+                :'Accumulate 10000 gold',
+                :'Join a coalition of more than 5 nations, and destroy the target',
+                :'Have a coalition of five or more nations form against you, and defeat them in a war',
                 :'Own 10 provinces which produce gold',
                 :'Own the entire Caribbean',
                 :'Win a war without fighting a single battle',
-                :'Have five colonial nations',
                 :'Have rebels you support in another country enforce their demands',
                 :'Own 100 or more provinces with no local autonomy or unrest',
                 :'Reach the maximum tech level in all technologies',
                 :'Conquer all three Georgias',
                 :'Discover the whole world',
                 :'Guarantee the Independence of France, The Ottoman Empire and Russia',
-                :'Restore the Roman Empire',
                 :'Be trade leader of seven different goods',
                 :'Own 1001 provinces directly',
                 :'Conquer Lisbon, Madrid, Paris, London, Amsterdam & Rome',
@@ -2486,7 +2490,7 @@ GAMES = {
                 :'Conquer all of the Arabian Peninsula',
                 :'Dismantle the Holy Roman Empire',
                 :'Own at least 150 provinces that all have the state religion',
-                :"Contain Europe - Prevent any european country from keeping it's overseas colonies",
+                :"Contain Europe - Prevent any european country from keeping its overseas colonies",
                 :"Conquer the Roman Empire's historical borders"
               ]
             },
@@ -5595,6 +5599,7 @@ GAMES = {
                 ]
             },
             goals: {
+                sub_trees: [:target_religion, :target_empire],
                 chance_of_multiple: 75,
                 min: 1,
                 max: 5,
@@ -5687,7 +5692,8 @@ GAMES = {
                                 :'The Deccan Empire',
                                 :'The Roman Empire',
                                 :'The Latin Empire',
-                                :'The Indian Empire'
+                                :'The Indian Empire',
+                                :'The Holy Roman Empire'
                             ]
                         }
                     },
@@ -5717,7 +5723,8 @@ GAMES = {
                                 :'The Deccan Empire',
                                 :'The Roman Empire',
                                 :'The Latin Empire',
-                                :'The Indian Empire'
+                                :'The Indian Empire',
+                                :'The Holy Roman Empire'
                             ]
                         }
                     },
@@ -5733,8 +5740,6 @@ GAMES = {
                     :'Successfully defend from a holy war',
                     :'As a ruler of non-india culture hold a King or Emperor title in India',
                     :'Convert an entire religion to a heresy',
-                    :'Form the Roman Empire',
-                    :'Form the Holy Roman Empire',
                     :'Become the Saoshyant',
                     :'Have the genius trait',
                     :'Have the quick trait',
