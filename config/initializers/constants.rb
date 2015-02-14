@@ -1106,8 +1106,8 @@ GAMES = {
                                 },
                                 :Wurzburg,
                                 {
-                                    :'Wurttemburg' => {
-                                      title: 'Wurttemburg Goals',
+                                    :'Wurttemberg' => {
+                                      title: 'Wurttemberg Goals',
                                       chance_of_multiple: 35,
                                       min: 1,
                                       max: 5,
