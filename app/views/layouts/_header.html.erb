@@ -13,6 +13,8 @@
   <div class="col-xs-2 hidden-xs">
     <% if @previous_link %>
       <%= link_to(@previous_title, generator_path(game_name: @previous_link), class: 'box button previous') %>
+    <% else %>
+      <div class="previous-padding"></div>
     <% end %>
     <% if @next_link %>
       <%= link_to(@next_title, generator_path(game_name: @next_link), class: 'box button next') %>
