@@ -4043,7 +4043,7 @@ GAMES = {
         background: 'witcher2.jpg',
         previous_game: :the_witcher,
         columns: {
-            "Prologue: Aryan La Valette": {
+            :"Prologue: Aryan La Valette" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
@@ -4278,7 +4278,7 @@ GAMES = {
                 ]
             },
             expansion_policy: {
-                help: 'Tall = A few very large cities. Wide = Lots of smaller cities.'
+                help: 'Tall = A few very large cities. Wide = Lots of smaller cities.',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
