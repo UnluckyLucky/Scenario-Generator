@@ -4471,14 +4471,14 @@ GAMES = {
         background: 'witcher2.jpg',
         previous_game: :the_witcher,
         columns: {
-            :"Prologue: Aryan La Valette" => {
+            :"Aryan La Valette" => {
                 spoiler: true,
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
                 options: [
-                    :'Kill',
-                    :'Save'
+                    :'Kill him',
+                    :'Convince him to stand down'
                 ]
             },
             malena: {
@@ -4492,6 +4492,7 @@ GAMES = {
                 ]
             },
             iorveth_sword: {
+                title: "Iorveth's Sword",
                 spoiler: true,
                 chance_of_multiple: 0,
                 max: 1,
@@ -4515,8 +4516,8 @@ GAMES = {
                             min: 1,
                             max: 1,
                             options: [
-                                :'Kill',
-                                :'Save'
+                                :'Kill him',
+                                :'Space his live'
                             ]
                         },
                         triss_or_temeria: {
@@ -4538,8 +4539,8 @@ GAMES = {
                             min: 1,
                             max: 1,
                             options: [
-                                :'Kill',
-                                :'Save'
+                                :'Kill him',
+                                :'Space his live'
                             ]
                         },
                         hero_or_avenger: {
