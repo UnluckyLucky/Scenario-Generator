@@ -1,13 +1,16 @@
 class AlertController < ApplicationController
 
   def subscribe
-    @alert = Alert.new(email: params[:alert][:email])
+    @alert = Alert.new(email: params[:alert][:email], version: current_version_model, signup_page: params[:page_name])
 
     @alert.save
 
     flash[:success] = "#{params[:alert][:email]} successfully subscribed"
 
-    redirect_to :back
+    respond_to do |format|
+      format.html { redirect_to :back }
+      format.js
+    end
   end
 
   def emails

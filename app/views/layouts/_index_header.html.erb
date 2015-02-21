@@ -3,17 +3,6 @@
     <div class="title"><%= link_to 'Scenario Generator Index', '/' %></div>
   </div>
   <div class="col-xs-5 col-lg-3 xs-hidden">
-    <%= form_for Alert.new, url: alert_subscribe_path do |f| %>
-      <div class="box subscribe-box">
-        <div class="subscribe-title">
-          Get alerts when new games are added
-        </div>
-        <div class="errors">
-          <%= flash[:success] %>
-        </div>
-        <%= f.text_field :email, placeholder: 'Email Address' %>
-        <%= f.submit 'Subscribe', class: 'button' %>
-      </div>
-    <% end %>
+    <%= render 'layouts/subscribe_form' %>
   </div>
 </div>

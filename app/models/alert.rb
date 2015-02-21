@@ -1,5 +1,7 @@
 class Alert < ActiveRecord::Base
 
+  belongs_to :version
+
   validates :email, :email => true
 
   validates_presence_of :email, :message => "required"
@@ -17,6 +19,16 @@ class Alert < ActiveRecord::Base
     end
 
     return string[0..-3]
+  end
+
+  def self.signups_by_page
+    counts = Hash.new(0)
+
+    all.each do |alert|
+      counts[alert.signup_page] += 1
+    end
+
+    return counts
   end
 
 end
