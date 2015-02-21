@@ -67,9 +67,11 @@ class ScenarioController < ApplicationController
     # TODO: Clean this up
     def construct_hash_from_params
       cleared_hash = { regular: {}, spoiler: {} }
-      params[REGULAR_SYMBOL].each do |param_key, param_value|
-        unless @sub_trees_to_remove && @sub_trees_to_remove.include?(standard_column_name(param_key))
-          cleared_hash[:regular][param_key.titleize] = param_value
+      if params[REGULAR_SYMBOL] && !params[REGULAR_SYMBOL].empty?
+        params[REGULAR_SYMBOL].each do |param_key, param_value|
+          unless @sub_trees_to_remove && @sub_trees_to_remove.include?(standard_column_name(param_key))
+            cleared_hash[:regular][param_key.titleize] = param_value
+          end
         end
       end
 
