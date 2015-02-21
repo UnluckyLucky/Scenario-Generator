@@ -6027,8 +6027,8 @@ GAMES = {
         }
     },
 	xrebirth: {
-		title: X-Rebirth
-		background:
+		title: 'X-Rebirth',
+		background: 'x_rebirth.png',
 		columns: {
 			game_starts: {
 				title: 'Game Starts',
@@ -6046,6 +6046,7 @@ GAMES = {
 			},
 			restrictions: {
 				title: 'Restrictions',
+				sub_trees: [primary_weapon]
 				chance_of_multiple: 15,
 				min: 1,
 				max: 3,
@@ -6067,7 +6068,7 @@ GAMES = {
 					:'Do not buy any ships',
 					:'Trade only with inventory items',
 					:'Dead is dead - if you die; game over',
-					:primary_weapon: {
+					primary_weapon: {
 						title: 'Use as primary weapon:',
 						chance_of_multiple: 0,
 						min: 1,
@@ -6126,6 +6127,7 @@ GAMES = {
 			},
 			build_goals: {
 				title: 'Build Goals',
+				sub_trees: [specific_zone_build],
 				chance_of_multiple: 5,
 				min: 1,
 				max: 2,
@@ -6142,7 +6144,7 @@ GAMES = {
 					:'Build 25 capital ships',
 					:'Build 50 capital ships',
 					:'Build 100 capital ships',
-					:specific_zone_build: {
+					specific_zone_build: {
 						title="Build a station in...",
 						chance_of_multiple: 5,
 						min: 1,
