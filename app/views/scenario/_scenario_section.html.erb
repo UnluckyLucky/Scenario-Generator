@@ -1,4 +1,4 @@
-<h2 class='box reroll-column-button button' id='<%= title.to_s.downcase.tr(" ", "_") %>-button'>
+<h2 class='box reroll-column-button button' id='<%= standard_column_name title %>-button'>
   <div class="row">
     <div class="col-xs-2 info-column">
       <% help = ScenarioGenerator.help_message(params[:game_name], standard_column_name(title)) %>

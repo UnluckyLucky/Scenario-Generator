@@ -37,6 +37,7 @@ ready = ->
       document.open()
       document.write(data)
       document.close()
+      location.hash = column_name_to_reroll;
     )
 
 
