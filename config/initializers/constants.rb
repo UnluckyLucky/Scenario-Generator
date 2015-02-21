@@ -294,7 +294,7 @@ GAMES = {
             challenge: {
                 chance_of_multiple: 15,
                 min: 1,
-                max: 1,
+                max: 5,
                 options: [
                     :"Don't level up",
                     :"Don't level past 10",
@@ -309,7 +309,6 @@ GAMES = {
                     :'Kill all killable NPCs upon meeting them, unless required to complete quest challenge',
                     :'Complete Anastacia, Guardian of the Firelink Shrine\'s quest chain',
                     :'Complete Big Hat Logan\'s quest chain',
-                    :'Complete Crestfallen Warrior\'s quest chain',
                     :'Complete Dusk of Oolacile\'s quest chain',
                     :'Complete Knight Laurtrec of Carim\'s quest chain',
                     :'Complete Laurentius of the Great Swamp\'s quest chain',
@@ -419,7 +418,7 @@ GAMES = {
                     :'Way of White',
                 ]
             },
-            class: {
+            starting_class: {
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -4517,7 +4516,7 @@ GAMES = {
                             max: 1,
                             options: [
                                 :'Kill him',
-                                :'Space his live'
+                                :'Spare his life'
                             ]
                         },
                         triss_or_temeria: {
@@ -4540,7 +4539,7 @@ GAMES = {
                             max: 1,
                             options: [
                                 :'Kill him',
-                                :'Space his live'
+                                :'Spare his life'
                             ]
                         },
                         hero_or_avenger: {
