@@ -6046,7 +6046,7 @@ GAMES = {
 			},
 			restrictions: {
 				title: 'Restrictions',
-				sub_trees: [primary_weapon]
+				sub_trees: [:primary_weapon]
 				chance_of_multiple: 15,
 				min: 1,
 				max: 3,
@@ -6127,7 +6127,7 @@ GAMES = {
 			},
 			build_goals: {
 				title: 'Build Goals',
-				sub_trees: [specific_zone_build],
+				sub_trees: [:specific_zone_build],
 				chance_of_multiple: 5,
 				min: 1,
 				max: 2,
