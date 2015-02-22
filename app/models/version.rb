@@ -19,7 +19,7 @@ class Version < ActiveRecord::Base
       conversion_counts[version.code][:count] = version.count
     end
 
-    return conversion_counts.sort.to_h
+    return Hash[conversion_counts.sort]
   end
 
   def self.full_report
