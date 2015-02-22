@@ -185,7 +185,7 @@ GAMES = {
                     :'Orange Charred Ring',
                     :'Poisonbite Ring ',
                     :'Rare Ring of Sacrifice',
-                    :'Red Tearstone Rin',
+                    :'Red Tearstone Ring',
                     :'Ring of Favor and Protection',
                     :'Ring of Sacrifice',
                     :'Ring of Steel Protection',
