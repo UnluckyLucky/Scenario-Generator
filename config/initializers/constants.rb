@@ -6046,7 +6046,7 @@ GAMES = {
 			},
 			restrictions: {
 				title: 'Restrictions',
-				sub_trees: [:primary_weapon]
+				sub_trees: [:primary_weapon],
 				chance_of_multiple: 15,
 				min: 1,
 				max: 3,
@@ -6068,19 +6068,21 @@ GAMES = {
 					:'Do not buy any ships',
 					:'Trade only with inventory items',
 					:'Dead is dead - if you die; game over',
-					primary_weapon: {
-						title: 'Use as primary weapon:',
-						chance_of_multiple: 0,
-						min: 1,
-						max: 1,
-						options: [
-							:'Pulsed Maser',
-							:'Inertial Hammer',
-							:'Plasma Cannon',
-							:'Partical Repeater',
-							:'Mining Laser'
-						]
-					}
+					{
+                        primary_weapon: {
+    						title: 'Use as primary weapon:',
+    						chance_of_multiple: 0,
+    						min: 1,
+    						max: 1,
+    						options: [
+    							:'Pulsed Maser',
+    							:'Inertial Hammer',
+    							:'Plasma Cannon',
+    							:'Partical Repeater',
+    							:'Mining Laser'
+    						]
+    					}
+                    }
 				]
 			},
 			trade_goals: {
@@ -6144,22 +6146,24 @@ GAMES = {
 					:'Build 25 capital ships',
 					:'Build 50 capital ships',
 					:'Build 100 capital ships',
-					specific_zone_build: {
-						title="Build a station in...",
-						chance_of_multiple: 5,
-						min: 1,
-						max: 2,
-						options: [
-							:'Shattered Singularity',
-							:'Venturous Profit',
-							:'Schödinger\'s Drift',
-							:'Time Distortion',
-							:'Gravity Anomaly',
-							:'Cryptic Heart',
-							:'Last Resort',
-							:'Biting Steel',
-						]
-					}
+					{
+                        specific_zone_build: {
+                            title: "Build a station in...",
+                            chance_of_multiple: 5,
+                            min: 1,
+                            max: 2,
+                            options: [
+                                :'Shattered Singularity',
+                                :'Venturous Profit',
+                                :'Schödinger\'s Drift',
+                                :'Time Distortion',
+                                :'Gravity Anomaly',
+                                :'Cryptic Heart',
+                                :'Last Resort',
+                                :'Biting Steel',
+                            ]
+                        }
+                    }
 				]
 			},
 			discovery_goals: {
