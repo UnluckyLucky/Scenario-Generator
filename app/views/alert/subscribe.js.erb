@@ -1,1 +1,4 @@
-$('.box.subscribe .errors').html('<%= "#{params[:alert][:email]} successfully subscribed" %>');
+$('.box.subscribe .errors').empty();
+$('.box.subscribe .success').empty();
+$('.box.subscribe .errors').html('<%= flash[:error]%>');
+$('.box.subscribe .success').html('<%= flash[:success]%>');

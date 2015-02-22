@@ -1,1 +1,4 @@
-$('.box.suggestion .errors').html('<%= "Suggestion saved" %>');
+$('.box.suggestion .errors').empty();
+$('.box.suggestion .success').empty();
+$('.box.suggestion .errors').html('<%= flash[:error]%>');
+$('.box.suggestion .success').html('<%= flash[:success]%>');

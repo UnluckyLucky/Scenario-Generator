@@ -10,8 +10,11 @@
           #f: 'Get updates about new generators'
       %>
     </div>
-    <div class="errors">
+    <div class="success">
       <%= flash[:success] %>
+    </div>
+    <div class="errors">
+      <%= flash[:errors] %>
     </div>
     <%= f.text_field :email, placeholder: 'Email Address' %>
     <%= f.submit 'Subscribe', class: 'button' %>
