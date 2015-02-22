@@ -10,7 +10,10 @@ class Version < ActiveRecord::Base
         next
       end
 
-      conversion_counts[version.code] = version.alerts.size.to_f / version.count.to_f
+      conversion_counts[version.code] = {}
+      conversion_counts[version.code][:rate] = version.alerts.size.to_f / version.count.to_f
+      conversion_counts[version.code][:conversions] = version.alerts.size
+      conversion_counts[version.code][:count] = version.count
     end
 
     return conversion_counts 
@@ -25,8 +28,8 @@ class Version < ActiveRecord::Base
     puts "#{total_emails}\n"
 
     puts "\nA/B testing outcome:\n"
-    test_outcome.each do |version, conversion_rate|
-      puts "#{version}: #{conversion_rate * 100}\n"
+    test_outcome.each do |version, conversion_info|
+      puts "#{version} | Conversion Rate: #{"%6.2f" % (conversion_info[:rate] * 100)}% | Conversions: #{"%5d" % conversion_info[:conversions]} | Count: #{"%5d" % conversion_info[:count]} \n"
     end
 
     puts "\nSignups by page:\n"
