@@ -159,8 +159,8 @@ GAMES = {
             rings: {
                 help: 'Do not equip any other rings, except those required to advance through the story',
                 chance_of_multiple: 0,
-                min: 1,
-                max: 1,
+                min: 2,
+                max: 2,
                 options: [
                     :'Bellowing Dragoncrest Ring',
                     :'Bloodbite Ring',
