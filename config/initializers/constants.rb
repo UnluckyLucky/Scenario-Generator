@@ -188,7 +188,7 @@ GAMES = {
                     :'Red Tearstone Rin',
                     :'Ring of Favor and Protection',
                     :'Ring of Sacrifice',
-                    :'Ring of Steel Protectio',
+                    :'Ring of Steel Protection',
                     :'Ring of the Evil Eye',
                     :'Ring of the Sun\'s Firstborn',
                     :'Rusted Iron Ring',
