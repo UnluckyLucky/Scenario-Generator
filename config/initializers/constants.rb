@@ -335,8 +335,8 @@ GAMES = {
         title: 'Dark Souls',
         background: 'darksouls.jpg',
         columns: {
-            left_hand_weapon: {
-                help: 'If you get a special weapon, use a weapon of the same class until you acquire it',
+            right_handed_weapon: {
+                help: 'If your primary weapon is two handed, skip this',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
@@ -402,8 +402,8 @@ GAMES = {
                     :'Priscilla\'s Dagger'
                 ]
             },
-            right_hand_weapon: {
-                help: 'If your primary weapon is two handed, skip this',
+            left_handed_weapon: {
+                help: 'If you get a special weapon, use a weapon of the same class until you acquire it',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
