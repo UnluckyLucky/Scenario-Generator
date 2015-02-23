@@ -671,7 +671,7 @@ GAMES = {
                     :'Keep 10000 liquid souls at all times, only spend souls above that level',
                     :'Keep 50000 liquid souls at all times, only spend souls above that level',
                     :'Keep 100000 liquid souls at all times, only spend souls above that level',
-                    :'Kick only',
+                    :'Only do damage via kicking',
                     :'Only level up 5 times per area. This does not roll over, once you advance you lose your chance',
                     :'Only level up once per area. This does not roll over, once you advance you lose your chance',
                     :'Defeat someone in pvp before advancing past each area',
