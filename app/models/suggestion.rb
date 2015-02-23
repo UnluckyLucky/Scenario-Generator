@@ -8,6 +8,8 @@ class Suggestion < ActiveRecord::Base
     all.each do |suggestion|
       puts suggestion.suggestion
     end
+
+    return nil
   end
 
   def self.signups_by_page
