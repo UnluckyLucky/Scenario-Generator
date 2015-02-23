@@ -1,4 +1,4 @@
-<%= form_for Alert.new, url: alert_subscribe_path(page_name: params[:game_name] || :index), remote: true do |f| %>
+<%= form_for Alert.new, url: alert_subscribe_path(page_name: params[:game_name] || :index), remote: true, :'pleasant-identifier-form' => true do |f| %>
   <div class="box subscribe <%= current_version %>">
     <div class="subscribe-title">
       <%= 
@@ -16,7 +16,7 @@
     <div class="errors">
       <%= flash[:errors] %>
     </div>
-    <%= f.text_field :email, placeholder: 'Email Address' %>
+    <%= f.text_field :email, placeholder: 'Email Address', :'pleasant-field' => "email", :'pleasant-identifier' => true  %>
     <%= f.submit 'Subscribe', class: 'button' %>
   </div>
 <% end %>

@@ -8,16 +8,7 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="initial-scale=1">
     <%= render 'layouts/inspectlet' %>
-  
-    <script type="text/javascript">
-      (function() {
-        window.PA_SITE_ID = 2665963857610;
-        var u='//pleasant-api.elasticbeanstalk.com/';
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pleasant.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><img src='//pleasant-api.elasticbeanstalk.com/pleasant.gif' /></noscript>
+    <%= render 'layouts/pleasant_analytics' %>
   </head>
   <body class="generator" style="background-image: url(<%= asset_path(@background) %>)">
     <div id="wrapper">
