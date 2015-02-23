@@ -7,6 +7,7 @@ class Suggestion < ActiveRecord::Base
   def self.suggestions
     all.each do |suggestion|
       puts suggestion.suggestion
+      puts "\n"
     end
 
     return nil
