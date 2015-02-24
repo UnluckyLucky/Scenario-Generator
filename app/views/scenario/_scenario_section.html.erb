@@ -1,18 +1,34 @@
-<h2 class='box reroll-column-button button' id='<%= standard_column_name title %>-button'>
-  <div class="row">
+<% help = ScenarioGenerator.help_message(params[:game_name], standard_column_name(title)) %>
+<div class="row">
+  <% if help %>
     <div class="col-xs-2 info-column">
-      <% help = ScenarioGenerator.help_message(params[:game_name], standard_column_name(title)) %>
-      <% if help %>
-        <div class="info-marker">
-          i
-          <div class="info"><%= help %></div>
+      <div class="info-marker">
+        i
+        <div class="info"><%= help %></div>
+      </div>
+    </div>
+    <div class="col-xs-10 with-info-column">
+      <h2 class='box reroll-column-button button' id='<%= standard_column_name title %>-button'>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="column-header"><%= title %></div>
+            <div class="reroll-column-button-button">Reroll column</div>
+          </div>
         </div>
-      <% end %>
+      </h2>
     </div>
-    <div class="col-xs-8">
-      <div class="column-header"><%= title %></div>
-      <div class="reroll-column-button-button">Reroll column</div>
+  <% else %>
+    <div class="col-xs-12">
+      <h2 class='box reroll-column-button button' id='<%= standard_column_name title %>-button'>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="column-header"><%= title %></div>
+            <div class="reroll-column-button-button">Reroll column</div>
+          </div>
+        </div>
+      </h2>
     </div>
-  </div>
-</h2>
+  <% end %>
+</div>
+
 <%= render partial: 'scenario_item', collection: items %>
