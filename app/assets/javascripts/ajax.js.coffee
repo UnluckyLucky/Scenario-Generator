@@ -1,6 +1,6 @@
 ready = ->
   $('.reroll-column-button').click ->
-    column_name_to_reroll = $(@).parent().attr('id')
+    column_name_to_reroll = $(@).attr('id')
     game_name = document.URL.split('/')[4].split('#')[0]
 
     regular = {}
