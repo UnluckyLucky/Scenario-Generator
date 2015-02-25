@@ -39,25 +39,20 @@ GAMES = {
                 min: 1,
                 max: 1,
                 options: [
-                    :Normal,
-                    :Normal,
-                    :Normal,
-                    :Normal,
-                    :Classic,
-                    :Classic,
-                    :Impossible
-                ]
-            },
-            ironman: {
-                chance_of_multiple: 0,
-                min: 1,
-                max: 1,
-                options: [
-                    :On,
-                    :On,
-                    :Off,
-                    :Off,
-                    :Off
+                    :'Normal',
+                    :'Normal',
+                    :'Normal',
+                    :'Normal',
+                    :'Classic',
+                    :'Classic',
+                    :'Impossible',
+                    :'Ironman Normal',
+                    :'Ironman Normal',
+                    :'Ironman Normal',
+                    :'Ironman Normal',
+                    :'Ironman Classic',
+                    :'Ironman Classic',
+                    :'Ironman Impossible'
                 ]
             },
             second_wave_options: {
@@ -89,7 +84,8 @@ GAMES = {
                     :'Itchy Trigger Tentacle'
                 ]
             },
-            squad: {
+            ideal_squad: {
+                help: "Bring rookies if you don't have the classes required",
                 chance_of_multiple: 0,
                 min: 6,
                 max: 6,
