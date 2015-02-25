@@ -3,11 +3,16 @@ class Version < ActiveRecord::Base
   has_many :alerts
   has_many :suggestions
 
+  def self.active_versons
+    [:red, :pink, :blue, :green]
+  end
+
   def self.test_outcome
     conversion_counts = Hash.new(0.0)
 
+
     all.each do |version|
-      if version.code == nil
+      if version.code == nil || !Version.active_versons.include?(version.code.to_sym)
         next
       end
 
@@ -38,11 +43,6 @@ class Version < ActiveRecord::Base
     puts "\nA/B testing email outcome:\n"
     test_outcome.each do |version, conversion_info|
       puts "#{version} | Conversion Rate: #{"%6.2f" % (conversion_info[:email_rate] * 100)}% | Conversions: #{"%5d" % conversion_info[:email_conversions]} | Count: #{"%7d" % conversion_info[:count]} \n"
-    end
-
-    puts "\nA/B testing suggestion outcome:\n"
-    test_outcome.each do |version, conversion_info|
-      puts "#{version} | Conversion Rate: #{"%6.2f" % (conversion_info[:suggestion_rate] * 100)}% | Conversions: #{"%5d" % conversion_info[:suggestion_conversions]} | Count: #{"%7d" % conversion_info[:count]} \n"
     end
 
     puts "\nEmail Signups by page:\n"

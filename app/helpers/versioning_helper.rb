@@ -18,7 +18,7 @@ module VersioningHelper
   end
 
   def testing_versions
-    [:c, :f, :g, :h]
+    Version.active_versons
   end
 
 end
