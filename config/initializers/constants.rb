@@ -30,7 +30,7 @@ def new_vegas_specials
 end
 
 GAMES = {
-    team_fortress_2: {
+    tf2: {
         title: 'Team Fortress 2',
         background: 'tf2.jpg',
         columns: {
@@ -98,7 +98,7 @@ GAMES = {
                             ]
                         },
                         scout_hat: {
-                            title: 'Scout hat',
+                            title: 'Scout Hat',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
@@ -437,7 +437,7 @@ GAMES = {
                             ]
                         },
                         fists: {
-                            title: 'fists',
+                            title: 'Fists',
                             chance_of_multiple: 0,
                             min: 1,
                             max: 1,
