@@ -30,6 +30,795 @@ def new_vegas_specials
 end
 
 GAMES = {
+    team_fortress_2: {
+        title: 'Team Fortress 2',
+        background: 'tf2.jpg',
+        columns: {
+            class: {
+                sub_trees: [
+                    :scout_shotgun, :scout_pistol, :bat, :scout_hat,
+                    :rocket_launcher, :soldier_shotgun, :soldier_melee_weapon, :soldier_hat,
+                    :flamethrower, :pyro_shotgun, :pyro_melee_weapon, :pyro_hat,
+                    :demoman_primary_weapon, :demoman_secondary_weapon, :demoman_melee_weapon, :demoman_hat,
+                    :minigun, :heavy_secondary_weapon, :fists, :heavy_hat,
+                    :engineer_shotgun, :engineer_secondary_weapon, :wrench, :engineer_hat,
+                    :medigun, :syringe_gun, :saw, :medic_hat,
+                    :rifle, :sniper_secondary_weapon, :sniper_melee_weapon, :sniper_hat,
+                    :knife, :spy_pistol, :watch, :sniper_hat, :sapper, :spy_hat
+                ],
+                chance_of_multiple: 0,
+                min: 1,
+                max: 1,
+                options: [
+                    {
+                        scout: {
+                            title: 'Scout Shotgun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Scattergun',
+                                :'Force-A-Nature',
+                                :'Shortstop',
+                                :'Soda Popper',
+                                :'Baby Face\'s Blaster',
+                                :'Back Scatter'
+                            ]
+                        },
+                        scout_pistol: {
+                            title: 'Scout Pistol',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Pistol',
+                                :'Bonk! Atomic Punch',
+                                :'Crit-a-Cola',
+                                :'Mad Milk',
+                                :'Winger',
+                                :'Pretty Boy\'s Pocket Pistol',
+                                :'Flying Guillotine'
+                            ]
+                        },
+                        bat: {
+                            title: 'Bat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Bat',
+                                :'Sandman',
+                                :'Holy Mackerel',
+                                :'Boston Basher',
+                                :'Candy Cane',
+                                :'Sun-on-a-Stick',
+                                :'Fan O\'War',
+                                :'Atomizer',
+                                :'Wrap Assassin'
+                            ]
+                        },
+                        scout_hat: {
+                            title: 'Scout hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Batter\'s helmet',
+                                :'Bonk helm',
+                                :'Ye olde baker boy',
+                                :'Troublemaker\'s tossle cap',
+                                :'Whoopee cap',
+                                :'Baseball Bill\'s Sports Shine',
+                                :'The Milkman',
+                                :'Bombing Run',
+                                :'Flipped Trilby',
+                                :'The Superfan',
+                                :'Hero\'s Tail Bonk Boy',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        soldier: {
+                            title: 'Rocket Launcher',
+                            help: 'Rawket Lawnchair',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Rocket Launcher',
+                                :'Direct Hit',
+                                :'Black Box',
+                                :'Rocket Jumper',
+                                :'Liberty Launcher',
+                                :'Cow Mangler 5000',
+                                :'Original',
+                                :'Beggar\'s Bazooka',
+                                :'Air Strike'
+                            ]
+                        },
+                        soldier_shotgun: {
+                            title: 'Soldier Shotgun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Shotgun',
+                                :'Buff Banner',
+                                :'Gunboats',
+                                :'Battalion\'s Backup',
+                                :'Concheror',
+                                :'Mantreads',
+                                :'Reserve Shooter',
+                                :'Righteous Bison',
+                                :'B.A.S.E. Jumper',
+                                :'Panic Attack'
+                            ]
+                        },
+                        soldier_melee_weapon: {
+                            title: 'Soldier Melee Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Shovel',
+                                :'Equalizer',
+                                :'Pain Train',
+                                :'Half-Zatoichi',
+                                :'Disciplinary Action',
+                                :'Market Gardener',
+                                :'Escape Plan'
+                            ]
+                        },
+                        soldier_hat: {
+                            title: 'Soldier hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Soldier\'s stash',
+                                :'Tyrant\'s helm',
+                                :'Stainless pot',
+                                :'Killer\'s Kabuto',
+                                :'Sergeant\'s drill hat',
+                                :'Lumbricus Lid',
+                                :'Grenadier\'s Softcap',
+                                :'Chieftain\'s Challenge',
+                                :'Stout Shako',
+                                :'Dr\'s Dapper Topper',
+                                :'Exquisite Rack',
+                                :'Defiant Spartan',
+                                :'Hero\'s Hachimaki',
+                                :'Furious Fukaamigasa',
+                                :'Spiral Sallet',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        pyro: {
+                            title: 'Flamethrower',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Flame Thrower',
+                                :'Backburner',
+                                :'Degreaser',
+                                :'Phlogistinator',
+                                :'Rainblower'
+                            ]
+                        },
+                        pyro_shotgun: {
+                            title: 'Pyro Shotgun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Shotgun',
+                                :'Flare Gun',
+                                :'Reserve Shooter',
+                                :'Detonator',
+                                :'Manmelter',
+                                :'Scorch Shot',
+                                :'Panic Attack'
+                            ]
+                        },
+                        pyro_melee_weapon: {
+                            title: 'Pyro Melee Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Fire Axe',
+                                :'Axtinguisher',
+                                :'Homewrecker',
+                                :'Powerjack',
+                                :'Back Scratcher',
+                                :'Sharpened Volcano Fragment',
+                                :'Third Degree',
+                                :'Lollichop',
+                                :'Neon Annihilator'
+                            ]
+                        },
+                        pyro_hat: {
+                            title: 'Pyro hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Pyro\'s beanie',
+                                :'Brigade helm',
+                                :'Respectless rubber glove',
+                                :'Triboniophorus tyrannus',
+                                :'Vintage merryweather',
+                                :'The Attendant',
+                                :'Napper´s Respite',
+                                :'Old Guadalajara',
+                                :'Handyman\'s Handle',
+                                :'Foster\'s Facade',
+                                :'Madame Dixie',
+                                :'Pyromancer\'s Mask',
+                                :'Hottie\'s Hoodie',
+                                :'Connoisseur\'s Cap',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        demoman: {
+                            title: 'Demoman Primary Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Grenade Launcher',
+                                :'Loch-n-Load',
+                                :'Ali Baba\'s Wee Booties',
+                                :'Loose Cannon',
+                                :'B.A.S.E. Jumper',
+                                :'Iron Bomber'
+                            ]
+                        },
+                        demoman_seconday_weapon: {
+                            title: 'Demoman Secondary Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Stickybomb Launcher',
+                                :'Chargin\' Targe',
+                                :'Scottish Resistance',
+                                :'Sticky Jumper',
+                                :'Splendid Screen',
+                                :'Tide Turner',
+                                :'Quickiebomb Launcher'
+                            ]
+                        },
+                        demoman_melee_weapon: {
+                            title: 'Demoman Melee Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Bottle',
+                                :'Eyelander',
+                                :'Pain Train',
+                                :'Scotsman\'s Skullcutter',
+                                :'Ullapool Caber',
+                                :'Claidheamh Mòr',
+                                :'Half-Zatoichi',
+                                :'Persian Persuader'
+                            ]
+                        },
+                        demoman_hat: {
+                            title: 'Demoman hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Demoman\'s Fro',
+                                :'Glengarry Bonnet',
+                                :'Scotsman\'s Stove Pipe',
+                                :'Hustler\'s Hallmark',
+                                :'Tippler\'s Tricorne',
+                                :'Sober Stuntman',
+                                :'Carouser\'s Capotain',
+                                :'Rimmed Raincatcher',
+                                :'Prince Tavish\'s Crown',
+                                :'Scotch Bonnet',
+                                :'Samur-Eye',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        heavy: {
+                            title: 'Minigun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Minigun',
+                                :'Natascha',
+                                :'Brass Beast',
+                                :'Tomislav',
+                                :'Huo-Long Heater'
+                            ]
+                        },
+                        heavy_secondary_weapon: {
+                            title: 'Heavy Secondary Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Shotgun',
+                                :'Sandvich',
+                                :'Dalokohs Bar',
+                                :'Buffalo Steak Sandvich',
+                                :'Family Business',
+                                :'Panic Attack'
+                            ]
+                        },
+                        fists: {
+                            title: 'fists',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Fists',
+                                :'Killing Gloves of Boxing',
+                                :'Gloves of Running Urgently',
+                                :'Warrior\'s Spirit',
+                                :'Fists of Steel',
+                                :'Eviction Notice',
+                                :'Holiday Punch'
+                            ]
+                        },
+                        heavy_hat: {
+                            title: 'Heavy Hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Football Helmet',
+                                :'Officer\'s Ushanka',
+                                :'Tough Guy\'s Toque',
+                                :'Hound Dog',
+                                :'Heavy duty Rag',
+                                :'Hard Counter',
+                                :'Pugilist\'s Protector',
+                                :'Cadaver\'s Cranium',
+                                :'Dealer\'s Visor',
+                                :'Big Chief',
+                                :'Magnificent Mongolian',
+                                :'Coupe D\'Isaster',
+                                :'Dread Knot',
+                                :'Large Luchadore',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        engineer: {
+                            title: 'Engineer Shotgun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Shotgun',
+                                :'Frontier Justice',
+                                :'Widowmaker',
+                                :'Pomson 6000',
+                                :'Rescue Ranger',
+                                :'Panic Attack'
+                            ]
+                        },
+                        engineer_secondary_weapon: {
+                            title: 'Engineer Secondary Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Pistol',
+                                :'Wrangler',
+                                :'Short Circuit'
+                            ]
+                        },
+                        wrench: {
+                            title: 'Wrench',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Wrench',
+                                :'Gunslinger',
+                                :'Southern Hospitality',
+                                :'Jag',
+                                :'Eureka Effect'
+                            ]
+                        },
+                        engineer_hat: {
+                            title: 'Engineer Hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Mining light',
+                                :'Texas ten gallon',
+                                :'Engineer\'s cap',
+                                :'Hotrod',
+                                :'Texas Slim\'s Dome Shine',
+                                :'Safe\'n\'Sound',
+                                :'Buckaroo\'s Hat',
+                                :'Industrial Festivizer',
+                                :'Western Wear',
+                                :'Ol\' Geezer',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        medic: {
+                            title: 'Medigun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Syringe Gun',
+                                :'Blutsauger',
+                                :'Crusader\'s Crossbow',
+                                :'Overdose'
+                            ]
+                        },
+                        syringe_gun: {
+                            title: 'Syringe Gun',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Medi Gun',
+                                :'Kritzkrieg',
+                                :'Quick-Fix',
+                                :'Vaccinator'
+                            ]
+                        },
+                        saw: {
+                            title: 'Saw',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Bonesaw',
+                                :'Übersaw',
+                                :'Vita-Saw',
+                                :'Amputator',
+                                :'Solemn Vow'
+                            ]
+                        },
+                        medic_hat: {
+                            title: 'Medic Hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Prussian Pickelhaube',
+                                :'Vintage Tyrolean',
+                                :'Otolaryngologist\'s mirror',
+                                :'Physician\'s procedure mask',
+                                :'Ze Goggles',
+                                :'Gentleman\'s Gatsby',
+                                :'Berliner\'s Bucket Helm',
+                                :'Blighted Beak',
+                                :'German Gonzila',
+                                :'Geisha Boy',
+                                :'Doctor\'s Sack',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        sniper: {
+                            title: 'Rifle',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Sniper Rifle',
+                                :'Huntsman',
+                                :'Sydney Sleeper',
+                                :'Bazaar Bargain',
+                                :'Machina',
+                                :'Hitman\'s Heatmaker',
+                                :'Classic'
+                            ]
+                        },
+                        sniper_secondary_weapon: {
+                            title: 'Sniper Secondary Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Submachine Gun',
+                                :'Jarate',
+                                :'Razorback',
+                                :'Darwin\'s Danger Shield',
+                                :'Cozy Camper',
+                                :'Cleaner\'s Carbine'
+                            ]
+                        },
+                        sniper_melee_weapon: {
+                            title: 'Sniper Melee Weapon',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Kukri',
+                                :'Tribalman\'s Shiv',
+                                :'Bushwacka',
+                                :'Shahanshah'
+                            ]
+                        },
+                        sniper_hat: {
+                            title: 'Sniper Hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Trophy belt',
+                                :'Professional\'s panama',
+                                :'Master\'s yellow belt',
+                                :'Shooter\'s sola topi',
+                                :'Bloke\'s bucket hat',
+                                :'Ritzy Rick\'s Hair Fixative',
+                                :'Ol\' Snaggletooth',
+                                :'Larrikin Robin',
+                                :'Crocleather Slouch',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                    {
+                        spy: {
+                            title: 'Knife',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Knife',
+                                :'Your Eternal Reward',
+                                :'Conniver\'s Kunai',
+                                :'Big Earner',
+                                :'Spy-cicle'
+                            ]
+                        },
+                        spy_pistol: {
+                            title: 'Spy Pistol',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Revolver',
+                                :'Ambassador',
+                                :'L\'Etranger',
+                                :'Enforcer',
+                                :'Diamondback'
+                            ]
+                        },
+                        watch: {
+                            title: 'Watch',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Invis Watch',
+                                :'Cloak and Dagger',
+                                :'Dead Ringer'
+                            ]
+                        },
+                        sapper: {
+                            title: 'Sapper',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Sapper',
+                                :'Red-Tape Recorder'
+                            ]
+                        },
+                        spy_hat: {
+                            title: 'Spy Hat',
+                            chance_of_multiple: 0,
+                            min: 1,
+                            max: 1,
+                            options: [
+                                :'Fancy fedora',
+                                :'Backbiter\'s billycock',
+                                :'Magistrate\'s mullet',
+                                :'Frenchman\'s beret',
+                                :'Familiar Fez',
+                                :'Detective Noir',
+                                :'Le Party Phantom',
+                                :'Noh Mercy',
+                                :'Cheater\'s lament',
+                                :'Ghastly gibus',
+                                :'Bill\'s Hat',
+                                :'Max\'s severed head',
+                                :'Wiki Cap',
+                                :'Alien Swarm Parasite',
+                                :'Modest pile of hat',
+                                :'Noble amassment of hats',
+                                :'Towering pillar of hats',
+                                :'Mann Co Cap Ellis\' Cap',
+                                :'Saxton Hale Mask',
+                                :'Horrific Headsplitter',
+                                :'Spine-Chilling Skull',
+                                :'Voodoo Juju Treasure Hat',
+                                :'Bounty Hat',
+                                :'Hat of Undeniable Wealth And Respect',
+                                :'The Athletic Supporter',
+                                :'World Traveler\'s Hat',
+                                :'Frontline Field Recorder',
+                                :'Team Captain'
+                            ]
+                        }
+                    },
+                ]
+            }
+        }
+    },
     xcom: {
         title: 'X-Com: Enemy Unknown',
         background: 'xcom.jpg',
@@ -623,7 +1412,7 @@ GAMES = {
                     :'Bloodbite Ring',
                     :'Blue Tearstone Ring',
                     :'Calamity Ring ',
-                    :'Your Convenant Ring',
+                    :'Your Covenant Ring',
                     :'Cloranthy Ring',
                     :'Covetous Gold Serpent Ring',
                     :'Covetous Silver Serpent Ring',
@@ -638,7 +1427,6 @@ GAMES = {
                     :'Hornet Ring',
                     :'Leo Ring',
                     :'Lingering Dragoncrest Ring',
-                    :'Old Witch\'s Ring',
                     :'Orange Charred Ring',
                     :'Poisonbite Ring ',
                     :'Rare Ring of Sacrifice',
@@ -839,8 +1627,8 @@ GAMES = {
                     :'You have two attempts on each boss, if you run out and the boss is not optional for advancement, game over'
                 ]
             },
-            primary_convenant: {
-                help: 'This is your primary convenant. You can swap, but only to complete challenges. You must swap back as soon as possible.',
+            primary_covenant: {
+                help: 'This is your primary covenant. You can swap, but only to complete challenges. You must swap back as soon as possible.',
                 chance_of_multiple: 0,
                 min: 1,
                 max: 1,
