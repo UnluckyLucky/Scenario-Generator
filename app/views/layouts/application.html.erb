@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Challenge Generator Index</title>
+    <title>Scenario Generator</title>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="initial-scale=1">
+    <link property="og:url" content="<%= request.original_url %>" />
+    <link property="og:title" content="Scenario Generator | Random Challenges for <%= params[:game_name] || 'games' %>" />
+    <link property="og:image" content="<%= asset_url('skyrim-generator.png') %>" />
+    <link property="og:image" content="<%= asset_url('index.png') %>" />
     <%= render 'layouts/pleasant_analytics' %>
   </head>
   <body class="application">
 
     <div class="container">
       <%= render 'layouts/index_header' %>
-      <%= render 'layouts/ad_top' %>
       <%= yield %>
-      <%= render 'layouts/ad_bottom' %>
     </div>
   
 
     <%= render 'layouts/footer' %>
-    <%= render 'layouts/ad_setup' %>
+
+    <div id="fb-root"></div>
+    <script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
+
   </body>
 </html>

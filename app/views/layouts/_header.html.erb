@@ -1,9 +1,21 @@
 <div class="row navbar navbar-inner">
   <div class="col-xs-4 col-sm-2">
-    <%= link_to "Other Games", '' , class: 'box button other-button menu-toggle' %>
-    <span class="twitter">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this challenge generator for <%= @title %>">Tweet</a>
-    </span>
+    <div class="row">
+      <div class="col-xs-12"><%= link_to "Other Games", '' , class: 'box button other-button menu-toggle' %></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 twitter">
+        <a href="https://twitter.com/Jokiros" class="twitter-follow-button" data-show-count="false" data-size="medium" data-show-screen-name="false" data-dnt="true">Follow @Jokiros</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this challenge generator for <%= @title %>">Tweet</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="facebook">
+          <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.scenariogenerator.net&amp;width=150&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=920748624615968" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px; float: left;" allowTransparency="true"></iframe>
+        </div>
+      </div>
+    </div>
   </div>
   <h1 class="col-xs-8">
     <div class="box">
@@ -31,6 +43,24 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <%= link_to "Click to reroll", generator_path(game_name: @game_name), class: 'box button reroll-button' %>
+      </div>
+      <div class="col-xs-6 btc-donation-image hidden-xs">
+        <a class="coinbase-button" data-code="e8f8c8233d32310169df5c0470fae3d3" data-button-style="donation_large" href="https://www.coinbase.com/checkouts/e8f8c8233d32310169df5c0470fae3d3">Donate Bitcoin</a>
+      </div>
+      <div class="col-xs-6 btc-donation-image visible-xs">
+        <a class="coinbase-button" data-code="e8f8c8233d32310169df5c0470fae3d3" data-button-style="donation_small" href="https://www.coinbase.com/checkouts/e8f8c8233d32310169df5c0470fae3d3">Donate Bitcoin</a>
+      </div>
+      <div class="col-xs-6 paypal-donation-holder">
+        <div class="row">
+          <div class="paypal col-xs-12 col-sm-8">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="VPLJEE6C7U26L">
+              <input type="image" src="<%= asset_path 'paypal.png' %>" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
