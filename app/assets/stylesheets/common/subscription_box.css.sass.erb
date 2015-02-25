@@ -1,0 +1,61 @@
+// Basic colours
+$a-background: rgba(#f5f5f5, .97)
+$a-color: black
+
+// rejected buttons
+
+//$a-background: rgba(#f5f5f5, .97)
+//$a-color: black
+//$a-button-background: #F59D38
+//$a-button-color: black
+//
+//$b-background: $a-background
+//$b-color: $a-color
+//$b-button-background: #EB0037
+//$b-button-color: black
+//
+//$d-background: $a-background
+//$d-color: $a-color
+//$d-button-background: #F2EB83
+//$d-button-color: black
+//
+//$e-background: $a-background
+//$e-color: $a-color
+//$e-button-background: #8C9FF5
+//$e-button-color: black
+
+// active buttons
+
+<% active_colours = [:c, :f, :g, :h] %>
+
+$c-background: $a-background
+$c-color: $a-color
+$c-button-background: #BD1313
+$c-button-color: black
+
+$f-background: $a-background
+$f-color: $a-color
+$f-button-background: #C845D6
+$f-button-color: black
+
+$g-background: $a-background
+$g-color: $a-color
+$g-button-background: #3777DE
+$g-button-color: black
+
+$h-background: $a-background
+$h-color: $a-color
+$h-button-background: #31A33A
+$h-button-color: black
+
+.subscribe, .suggestion
+<% active_colours.each do |code| %>
+  &.<%= code %>
+    background: $<%= code %>-background
+    color: $<%= code %>-color
+    .button
+      background: $<%= code %>-button-background
+      color: $<%= code %>-button-color
+      &:hover, &:active, &:focus
+        background: darken($<%= code %>-button-background, 10) !important
+<% end %>

@@ -18,7 +18,7 @@ module VersioningHelper
   end
 
   def testing_versions
-    (:a..:f).to_a
+    [:c, :f, :g, :h]
   end
 
 end

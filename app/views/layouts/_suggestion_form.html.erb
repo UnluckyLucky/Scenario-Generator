@@ -1,5 +1,5 @@
 <%= form_for Suggestion.new, url: suggestion_submit_path(page_name: params[:game_name] || :index), remote: true do |f| %>
-  <div class="box suggestion <%= current_version %>">
+  <div class="box suggestion">
     <div class="suggestion-title">
       <%= 
         version_choice default: 'Suggest games or features here,'
