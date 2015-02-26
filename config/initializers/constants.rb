@@ -6982,7 +6982,7 @@ GAMES = {
                     :'Dauphiné',
                     :'Provence',
                     :'Savoy',
-                    :'Upper',
+                    :'Upper Burgundy',
                     :'Anjou',
                     :'Berry',
                     :'Burgundy',
