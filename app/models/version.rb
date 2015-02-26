@@ -33,12 +33,16 @@ class Version < ActiveRecord::Base
     test_outcome = Version.test_outcome
     emails_by_page = Alert.signups_by_page
     suggestions_by_page = Suggestion.signups_by_page
+    total_saved_scenarios = Scenario.all.size
 
     puts "\nTotal email signups:\n"
     puts "#{total_emails}\n"
 
     puts "\nTotal suggestions:\n"
     puts "#{total_suggestions}\n"
+
+    puts "\nTotal saved scenarios:\n"
+    puts "#{total_saved_scenarios}\n"
 
     puts "\nA/B testing email outcome:\n"
     test_outcome.each do |version, conversion_info|
