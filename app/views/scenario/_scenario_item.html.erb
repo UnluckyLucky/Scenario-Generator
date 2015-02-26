@@ -1,3 +1,13 @@
-<div class="box item">
-  <%= scenario_item.to_s.html_safe %>
+<% 
+  if scenario_item.to_s.html_safe[0] == '@'
+    item_string = scenario_item.to_s.html_safe[1..-1]
+    extra_class = ' active'
+  else
+    item_string = scenario_item.to_s.html_safe
+    extra_class = ''
+  end
+%>
+
+<div class="box item <%= extra_class %>">
+  <%= item_string %>
 </div>

@@ -10,7 +10,12 @@ ready = ->
     $(columns).each (key, column) ->
       column_name = $(column).attr('id')
       items = $(column).children('.item').map( ->
-        $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+        text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+
+        if $(@).hasClass('active')
+          text = '@' + text
+
+        return text
       ).get()
       regular[column_name] = items
 
@@ -20,7 +25,12 @@ ready = ->
     $(columns).each (key, column) ->
       column_name = $(column).attr('id')
       items = $(column).children('.item').map( ->
-        $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+        text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+
+        if $(@).hasClass('active')
+          text = '@' + text
+
+        return text
       ).get()
       spoiler[column_name] = items
 

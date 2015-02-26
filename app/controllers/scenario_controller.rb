@@ -2,7 +2,7 @@ class ScenarioController < ApplicationController
   include ScenarioGenerator
   include ScenarioHelper
 
-  layout 'generator', only: [:show, :reroll_column]
+  layout 'generator', only: [:show, :reroll_column, :load]
 
   before_action :load_games
 
@@ -58,6 +58,41 @@ class ScenarioController < ApplicationController
     redirect_to generator_path(game_name: @game_name)
   end
 
+  def save
+    @game_name = params[:game_name].gsub(/#/,"").to_sym
+    @scenario = Scenario.find_by(uuid: params[:uuid], game: params[:game_name]) || 
+                Scenario.new(game: @game_name)
+
+    @scenario.scenario_hash = construct_hash_from_params
+    @scenario.save
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def load
+    @game_name = params[:game_name].gsub(/#/,"").to_sym
+    @saved_scenario = Scenario.find_by(uuid: params[:uuid], game: params[:game_name])
+
+    if @saved_scenario
+      @scenario = @saved_scenario.scenario_hash
+
+      @title = ScenarioGenerator.game_display_name @game_name
+      @background = ScenarioGenerator.game_background @game_name
+      @next_title, @next_link = ScenarioGenerator.next_game @game_name
+      @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
+
+      unless session[@game_name]
+        @spoiler_alert_display = !@scenario[:spoiler].empty?
+      end
+
+      render :show
+    else
+      redirect_to generator_path(game_name: params[:game_name])
+    end
+  end
+
   private
 
     def load_games
@@ -84,6 +119,8 @@ class ScenarioController < ApplicationController
       end
 
       returned_hash = { regular: {}, spoiler: {} }
+
+      @sub_scenario = returned_hash unless @sub_scenario
 
       cleared_hash[:regular].each do |cleared_key, cleared_value|
         if !@sub_scenario[:regular].empty? && standard_column_name(cleared_key) == standard_column_name(@sub_scenario[:regular].keys[0])
