@@ -1,0 +1,94 @@
+GAMES[:dungeons_of_dredmor] = {
+    title: 'Dungeons of Dredmor',
+    page_title: 'Character Generator for Dungeons of Dredmore',
+    save_button_message: 'Save character',
+    background: 'dungeons-of-dredmor.jpg',
+    columns: {
+        skills: {
+            chance_of_multiple: 0,
+            min: 6,
+            max: 6,
+            options: [
+                :'Swords',
+                :'Axes',
+                :'Maces',
+                :'Polearms',
+                :'Staves',
+                :'Unarmed Combat',
+                :'Dual Wielding',
+                :'Shield Bearer',
+                :'Berserker Rage',
+                :'Master of Arms',
+                :'Smithing',
+                :'Daggers',
+                :'Archery',
+                :'Thrown Weapons',
+                :'Artful Dodger',
+                :'Perception',
+                :'Burglary',
+                :'Assassination',
+                :'Fungal Arts',
+                :'Archaeology',
+                :'Tinkering',
+                :'Vampirism',
+                :'Golemancy',
+                :'Fleshsmithing',
+                :'Mathemagic',
+                :'Psionics',
+                :'Necronomiconomics',
+                :'Viking Wizardry',
+                :'Astrology',
+                :'Promethean Magic',
+                :'Magic Training',
+                :'Blood Magic',
+                :'Ley Walker',
+                :'Alchemy',
+                :'Wand Lore',
+                :'Demonologist',
+                :'Big Game Hunter',
+                :'Emomancy',
+                :'Killer Vegan',
+                :'Piracy',
+                :'Werediggle Curse',
+                :'Clockwork Knight',
+                :'Rogue Scientist',
+                :'Battle Geology',
+                :'Warlockery',
+                :'Bankster',
+                :'Communist',
+                :'Egyptian Magic',
+                :'Magical Law',
+                :'Paranormal Investigator',
+                :'Tourist'
+            ]
+        },
+        gender: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :Male,
+                :Female
+            ]
+        },
+        difficulty: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :'Elvishly Easy',
+                :'Dwarvish Moderation',
+                :'Going Rogue'
+            ]
+        },
+        permadeath: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :Enabled,
+                :Disabled
+            ]
+        }
+    }
+}
