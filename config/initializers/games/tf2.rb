@@ -68,6 +68,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     scout_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Scout Hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -160,6 +161,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     soldier_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Soldier hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -250,6 +252,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     pyro_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Pyro hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -339,6 +342,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     demoman_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Demoman hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -422,6 +426,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     heavy_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Heavy Hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -504,6 +509,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     engineer_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Engineer Hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -581,6 +587,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     medic_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Medic Hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -663,6 +670,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     sniper_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Sniper Hat',
                         chance_of_multiple: 0,
                         min: 1,
@@ -749,6 +757,7 @@ GAMES[:tf2] = {
                         ]
                     },
                     spy_hat: {
+                        help: "This is optional, unless you don't want it to be, in which case it isn't",
                         title: 'Spy Hat',
                         chance_of_multiple: 0,
                         min: 1,
