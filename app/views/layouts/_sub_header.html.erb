@@ -1,0 +1,37 @@
+<div class="row">
+  
+  <div class="col-md-3 col-md-offset-0 col-md-3 hidden-xs hidden-sm">
+    <%= render 'layouts/suggestion_form' %>
+  </div>
+  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <%= link_to "Click to reroll", generator_path(game_name: @game_name), class: 'box button reroll-button' %>
+      </div>
+    </div>
+    <div class="row">
+      <%= render 'layouts/donation_section' %>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <%= render 'layouts/subscribe_form' %>
+  </div>
+  <div class="col-xs-6 hidden-md hidden-lg">
+    <%= render 'layouts/suggestion_form' %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="box">
+      <div>If a column is too hard or conflicts with another you can reroll it clicking the orange header buttons!</div>
+      <div>You can click boxes to mark them as complete</div>
+    </div>
+  </div>
+  <div class="col-xs-3 box">
+    <div class="box button save-button">
+      <%= @save_button_message %>
+    </div>
+    <div class="link-to-generator"></div>
+  </div>
+</div>
