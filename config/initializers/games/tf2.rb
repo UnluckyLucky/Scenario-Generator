@@ -555,10 +555,10 @@ GAMES[:tf2] = {
                         min: 1,
                         max: 1,
                         options: [
-                            :'Syringe Gun',
-                            :'Blutsauger',
-                            :'Crusader\'s Crossbow',
-                            :'Overdose'
+                            :'Medi Gun',
+                            :'Kritzkrieg',
+                            :'Quick-Fix',
+                            :'Vaccinator'
                         ]
                     },
                     syringe_gun: {
@@ -567,10 +567,10 @@ GAMES[:tf2] = {
                         min: 1,
                         max: 1,
                         options: [
-                            :'Medi Gun',
-                            :'Kritzkrieg',
-                            :'Quick-Fix',
-                            :'Vaccinator'
+                            :'Syringe Gun',
+                            :'Blutsauger',
+                            :'Crusader\'s Crossbow',
+                            :'Overdose'
                         ]
                     },
                     saw: {
