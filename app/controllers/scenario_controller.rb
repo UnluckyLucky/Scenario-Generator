@@ -17,15 +17,7 @@ class ScenarioController < ApplicationController
     if ScenarioGenerator.games.include? @game_name
       @scenario = ScenarioGenerator.scenario @game_name
 
-      @title = ScenarioGenerator.game_display_name @game_name
-      @background = ScenarioGenerator.game_background @game_name
-      @next_title, @next_link = ScenarioGenerator.next_game @game_name
-      @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
-
-      unless session[@game_name]
-        @spoiler_alert_display = !@scenario[:spoiler].empty?
-      end
-
+      set_up_variables
     else
       redirect_to root_path
     end
@@ -37,16 +29,7 @@ class ScenarioController < ApplicationController
       @sub_scenario, @sub_trees_to_remove = ScenarioGenerator.sub_scenario @game_name, standard_column_name(params[:column_name])
       @scenario = construct_hash_from_params
 
-      @title = ScenarioGenerator.game_display_name @game_name
-      @background = ScenarioGenerator.game_background @game_name
-      @next_title, @next_link = ScenarioGenerator.next_game @game_name
-      @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
-
-      unless session[@game_name]
-        @spoiler_alert_display = !@scenario[:spoiler].empty?
-      end
-
-      render :show
+      set_up_variables
     else
       redirect_to root_path
     end
@@ -78,7 +61,17 @@ class ScenarioController < ApplicationController
     if @saved_scenario
       @scenario = @saved_scenario.scenario_hash
 
-      @title = ScenarioGenerator.game_display_name @game_name
+      set_up_variables
+    else
+      redirect_to generator_path(game_name: params[:game_name])
+    end
+  end
+
+  private
+
+    def set_up_variables
+      @title = ScenarioGenerator.game_page_title @game_name
+      @save_button_message = ScenarioGenerator.save_button_message @game_name
       @background = ScenarioGenerator.game_background @game_name
       @next_title, @next_link = ScenarioGenerator.next_game @game_name
       @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
@@ -88,12 +81,7 @@ class ScenarioController < ApplicationController
       end
 
       render :show
-    else
-      redirect_to generator_path(game_name: params[:game_name])
     end
-  end
-
-  private
 
     def load_games
       @games = ScenarioGenerator.games

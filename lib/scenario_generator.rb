@@ -138,7 +138,7 @@ module ScenarioGenerator
       if ENV['shuffle_sidebar']
         return games.sort {|a, b| rand <=> rand }
       else
-        return games
+        return Hash[games.sort]
       end
     end
 
@@ -169,6 +169,14 @@ module ScenarioGenerator
 
     def game_display_name game
       GAMES[game][:title]
+    end
+
+    def game_page_title game
+      GAMES[game][:page_title] || "Scenaro Generator for #{game_display_name(game)}"
+    end
+
+    def save_button_message game
+      GAMES[game][:save_button_message] || "Save Scenario"
     end
 
     def game_background game
