@@ -155,6 +155,28 @@ GAMES[:falloutnewvegas] = {
                 :'ED-E',
                 :'Rex'
             ]
+        },
+        freelance_theft: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :'No freelance theft',
+                :"If its too tempting to resist",
+                :'Habitual',
+                :"If it's not nailed down, it's yours"
+            ]
+        },
+        unprovoked_murder: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :'No murder',
+                :'Occasional',
+                :'Frequent',
+                :'Constant rampage'
+            ]
         }
     }
 }
