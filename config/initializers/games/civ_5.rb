@@ -74,6 +74,22 @@ GAMES[:civilization_v] = {
                 :'Order'
             ]
         },
+        difficulty: {
+            help: 'If you get a difficulty way too high or low for you, you can always reroll',
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :Settler
+                :Chieftain
+                :Warlord
+                :Prince
+                :King
+                :Emperor
+                :Immortal
+                :Deity
+            ]
+        },
         personality: {
             help: 'The overall way you act towards your fellow civilizations',
             chance_of_multiple: 0,
