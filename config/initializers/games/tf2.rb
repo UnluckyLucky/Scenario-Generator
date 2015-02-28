@@ -103,8 +103,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -180,6 +179,7 @@ GAMES[:tf2] = {
                             :'Exquisite Rack',
                             :'Defiant Spartan',
                             :'Hero\'s Hachimaki',
+                            :'Team Captain',
                             :'Furious Fukaamigasa',
                             :'Spiral Sallet',
                             :'Cheater\'s lament',
@@ -200,8 +200,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -290,8 +289,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -377,8 +375,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -442,6 +439,7 @@ GAMES[:tf2] = {
                             :'Cadaver\'s Cranium',
                             :'Dealer\'s Visor',
                             :'Big Chief',
+                            :'Team Captain',
                             :'Magnificent Mongolian',
                             :'Coupe D\'Isaster',
                             :'Dread Knot',
@@ -464,8 +462,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -543,8 +540,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -607,6 +603,7 @@ GAMES[:tf2] = {
                             :'Cheater\'s lament',
                             :'Ghastly gibus',
                             :'Bill\'s Hat',
+                            :'Team Captain',
                             :'Max\'s severed head',
                             :'Wiki Cap',
                             :'Alien Swarm Parasite',
@@ -622,8 +619,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -703,8 +699,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
@@ -789,8 +784,7 @@ GAMES[:tf2] = {
                             :'Hat of Undeniable Wealth And Respect',
                             :'The Athletic Supporter',
                             :'World Traveler\'s Hat',
-                            :'Frontline Field Recorder',
-                            :'Team Captain'
+                            :'Frontline Field Recorder'
                         ]
                     }
                 },
