@@ -1,6 +1,6 @@
 GAMES[:dungeons_of_dredmor] = {
     title: 'Dungeons of Dredmor',
-    page_title: 'Character Generator for Dungeons of Dredmore',
+    page_title: 'Character Generator for Dungeons of Dredmor',
     save_button_message: 'Save character',
     background: 'dungeons-of-dredmor.jpg',
     columns: {
