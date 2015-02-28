@@ -80,13 +80,13 @@ GAMES[:civilization_v] = {
             min: 1,
             max: 1,
             options: [
-                :Settler
-                :Chieftain
-                :Warlord
-                :Prince
-                :King
-                :Emperor
-                :Immortal
+                :Settler,
+                :Chieftain,
+                :Warlord,
+                :Prince,
+                :King,
+                :Emperor,
+                :Immortal,
                 :Deity
             ]
         },
