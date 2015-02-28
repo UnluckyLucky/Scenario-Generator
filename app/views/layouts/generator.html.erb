@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="initial-scale=1">
     <meta property="og:url" content="<%= request.original_url %>" />
-    <meta property="og:title" content="Scenario Generator | @title %>" />
+    <meta property="og:title" content="Scenario Generator | <%= @title %>" />
     <meta property="og:image" content="<%= asset_url('skyrim-generator.png') %>" />
     <meta property="og:image" content="<%= asset_url('index.png') %>" />
     <%= render 'layouts/inspectlet' %>
