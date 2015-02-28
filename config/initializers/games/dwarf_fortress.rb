@@ -43,7 +43,7 @@ GAMES[:dwarffortress] = {
             ]
         },
         challenges: {
-            chance_of_multiple: 5,
+            chance_of_multiple: 35,
             min: 1,
             max: 3,
             options: [
@@ -109,13 +109,14 @@ GAMES[:dwarffortress] = {
                 :"No lethal traps",
                 :"Kill all non-dwarf sentients",
                 :"All rooms are max 3x3",
-                :"No alcohol"
+                :"No alcohol",
+                :'1x1 embark'
             ]
         },
         goals: {
-            chance_of_multiple: 15,
+            chance_of_multiple: 45,
             min: 1,
-            max: 2,
+            max: 6,
             options: [
                 :"Kill all Elf and Human caravans",
                 :"Generate 25 million dorfbucks",
