@@ -172,9 +172,10 @@ GAMES[:pokemon] = {
         },
         modifiers: {
             chance_of_multiple: 35,
-            min: 0,
+            min: 1,
             max: 5,
             options: [
+                :'No modifiers',
                 :"Nuzlocke Run",
                 :"Only use HMs outside of battle",
                 :'Use no dual-types',
