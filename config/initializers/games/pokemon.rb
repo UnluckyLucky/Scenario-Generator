@@ -196,6 +196,7 @@ GAMES[:pokemon] = {
                 :'No exp share',
                 :'No stat enhancing items',
                 [
+                    :'Wedlocke challenge',
                     :'Only male pokemon',
                     :'Only female pokemon'
                 ],
@@ -238,7 +239,6 @@ GAMES[:pokemon] = {
                     :'Do not ever swap pokemon out',
                     :'Always swap out your pokemon when asked',
                 ],
-                :'Wedlocke challenge',
                 :'Try to keep all your pokemon the same colour',
                 :'Solo run - Only take one of your assigned pokemon, when it faints replace it with another of your assigned pokemon. Only use the first when you have used all six',
                 :'Solo run - Only take one of your assigned pokemon, when it faints wonder trade it, whatever you get back is your new solo pokemon',
