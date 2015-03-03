@@ -1,0 +1,19 @@
+<%= form_for Alert.new, url: alert_subscribe_path(page_name: params[:game_name] || :index), remote: true, :'pleasant-identifier-form' => true do |f| %>
+  <div class="subscribe <%= current_version %>">
+    <div class="messages">
+      <span class="success">
+        <%= flash[:success] %>
+      </span>
+      <span class="errors">
+        <%= flash[:errors] %>
+      </span>
+    </div>
+    <span class="subscribe-title">
+      <%= 
+        version_choice default: 'Get updates on new games'
+      %>
+    </span>
+    <%= f.text_field :email, placeholder: 'Email Address', :'pleasant-field' => "email", :'pleasant-identifier' => true  %>
+    <%= f.submit 'Subscribe', class: 'button' %>
+  </div>
+<% end %>

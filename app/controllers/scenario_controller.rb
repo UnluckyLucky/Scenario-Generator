@@ -4,12 +4,11 @@ class ScenarioController < ApplicationController
 
   layout 'generator', only: [:show, :reroll_column, :load]
 
-  before_action :load_games
-
   REGULAR_SYMBOL = :r
   SPOILER_SYMBOL = :s
 
   def index
+    @title = 'Scenario Generator'
   end
 
   def show
@@ -81,10 +80,6 @@ class ScenarioController < ApplicationController
       end
 
       render :show
-    end
-
-    def load_games
-      @games = ScenarioGenerator.games
     end
 
     # TODO: Clean this up

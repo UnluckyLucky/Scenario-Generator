@@ -50,8 +50,8 @@
 
 /* Sidebar Styles */
 
-.menu-toggle {
-    margin-bottom: 10px;
+.menu-toggle.sidebar {
+    margin-top: 10px;
 }
 
 .sidebar-nav {
@@ -61,6 +61,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-bottom: 50px;
 }
 
 .sidebar-nav li {
@@ -100,3 +101,7 @@
     background: none;
 }
 
+hr {
+    margin: 12px 0px;
+    border-color: grey;
+}

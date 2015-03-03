@@ -51,7 +51,6 @@ $green-button-color: black
 .subscribe, .suggestion
 <% active_colours.each do |code| %>
   &.<%= code %>
-    background: $<%= code %>-background
     color: $<%= code %>-color
     .button
       background: $<%= code %>-button-background
@@ -59,3 +58,6 @@ $green-button-color: black
       &:hover, &:active, &:focus
         background: darken($<%= code %>-button-background, 10) !important
 <% end %>
+
+.suggestion
+  color: $a-color

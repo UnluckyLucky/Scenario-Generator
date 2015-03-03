@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_testing_version
+  before_action :load_games
 
   def set_testing_version
     unless testing_versions.include? current_version
@@ -13,5 +14,11 @@ class ApplicationController < ActionController::Base
       version_model.save
     end
   end
+
+  private
+
+    def load_games
+      @games = ScenarioGenerator.games
+    end
 
 end

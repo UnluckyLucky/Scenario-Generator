@@ -1,0 +1,23 @@
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="menu-toggle sidebar">
+            <a href="#">Close Menu</a>
+        </li>
+        <hr>
+        <li>
+            <a href="/">Game Index</a>
+        </li>
+        <li class="donator-link">
+            <a href="/donators">Donators</a>
+        </li>
+        <li class="donator-link">
+            <a href="https://github.com/Lockyy/scenario-generator">Github Repo</a>
+        </li>
+        <hr>
+        <% @games.each do |key, value| %>
+            <li>
+                <%= link_to value, generator_path(game_name: key) %>
+            </li>
+        <% end %>
+    </ul>
+</div>

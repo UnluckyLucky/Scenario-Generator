@@ -1,5 +1,9 @@
-$('.box.suggestion .errors').empty();
-$('.box.suggestion .success').empty();
-$('.box.suggestion .errors').html('<%= flash[:error]%>');
-$('.box.suggestion .success').html('<%= flash[:success]%>');
+$('.suggestion .errors').empty();
+$('.suggestion .success').empty();
+$('.suggestion .errors').html('<%= flash[:error]%>');
+$('.suggestion .success').html('<%= flash[:success]%>');
 $('#new_suggestion')[0].reset();
+setTimeout(function() {
+  $('.suggestion .errors').empty();
+  $('.suggestion .success').empty();
+}, 3000);

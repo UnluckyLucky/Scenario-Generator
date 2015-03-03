@@ -1,1 +1,4 @@
-$('.link-to-generator').html('Scenario Saved: <%= link_to("link", scenario_load_url(uuid: @scenario.uuid)).html_safe %>');
+$('.link-to-generator').show();
+$('.link-to-generator .link').attr('href', '<%= scenario_load_url(uuid: @scenario.uuid) %>');
+$('.link-to-generator .input').val('<%= scenario_load_url(uuid: @scenario.uuid).html_safe %>');
+$('.link-to-generator .input').select();

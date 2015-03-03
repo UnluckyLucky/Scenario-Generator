@@ -9,7 +9,7 @@
     <% end %>
     <div  class="col-xs-10 col-xs-offset-1 <%= column_width_string(column_type) %> column <%= column_type %>" 
           id="<%= standard_column_name key %>">
-      <%= render partial: 'scenario_section', locals: { title: key, items: value } %>
+      <%= render partial: 'scenario/generator/scenario_section', locals: { title: key, items: value } %>
     </div>
     <% if index % (12 / column_width_row_divisor(column_type)) == column_width_row_remainder(column_type) || index == @scenario[column_type].length - 1 %>
       </div>

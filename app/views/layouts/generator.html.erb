@@ -15,22 +15,25 @@
     <meta property="fb:app_id" content="920748624615968"/>
     <%= render 'layouts/inspectlet' %>
   </head>
-  <body class="generator" style="background-image: url(<%= asset_path(@background) %>)">
+  <body class="generator">
 
     <div id="wrapper">
-      <%= render 'layouts/sidebar' %>
+      <%= render 'common/sidebar' %>
     </div>
-    <div class="container">
-        <%= render 'layouts/header' %>
-        <%= render 'layouts/sub_header' %>
-        <%= yield %>
-    </div>
-  
 
-    <%= render 'layouts/footer' %>
+    <div class="header-2">
+        <%= render 'scenario/generator/header_2' %>
+    </div>
+
+    <div class="content" style="background-image: url(<%= asset_path(@background) %>)">
+        <div class="container">
+            <%= yield %>
+        </div>
+    </div>
 
     <script>
         $(".menu-toggle").click(function(e) {
+            console.log('clicked');
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });

@@ -1,5 +1,5 @@
 DfScenario::Application.routes.draw do
-  
+
   root "scenario#index"
 
   get "game/:game_name", to: "scenario#show", as: 'generator'
@@ -14,5 +14,7 @@ DfScenario::Application.routes.draw do
 
   get 'unsubscribe', to: 'alert#emails', as: 'alert_emails'
   post 'unsubscribe', to: 'alert#unsubscribe', as: 'alert_unsubscribe'
+
+  get 'donators', to: 'donator#index', as: 'donator_index'
 
 end

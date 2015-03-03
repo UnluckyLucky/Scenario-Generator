@@ -1,7 +1,11 @@
-$('.box.subscribe .errors').empty();
-$('.box.subscribe .success').empty();
-$('.box.subscribe .errors').html('<%= flash[:error]%>');
-$('.box.subscribe .success').html('<%= flash[:success]%>');
+$('.subscribe .errors').empty();
+$('.subscribe .success').empty();
+$('.subscribe .errors').html('<%= flash[:error]%>');
+$('.subscribe .success').html('<%= flash[:success]%>');
 <% if flash[:error] == nil || flash[:error].include?('already subscribed') %>
   $('#new_alert')[0].reset();
 <% end %>
+setTimeout(function() {
+  $('.subscribe .errors').empty();
+  $('.subscribe .success').empty();
+}, 3000);

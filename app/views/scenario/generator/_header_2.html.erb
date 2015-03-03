@@ -1,0 +1,55 @@
+<div class="container header">
+  <div class="row">
+    <div class="col-xs-4 col-sm-2">
+      <% if params[:action] == 'index' %>
+        <%= link_to 'Menu', '#', class: 'box button other-button menu-toggle' %>
+      <% else %>
+        <%= link_to 'Other Games', '#', class: 'box button other-button menu-toggle' %>
+      <% end %>
+    </div>
+    <h1 class="col-xs-8 title"><%= @title %></h1>
+  </div>
+</div>
+
+<div class="interaction-bar hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <%= render 'common/suggestion_form' %>
+      </div>
+      <div class="col-xs-6">
+        <%= render 'common/subscribe_form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="interaction-bar visible-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render 'common/suggestion_form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="interaction-bar visible-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render 'common/subscribe_form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="interaction-bar donation">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render 'common/donation_bar' %>
+      </div>
+    </div>
+  </div>
+</div>

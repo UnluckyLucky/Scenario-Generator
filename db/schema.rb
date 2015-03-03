@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150225233930) do
+ActiveRecord::Schema.define(version: 20150303011330) do
 
   create_table "alerts", force: :cascade do |t|
     t.string   "email"
@@ -20,6 +20,19 @@ ActiveRecord::Schema.define(version: 20150225233930) do
     t.string   "test_code"
     t.string   "version_id"
     t.string   "signup_page"
+  end
+
+  create_table "donators", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "link_name"
+    t.string   "link_url"
+    t.integer  "amount"
+    t.string   "email"
+    t.boolean  "visible"
+    t.string   "image_url"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "scenarios", force: :cascade do |t|

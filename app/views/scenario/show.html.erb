@@ -1,7 +1,22 @@
-<%= render partial: 'columns', locals: { column_type: :regular } %>
+<div class="row controls">
+  <div class="col-xs-8 col-sm-4 col-sm-offset-4">
+    <%= link_to "Click to reroll", generator_path(game_name: @game_name), class: 'box button reroll-button' %>
+  </div>
+  <div class="col-xs-4 col-sm-2 col-sm-offset-2">
+    <div class="button save-button box">
+      Save
+    </div>
+    <div class="box link-to-generator">
+      <input type='textfield' class='input'>
+      <%= link_to 'link', '' %>
+    </div>
+  </div>
+</div>
+
+<%= render partial: 'scenario/generator/columns', locals: { column_type: :regular } %>
 
 <% if @spoiler_alert_display %>
-  <%= render 'layouts/spoiler_alert' %>
+  <%= render 'scenario/generator/spoiler_alert' %>
 <% end %>
 
-<%= render partial: 'columns', locals: { column_type: :spoiler } %>
+<%= render partial: 'scenario/generator/columns', locals: { column_type: :spoiler } %>
