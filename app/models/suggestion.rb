@@ -6,6 +6,7 @@ class Suggestion < ActiveRecord::Base
 
   def self.suggestions
     all.each do |suggestion|
+      puts suggestion.id
       puts suggestion.suggestion
       puts "\n"
     end
