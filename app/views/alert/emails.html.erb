@@ -1,11 +1,9 @@
-<%= render 'scenario/index/index_header' %>
-
 <div class="row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
     <div class="box unsubscribe">
       <%= form_for Alert.new, url: alert_unsubscribe_path do |f| %>
         <%= f.label "If you have any comments on why you're unsubscribing you can email me at:" %>
-        <%= link_to 'admin@scenariogenerator.net', 'mailto:admin@scenariogenerator.net' %>
+        <%= link_to 'daniel@scenariogenerator.net', 'mailto:daniel@scenariogenerator.net' %>
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2">
             <div class="flash">
