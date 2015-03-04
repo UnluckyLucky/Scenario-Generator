@@ -69,8 +69,9 @@ class ScenarioController < ApplicationController
   private
 
     def set_up_variables
-      @title = ScenarioGenerator.game_page_title @game_name
-      @save_button_message = ScenarioGenerator.save_button_message @game_name
+      @game_name_title = ScenarioGenerator.game_display_name @game_name
+      @generator_title = ScenarioGenerator.generator_title @game_name
+      @title = "#{@generator_title} Generator for #{@game_name_title}"
       @background = ScenarioGenerator.game_background @game_name
       @next_title, @next_link = ScenarioGenerator.next_game @game_name
       @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name

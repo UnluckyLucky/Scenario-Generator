@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= @title %></title>
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <title><%= @title %> | Random Challenges for Great Games</title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
@@ -12,6 +11,7 @@
     <meta property="og:image" content="<%= asset_url("facebook-images/index.png") %>" />
     <meta property="og:type" content="website" />
     <meta property="fb:app_id" content="920748624615968"/>
+    <meta name="Description" content="<%= @title %> has challenge randomizers for all your favourite games including Skyrim, Minecraft, and Pokemon." >
   </head>
   <body class="application">
 
@@ -34,9 +34,16 @@
             $("#wrapper").toggleClass("toggled");
         });
     </script>
+    <script>
+      $('.show-suggestion').on('click', function() {
+        console.log('clicked');
+        $('.suggestion-form').toggle();
+      });
+    </script>
 
     <div id="fb-root"></div>
     <script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
   </body>
 </html>

@@ -1,7 +1,6 @@
 GAMES[:baldurs_gate] = {
     title: 'Baldur\'s Gate',
-    page_title: 'Character Generator for Baldur\'s Gate',
-    save_button_message: 'Save character',
+    generator_title: 'Character',
     background: 'balders_gate.jpg',
     columns: {
         gender: {

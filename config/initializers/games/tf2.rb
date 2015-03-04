@@ -1,7 +1,6 @@
 GAMES[:tf2] = {
     title: 'Team Fortress 2',
-    page_title: 'Loadout Generator for Team Fortress 2',
-    save_button_message: 'Save loadout',
+    generator_title: 'Loadout',
     background: 'tf2.jpg',
     columns: {
         class: {

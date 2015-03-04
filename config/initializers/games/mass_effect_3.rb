@@ -1,7 +1,6 @@
 GAMES[:mass_effect_3] = {
     title: 'Mass Effect 3',
-    page_title: 'Playthrough Generator for Mass Effect 3',
-    save_button_message: 'Save playthrough',
+    generator_title: 'Playthrough',
     background: 'masseffect3.jpg',
     previous_game: :mass_effect_2,
     columns: {

@@ -171,12 +171,8 @@ module ScenarioGenerator
       GAMES[game][:title]
     end
 
-    def game_page_title game
-      GAMES[game][:page_title] || "Scenario Generator for #{game_display_name(game)}"
-    end
-
-    def save_button_message game
-      GAMES[game][:save_button_message] || "Save Scenario"
+    def generator_title game
+      GAMES[game][:generator_title] || "Scenario"
     end
 
     def game_background game

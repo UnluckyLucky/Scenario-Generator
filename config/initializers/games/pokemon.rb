@@ -1,7 +1,6 @@
 GAMES[:pokemon] = {
     title: 'Pokemon',
-    page_title: 'Pokemon Party Generator',
-    save_button_message: 'Save party',
+    generator_title: 'Party',
     background: 'pokemon.jpg',
     columns: {
         starter: {

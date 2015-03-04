@@ -1,7 +1,6 @@
 GAMES[:mass_effect_2] = {
     title: 'Mass Effect 2',
-    page_title: 'Playthrough Generator for Mass Effect',
-    save_button_message: 'Save playthrough',
+    generator_title: 'Playthrough',
     background: 'masseffect2.jpg',
     previous_game: :mass_effect,
     next_game: :mass_effect_3,

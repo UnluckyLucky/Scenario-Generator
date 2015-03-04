@@ -1,7 +1,6 @@
 GAMES[:dark_souls] = {
     title: 'Dark Souls',
-    page_title: 'Character Generator for Dark Souls',
-    save_button_message: 'Save character',
+    generator_title: 'Character',
     background: 'darksouls.jpg',
     columns: {
         right_handed_weapon: {

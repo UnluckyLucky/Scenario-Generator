@@ -1,7 +1,6 @@
 GAMES[:minecraft] = {
     title: 'Minecraft',
-    page_title: 'Challenge Generator for Minecraft',
-    save_button_message: 'Save challenge',
+    generator_title: 'Challenge',
     background: 'minecraft.png',
     columns: {
         main_base_biome: {

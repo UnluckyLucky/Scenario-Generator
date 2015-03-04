@@ -16,5 +16,6 @@ DfScenario::Application.routes.draw do
   post 'unsubscribe', to: 'alert#unsubscribe', as: 'alert_unsubscribe'
 
   get 'donators', to: 'donator#index', as: 'donator_index'
+  get 'faq', to: 'static#faq', as: 'faq'
 
 end

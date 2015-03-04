@@ -1,7 +1,6 @@
 GAMES[:the_witcher] = {
     title: 'The Witcher',
-    page_title: 'Playthrough Generator for The Witcher',
-    save_button_message: 'Save playthrough',
+    generator_title: 'Playthrough',
     background: 'witcher.jpg',
     next_game: :the_witcher_2,
     columns: {

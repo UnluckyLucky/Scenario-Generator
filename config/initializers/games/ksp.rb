@@ -1,7 +1,6 @@
 GAMES[:kerbal_space_program] = {
     title: 'Kerbal Space Program',
-    page_title: 'Challenge Generator for Kerbal Space Program',
-    save_button_message: 'Save challenge',
+    generator_title: 'Challenge',
     background: 'ksp.jpg',
     columns: {
         target_body: {

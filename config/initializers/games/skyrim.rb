@@ -1,7 +1,6 @@
 GAMES[:skyrim] = {
     title: 'Skyrim',
-    page_title: 'Character Generator for Skyrim',
-    save_button_message: 'Save character',
+    generator_title: 'Character',
     background: 'skyrim.jpg',
     columns: {
         race: {

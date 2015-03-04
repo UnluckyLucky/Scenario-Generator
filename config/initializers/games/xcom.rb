@@ -1,7 +1,6 @@
 GAMES[:xcom] = {
     title: 'X-Com: Enemy Unknown',
-    page_title: 'Playthrough Generator for Xcom: Enemy Unknown',
-    save_button_message: 'Save playthrough',
+    generator_title: 'Challenge',
     background: 'xcom.jpg',
     columns: {
         difficulty: {

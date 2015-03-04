@@ -31,8 +31,7 @@ end
 
 GAMES[:falloutnewvegas] = {
     title: 'Fallout: New Vegas',
-    page_title: 'Character Generator for Fallout: New Vegas',
-    save_button_message: 'Save character',
+    generator_title: 'Character',
     background: 'newvegas.jpg',
     columns: {
         special: {
