@@ -444,6 +444,62 @@ GAMES[:age_of_mythology] = {
                     }
                 }
             ]
+        },
+        game_mode: {
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :'Supremacy',
+                :'Conquest',
+                :'Deathmatch',
+                :'Lightning',
+                :'Nomad',
+                :'King of the Hill',
+                :'Sudden Death'
+            ]
+        },
+        restrictions: {
+            help: 'Optional',
+            chance_of_multiple: 25,
+            min: 1,
+            max: 3,
+            options: [
+                [
+                    :'No myth units',
+                    :'No melee myth units',
+                    :'No ranged myth units'
+                ],
+                [
+                    :'Do not advance past the classical age',
+                    :'Do not advance past the heroic age',
+                    :'Do not advance past the mythic age'
+                ],
+                :'Only use your first hero unit',
+                :'No archers',
+                :'No infantry',
+                :'No cavalry',
+                :'No seige units',
+                :'No scout units - Only explore the map with an army to either conquer or take control of a settlement',
+                :'You may only use the resources in your immediate base',
+                :'Settle no new bases',
+                :'Build no extra town centers',
+                :'No houses',
+                :'Do not attack for the first 5 minutes',
+                :'You can only have one settlement at a time, when your base runs out of resources move your entire base to a new settlement',
+                :'No walls',
+                :'No melee cavalry',
+                :'No ranged cavalry',
+                :'Do not upgrade your units',
+                :'No Relics',
+                :'Do not advance through the ages',
+                :'You must build an equal amount of each type of available unit - Archers, Infantry, Cavalry, Seige',
+                :'No non-transport boats',
+                :'Only use boats on maps where it is absolutely required',
+                :'No gates',
+                :'No sentry towers',
+                :'Do not upgrade your sentry towers'
+            ]
         }
     }
 }
