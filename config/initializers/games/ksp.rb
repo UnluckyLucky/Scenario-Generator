@@ -72,7 +72,9 @@ GAMES[:kerbal_space_program] = {
                             :'Plant a flag',
                             :'Construct a base',
                             :'Land a rover on the surface',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Moho in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -102,7 +104,9 @@ GAMES[:kerbal_space_program] = {
                             :'Construct a base',
                             :'Land a rover on the surface',
                             :'Send a plane to Eve',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Eve in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -129,7 +133,9 @@ GAMES[:kerbal_space_program] = {
                             :'Plant a flag',
                             :'Construct a base',
                             :'Land a rover on the surface',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Gilly in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -182,7 +188,9 @@ GAMES[:kerbal_space_program] = {
                             :'Construct a space station in orbit',
                             :'Kill a Kerbal in style',
                             :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to the Mun in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -205,7 +213,9 @@ GAMES[:kerbal_space_program] = {
                             :'Construct a space station in orbit',
                             :'Kill a Kerbal in style',
                             :'Rescue a Kerbal from the Mun with a different ship to the one that put him there',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Minmus in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -230,7 +240,9 @@ GAMES[:kerbal_space_program] = {
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                             :'Land a rover on Duna',
                             :'Construct a base',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Duna in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -253,7 +265,9 @@ GAMES[:kerbal_space_program] = {
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                             :'Land a rover on Ike',
                             :'Construct a base',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Ike in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -276,7 +290,9 @@ GAMES[:kerbal_space_program] = {
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                             :'Land a rover on Dres',
                             :'Construct a base',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Dres in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -297,7 +313,8 @@ GAMES[:kerbal_space_program] = {
                             :'Construct a space station in orbit over multiple launches',
                             :'Kill a Kerbal in style',
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Jool in one trip'
                         ]
                     }
                 },
@@ -321,7 +338,9 @@ GAMES[:kerbal_space_program] = {
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
                             :'Achieve orbit and return safely to Kerbin',
                             :'Construct a base',
-                            :'Land a boat on Laythe'
+                            :'Land a boat on Laythe',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Laythe in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },
@@ -431,7 +450,9 @@ GAMES[:kerbal_space_program] = {
                             :'Construct a space station in orbit',
                             :'Kill a Kerbal in style',
                             :'Rescue a Kerbal from Eeloo with a different ship to the one that put him there',
-                            :'Achieve orbit and return safely to Kerbin'
+                            :'Achieve orbit and return safely to Kerbin',
+                            :'Bring 10 Kerbals from Kerbin (orbit or ground) to Eeloo in one trip',
+                            :'Establish a permanent ground base'
                         ]
                     }
                 },

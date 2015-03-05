@@ -3,6 +3,29 @@ GAMES[:pokemon] = {
     generator_title: 'Party',
     background: 'pokemon.jpg',
     columns: {
+        game: {
+            help: 'This is optional, play whatever you want to play',
+            chance_of_multiple: 0,
+            min: 1,
+            max: 1,
+            options: [
+                :'Red or Blue',
+                :'Yellow',
+                :'Gold or Silver',
+                :'Crystal',
+                :'Ruby or Sapphire',
+                :'FireRed or LeafGreen',
+                :'Emerald',
+                :'Ruby & Sapphire',
+                :'Diamond or Pearl',
+                :'Platinum',
+                :'HeartGold or SoulSilver',
+                :'Black or White',
+                :'Black 2 or White 2',
+                :'X or Y',
+                :'Omega Ruby or Alpha Sapphire'
+            ]
+        },
         starter: {
             chance_of_multiple: 0,
             min: 1,
