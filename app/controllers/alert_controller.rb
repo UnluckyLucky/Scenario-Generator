@@ -14,6 +14,7 @@ class AlertController < ApplicationController
   end
 
   def emails
+    @title = 'Scenario Generator Unsubscribe Form'
   end
 
   def unsubscribe

@@ -1,7 +1,6 @@
 class SuggestionController < ApplicationController
 
   def submit
-
     @suggestion = Suggestion.new( suggestion: params[:suggestion][:suggestion],
                                   version: current_version_model,
                                   signup_page: params[:page_name])
