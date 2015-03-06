@@ -2,6 +2,8 @@ GAMES[:age_of_empires_2] = {
     title: 'Age of Empires 2',
     generator_title: 'Scenario',
     background: 'age_of_empires.jpg',
+    added: Date.strptime('20150305',"%Y%m%d"),
+    last_updated: Date.strptime('20150305',"%Y%m%d"),
     columns: {
         civilization: {
             chance_of_multiple: 0,

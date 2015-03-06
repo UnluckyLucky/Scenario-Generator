@@ -2,6 +2,8 @@ GAMES[:dungeons_of_dredmor] = {
     title: 'Dungeons of Dredmor',
     generator_title: 'Character',
     background: 'dungeons-of-dredmor.jpg',
+    added: Date.strptime('20150227',"%Y%m%d"),
+    last_updated: Date.strptime('20150227',"%Y%m%d"),
     columns: {
         skills: {
             chance_of_multiple: 0,

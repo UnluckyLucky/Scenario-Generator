@@ -1,6 +1,7 @@
 GAMES[:dwarffortress] = {
     title: 'Dwarf Fortress',
     background: 'dwarffortress.png',
+    last_updated: Date.strptime('20150228',"%Y%m%d"),
     columns: {
         biome: {
             chance_of_multiple: 0,

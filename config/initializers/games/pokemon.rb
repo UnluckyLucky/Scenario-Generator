@@ -2,6 +2,8 @@ GAMES[:pokemon] = {
     title: 'Pokemon',
     generator_title: 'Party',
     background: 'pokemon.jpg',
+    added: Date.strptime('20150305',"%Y%m%d"),
+    last_updated: Date.strptime('20150305',"%Y%m%d"),
     columns: {
         game: {
             help: 'This is optional, play whatever you want to play',

@@ -33,6 +33,8 @@ GAMES[:falloutnewvegas] = {
     title: 'Fallout: New Vegas',
     generator_title: 'Character',
     background: 'newvegas.jpg',
+    added: Date.strptime('20150227',"%Y%m%d"),
+    last_updated: Date.strptime('20150227',"%Y%m%d"),
     columns: {
         special: {
             chance_of_multiple: 0,

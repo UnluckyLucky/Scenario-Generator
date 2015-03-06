@@ -2,6 +2,8 @@ GAMES[:age_of_mythology] = {
     title: 'Age of Mythology',
     generator_title: 'Scenario',
     background: 'age_of_mythology.jpg',
+    added: Date.strptime('20150305',"%Y%m%d"),
+    last_updated: Date.strptime('20150305',"%Y%m%d"),
     columns: {
         race: {
             sub_trees: [
