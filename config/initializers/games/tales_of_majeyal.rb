@@ -122,7 +122,8 @@ GAMES[:tales_of_majeyal] = {
             max: 1,
             options: [
                 :Join,
-                :Destroy
+                :Destroy,
+                :Ignore
             ]
         }
     }
