@@ -18,8 +18,13 @@
         </li>
         <hr>
         <% @games.each do |key, value| %>
-            <li>
-                <%= link_to value, generator_path(game_name: key) %>
+            <li class="<%= 'new' if ScenarioGenerator.new?(key) %><%= 'updated' if ScenarioGenerator.updated_recently?(key) %>">
+                <% 
+                    name = value
+                    name += ' - New!' if ScenarioGenerator.new?(key)
+                    name += ' - Updated!' if ScenarioGenerator.updated_recently?(key) 
+                %>
+                <%= link_to name, generator_path(game_name: key) %>
             </li>
         <% end %>
     </ul>

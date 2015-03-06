@@ -1,10 +1,10 @@
 <div class="row generator-links">
   <% @games.each do |key, value| %>
-    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator<%= ' new' if ScenarioGenerator.new?(key) %><%= ' updated' if ScenarioGenerator.updated_recently?(key) %>">
 
       <a href="/game/<%= key %>" class="link-header">
         <div class="link-text">
-          <%= value %>
+          <%= value %><%= ' - New!' if ScenarioGenerator.new?(key) %><%= ' - Updated!' if ScenarioGenerator.updated_recently?(key) %>
         </div>
       </a>
 

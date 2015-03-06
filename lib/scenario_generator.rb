@@ -126,7 +126,7 @@ module ScenarioGenerator
 
     end
 
-    # Return list of games
+    # Return list of games, by default this is sorted new -> updated -> alphabetical everything else
     def games
       games = {}
       GAMES.each do |key, value|
@@ -136,12 +136,23 @@ module ScenarioGenerator
       end
 
       if ENV['shuffle_sidebar']
-        return games.sort {|a, b| rand <=> rand }
+        return Hash[games.sort {|a, b| rand <=> rand }]
       else
-        return Hash[games.sort]
+        sorted_games = games.sort_by do |name, value|
+          if new?(name)
+            '1'
+          elsif updated_recently?(name)
+            '2'
+          else
+            name.to_s
+          end
+        end
+        return Hash[sorted_games]
       end
     end
 
+    # Get next game in series
+    # Not currently in use
     def next_game game
       if GAMES[game][:next_game]
         title = GAMES[GAMES[game][:next_game]][:title]
@@ -150,6 +161,8 @@ module ScenarioGenerator
       end
     end
 
+    # Get previous game in series
+    # Not currently in use
     def previous_game game
       if GAMES[game][:previous_game]
         title = GAMES[GAMES[game][:previous_game]][:title]
@@ -158,6 +171,8 @@ module ScenarioGenerator
       end
     end
 
+    # Searches the given game for the given column and returns its help message.
+    # TODO: Roll this into scenario generation so that the data is passed around in that JSON
     def help_message game, wanted_column
       GAMES[game.to_sym][:columns].each do |column_name, options|
         column_name, options = find_column(wanted_column, column_name, options)
@@ -167,10 +182,15 @@ module ScenarioGenerator
       end
     end
 
+    # The human readable name of a game
     def game_display_name game
       GAMES[game][:title]
     end
 
+    # This is what the generater generates. Examples:
+    # Pokemon -> Party
+    # Mass Effect -> Playthrough
+    # Skyrim -> Character
     def generator_title game
       GAMES[game][:generator_title] || "Scenario"
     end
@@ -179,8 +199,16 @@ module ScenarioGenerator
       GAMES[game][:background]
     end
 
-    def spoiler game
-      GAMES[game][:spoiler]
+    # A game is new if it was added in the last week
+    def new? game
+      return true if GAMES[game][:added] && GAMES[game][:added].between?(1.weeks.ago, Date.today)
+      return false
+    end
+
+    # A game was updated recently if it was updated in the last week, but not added within the last week
+    def updated_recently? game
+      return true if GAMES[game][:last_updated] && GAMES[game][:last_updated].between?(1.weeks.ago, Date.today) && !new?(game)
+      return false
     end
 
     def quantity chance, max, min
