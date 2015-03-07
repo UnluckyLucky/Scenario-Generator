@@ -332,7 +332,6 @@ GAMES[:kerbal_space_program] = {
                             :'Perform a rendevous and dock two ships',
                             :'Put a satellite in orbit',
                             :'Send a capsule with a Kerbal to Laythe',
-                            :'Land a plane on the island airstrip',
                             :'Construct a space station in orbit over multiple launches',
                             :'Kill a Kerbal in style',
                             :'Rescue a Kerbal from orbit with a different ship to the one that put him there',
