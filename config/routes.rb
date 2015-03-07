@@ -18,6 +18,6 @@ DfScenario::Application.routes.draw do
   get 'donators', to: 'donator#index', as: 'donator_index'
   get 'faq', to: 'static#faq', as: 'faq'
 
-  post 'mailchimp_callback', to: 'alert#mailchimp_callback', as: 'mailchimp_callback'
+  post 'mailchimp_callback/:id', to: 'alert#mailchimp_callback', as: 'mailchimp_callback'
 
 end

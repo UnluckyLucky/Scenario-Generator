@@ -29,7 +29,9 @@ class AlertController < ApplicationController
   end
 
   def mailchimp_callback
-    puts params
+    if params[:mailchimp_password] == ENV['MAILCHIMP_PASSWORD']
+      puts params
+    end
   end
 
   private
