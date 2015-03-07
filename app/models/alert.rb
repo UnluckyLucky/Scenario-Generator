@@ -35,13 +35,19 @@ class Alert < ActiveRecord::Base
   end
 
   def mailchimp_subscribe
-    gb = Gibbon::API.new
-    gb.lists.subscribe({:id => LIST_ID, :email => {:email => self.email}, :double_optin => false})
+    begin
+      gb = Gibbon::API.new
+      gb.lists.subscribe({:id => LIST_ID, :email => {:email => self.email}, :double_optin => false})
+    rescue
+    end
   end
 
   def mailchimp_unsubscribe
-    gb = Gibbon::API.new
-    gb.lists.unsubscribe(:id => LIST_ID, :email => {:email => self.email}, :delete_member => true, :send_notify => true)
+    begin
+      gb = Gibbon::API.new
+      gb.lists.unsubscribe(:id => LIST_ID, :email => {:email => self.email}, :delete_member => true, :send_notify => true)
+    rescue
+    end
   end
 
 end
