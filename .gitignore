@@ -18,3 +18,5 @@
 .secret
 pause.md
 output.txt
+
+.env

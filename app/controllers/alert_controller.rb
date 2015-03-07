@@ -28,6 +28,10 @@ class AlertController < ApplicationController
     redirect_to alert_emails_path
   end
 
+  def mailchimp_callback
+    puts params
+  end
+
   private
 
     def save_alert
