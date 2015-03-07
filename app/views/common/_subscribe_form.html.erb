@@ -1,19 +1,25 @@
-<%= form_for Alert.new, url: alert_subscribe_path(page_name: params[:game_name] || :index), remote: true, :'pleasant-identifier-form' => true do |f| %>
-  <div class="subscribe <%= current_version %>">
-    <div class="messages">
-      <span class="success">
-        <%= flash[:success] %>
+<span id="mce-responses" class="clear">
+  <span class="response" id="mce-error-response" style="display:none"></span>
+  <span class="response" id="mce-success-response" style="display:none"></span>
+</span>
+<div id="mc_embed_signup">
+  <form action="//scenariogenerator.us10.list-manage.com/subscribe/post?u=2316b2a30b6654fba992aaf1f&amp;id=84922e73b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div class="subscribe <%= current_version %>">
+      <span class="subscribe-title">
+        <%= 
+          version_choice default: 'Get updates on new games'
+        %>
       </span>
-      <span class="errors">
-        <%= flash[:errors] %>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder='Email Address'>
+      <span style="position: absolute; left: -5000px;">
+        <input type="text" name="b_2316b2a30b6654fba992aaf1f_84922e73b0" tabindex="-1" value="">
+      </span>
+      <span class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin: none !important; display: inline !important">
       </span>
     </div>
-    <span class="subscribe-title">
-      <%= 
-        version_choice default: 'Get updates on new games'
-      %>
-    </span>
-    <%= f.text_field :email, placeholder: 'Email Address', :'pleasant-field' => "email", :'pleasant-identifier' => true  %>
-    <%= f.submit 'Subscribe', class: 'button' %>
-  </div>
-<% end %>
+  </form>
+</div>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->

@@ -12,9 +12,6 @@ DfScenario::Application.routes.draw do
   post 'suggestion/:page_name', to: 'suggestion#submit', as: 'suggestion_submit'
   post 'subscribe/:page_name', to: 'alert#subscribe', as: 'alert_subscribe'
 
-  get 'unsubscribe', to: 'alert#emails', as: 'alert_emails'
-  post 'unsubscribe', to: 'alert#unsubscribe', as: 'alert_unsubscribe'
-
   get 'donators', to: 'donator#index', as: 'donator_index'
   get 'faq', to: 'static#faq', as: 'faq'
 
