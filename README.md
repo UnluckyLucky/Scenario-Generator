@@ -27,8 +27,11 @@ Currently supported games:
 * X-Com: Enemy Unknown + Enemy Within
 * X-Rebirth
 
-You can add to the generator source list in config/initializers/constants.rb
-Just add to the hash in the correct format and give it a background at assets/images/<game_name>.png and it will automatically appear in the index and the generator will work.
+You can add a new game by adding it to config/initializers/games/
+Right now there is no guide to how to add a game unfortunately. The existing games are fairly self-explanatory however.
+Any games added will automatically appear in the Index and Sidebar.
 
 Pull requests will be vetted for spelling and grammar. Feel free to correct me if I've messed either up.
-Please remember to increment the counter in the readme.
+Please remember to add to the game list above
+
+Licensed under GNU GPL 3. Reuse of Scenario Generator code must be attributed.
