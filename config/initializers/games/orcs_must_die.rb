@@ -5,10 +5,11 @@ GAMES[:orcs_must_die] = {
     added: Date.strptime('20150322',"%Y%m%d"),
     last_updated: Date.strptime('20150322',"%Y%m%d"),
     columns: {
-        traps: {
+        traps_and_weapons: {
+            help: "If you haven't unlocked a trap or weapon, replace it with your own choice",
             chance_of_multiple: 0,
-            min: 6,
-            max: 6,
+            min: 9,
+            max: 9,
             options: [
                 :'Spike Trap',
                 :'Tar Trap',
