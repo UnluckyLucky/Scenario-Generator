@@ -31,7 +31,6 @@ GAMES[:orcs_must_die] = {
                 :'Floor Scorcher',
                 :'Alchemist Satchel',
                 :'Bladestaff',
-                :'Crossbow',
                 :'Flame Bracers',
                 :'Ice Amulet',
                 :'Lightning Ring',
