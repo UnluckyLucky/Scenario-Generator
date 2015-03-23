@@ -1,10 +1,12 @@
-<div class="donator box col-xs-3">
-  <div class="name">
-    <%= donator.name %>
-  </div>
-  <% if donator.link_url %>
-    <div class="link">
-      <%= link_to donator.link_name, donator.link_url %>
+<div class="col-xs-3">
+  <div class="donator box">
+    <div class="name">
+      <%= donator.name %>
     </div>
-  <% end %>
+    <% if donator.link_url %>
+      <div class="link">
+        <%= link_to donator.link_name, donator.link_url %>
+      </div>
+    <% end %>
+  </div>
 </div>
