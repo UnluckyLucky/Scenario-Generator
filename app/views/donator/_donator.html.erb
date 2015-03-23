@@ -2,7 +2,9 @@
   <div class="name">
     <%= donator.name %>
   </div>
-  <div class="link">
-    <%= link_to donator.link_name, donator.link_url %>
-  </div>
+  <% if donator.link_url %>
+    <div class="link">
+      <%= link_to donator.link_name, donator.link_url %>
+    </div>
+  <% end %>
 </div>
