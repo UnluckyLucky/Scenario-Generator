@@ -1,5 +1,5 @@
 ready = ->
-  $('.save-button').click ->
+  $('.save-button').on 'click', ->
     game_name = document.URL.split('/')[4].split('#')[0]
     existing_uuid = document.URL.split('/')[6]
 
@@ -44,7 +44,6 @@ ready = ->
     $.post(
       '/game/' + game_name + '/save', data
     )
-
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
