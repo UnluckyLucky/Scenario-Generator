@@ -137,15 +137,6 @@ GAMES[:ftl] = {
                 :Normal,
                 :Hard
             ]
-        },
-        advanced_edition?: {
-            chance_of_multiple: 0,
-            min: 1,
-            max: 1,
-            options: [
-                :On,
-                :Off
-            ]
         }
     }
 }
