@@ -2,8 +2,8 @@ GAMES[:orcs_must_die] = {
     title: 'Orcs Must Die',
     generator_title: 'Loadout',
     background: 'omd1.jpg',
-    added: Date.strptime('20150322',"%Y%m%d"),
-    last_updated: Date.strptime('20150322',"%Y%m%d"),
+    added: Date.strptime('20150323',"%Y%m%d"),
+    last_updated: Date.strptime('20150323',"%Y%m%d"),
     columns: {
         traps_and_weapons: {
             help: "If you haven't unlocked a trap or weapon, replace it with your own choice",

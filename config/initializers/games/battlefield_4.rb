@@ -263,8 +263,8 @@ GAMES[:battlefield_4] = {
     title: 'Battlefield 4',
     generator_title: 'Loadout',
     background: 'bf4.jpg',
-    added: Date.strptime('20150322',"%Y%m%d"),
-    last_updated: Date.strptime('20150322',"%Y%m%d"),
+    added: Date.strptime('20150323',"%Y%m%d"),
+    last_updated: Date.strptime('20150323',"%Y%m%d"),
     columns: {
         character: {
             sub_trees: class_kit_subtrees,

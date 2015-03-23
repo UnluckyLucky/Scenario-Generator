@@ -2,8 +2,8 @@ GAMES[:orcs_must_die_2] = {
     title: 'Orcs Must Die 2',
     generator_title: 'Loadout',
     background: 'omd2.jpg',
-    added: Date.strptime('20150322',"%Y%m%d"),
-    last_updated: Date.strptime('20150322',"%Y%m%d"),
+    added: Date.strptime('20150323',"%Y%m%d"),
+    last_updated: Date.strptime('20150323',"%Y%m%d"),
     columns: {
         character: {
             sub_trees: [ :sorcerer_traps_and_weapons, :war_mage_traps_and_weapons ],

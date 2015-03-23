@@ -1,8 +1,8 @@
 GAMES[:ftl] = {
     title: 'FTL: Faster Than Light',
     background: 'ftl.png',
-    added: Date.strptime('20150322',"%Y%m%d"),
-    last_updated: Date.strptime('20150322',"%Y%m%d"),
+    added: Date.strptime('20150323',"%Y%m%d"),
+    last_updated: Date.strptime('20150323',"%Y%m%d"),
     columns: {
         ship: {
             chance_of_multiple: 0,
