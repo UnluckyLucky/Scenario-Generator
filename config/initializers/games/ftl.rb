@@ -4,28 +4,66 @@ GAMES[:ftl] = {
     added: Date.strptime('20150323',"%Y%m%d"),
     last_updated: Date.strptime('20150323',"%Y%m%d"),
     columns: {
-        ship: {
+        advanced_edition?: {
+            sub_trees: [ :'ship_(ae)', :'ship_layout_(ae)', :ship, :ship_layout ],
             chance_of_multiple: 0,
             min: 1,
             max: 1,
             options: [
-                :'Kestrel',
-                :'Engi',
-                :'Federation',
-                :'Zoltan',
-                :'Mantis',
-                :'Slug',
-                :'Rock',
-                :'Stealth',
-                :'Lanius',
-                :'Crystal'
+                {
+                    On: {
+                        title: 'Ship (AE)',
+                        chance_of_multiple: 0,
+                        min: 1,
+                        max: 1,
+                        options: [
+                            :'Kestrel',
+                            :'Engi',
+                            :'Federation',
+                            :'Zoltan',
+                            :'Mantis',
+                            :'Slug',
+                            :'Rock',
+                            :'Stealth',
+                            :'Lanius',
+                            :'Crystal'
+                        ]
+                    },
+                    ship_layout_ae: {
+                        title: 'Ship Layout (AE)',
+                        chance_of_multiple: 0,
+                        min: 1,
+                        max: 1,
+                        options: (:A..:C).to_a
+                    }
+                },
+                {
+                    Off: {
+                        title: 'Ship',
+                        chance_of_multiple: 0,
+                        min: 1,
+                        max: 1,
+                        options: [
+                            :'Kestrel',
+                            :'Engi',
+                            :'Federation',
+                            :'Zoltan',
+                            :'Mantis',
+                            :'Slug',
+                            :'Rock',
+                            :'Stealth',
+                            :'Crystal'
+                        ]
+                    },
+                    ship_layout_ae: {
+                        title: 'Ship Layout',
+                        chance_of_multiple: 0,
+                        min: 1,
+                        max: 1,
+                        options: (:A..:B).to_a
+                    }
+                }
             ]
-        },
-        layout: {
-            chance_of_multiple: 0,
-            min: 1,
-            max: 1,
-            options: (:A..:C).to_a
         },
         primary_combat_style: {
             chance_of_multiple: 0,
