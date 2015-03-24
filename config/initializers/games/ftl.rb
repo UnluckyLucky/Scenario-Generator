@@ -30,6 +30,7 @@ GAMES[:ftl] = {
                         ]
                     },
                     ship_layout_ae: {
+                        help: 'If your ship does not have this layout, reroll',
                         title: 'Ship Layout (AE)',
                         chance_of_multiple: 0,
                         min: 1,
@@ -55,7 +56,8 @@ GAMES[:ftl] = {
                             :'Crystal'
                         ]
                     },
-                    ship_layout_ae: {
+                    ship_layout: {
+                        help: 'If your ship does not have this layout, reroll',
                         title: 'Ship Layout',
                         chance_of_multiple: 0,
                         min: 1,
