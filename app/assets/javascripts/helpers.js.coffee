@@ -2,7 +2,7 @@ ready = ->
   $('.item').on ->
     $(@).toggleClass('active')
 
-  $(".content").height($(document).height() - $('.header-2').height() + 2)
+  $(".content").height($(document).height() - $('.header-2').height() + 12)
 
   $('.show-suggestion').on 'click', ->
     $('.suggestion-form').toggle()
