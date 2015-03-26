@@ -19,4 +19,8 @@ class Donator < ActiveRecord::Base
     total / goal
   end
 
+  def self.last_visible
+    self.where(visible: true).last
+  end
+
 end
