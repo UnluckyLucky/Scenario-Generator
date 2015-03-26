@@ -23,4 +23,12 @@ class Donator < ActiveRecord::Base
     self.where(visible: true).last
   end
 
+  def visible_name
+    if visible
+      self.name
+    else
+      'Anonymous'
+    end
+  end
+
 end
