@@ -2,7 +2,6 @@ ready = ->
   $('.item').on ->
     $(@).toggleClass('active')
 
-  $('.content').height(-10)
   $(".content").height($(document).height() - $('.header-2').height() + 2)
 
   $('.show-suggestion').on 'click', ->
