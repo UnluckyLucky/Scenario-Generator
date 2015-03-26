@@ -6,7 +6,7 @@
       <% if controller == 'donator' %>
         below.
       <% else %>
-        on the 
+        on the
         <%= link_to 'site\'s donator list', '/donators' %>.
       <% end %>
     </span>
@@ -26,5 +26,29 @@
     <span class="flattr-donation-holder">
       <script id='fbnfb4l'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=Lockyy&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbnfb4l');</script>
     </span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-10">
+        <div class="progress">
+          <div  class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="<%= Donator.total_for_this_month %>"
+                aria-valuemin="0"
+                aria-valuemax="<%= ENV['DONATION_GOAL'].to_i %>"
+                style="width: <%= Donator.percentage_towards_goal * 100 %>%">
+                <%= Donator.percentage_towards_goal * 100 %>%
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <span class="total">Goal: £<%= ENV['DONATION_GOAL'] %></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 latest-donator">Latest donator: <%= Donator.last.name %></div>
+    </div>
   </div>
 </div>

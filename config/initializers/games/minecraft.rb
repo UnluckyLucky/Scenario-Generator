@@ -230,7 +230,6 @@ GAMES[:minecraft] = {
                 :"Kill 5 Witchs",
                 :"Kill the Wither",
                 :"Kill 5 Zombie Villagers",
-                :"Kill the Killer Bunny",
                 :"Kill 5 Guardians",
                 :"Kill the Elder Guardian",
                 :"Kill the Ender Dragon",
