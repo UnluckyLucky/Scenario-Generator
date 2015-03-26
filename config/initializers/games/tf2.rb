@@ -814,8 +814,7 @@ GAMES[:tf2] = {
                                 :Sawmill,
                                 :Watchtower,
                                 :Well,
-                                :'Any community map',
-                                :'Free pick'
+                                :'Any community map'
                             ]
                     }
                 },
@@ -830,8 +829,7 @@ GAMES[:tf2] = {
                             :Sawmill,
                             :Turbine,
                             :Well,
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -853,8 +851,7 @@ GAMES[:tf2] = {
                             :'Snakewater',
                             :'Well',
                             :'Yukon',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -883,8 +880,7 @@ GAMES[:tf2] = {
                             :'Steel',
                             :'Mountain Lab',
                             :'Mann Manor',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -902,8 +898,7 @@ GAMES[:tf2] = {
                             :'Nucleus',
                             :'Sawmill',
                             :'Viaduct',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -920,8 +915,7 @@ GAMES[:tf2] = {
                             :'Mannhattan',
                             :'Mannworks',
                             :'Rottenburg',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -938,8 +932,7 @@ GAMES[:tf2] = {
                             :'Hoodoo',
                             :'Thunder Mountain',
                             :'Upward',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -952,8 +945,7 @@ GAMES[:tf2] = {
                             :'Hightower',
                             :'Pipeline',
                             :'Nightfall',
-                            :'Any community map',
-                            :'Free pick'
+                            :'Any community map'
                         ]
                     }
                 },
@@ -964,7 +956,7 @@ GAMES[:tf2] = {
                         max: 1,
                         options: [
                             :Doomsday,
-                            :'Any community map'           
+                            :'Any community map'
                         ]
                     }
                 },
@@ -979,7 +971,6 @@ GAMES[:tf2] = {
                         ]
                     }
                 },
-                :'Free pick',
                 :'Any community map',
                 :'Any official map'
             ]
