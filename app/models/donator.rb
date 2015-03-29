@@ -1,5 +1,7 @@
 class Donator < ActiveRecord::Base
 
+  UK_STRING = 'United Kingdom'
+
   def self.visible
     where(visible: true)
   end
@@ -38,7 +40,7 @@ class Donator < ActiveRecord::Base
   end
 
   def self.get_donation_goal(country)
-    if country == 'UK'
+    if country == UK_STRING
       ENV['DONATION_GOAL_UK']
     else
       ENV['DONATION_GOAL_US']
@@ -46,7 +48,7 @@ class Donator < ActiveRecord::Base
   end
 
   def self.get_currency_symbol(country)
-    if country == 'UK'
+    if country == UK_STRING
       '£'
     else
       '$'
