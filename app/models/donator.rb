@@ -13,7 +13,7 @@ class Donator < ActiveRecord::Base
   def self.total_for_this_month(country)
     total = self.from_this_month.map { |donator| donator.amount }.inject(:+)
 
-    if in_uk?(country)
+    unless in_uk?(country)
       total = Monetize.parse("GBP #{total}").exchange_to("USD")
     end
 
