@@ -62,11 +62,14 @@ GEM
       activemodel
     erubis (2.7.0)
     execjs (2.4.0)
+    geocoder (1.2.8)
     gibbon (1.1.5)
       httparty
       multi_json (>= 1.9.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    google_currency (3.2.0)
+      money (~> 6.5.0)
     hike (1.2.3)
     httparty (0.13.3)
       json (~> 1.8)
@@ -90,6 +93,10 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    monetize (1.1.0)
+      money (~> 6.5.0)
+    money (6.5.1)
+      i18n (>= 0.6.4, <= 0.7.0)
     multi_json (1.11.0)
     multi_xml (0.5.5)
     nokogiri (1.6.6.2)
@@ -167,10 +174,14 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   dotenv-rails
   email_validator
+  geocoder
   gibbon
+  google_currency
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
+  monetize
+  money
   pg
   rack-mini-profiler
   rails (~> 4.2.0)

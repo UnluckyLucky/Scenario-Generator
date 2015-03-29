@@ -25,27 +25,5 @@
     </span>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-12">
-    <div class="row">
-      <div class="col-xs-10">
-        <div class="progress">
-          <div  class="progress-bar progress-bar-success"
-                role="progressbar"
-                aria-valuenow="<%= Donator.total_for_this_month %>"
-                aria-valuemin="0"
-                aria-valuemax="<%= ENV['DONATION_GOAL'].to_i %>"
-                style="width: <%= Donator.percentage_towards_goal * 100 %>%">
-                <%= Donator.percentage_towards_goal * 100 %>%
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-2">
-        <span class="total">Goal: £<%= ENV['DONATION_GOAL'] %></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 latest-donator">Latest donator: <%= Donator.last.visible_name %></div>
-    </div>
-  </div>
-</div>
+
+<%= render partial: 'common/donation_goal_bar' %>

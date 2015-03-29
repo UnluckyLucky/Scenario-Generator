@@ -11,6 +11,12 @@ gem 'email_validator'
 gem 'gibbon'
 gem 'jquery-turbolinks'
 
+gem 'geocoder'
+
+gem 'money'
+gem 'monetize'
+gem 'google_currency'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

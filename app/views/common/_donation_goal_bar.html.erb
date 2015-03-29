@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-10">
+        <div class="progress">
+          <div  class="progress-bar progress-bar-success"
+                role="progressbar"
+                aria-valuenow="<%= @percentage_towards_goal %>"
+                aria-valuemin="0"
+                aria-valuemax="1"
+                style="width: <%= @percentage_towards_goal * 100 %>%">
+                <%= @percentage_towards_goal * 100 %>%
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <span class="total">Goal: <%= @currency_symbol %><%= @donation_goal %></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 latest-donator">Latest donator: <%= Donator.last.visible_name %></div>
+    </div>
+  </div>
+</div>
+
+<div><%= @location.inspect %></div>
+<div><%= @country %></div>
+<div><%= @donation_goal %></div>
+<div><%= @monthly_total %></div>
+<div><%= @percentage_towards_goal %></div>
+<div><%= @currency_symbol %></div>

@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20150303011330) do
     t.string   "email"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "test_code"
     t.string   "version_id"
     t.string   "signup_page"
   end
