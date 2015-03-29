@@ -1,7 +1,5 @@
 class Suggestion < ActiveRecord::Base
 
-  belongs_to :version
-
   validates :suggestion, presence: true
 
   def self.suggestions
