@@ -14,15 +14,15 @@
             <a href="/faq">FAQ</a>
         </li>
         <li>
-            <a href="https://github.com/Lockyy/scenario-generator">Github Repo</a>
+            <a href="https://github.com/Lockyy/scenario-generator", class: 'sidebar-github-link'>Github Repo</a>
         </li>
         <hr>
         <% @games.each do |key, value| %>
             <li class="<%= 'new' if ScenarioGenerator.new?(key) %><%= 'updated' if ScenarioGenerator.updated_recently?(key) %>">
-                <% 
+                <%
                     name = value
                     name += ' - New!' if ScenarioGenerator.new?(key)
-                    name += ' - Updated!' if ScenarioGenerator.updated_recently?(key) 
+                    name += ' - Updated!' if ScenarioGenerator.updated_recently?(key)
                 %>
                 <%= link_to name, generator_path(game_name: key) %>
             </li>

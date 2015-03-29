@@ -10,8 +10,12 @@ class Donator < ActiveRecord::Base
     self.where(:created_at => Time.now.beginning_of_month..Time.now.end_of_month)
   end
 
+  def self.total_donated
+    self.all.map { |donator| donator.amount }.inject(:+)
+  end
+
   def self.total_for_this_month(country)
-    total = self.from_this_month.map { |donator| donator.amount }.inject(:+)
+    total = self.from_this_month.total_donated
 
     unless in_uk?(country)
       total = Monetize.parse("GBP #{total}").exchange_to("USD")

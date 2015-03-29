@@ -42,7 +42,7 @@ class ScenarioController < ApplicationController
 
   def save
     @game_name = params[:game_name].gsub(/#/,"").to_sym
-    @scenario = Scenario.find_by(uuid: params[:uuid], game: params[:game_name]) || 
+    @scenario = Scenario.find_by(uuid: params[:uuid], game: params[:game_name]) ||
                 Scenario.new(game: @game_name)
 
     @scenario.scenario_hash = construct_hash_from_params

@@ -10,12 +10,10 @@ DfScenario::Application.routes.draw do
   get 'game/:game_name/scenario/:uuid', to: 'scenario#load', as: 'scenario_load'
 
   post 'suggestion/:page_name', to: 'suggestion#submit', as: 'suggestion_submit'
-  post 'subscribe/:page_name', to: 'alert#subscribe', as: 'alert_subscribe'
+
+  post 'stat', to: 'stat#stat', as: 'record_stat'
 
   get 'donators', to: 'donator#index', as: 'donator_index'
   get 'faq', to: 'static#faq', as: 'faq'
-
-  get 'mailchimp_callback/:mailchimp_password', to: 'alert#mailchimp_callback', as: 'mailchimp_callback_get'
-  post 'mailchimp_callback/:mailchimp_password', to: 'alert#mailchimp_callback', as: 'mailchimp_callback'
 
 end

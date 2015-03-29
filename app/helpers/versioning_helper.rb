@@ -5,10 +5,6 @@ module VersioningHelper
     options[:default]
   end
 
-  def current_version_model
-    Version.find_by(code: current_version) || Version.create(code: current_version)
-  end
-
   def current_version
     session[:version]
   end
@@ -18,7 +14,7 @@ module VersioningHelper
   end
 
   def testing_versions
-    Version.active_versons
+    Stat.active_versions
   end
 
 end

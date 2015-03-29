@@ -2,11 +2,11 @@ class SuggestionController < ApplicationController
 
   def submit
     @suggestion = Suggestion.new( suggestion: params[:suggestion][:suggestion],
-                                  version: current_version_model,
                                   signup_page: params[:page_name])
 
     if suggestion_allowed?
       save_suggestion
+      Stat.adjust_stat(name: "Suggestion Version #{session[:version]}", count: 1, group: 'Suggestion Version Counts')
     end
 
     respond_to do |format|
@@ -50,7 +50,7 @@ class SuggestionController < ApplicationController
         session[:suggestions] = 0
       end
 
-      return true 
+      return true
     end
 
 end
