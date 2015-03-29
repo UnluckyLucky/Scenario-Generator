@@ -13,7 +13,7 @@ class Donator < ActiveRecord::Base
   def self.total_for_this_month(country)
     total = self.from_this_month.map { |donator| donator.amount }.inject(:+)
 
-    if true
+    if in_uk?(country)
       total = Monetize.parse("GBP #{total}").exchange_to("USD")
     end
 
@@ -40,7 +40,7 @@ class Donator < ActiveRecord::Base
   end
 
   def self.get_donation_goal(country)
-    if country == UK_STRING
+    if in_uk?(country)
       ENV['DONATION_GOAL_UK']
     else
       ENV['DONATION_GOAL_US']
@@ -48,11 +48,15 @@ class Donator < ActiveRecord::Base
   end
 
   def self.get_currency_symbol(country)
-    if country == UK_STRING
+    if in_uk?(country)
       '£'
     else
       '$'
     end
+  end
+
+  def self.in_uk?
+    country == UK_STRING
   end
 
 end
