@@ -11,6 +11,8 @@ class Stat < ActiveRecord::Base
     total_donated = Donator.total_donated
     top_donator = Donator.all.order("amount DESC").first
 
+    puts "\n\n"
+
     puts "Total suggestions: #{total_suggestions}\n"
     puts "Total scenarios: #{total_scenarios}\n"
     puts "Total donators: #{total_donators}\n"
@@ -25,6 +27,8 @@ class Stat < ActiveRecord::Base
       end
       puts "\n\n"
     end
+
+    return nil
   end
 
   def self.adjust_stat(opts = {})

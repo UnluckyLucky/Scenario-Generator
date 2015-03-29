@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
       @donation_goal = Donator.get_donation_goal(@country)
 
       percentage_towards_goal = Donator.percentage_towards_goal(@country)
-      @display_percentage = (percentage_towards_goal * 100).to_i
+      @display_percentage =  "%g" % ("%.2f" % (percentage_towards_goal * 100))
 
       @currency_symbol = Donator.get_currency_symbol(@country)
 
