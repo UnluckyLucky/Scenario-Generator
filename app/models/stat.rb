@@ -7,9 +7,9 @@ class Stat < ActiveRecord::Base
   def self.full_report
     total_suggestions = Suggestion.all.size
     total_scenarios = Scenario.all.size
-    total_donators = Donators.all.size
-    total_donated = Donators.total_donated
-    top_donator = Donators.all.order("amount DESC").first
+    total_donators = Donator.all.size
+    total_donated = Donator.total_donated
+    top_donator = Donator.all.order("amount DESC").first
 
     puts "Total suggestions: #{total_suggestions}\n"
     puts "Total scenarios: #{total_scenarios}\n"
