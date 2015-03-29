@@ -55,7 +55,7 @@ class Donator < ActiveRecord::Base
     end
   end
 
-  def self.in_uk?
+  def self.in_uk?(country)
     country == UK_STRING
   end
 
