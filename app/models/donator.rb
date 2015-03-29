@@ -59,4 +59,8 @@ class Donator < ActiveRecord::Base
     country == UK_STRING
   end
 
+  def self.latest_donator_name
+    Donator.last.visible_name
+  end
+
 end

@@ -25,10 +25,15 @@ class ApplicationController < ActionController::Base
     def setup_donation_bar_info
       @location = Geocoder.search(request.remote_ip).first
       @country = @location.country
+
       @donation_goal = Donator.get_donation_goal(@country)
-      @monthly_total = Donator.total_for_this_month(@country)
-      @percentage_towards_goal = Donator.percentage_towards_goal(@country)
+
+      percentage_towards_goal = Donator.percentage_towards_goal(@country)
+      @display_percentage = (percentage_towards_goal * 100).to_i
+
       @currency_symbol = Donator.get_currency_symbol(@country)
+
+      @latest_donator_name = Donator.latest_donator_name
     end
 
 end
