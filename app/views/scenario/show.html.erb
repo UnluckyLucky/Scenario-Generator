@@ -1,5 +1,10 @@
 <div class="row controls">
-  <div class="col-xs-8 col-sm-4 col-sm-offset-4">
+  <div class="col-xs-4 col-sm-3">
+    <% if @buy_link %>
+      <%= link_to 'Get this game', @buy_link, class: 'button box blue', id: 'buy-game-link' %>
+    <% end %>
+  </div>
+  <div class="col-xs-8 col-sm-4 col-sm-offset-1">
     <%= link_to "Click to reroll", generator_path(game_name: @game_name), class: 'box button reroll-button' %>
   </div>
   <div class="col-xs-4 col-sm-2 col-sm-offset-2">

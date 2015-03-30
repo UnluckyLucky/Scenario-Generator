@@ -1,4 +1,5 @@
 GAMES[:xcom] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B008IYCVK2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008IYCVK2&linkCode=as2&tag=scen-gen-21&linkId=PEXMH5LQWPS2I2YX',
     title: 'X-Com: Enemy Unknown',
     generator_title: 'Challenge',
     background: 'xcom.jpg',

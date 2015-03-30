@@ -1,4 +1,5 @@
 GAMES[:mass_effect_3] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B009WMVCGS/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009WMVCGS&linkCode=as2&tag=scen-gen-21&linkId=TES4R2XYCXZ6LYJY',
     title: 'Mass Effect 3',
     generator_title: 'Playthrough',
     background: 'masseffect3.jpg',

@@ -1,4 +1,5 @@
 GAMES[:age_of_empires_2] = {
+    buy_link: 'http://store.steampowered.com/app/221380/',
     title: 'Age of Empires 2',
     generator_title: 'Scenario',
     background: 'age_of_empires.jpg',

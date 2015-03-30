@@ -1,4 +1,5 @@
 GAMES[:xrebirth] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B005N64QFG/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B005N64QFG&linkCode=as2&tag=scen-gen-21&linkId=AXSJCKSP4DW6M36P',
     title: 'X-Rebirth',
     background: 'x_rebirth.png',
     columns: {

@@ -30,6 +30,7 @@ def new_vegas_specials
 end
 
 GAMES[:falloutnewvegas] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B004Q7D9LU/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B004Q7D9LU&linkCode=as2&tag=scen-gen-21&linkId=K766N4ZZ5KBJEPTZ',
     title: 'Fallout: New Vegas',
     generator_title: 'Character',
     background: 'newvegas.jpg',

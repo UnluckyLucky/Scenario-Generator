@@ -75,6 +75,7 @@ class ScenarioController < ApplicationController
       @background = ScenarioGenerator.game_background @game_name
       @next_title, @next_link = ScenarioGenerator.next_game @game_name
       @previous_title, @previous_link = ScenarioGenerator.previous_game @game_name
+      @buy_link = ScenarioGenerator.buy_link @game_name
 
       unless session[@game_name]
         @spoiler_alert_display = !@scenario[:spoiler].empty?

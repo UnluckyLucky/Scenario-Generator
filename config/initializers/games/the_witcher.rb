@@ -1,4 +1,5 @@
 GAMES[:the_witcher] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B001F50OEQ/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B001F50OEQ&linkCode=as2&tag=scen-gen-21&linkId=G6HGZ3UR3GBUKPYW',
     title: 'The Witcher',
     generator_title: 'Playthrough',
     background: 'witcher.jpg',
@@ -108,8 +109,8 @@ GAMES[:the_witcher] = {
             ]
         },
         bank_robbery: {
-            sub_trees: [    
-                :vodyenoi_conflict, :forgiveness, 
+            sub_trees: [
+                :vodyenoi_conflict, :forgiveness,
                 :"continue_with_the_scoia'tael?", :'continue_with_the_order?'
             ],
             spoiler: true,

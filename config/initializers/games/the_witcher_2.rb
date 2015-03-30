@@ -1,4 +1,5 @@
 GAMES[:the_witcher_2] =  {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B0074H98HS/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B0074H98HS&linkCode=as2&tag=scen-gen-21&linkId=6EIIR7S3BOX7MFKP',
     title: 'The Witcher 2',
     generator_title: 'Playthrough',
     background: 'witcher2.jpg',

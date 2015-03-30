@@ -1,4 +1,5 @@
 GAMES[:dark_souls] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B009GG307O/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009GG307O&linkCode=as2&tag=scen-gen-21&linkId=6T2E7Y4NOKSTUAPE',
     title: 'Dark Souls',
     generator_title: 'Character',
     background: 'darksouls.jpg',

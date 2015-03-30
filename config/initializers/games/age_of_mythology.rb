@@ -1,4 +1,5 @@
 GAMES[:age_of_mythology] = {
+    buy_link: 'http://store.steampowered.com/app/266840/',
     title: 'Age of Mythology',
     generator_title: 'Scenario',
     background: 'age_of_mythology.jpg',

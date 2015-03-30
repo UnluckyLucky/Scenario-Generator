@@ -260,6 +260,7 @@ end
 
 
 GAMES[:battlefield_4] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B00BT9DTCM/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00BT9DTCM&linkCode=as2&tag=scen-gen-21&linkId=KJMMYUDHA7DO55FA',
     title: 'Battlefield 4',
     generator_title: 'Loadout',
     background: 'bf4.jpg',

@@ -1,4 +1,5 @@
 $roll-button-colour: #F59D38
+$red: #DB1E18
 
 .button, a .button
   cursor: pointer
@@ -28,6 +29,12 @@ $roll-button-colour: #F59D38
     background-color: darken($roll-button-colour, 5%) !important
   a:active
     background-color: darken($roll-button-colour, 10%) !important
+  &.blue
+    background: $red
+    &:hover
+      background-color: darken($red, 5%) !important
+    &:active
+      background-color: darken($red, 10%) !important
 
 .previous-padding
   height: 56px
@@ -37,7 +44,7 @@ a
   &:hover, &:active, &:focus
     text-decoration: none !important
 
-.title 
+.title
   a
     color: #aabdd1
     &:focus

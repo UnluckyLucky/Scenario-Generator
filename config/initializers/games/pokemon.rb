@@ -299,5 +299,5 @@ GAMES[:pokemon] = {
                 :'Capture at least one pokemon in each route before moving on once you have obtained pokeballs'
             ]
         }
-    } 
+    }
 }

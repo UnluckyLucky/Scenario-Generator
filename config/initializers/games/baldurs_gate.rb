@@ -1,4 +1,5 @@
 GAMES[:baldurs_gate] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B002TOKQH2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B002TOKQH2&linkCode=as2&tag=scen-gen-21&linkId=BSKBHGQBFBHHIRBX',
     title: 'Baldur\'s Gate',
     generator_title: 'Character',
     background: 'balders_gate.jpg',

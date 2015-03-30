@@ -1,4 +1,5 @@
 GAMES[:orcs_must_die] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B008AGWEO6/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008AGWEO6&linkCode=as2&tag=scen-gen-21&linkId=ZCWUKMZ2ZLNKIXWD',
     title: 'Orcs Must Die',
     generator_title: 'Loadout',
     background: 'omd1.jpg',

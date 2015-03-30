@@ -1,4 +1,5 @@
 GAMES[:kerbal_space_program] = {
+    buy_link: 'http://store.steampowered.com/app/220200/',
     title: 'Kerbal Space Program',
     generator_title: 'Challenge',
     background: 'ksp.jpg',

@@ -1,4 +1,5 @@
 GAMES[:europa_universalis_IV] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B00DQKB6EK/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00DQKB6EK&linkCode=as2&tag=scen-gen-21&linkId=KTM2FQAIPDQNSYSX',
     title: 'Europa Universalis IV',
     background: 'eu4.jpg',
     columns: {
@@ -8,7 +9,7 @@ GAMES[:europa_universalis_IV] = {
                 :indian_country, :indian_goals, :eastern_country, :eastern_goals, :chinese_country,
                 :chinese_goals, :nomad_country, :nomad_goals, :sub_saharan_country, :sub_saharan_goals,
                 :north_american_country, :north_american_goals, :meso_american_country, :meso_american_goals,
-                :andean_country, :andean_goals, :south_american_country, :south_american_goals, :aachen_goals, :alsace_goals, :anhalt_goals, :ansbach_goals, :aragon_goals, :armagnac_goals, :augsburg_goals, :austria_goals, :auvergne_goals, :baden_goals, :bavaria_goals, :bohemia_goals, :bourbonnais_goals, :brandenburg_goals, :bremen_goals, :brittany_goals, :brunswick_goals, :burgundy_goals, :castile_goals, :cleves_goals, :cologne_goals, :connact_goals, :denmark_goals, :east_frisia_goals, :england_goals, :ferrara_goals, :foix_goals, :france_goals, :frankfurt_goals, :friesland_goals, :gelre_goals, :genoa_goals, :hesse_goals, :holstein_goals, :leinster_goals, :liege_goals, :livonian_order_goals, :lorraine_goals, :lüneburg_goals, :magdeburg_goals, :mainz_goals, :mantua_goals, :milan_goals, :mecklenburg_goals, :modena_goals, :münster_goals, :munster_goals, :naples_goals, :navarra_goals, :norway_goals, :oldenburg_goals, :orleans_goals, :the_palatinate_goals, :the_papal_state_goals, :pomerania_goals, :portugal_goals, :provence_goals, :riga_goals, :salzburg_goals, :savoy_goals, :saxe_lauenburg_goals, :saxony_goals, :scotland_goals, :siena_goals, :silesia_goals, :sweden_goals, :switzerland_goals,    :the_teutonic_order_goals, :the_hansa_goals, :the_knights_goals, :thuringia_goals, :trier_goals, :tuscany_goals, :tyrone_goals, :ulm_goals, :urbino_goals, :utrecht_goals, :venice_goals, :wurzburg_goals, :wurttemberg_goals, 
+                :andean_country, :andean_goals, :south_american_country, :south_american_goals, :aachen_goals, :alsace_goals, :anhalt_goals, :ansbach_goals, :aragon_goals, :armagnac_goals, :augsburg_goals, :austria_goals, :auvergne_goals, :baden_goals, :bavaria_goals, :bohemia_goals, :bourbonnais_goals, :brandenburg_goals, :bremen_goals, :brittany_goals, :brunswick_goals, :burgundy_goals, :castile_goals, :cleves_goals, :cologne_goals, :connact_goals, :denmark_goals, :east_frisia_goals, :england_goals, :ferrara_goals, :foix_goals, :france_goals, :frankfurt_goals, :friesland_goals, :gelre_goals, :genoa_goals, :hesse_goals, :holstein_goals, :leinster_goals, :liege_goals, :livonian_order_goals, :lorraine_goals, :lüneburg_goals, :magdeburg_goals, :mainz_goals, :mantua_goals, :milan_goals, :mecklenburg_goals, :modena_goals, :münster_goals, :munster_goals, :naples_goals, :navarra_goals, :norway_goals, :oldenburg_goals, :orleans_goals, :the_palatinate_goals, :the_papal_state_goals, :pomerania_goals, :portugal_goals, :provence_goals, :riga_goals, :salzburg_goals, :savoy_goals, :saxe_lauenburg_goals, :saxony_goals, :scotland_goals, :siena_goals, :silesia_goals, :sweden_goals, :switzerland_goals,    :the_teutonic_order_goals, :the_hansa_goals, :the_knights_goals, :thuringia_goals, :trier_goals, :tuscany_goals, :tyrone_goals, :ulm_goals, :urbino_goals, :utrecht_goals, :venice_goals, :wurzburg_goals, :wurttemberg_goals,
                 :albania_goals, :athens_goals, :bosnia_goals, :byzantium_goals, :corfu_goals, :cyprus_goals, :georgia_goals, :hungary_goals, :lithuania_goals, :mazovia_goals, :moldavia_goals, :muscovy_goals, :naxos_goals, :novgorod_goals, :perm_goals, :poland_goals, :pskov_goals, :ragusa_goals, :ryazan_goals, :serbia_goals, :trebizond_goals, :tver_goals, :wallachia_goals, :yaroslavl_goals,
                 :candar_goals, :dulkadir_goals, :karaman_goals, :the_ottomans_goals, :ramazan_goals,
                 :adal_goals, :algiers_goals, :alodia_goals, :baluchistan_goals, :djerid_goals, :ethiopia_goals, :fezzan_goals, :gazikumukh_goals, :granada_goals, :haasa_goals, :hedjaz_goals, :kaffa_goals, :makuria_goals, :marehan_goals, :the_mamluks_goals, :medri_bahri_goals, :morocco_goals, :mzab_goals, :najd_goals, :oman_goals, :shammar_goals, :shirvan_goals, :tabarestan_goals, :tlemcen_goals, :touggourt_goals, :tripoli_goals, :tunisia_goals, :warsangali_goals, :yemen_goals,
@@ -28,7 +29,7 @@ GAMES[:europa_universalis_IV] = {
                 {
                     western_country: {
                         sub_trees: [
-                            :aachen_goals, :alsace_goals, :anhalt_goals, :ansbach_goals, :aragon_goals, 
+                            :aachen_goals, :alsace_goals, :anhalt_goals, :ansbach_goals, :aragon_goals,
                             :armagnac_goals, :augsburg_goals, :austria_goals, :auvergne_goals, :baden_goals,
                             :bavaria_goals, :bohemia_goals, :bourbonnais_goals, :brandenburg_goals, :bremen_goals,
                             :brittany_goals, :brunswick_goals, :burgundy_goals, :castile_goals, :cleves_goals,
@@ -40,7 +41,7 @@ GAMES[:europa_universalis_IV] = {
                             :naples_goals, :navarra_goals, :norway_goals, :oldenburg_goals, :orleans_goals,
                             :the_palatinate_goals, :the_papal_state_goals, :pomerania_goals, :portugal_goals,
                             :provence_goals, :riga_goals, :salzburg_goals, :savoy_goals, :saxe_lauenburg_goals,
-                            :saxony_goals, :scotland_goals, :siena_goals, :silesia_goals, :sweden_goals, :switzerland_goals, 
+                            :saxony_goals, :scotland_goals, :siena_goals, :silesia_goals, :sweden_goals, :switzerland_goals,
                             :the_teutonic_order_goals, :the_hansa_goals, :the_knights_goals, :thuringia_goals, :trier_goals,
                             :tuscany_goals, :tyrone_goals, :ulm_goals, :urbino_goals, :utrecht_goals, :venice_goals,
                             :wurzburg_goals, :wurttemberg_goals
@@ -1310,7 +1311,7 @@ GAMES[:europa_universalis_IV] = {
                                     ]
                                 }
                             },
-                            :'Yaroslavl' 
+                            :'Yaroslavl'
                         ]
                     },
                     eastern_goals: {
@@ -2471,5 +2472,5 @@ GAMES[:europa_universalis_IV] = {
                 :No
             ]
         }
-    } 
+    }
 }

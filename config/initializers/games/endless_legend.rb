@@ -1,4 +1,5 @@
 GAMES[:endless_legend] = {
+    buy_link: 'http://www.amazon.co.uk/gp/product/B00M2NYMVQ/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00M2NYMVQ&linkCode=as2&tag=scen-gen-21&linkId=ZUQ4DEXV3H22DIPL',
     title: 'Endless Legend',
     background: 'endless_legend.jpg',
     added: Date.strptime('20150306',"%Y%m%d"),

@@ -1,5 +1,5 @@
 module ScenarioGenerator
-  
+
   class << self
 
     def scenario game
@@ -20,7 +20,7 @@ module ScenarioGenerator
         @column_name, @options = find_column(wanted_column, column_name, options)
         if @column_name == wanted_column
           add_column @column_name, @options
-          
+
           return @scenario, @options[:sub_trees]
         end
       end
@@ -34,13 +34,13 @@ module ScenarioGenerator
       # Check the column's specific title for a match
       elsif options[:title] && same_column?(options[:title], wanted_column)
         return standard_column_name(options[:title]), options
-      # Otherwise there is no match, so go down a level and continue the search 
+      # Otherwise there is no match, so go down a level and continue the search
       else
         # Iterate through all the options for the given column
         options[:options].each do |option|
           # If it's a hash then it is an option containing at least one sub-column
           if option.class == Hash
-            # Since an option with sub-columns can have multiple sub-columns we need to iterate through 
+            # Since an option with sub-columns can have multiple sub-columns we need to iterate through
             # all of them to do the search.
             option.each do |key, value|
               # Call find_column for each of the sub-columns
@@ -197,6 +197,10 @@ module ScenarioGenerator
 
     def game_background game
       GAMES[game][:background]
+    end
+
+    def buy_link game
+      GAMES[game][:buy_link]
     end
 
     # A game is new if it was added in the last week

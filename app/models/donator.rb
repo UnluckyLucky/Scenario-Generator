@@ -45,10 +45,16 @@ class Donator < ActiveRecord::Base
 
   def self.get_donation_goal(country)
     if in_uk?(country)
-      ENV['DONATION_GOAL_UK']
+      result = ENV['DONATION_GOAL_UK']
     else
-      ENV['DONATION_GOAL_US']
+      result = ENV['DONATION_GOAL_US']
     end
+
+    unless result
+      result = 100
+    end
+
+    return result
   end
 
   def self.get_currency_symbol(country)
