@@ -6,7 +6,7 @@ class SuggestionController < ApplicationController
 
     if suggestion_allowed?
       save_suggestion
-      Stat.adjust_stat(name: "Suggestion Version #{session[:version]}", count: 1, group: 'Suggestion Version Counts')
+      Stat.adjust_stat(name: "Suggestion Version #{session[:version]}", count: 1, group: 'Suggestion Version Counts', version: current_version)
     end
 
     respond_to do |format|

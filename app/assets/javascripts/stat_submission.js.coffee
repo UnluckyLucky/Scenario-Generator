@@ -1,8 +1,9 @@
 ready = ->
 
-  submit_stat = (name) ->
+  submit_stat = (name, group) ->
     data = {
-      name: name
+      name: name,
+      group: group
     }
 
     $.post(
@@ -16,7 +17,7 @@ ready = ->
     submit_stat('Email submitted for subscription')
 
   $('#buy-game-link').on 'click', ->
-    submit_stat('Get game link clicked')
+    submit_stat(document.URL.split('/')[4].split('#')[0], 'a')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

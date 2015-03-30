@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   def set_testing_version
     unless testing_versions.include? current_version
       session[:version] = random_testing_version
-      Stat.adjust_stat(name: "Version #{session[:version]} users", count: 1, group: 'Version Users')
+      Stat.adjust_stat(name: "Version #{session[:version]} users", count: 1, group: 'Version Users', version: current_version)
     end
   end
 
