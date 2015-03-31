@@ -84,7 +84,7 @@ class Stat < ActiveRecord::Base
         end
       end
 
-      regular_output.sort_by(&:count).each do |stat|
+      regular_output.sort_by{ |output| output[:count] }.reverse.each do |stat|
         puts "#{"%6d" % stat[:count]} | #{stat[:name]}"
       end
 
