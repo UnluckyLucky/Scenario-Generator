@@ -40,7 +40,7 @@ class Stat < ActiveRecord::Base
     self.all.group_by(&:group).each do |group, stats|
       # Output the title and underline it
       puts "#{group}"
-      puts "-" * group.length
+      puts "-" * 35
 
       # Secondly we group them by name. This allows us to check if that stat or group is being a/b tested.
       # If it is then we output each version of the stat separately with it's version name and count.
@@ -50,6 +50,7 @@ class Stat < ActiveRecord::Base
           stats.each do |stat|
             puts "#{stat.name} | #{stat.version || '-'} | #{stat.count}"
           end
+          puts "\n"
         else
           total_across_versions = stats.map{ |stat| stat.count }.inject(:+)
           puts "#{stats.first.name} | #{total_across_versions}"
