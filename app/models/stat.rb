@@ -19,7 +19,7 @@ class Stat < ActiveRecord::Base
     ACTIVE_VERSIONS
   end
 
-  def self.full_report
+  def self.report
     total_suggestions = Suggestion.all.size
     total_scenarios = Scenario.all.size
     total_donators = Donator.all.size
@@ -36,8 +36,12 @@ class Stat < ActiveRecord::Base
     puts "Top donator: #{top_donator.name} | £#{top_donator.amount} | #{top_donator.email}\n"
 
     puts "\n\n"
+
+    # sort the stats into descending order
+    stats = self.all.sort_by(&:count).reverse
+
     # First we group the stats by group name. This allows us to nicely separate them.
-    self.all.group_by(&:group).each do |group, stats|
+    stats.group_by(&:group).each do |group, stats|
       # Output the title and underline it
       puts "#{group}"
       puts "-" * 35
@@ -47,13 +51,17 @@ class Stat < ActiveRecord::Base
       # If it isn't then we add up all the versions and display them as one stat.
       stats.group_by(&:name).each do |name, stats|
         if self.ab_tested?(name, stats.first.group)
+
+          # Sort the stats into descending order
+          stats = stats.sort_by(&:count).reverse
+
           stats.each do |stat|
-            puts "#{stat.name} | #{stat.version || '-'} | #{stat.count}"
+            puts "#{"%6d" % stat.count} | #{stat.name} | #{stat.version || '-'}"
           end
           puts "\n"
         else
           total_across_versions = stats.map{ |stat| stat.count }.inject(:+)
-          puts "#{stats.first.name} | #{total_across_versions}"
+          puts "#{"%6d" % total_across_versions} | #{stats.first.name}"
         end
       end
       puts "\n\n"
