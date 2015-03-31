@@ -1,14 +1,24 @@
-<span class="paypal-donation-holder">
+<span class="col-xs-6 paypal-donation-holder">
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-form">
     <input type="hidden" name="cmd" value="_s-xclick">
 
-  <% if @country == 'United Kingdom' %>
+    <% if @country == 'United Kingdom' %>
       <input type="hidden" name="hosted_button_id" value="VPLJEE6C7U26L">
-  <% else %>
+    <% else %>
       <input type="hidden" name="hosted_button_id" value="HS3YTY35PJLMG">
-  <% end %>
+    <% end %>
 
-    <input type="image" src="<%= asset_path 'paypal.png' %>" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+    <%= version_choice  default: submit_tag('submit',
+                                            type: 'image',
+                                            src: asset_path('paypal.png'),
+                                            name: 'submit',
+                                            alt: 'PayPal – The safer, easier way to pay online.',
+                                            class: 'a'),
+                        b: submit_tag('Donate via. Paypal', class: 'btn btn-warning paypal-donate-button'),
+                        c: submit_tag('Donate via. Paypal', class: 'btn btn-danger  paypal-donate-button'),
+                        d: submit_tag('Donate via. Paypal', class: 'btn btn-success paypal-donate-button'),
+                        e: submit_tag('Donate via. Paypal', class: 'btn btn-primary paypal-donate-button') %>
+
     <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
   </form>
 </span>

@@ -11,14 +11,20 @@
   display: none
   height: 90px
 
-.btc-donation-image
+.btc-donation-holder
   text-align: center
-  margin-top: 15px
-  &.hidden-xs
-    position: relative
-    left: 50px
+  .btc-donation-image
+    display: inline-block
+    text-align: center
+    margin-top: 10px
+    &.hidden-xs
+      position: relative
+      left: 50px
+    iframe
+      width: 156px !important
 
 .paypal-donation-holder
+  text-align: center
   .row
     text-align: center
     .paypal
@@ -27,6 +33,15 @@
       margin-top: -10px
       img
         position: absolute
+  .paypal-donate-button
+    display: block
+    margin-top: 15px
+    width: 155px
+    height: 38px
+  .a, .b, .c, .d
+    width: 155px !important
+    height: 38px
+    margin-top: 15px
 
 .application
   .paypal

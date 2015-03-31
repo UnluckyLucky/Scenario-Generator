@@ -12,10 +12,14 @@
     </span>
   </div>
   <div class="col-xs-12 col-sm-6">
-    <span class="btc-donation-image">
-      <a class="coinbase-button" data-code="e8f8c8233d32310169df5c0470fae3d3" data-button-style="custom_small" href="https://www.coinbase.com/checkouts/e8f8c8233d32310169df5c0470fae3d3">Donate Bitcoin</a>
-    </span>
-    <%= render partial: 'common/paypal_button' %>
+    <div class="row">
+      <div class="col-xs-6 btc-donation-holder">
+        <span class="btc-donation-image">
+          <a class="coinbase-button" data-code="e8f8c8233d32310169df5c0470fae3d3" data-button-style="custom_small" href="https://www.coinbase.com/checkouts/e8f8c8233d32310169df5c0470fae3d3">Donate Bitcoin</a>
+        </span>
+      </div>
+      <%= render partial: 'common/paypal_button' %>
+    </div>
   </div>
 </div>
 

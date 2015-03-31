@@ -5,12 +5,10 @@ class Stat < ActiveRecord::Base
     'Paypal button clicked'
   ]
 
-  AB_TESTED_GROUPS = [
-    'Affiliate link clicks'
-  ]
+  AB_TESTED_GROUPS = []
 
   # Active versions
-  ACTIVE_VERSIONS = [:a, :b]
+  ACTIVE_VERSIONS = [:a, :b, :c, :d, :e]
 
   # Check if a given stat or group is being a/b tested
   def self.ab_tested?(stat_name, group)
