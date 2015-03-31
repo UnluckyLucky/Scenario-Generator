@@ -1,5 +1,7 @@
 GAMES[:orcs_must_die_2] = {
-    buy_link: 'http://store.steampowered.com/app/201790/',
+    buy_link: {
+        us: 'http://store.steampowered.com/app/201790/'
+    },
     title: 'Orcs Must Die 2',
     generator_title: 'Loadout',
     background: 'omd2.jpg',

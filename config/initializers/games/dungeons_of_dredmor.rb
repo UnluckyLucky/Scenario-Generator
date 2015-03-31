@@ -1,5 +1,7 @@
 GAMES[:dungeons_of_dredmor] = {
-    buy_link: 'http://store.steampowered.com/app/98800/',
+    buy_link: {
+        us: 'http://store.steampowered.com/app/98800/'
+    },
     title: 'Dungeons of Dredmor',
     generator_title: 'Character',
     background: 'dungeons-of-dredmor.jpg',

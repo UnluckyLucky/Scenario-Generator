@@ -1,5 +1,7 @@
 GAMES[:tales_of_majeyal] = {
-    buy_link: 'http://te4.org/',
+    buy_link: {
+        us: 'http://te4.org/'
+    },
     title: 'Tales of Maj\'Eyal',
     background: 'tome.jpg',
     added: Date.strptime('20150306',"%Y%m%d"),

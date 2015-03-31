@@ -1,5 +1,8 @@
 GAMES[:baldurs_gate] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B002TOKQH2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B002TOKQH2&linkCode=as2&tag=scen-gen-21&linkId=BSKBHGQBFBHHIRBX',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B002TOKQH2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B002TOKQH2&linkCode=as2&tag=scen-gen-21&linkId=BSKBHGQBFBHHIRBX',
+        us: 'http://www.amazon.com/gp/product/B000FGA1US/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B000FGA1US&linkCode=as2&tag=scen-gen-20&linkId=FDTOBCJBVRUSTVKX'
+    },
     title: 'Baldur\'s Gate',
     generator_title: 'Character',
     background: 'balders_gate.jpg',

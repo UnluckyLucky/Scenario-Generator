@@ -1,5 +1,8 @@
 GAMES[:dark_souls] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B009GG307O/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009GG307O&linkCode=as2&tag=scen-gen-21&linkId=6T2E7Y4NOKSTUAPE',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B009GG307O/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009GG307O&linkCode=as2&tag=scen-gen-21&linkId=6T2E7Y4NOKSTUAPE',
+        us: 'http://www.amazon.com/gp/product/B004NRN5EO/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004NRN5EO&linkCode=as2&tag=scen-gen-20&linkId=NEJCS6CJK4CY53UI'
+    },
     title: 'Dark Souls',
     generator_title: 'Character',
     background: 'darksouls.jpg',

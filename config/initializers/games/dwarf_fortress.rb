@@ -1,5 +1,7 @@
 GAMES[:dwarffortress] = {
-    buy_link: 'http://www.bay12games.com/dwarves/',
+    buy_link: {
+        us: 'http://www.bay12games.com/dwarves/'
+    },
     title: 'Dwarf Fortress',
     background: 'dwarffortress.png',
     last_updated: Date.strptime('20150228',"%Y%m%d"),

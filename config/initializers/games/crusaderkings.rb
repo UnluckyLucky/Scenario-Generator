@@ -1,5 +1,8 @@
 GAMES[:crusaderkings] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B006NU6M5S/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B006NU6M5S&linkCode=as2&tag=scen-gen-21&linkId=LIAYSZYRDTK25AFR',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B006NU6M5S/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B006NU6M5S&linkCode=as2&tag=scen-gen-21&linkId=LIAYSZYRDTK25AFR',
+        us: 'http://www.amazon.com/gp/product/B006NU6M5S/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006NU6M5S&linkCode=as2&tag=scen-gen-20&linkId=KX6HZIO77OY6G2HQ'
+    },
     title: 'Crusader Kings 2',
     background: 'crusaderkings.jpg',
     columns: {

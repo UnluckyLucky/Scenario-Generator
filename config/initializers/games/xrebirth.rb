@@ -1,5 +1,8 @@
 GAMES[:xrebirth] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B005N64QFG/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B005N64QFG&linkCode=as2&tag=scen-gen-21&linkId=AXSJCKSP4DW6M36P',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B005N64QFG/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B005N64QFG&linkCode=as2&tag=scen-gen-21&linkId=AXSJCKSP4DW6M36P',
+        us: 'http://www.amazon.com/gp/product/B00FAVVKO4/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00FAVVKO4&linkCode=as2&tag=scen-gen-20&linkId=GXZSEDHCWXDJ7YLY'
+    },
     title: 'X-Rebirth',
     background: 'x_rebirth.png',
     columns: {

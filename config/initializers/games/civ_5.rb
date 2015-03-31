@@ -1,5 +1,8 @@
 GAMES[:civilization_v] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B0056F2G3S/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B0056F2G3S&linkCode=as2&tag=scen-gen-21&linkId=3TIE7E2XH3S2TCIB',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B0056F2G3S/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B0056F2G3S&linkCode=as2&tag=scen-gen-21&linkId=3TIE7E2XH3S2TCIB',
+        us: 'http://www.amazon.com/gp/product/B005M0KSIM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005M0KSIM&linkCode=as2&tag=scen-gen-20&linkId=YNCQJOCTYUEZXZY2'
+    },
     title: 'Civilization V',
     background: 'civ5.jpg',
     columns: {

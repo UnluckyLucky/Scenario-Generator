@@ -1,5 +1,8 @@
 GAMES[:mass_effect] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B009WMVCGS/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009WMVCGS&linkCode=as2&tag=scen-gen-21&linkId=TES4R2XYCXZ6LYJY',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B009WMVCGS/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B009WMVCGS&linkCode=as2&tag=scen-gen-21&linkId=TES4R2XYCXZ6LYJY',
+        us: 'http://www.amazon.com/gp/product/B0050SZ980/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0050SZ980&linkCode=as2&tag=scen-gen-20&linkId=IXWXMZGTBKJZKSAB'
+    },
     title: 'Mass Effect',
     generator_title: 'Playthrough',
     background: 'masseffect1.jpg',

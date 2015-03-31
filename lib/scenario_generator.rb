@@ -199,8 +199,12 @@ module ScenarioGenerator
       GAMES[game][:background]
     end
 
-    def buy_link game
-      GAMES[game][:buy_link]
+    def buy_link game, country
+      if country == 'United Kingdom' && GAMES[game][:buy_link][:uk]
+        GAMES[game][:buy_link][:uk]
+      else
+        GAMES[game][:buy_link][:us]
+      end
     end
 
     # A game is new if it was added in the last week

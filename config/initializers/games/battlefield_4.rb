@@ -260,7 +260,10 @@ end
 
 
 GAMES[:battlefield_4] = {
-    buy_link: 'http://www.amazon.co.uk/gp/product/B00BT9DTCM/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00BT9DTCM&linkCode=as2&tag=scen-gen-21&linkId=KJMMYUDHA7DO55FA',
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B00BT9DTCM/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00BT9DTCM&linkCode=as2&tag=scen-gen-21&linkId=KJMMYUDHA7DO55FA',
+        us: 'http://www.amazon.com/gp/product/B00DS0MQUQ/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00DS0MQUQ&linkCode=as2&tag=scen-gen-20&linkId=Y4ERT6H7D6E6KCUC'
+    },
     title: 'Battlefield 4',
     generator_title: 'Loadout',
     background: 'bf4.jpg',
