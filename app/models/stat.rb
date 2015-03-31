@@ -37,14 +37,14 @@ class Stat < ActiveRecord::Base
 
     puts "\n\n"
 
-    # sort the stats into descending order
-    stats = self.all.sort_by(&:count).reverse
-
     # First we group the stats by group name. This allows us to nicely separate them.
-    stats.group_by(&:group).each do |group, stats|
+    self.all.group_by(&:group).each do |group, stats|
       # Output the title and underline it
       puts "#{group}"
       puts "-" * 35
+
+      # sort the stats into descending order
+      stats = stats.sort_by(&:count).reverse
 
       # Secondly we group them by name. This allows us to check if that stat or group is being a/b tested.
       # If it is then we output each version of the stat separately with it's version name and count.
