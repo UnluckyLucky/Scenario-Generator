@@ -19,6 +19,7 @@ class Stat < ActiveRecord::Base
     ACTIVE_VERSIONS
   end
 
+  # TODO: Split this up into multiple functions
   def self.report
     total_suggestions = Suggestion.all.size
     total_scenarios = Scenario.all.size
@@ -38,32 +39,55 @@ class Stat < ActiveRecord::Base
     puts "\n\n"
 
     # First we group the stats by group name. This allows us to nicely separate them.
-    self.all.group_by(&:group).each do |group, stats|
+    self.all.group_by(&:group).each do |group, stats_grouped_by_group|
       # Output the title and underline it
       puts "#{group}"
       puts "-" * 35
 
-      # sort the stats into descending order
-      stats = stats.sort_by(&:count).reverse
+      ab_tested_output = []
+      regular_output = []
+
+      # Sort the stats into descending order
+      stats_grouped_by_group = stats_grouped_by_group.sort_by(&:count).reverse
 
       # Secondly we group them by name. This allows us to check if that stat or group is being a/b tested.
       # If it is then we output each version of the stat separately with it's version name and count.
       # If it isn't then we add up all the versions and display them as one stat.
-      stats.group_by(&:name).each do |name, stats|
-        if self.ab_tested?(name, stats.first.group)
+      #
+      # We don't output here, we just push into the output buffer.
+      # This is so we can properly sort it, taking into account the non-a/b tested stats
+      stats_grouped_by_group.group_by(&:name).each do |name, stats_grouped_by_name|
+        if self.ab_tested?(name, stats_grouped_by_name.first.group)
 
           # Sort the stats into descending order
-          stats = stats.sort_by(&:count).reverse
+          stats_grouped_by_name = stats_grouped_by_name.sort_by(&:count).reverse
 
-          stats.each do |stat|
-            puts "#{"%6d" % stat.count} | #{stat.name} | #{stat.version || '-'}"
+          # Iterate through each version of this stat and push it to the a/b tested output buffer.
+          stats_grouped_by_name.each_with_index do |stat, i|
+            ab_tested_output.push({ count: stat.count,
+                                    name: stat.name,
+                                    version: stat.version || '-',
+                                    last: i == stats_grouped_by_name.length - 1})
           end
-          puts "\n"
         else
-          total_across_versions = stats.map{ |stat| stat.count }.inject(:+)
-          puts "#{"%6d" % total_across_versions} | #{stats.first.name}"
+          # Sum all the versions of this stat
+          total_across_versions = stats_grouped_by_name.map{ |stat| stat.count }.inject(:+)
+          # Push those values to the non-a/b tested buffer
+          regular_output.push({ count: total_across_versions, name: stats_grouped_by_name.first.name })
         end
       end
+
+      ab_tested_output.each do |stat|
+        puts "#{"%6d" % stat[:count]} | #{stat[:name]} | #{stat[:version]}"
+        if stat[:last]
+          puts "\n"
+        end
+      end
+
+      regular_output.sort_by(&:count).each do |stat|
+        puts "#{"%6d" % stat[:count]} | #{stat[:name]}"
+      end
+
       puts "\n\n"
     end
 
