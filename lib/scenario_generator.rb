@@ -200,10 +200,12 @@ module ScenarioGenerator
     end
 
     def buy_link game, country
-      if country == 'United Kingdom' && GAMES[game][:buy_link][:uk]
-        GAMES[game][:buy_link][:uk]
-      else
-        GAMES[game][:buy_link][:us]
+      if GAMES[game][:buy_link]
+        if country == 'United Kingdom' && GAMES[game][:buy_link][:uk]
+          GAMES[game][:buy_link][:uk]
+        else
+          GAMES[game][:buy_link][:us]
+        end
       end
     end
 
