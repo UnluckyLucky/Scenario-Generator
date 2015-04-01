@@ -70,7 +70,7 @@ class Donator < ActiveRecord::Base
   end
 
   def self.latest_donator_name
-    Donator.last.visible_name
+    Donator.where(title: 'Donator').last.visible_name
   end
 
 end

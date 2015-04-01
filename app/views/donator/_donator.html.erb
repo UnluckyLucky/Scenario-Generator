@@ -5,7 +5,7 @@
         <% if donator.image_url %>
           <%= image_tag donator.image_url %>
         <% else %>
-          <div class="image-placeholder"><div class="image-text">Donator</div></div>
+          <div class="image-placeholder"><div class="image-text"><%= donator.title %></div></div>
         <% end %>
       </div>
       <div class="col-xs-8">
