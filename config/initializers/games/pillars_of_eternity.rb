@@ -1,0 +1,334 @@
+# Races
+
+# Info that'll be used in the hash used in the generator
+races = {
+    :Human => [
+        :Meadow,
+        :Ocean,
+        :Savannah
+    ],
+    :Aumaua => [
+        :Coastal,
+        :Island
+    ],
+    :Dwarf => [
+        :Boreal,
+        :Mountain
+    ],
+    :Elf => [
+        :Pale,
+        :Wood
+    ],
+    :Orland => [
+        :Hearth,
+        :Wild
+    ],
+    :Godlike => [
+        :Death,
+        :Fire,
+        :Moon,
+        :Nature
+    ]
+}
+
+# This holds the actual options
+race_options = []
+# This holds the names of subtrees that'll help with column rerolls
+race_subtrees = []
+
+# Generate and push the columns and subcolumns
+races.each do |race, subraces|
+    race_hash = {}
+
+    sub_column_name = "#{race} Subrace"
+
+    race_subtrees.push sub_column_name.to_s.gsub(/ /, '_').downcase.to_sym
+
+    race_hash[race] = {
+        title: sub_column_name,
+        options: subraces
+    }
+
+    race_options.push race_hash
+end
+
+# Classes
+
+# This holds the names of subtrees that'll help with column rerolls
+class_subtrees = [
+    :phrases, :powers, :invocations, :shapeshift_form,
+    :order, :diety, :spells
+]
+
+# Classes and their subtrees
+classes = [
+    :Barbarian,
+    :Fighter,
+    :Monk,
+    :Ranger,
+    :Rogue,
+    {
+        :Chanter => {
+            title: 'Phrases',
+            min: 2,
+            options: [
+                :"Aefyllath Ues Mith Fyr",
+                :"Blessed Was Wengridh, Quickest of His Tribe",
+                :"Dull the Edge, Blunt the Point",
+                :"Thick Grew Their Tongues, Stumbling O'er Words",
+                :"Come, Come Soft Winds of Death"
+            ]
+        },
+        :Invocations => {
+            min: 2,
+            options: [
+                :"But Reny Daret's Ghost, He would not Rest",
+                :"And Hel-Hyraf Crashed upon the Shield",
+                :"Not Felled by Axe, Nor Broken by Storm",
+                :"The Thunder Rolled like Waves on Black Seas",
+                :"Thrice Was She Wronged, and Thrice Justly Avenged",
+                :"If their Bones Sleep Still Under that Hill, None Can Say",
+                :"White Worms Writhed in the Bellies of the Dead"
+            ]
+        }
+    },
+    {
+        :Cipher => {
+            title: 'Powers',
+            min: 2,
+            options: [
+                :"Eyestrike",
+                :"Tenuous Grasp",
+                :"Whisper of Treason",
+                :"Antipathetic Field",
+                :"Mind Wave",
+                :"Soul Shock"
+            ]
+        }
+    },
+    {
+        :Druid => {
+            title: 'Shapeshift Form',
+            options: [
+                :Bear,
+                :Boar,
+                :Cat,
+                :Stag,
+                :Wolf
+            ]
+        }
+    },
+    {
+        :Paladin => {
+            title: 'Order',
+            options: [
+                :"Bleak Walkers",
+                :"Darcozzi",
+                :"Goldpact",
+                :"Kind Wayfarers",
+                :"Shieldbearers of St. Elcga"
+            ]
+        }
+    },
+    {
+        :Priest => {
+            title: 'Diety',
+            options: [
+                :Berath,
+                :Eothas,
+                :Magran,
+                :Skaen,
+                :Wael
+            ]
+        }
+    },
+    {
+        :Wizard => {
+            title: 'Spells',
+            min: 4,
+            options: [
+                :"Arkemyr's Dazzling Lights",
+                :"Chill Fog",
+                :"Concelhaut's Parasitic Staff",
+                :"Eldritch Aim ",
+                :"Fan of Flames ",
+                :"Fleet Feet",
+                :"Ghost Blades",
+                :"Jolting Touch",
+                :"Kalakoth's Sunless Grasp",
+                :"Minoletta's Minor Missiles",
+                :"Slicken Coats",
+                :"Spirit Shield",
+                :"Thrust of Tattered Veils",
+                :"Wizard's Double"
+            ]
+        }
+    }
+]
+
+# Attributes
+# TODO: Make this more interesting
+
+attributes = [
+    [
+        :"High Might",
+        :"Medium Might",
+        :"Low Might"
+    ],
+    [
+        :"High Constitution",
+        :"Medium Constitution",
+        :"Low Constitution"
+    ],
+    [
+        :"High Dexterity",
+        :"Medium Dexterity",
+        :"Low Dexterity"
+    ],
+    [
+        :"High Perception",
+        :"Medium Perception",
+        :"Low Perception"
+    ],
+    [
+        :"High Intellect",
+        :"Medium Intellect",
+        :"Low Intellect"
+    ],
+    [
+        :"High Resolve",
+        :"Medium Resolve",
+        :"Low Resolve"
+    ],
+]
+
+# Backgrounds
+
+# Generic backgrounds to be added to all cultures
+generic_backgrounds = [
+    :Drifter,
+    :Hunter,
+    :Laborer,
+    :Merchant
+]
+
+# Info to be used for generating culture columns and the background subcolumns
+cultures = {
+    :"Aedyr" => [
+        :Aristocrat,
+        :Clergyman,
+        :Colonist,
+        :Dissident,
+        :Mercenary,
+        :Slave
+    ],
+    :"Deadfire Archipelago" => [
+        :Aristocrat,
+        :Explorer,
+        :Mercenary,
+        :Raider,
+        :Slave
+    ],
+    :"Ixamitl Plains" => [
+        :Aristocrat,
+        :Dissident,
+        :Philosopher,
+        :Scholar,
+        :Mercenary
+    ],
+    :"Old Vailia" => [
+        :Aristocrat,
+        :Artist,
+        :Colonist,
+        :Dissident,
+        :Mercenary,
+        :Slave
+    ],
+    :"Rauatai" => [
+        :Aristocrat,
+        :Mercenary,
+        :Slave
+    ],
+    :"The Living Lands" => [
+        :Scientist,
+        :Explorer,
+        :Colonist
+    ],
+    :"The White that Wends" => [
+        :Aristocrat,
+        :Explorer,
+        :Mystic
+    ]
+}
+
+# This holds the actual options
+cultures_array = []
+# This holds the names of subtrees that'll help with column rerolls
+cultures_sub_trees = []
+
+# Generate and push the columns and subcolumns
+cultures.each do |culture, backgrounds|
+    culture_hash = {}
+
+    sub_column_name = "#{culture} Background"
+
+    cultures_sub_trees.push sub_column_name.to_s.gsub(/ /, '_').downcase.to_sym
+
+    culture_hash[culture] = {
+        title: sub_column_name,
+        options: backgrounds + generic_backgrounds
+    }
+
+    cultures_array.push culture_hash
+end
+
+GAMES[:pillars_of_eternity] = {
+    buy_link: {
+        uk: 'http://www.amazon.co.uk/gp/product/B00QGNX0P2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00QGNX0P2&linkCode=as2&tag=scen-gen-21&linkId=OATNHOVIHPYPL6VY',
+        us: 'http://store.steampowered.com/app/291650/'
+    },
+    title: 'Pillars of Eternity',
+    generator_title: 'Character',
+    background: 'pillars_of_eternity.jpg',
+    added: Date.strptime('20150403',"%Y%m%d"),
+    last_updated: Date.strptime('20150403',"%Y%m%d"),
+    columns: {
+        sex: {
+            options: [
+                :Male,
+                :Female
+            ]
+        },
+        race: {
+            sub_trees: race_subtrees,
+            options: race_options
+        },
+        class: {
+            sub_trees: class_subtrees,
+            options: classes
+        },
+        attributes: {
+            min: 6,
+            options: attributes
+        },
+        culture: {
+            sub_trees: cultures_sub_trees,
+            options: cultures_array
+        },
+        voice: {
+            options: [
+                :"Mystic (male)",
+                :"Feisty (male)",
+                :"Noble (male)",
+                :"Stoic (male)",
+                :"Sinister (male)",
+                :"Mystic (female)",
+                :"Feisty (female)",
+                :"Noble (female)",
+                :"Stoic (female)",
+                :"Sinister (female)",
+                :None
+            ]
+        }
+    }
+}
