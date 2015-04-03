@@ -1,6 +1,6 @@
 ready = ->
 
-  headerHeight = $('.header-2').height()
+  headerHeight = $('.header-2').height() - 10
   positionString = 'center ' + headerHeight + 'px'
 
   $('body').css('background-position', positionString)
