@@ -18,10 +18,6 @@
   </div>
 </div>
 
-<%= render partial: 'scenario/generator/columns', locals: { column_type: :regular } %>
-
-<% if @spoiler_alert_display %>
-  <%= render 'scenario/generator/spoiler_alert' %>
-<% end %>
-
-<%= render partial: 'scenario/generator/columns', locals: { column_type: :spoiler } %>
+<div id="generator-columns">
+  <%= render partial: 'scenario/generator/scenario' %>
+</div>

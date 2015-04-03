@@ -1,5 +1,5 @@
 ready = ->
-  $('.reroll-column-button').click ->
+  $(document).on 'click', '.reroll-column-button', ->
     column_name_to_reroll = $(@).attr('id')
     game_name = document.URL.split('/')[4].split('#')[0]
 
@@ -44,10 +44,8 @@ ready = ->
     $.get(
       '/reroll/column', data
     ).done( (data) ->
-      document.open()
-      document.write(data)
-      document.close()
-      location.hash = column_name_to_reroll;
+      $('#generator-columns').empty()
+      $('#generator-columns').append(data)
     )
 
 

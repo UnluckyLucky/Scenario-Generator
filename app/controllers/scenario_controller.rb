@@ -20,6 +20,7 @@ class ScenarioController < ApplicationController
     else
       redirect_to root_path
     end
+
   end
 
   def reroll_column
@@ -29,6 +30,8 @@ class ScenarioController < ApplicationController
       @scenario = construct_hash_from_params
 
       set_up_variables
+
+      render partial: 'scenario/generator/scenario'
     else
       redirect_to root_path
     end
@@ -80,8 +83,6 @@ class ScenarioController < ApplicationController
       unless session[@game_name]
         @spoiler_alert_display = !@scenario[:spoiler].empty?
       end
-
-      render :show
     end
 
     # TODO: Clean this up
