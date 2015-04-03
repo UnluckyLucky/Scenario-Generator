@@ -1,8 +1,12 @@
 ready = ->
+
+  headerHeight = $('.header-2').height()
+  positionString = 'center ' + headerHeight + 'px'
+
+  $('body').css('background-position', positionString)
+
   $(document).on 'click', '.item', ->
     $(@).toggleClass('active')
-
-  $(".content").height($(document).height() - $('.header-2').height() + 12)
 
   $(document).on 'click', '.show-suggestion', ->
     $('.suggestion-form').toggle()
