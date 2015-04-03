@@ -5,67 +5,71 @@ ready = ->
 
 
   $(document).on 'click', '.reroll-column-button', ->
-    $(@).children('.loading').show()
-    column_name_to_reroll = $(@).attr('id')
+    if !$(@).children('.loading').is(':visible')
 
-    regular = {}
-    spoiler = {}
-    columns = $('.column.regular')
+      $(@).children('.loading').show()
+      column_name_to_reroll = $(@).attr('id')
 
-    $(columns).each (key, column) ->
-      column_name = $(column).attr('id')
-      items = $(column).children('.item').map( ->
-        text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+      regular = {}
+      spoiler = {}
+      columns = $('.column.regular')
 
-        if $(@).hasClass('active')
-          text = '@' + text
+      $(columns).each (key, column) ->
+        column_name = $(column).attr('id')
+        items = $(column).children('.item').map( ->
+          text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
 
-        return text
-      ).get()
-      regular[column_name] = items
+          if $(@).hasClass('active')
+            text = '@' + text
+
+          return text
+        ).get()
+        regular[column_name] = items
 
 
-    columns = $('.column.spoiler')
+      columns = $('.column.spoiler')
 
-    $(columns).each (key, column) ->
-      column_name = $(column).attr('id')
-      items = $(column).children('.item').map( ->
-        text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
+      $(columns).each (key, column) ->
+        column_name = $(column).attr('id')
+        items = $(column).children('.item').map( ->
+          text = $(@).text().replace(/(\r\n|\n|\r|)/gm,"").trim()
 
-        if $(@).hasClass('active')
-          text = '@' + text
+          if $(@).hasClass('active')
+            text = '@' + text
 
-        return text
-      ).get()
-      spoiler[column_name] = items
+          return text
+        ).get()
+        spoiler[column_name] = items
 
-    data = {
-      column_name: column_name_to_reroll,
-      r: regular,
-      s: spoiler
-    }
+      data = {
+        column_name: column_name_to_reroll,
+        r: regular,
+        s: spoiler
+      }
 
-    url = game_name() + '/reroll/column'
+      url = game_name() + '/reroll/column'
 
-    $.get(
-      url, data
-    ).done( (data) ->
-      $('#generator-columns').empty()
-      $('#generator-columns').append(data)
-    )
+      $.get(
+        url, data
+      ).done( (data) ->
+        $('#generator-columns').empty()
+        $('#generator-columns').append(data)
+      )
 
   $(document).on 'click', '.reroll-button', ->
-    $(@).children('.loading').show()
+    if $(@).children('.loading').is(':visible')
 
-    url = game_name() + '/reroll'
+      $(@).children('.loading').show()
 
-    $.get(
-      url
-    ).done( (data) ->
-      $('#generator-columns').empty()
-      $('#generator-columns').append(data)
-      $('.loading').hide()
-    )
+      url = game_name() + '/reroll'
+
+      $.get(
+        url
+      ).done( (data) ->
+        $('#generator-columns').empty()
+        $('#generator-columns').append(data)
+        $('.loading').hide()
+      )
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
