@@ -167,39 +167,14 @@ classes = [
 ]
 
 # Attributes
-# TODO: Make this more interesting
 
 attributes = [
-    [
-        :"High Might",
-        :"Medium Might",
-        :"Low Might"
-    ],
-    [
-        :"High Constitution",
-        :"Medium Constitution",
-        :"Low Constitution"
-    ],
-    [
-        :"High Dexterity",
-        :"Medium Dexterity",
-        :"Low Dexterity"
-    ],
-    [
-        :"High Perception",
-        :"Medium Perception",
-        :"Low Perception"
-    ],
-    [
-        :"High Intellect",
-        :"Medium Intellect",
-        :"Low Intellect"
-    ],
-    [
-        :"High Resolve",
-        :"Medium Resolve",
-        :"Low Resolve"
-    ],
+    :Might,
+    :Constitution,
+    :Dexterity,
+    :Perception,
+    :Intellect,
+    :Resolve
 ]
 
 # Backgrounds
@@ -307,8 +282,7 @@ GAMES[:pillars_of_eternity] = {
             sub_trees: class_subtrees,
             options: classes
         },
-        attributes: {
-            min: 6,
+        primary_attribute: {
             options: attributes
         },
         culture: {
