@@ -58,7 +58,7 @@ ready = ->
     )
 
   $(document).on 'click', '.reroll-button', ->
-    if $('.loading.reroll').is(':visible')
+    if $('.loading').is(':visible')
       return
 
     $(@).children('.loading').show()
