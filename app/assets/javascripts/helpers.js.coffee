@@ -1,10 +1,10 @@
 ready = ->
-  $('.item').on ->
+  $(document).on 'click', '.item', ->
     $(@).toggleClass('active')
 
   $(".content").height($(document).height() - $('.header-2').height() + 12)
 
-  $('.show-suggestion').on 'click', ->
+  $(document).on 'click', '.show-suggestion', ->
     $('.suggestion-form').toggle()
 
   $(".menu-toggle").on 'click', (e) ->

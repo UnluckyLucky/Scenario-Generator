@@ -20,7 +20,19 @@ class ScenarioController < ApplicationController
     else
       redirect_to root_path
     end
+  end
 
+  def reroll
+    @game_name = params[:game_name].to_sym
+    if ScenarioGenerator.games.include? @game_name
+      @scenario = ScenarioGenerator.scenario @game_name
+
+      set_up_variables
+
+      render partial: 'scenario/generator/scenario'
+    else
+      redirect_to root_path
+    end
   end
 
   def reroll_column

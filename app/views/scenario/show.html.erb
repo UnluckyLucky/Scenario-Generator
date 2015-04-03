@@ -5,7 +5,10 @@
     <% end %>
   </div>
   <div class="col-xs-8 col-sm-4 col-sm-offset-1">
-    <%= link_to "Click to reroll", generator_path(game_name: @game_name), class: 'box button reroll-button' %>
+    <div class="box button reroll-button">
+      Click to reroll
+      <div class="loading"><%= image_tag 'loading.gif' %></div>
+    </div>
   </div>
   <div class="col-xs-4 col-sm-2 col-sm-offset-2">
     <div class="button save-button box">

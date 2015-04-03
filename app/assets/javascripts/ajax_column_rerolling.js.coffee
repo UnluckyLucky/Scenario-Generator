@@ -1,7 +1,11 @@
 ready = ->
+
+  game_name = ->
+    return document.URL.split('/')[4].split('#')[0]
+
+
   $(document).on 'click', '.reroll-column-button', ->
     column_name_to_reroll = $(@).attr('id')
-    game_name = document.URL.split('/')[4].split('#')[0]
 
     regular = {}
     spoiler = {}
@@ -35,19 +39,31 @@ ready = ->
       spoiler[column_name] = items
 
     data = {
-      game_name: game_name,
       column_name: column_name_to_reroll,
       r: regular,
       s: spoiler
     }
 
+
+    url = game_name() + '/reroll/column'
+
     $.get(
-      '/reroll/column', data
+      url, data
     ).done( (data) ->
       $('#generator-columns').empty()
       $('#generator-columns').append(data)
     )
 
+  $(document).on 'click', '.reroll-button', ->
+
+    url = game_name() + '/reroll'
+
+    $.get(
+      url
+    ).done( (data) ->
+      $('#generator-columns').empty()
+      $('#generator-columns').append(data)
+    )
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
