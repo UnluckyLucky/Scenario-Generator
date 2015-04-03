@@ -2,3 +2,4 @@ $('.link-to-generator').show();
 $('.link-to-generator .link').prop('href', '<%= scenario_load_url(uuid: @scenario.uuid) %>');
 $('.link-to-generator .input').val('<%= scenario_load_url(uuid: @scenario.uuid) %>');
 $('.link-to-generator .input').select();
+$('.save-button').children('.loading').hide()

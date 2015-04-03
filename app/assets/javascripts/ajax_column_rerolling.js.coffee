@@ -5,6 +5,7 @@ ready = ->
 
 
   $(document).on 'click', '.reroll-column-button', ->
+    $(@).children('.loading').show()
     column_name_to_reroll = $(@).attr('id')
 
     regular = {}
@@ -44,7 +45,6 @@ ready = ->
       s: spoiler
     }
 
-
     url = game_name() + '/reroll/column'
 
     $.get(
@@ -55,6 +55,7 @@ ready = ->
     )
 
   $(document).on 'click', '.reroll-button', ->
+    $(@).children('.loading').show()
 
     url = game_name() + '/reroll'
 
@@ -63,6 +64,7 @@ ready = ->
     ).done( (data) ->
       $('#generator-columns').empty()
       $('#generator-columns').append(data)
+      $('.loading').hide()
     )
 
 $(document).ready(ready)

@@ -8,7 +8,8 @@
       </div>
     </div>
     <div class="col-xs-10 with-info-column">
-      <h2 class='box reroll-column-button button' id='<%= standard_column_name title %>'>
+      <h2 class='box reroll-column-button button unselectable' id='<%= standard_column_name title %>'>
+        <div class="loading"><%= image_tag 'loading.gif' %></div>
         <div class="row">
           <div class="col-xs-12">
             <div class="column-header"><%= title %></div>
@@ -19,7 +20,8 @@
     </div>
   <% else %>
     <div class="col-xs-12">
-      <h2 class='box reroll-column-button button' id='<%= standard_column_name title %>'>
+      <h2 class='box reroll-column-button button unselectable' id='<%= standard_column_name title %>'>
+        <div class="loading"><%= image_tag 'loading.gif' %></div>
         <div class="row">
           <div class="col-xs-12">
             <div class="column-header"><%= title %></div>
