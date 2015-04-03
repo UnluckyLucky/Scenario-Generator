@@ -1,5 +1,8 @@
 ready = ->
   $('.save-button').on 'click', ->
+    if $('.loading').is(':visible')
+      return
+
     $(@).children('.loading').show()
     game_name = document.URL.split('/')[4].split('#')[0]
     existing_uuid = document.URL.split('/')[6]

@@ -5,7 +5,7 @@ ready = ->
 
 
   $(document).on 'click', '.reroll-column-button', ->
-    if $(@).children('.loading').is(':visible')
+    if $('.loading').is(':visible')
       return
 
     $(@).children('.loading').show()
@@ -58,7 +58,7 @@ ready = ->
     )
 
   $(document).on 'click', '.reroll-button', ->
-    if $(@).children('.loading').is(':visible')
+    if $('.loading.reroll').is(':visible')
       return
 
     $(@).children('.loading').show()
