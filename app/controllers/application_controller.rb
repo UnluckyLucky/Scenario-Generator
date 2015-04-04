@@ -37,8 +37,6 @@ class ApplicationController < ActionController::Base
     end
 
     def set_up_donation_limits
-      @donation_level_1 = ENV['US_DONATION_TIER_ONE']
-      @donation_level_1 = ENV['UK_DONATION_TIER_ONE'] if Donator.in_uk?(@country)
       @donation_level_2 = ENV['US_DONATION_TIER_TWO']
       @donation_level_2 = ENV['UK_DONATION_TIER_TWO'] if Donator.in_uk?(@country)
     end
