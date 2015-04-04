@@ -257,6 +257,20 @@ cultures.each do |culture, backgrounds|
     cultures_array.push culture_hash
 end
 
+voices = [
+    :"Mystic (male)",
+    :"Feisty (male)",
+    :"Noble (male)",
+    :"Stoic (male)",
+    :"Sinister (male)",
+    :"Mystic (female)",
+    :"Feisty (female)",
+    :"Noble (female)",
+    :"Stoic (female)",
+    :"Sinister (female)",
+    :None
+]
+
 GAMES[:pillars_of_eternity] = {
     buy_link: {
         uk: 'http://www.amazon.co.uk/gp/product/B00QGNX0P2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00QGNX0P2&linkCode=as2&tag=scen-gen-21&linkId=OATNHOVIHPYPL6VY',
@@ -290,19 +304,7 @@ GAMES[:pillars_of_eternity] = {
             options: cultures_array
         },
         voice: {
-            options: [
-                :"Mystic (male)",
-                :"Feisty (male)",
-                :"Noble (male)",
-                :"Stoic (male)",
-                :"Sinister (male)",
-                :"Mystic (female)",
-                :"Feisty (female)",
-                :"Noble (female)",
-                :"Stoic (female)",
-                :"Sinister (female)",
-                :None
-            ]
+            options: voices
         }
     }
 }
