@@ -265,8 +265,8 @@ GAMES[:pillars_of_eternity] = {
     title: 'Pillars of Eternity',
     generator_title: 'Character',
     background: 'pillars_of_eternity.jpg',
-    added: Date.strptime('20150403',"%Y%m%d"),
-    last_updated: Date.strptime('20150403',"%Y%m%d"),
+    added: Date.strptime('20150404',"%Y%m%d"),
+    last_updated: Date.strptime('20150404',"%Y%m%d"),
     columns: {
         sex: {
             options: [
