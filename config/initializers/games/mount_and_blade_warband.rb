@@ -136,7 +136,7 @@ challenges = [
     ],
     :"Never random prisoners",
     :"Accept no fiefs",
-    :"Become the martial of your faction",
+    :"Become the marshall of your faction",
     :"Capture a town with no back up",
     :"Capture a castle with no back up",
     :"Capture an enemy king",
