@@ -29,15 +29,12 @@ class ApplicationController < ActionController::Base
       percentage_towards_goal = Donator.percentage_towards_goal(@country)
       @display_percentage =  "%g" % ("%.2f" % (percentage_towards_goal * 100))
 
-      @currency_symbol = Donator.get_currency_symbol(@country)
-
       @latest_donator_name = Donator.latest_donator_name
 
       set_up_donation_limits
     end
 
     def set_up_donation_limits
-      @donation_level_2 = ENV['US_DONATION_TIER_TWO']
-      @donation_level_2 = ENV['UK_DONATION_TIER_TWO'] if Donator.in_uk?(@country)
+      @donation_level_2 = ENV['UK_DONATION_TIER_TWO']
     end
 end
