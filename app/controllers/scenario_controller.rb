@@ -76,6 +76,8 @@ class ScenarioController < ApplicationController
       @scenario = @saved_scenario.scenario_hash
 
       set_up_variables
+
+      render :show
     else
       redirect_to generator_path(game_name: params[:game_name])
     end
