@@ -14,6 +14,8 @@ class ScenarioController < ApplicationController
   def random
     game = ScenarioGenerator.random_game
 
+    Stat.adjust_stat(name: "Random button users", count: 1, group: 'Visitor Counts', version: current_version)
+
     redirect_to generator_path(game_name: game)
   end
 

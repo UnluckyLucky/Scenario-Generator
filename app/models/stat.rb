@@ -8,7 +8,7 @@ class Stat < ActiveRecord::Base
   AB_TESTED_GROUPS = []
 
   # Active versions
-  ACTIVE_VERSIONS = [:a, :b, :c, :d, :e]
+  ACTIVE_VERSIONS = [:b, :d]
 
   # Check if a given stat or group is being a/b tested
   def self.ab_tested?(stat_name, group)
