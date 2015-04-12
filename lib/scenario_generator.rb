@@ -235,6 +235,10 @@ module ScenarioGenerator
       # If that'd put it below 1 then set it to 1
       max = 1 if max < 1
 
+      if chance == :even
+        return rand(min..max)
+      end
+
       quantity = min
 
       # If chance is 100% then just use max since we'll hit it anyway

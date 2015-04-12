@@ -66,7 +66,7 @@ GAMES[:skyrim] = {
         },
         factions_to_join: {
             help: 'The factions you are required to join, you can join others if you want as well',
-            chance_of_multiple: 50,
+            chance_of_multiple: :even,
             min: 1,
             max: 5,
             options: [

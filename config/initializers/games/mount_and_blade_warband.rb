@@ -287,18 +287,18 @@ GAMES[:mount_and_blade_warband] = {
         },
         challenges: {
             max: 6,
-            chance_of_multiple: 70,
+            chance_of_multiple: :even,
             options: challenges
         },
         required_companions: {
             help: 'If two companions start arguing, whoever comes first on the list wins',
             max: 4,
-            chance_of_multiple: 80,
+            chance_of_multiple: :even,
             options: companions
         },
         army_makeup: {
             max: 4,
-            chance_of_multiple: 70,
+            chance_of_multiple: :even,
             options: troop_types
         }
     }

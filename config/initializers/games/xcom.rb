@@ -30,7 +30,7 @@ GAMES[:xcom] = {
         },
         second_wave_options: {
             help: 'Ignore any options you have not unlocked. If you get an Enemy Within option and you do not own Enemy Within, go buy it because it is awesome.',
-            chance_of_multiple: 75,
+            chance_of_multiple: 70,
             min: 0,
             max: 8,
             options: [
@@ -102,7 +102,7 @@ GAMES[:xcom] = {
             ]
         },
         starting_country: {
-            chance_of_multiple: 35,
+            chance_of_multiple: 0,
             min: 1,
             max: 1,
             options: [

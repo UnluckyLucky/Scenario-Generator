@@ -447,7 +447,7 @@ GAMES[:crusaderkings] = {
         },
         goals: {
             sub_trees: [:target_religion, :target_empire],
-            chance_of_multiple: 75,
+            chance_of_multiple: :even,
             min: 1,
             max: 5,
             options: [

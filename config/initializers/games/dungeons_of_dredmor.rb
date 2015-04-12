@@ -10,8 +10,8 @@ GAMES[:dungeons_of_dredmor] = {
     columns: {
         skills: {
             chance_of_multiple: 0,
-            min: 6,
-            max: 6,
+            min: 7,
+            max: 7,
             options: [
                 :'Swords',
                 :'Axes',
