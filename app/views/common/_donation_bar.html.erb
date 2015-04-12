@@ -1,30 +1,22 @@
-<div class="row">
+<div class="row donation-info">
   <div class="col-xs-12 col-sm-7">
     <span class="text">
       <div class="prop">
-        Donate to help keep Scenario Generator running.
-      </div>
-      <div class="fiver">
-        All donators can have their named listed
+        Donate to help keep Scenario Generator running. All donators can have their name listed
         <% if controller == 'donator' %>
           below.
         <% else %>
           on the
           <%= link_to 'donator list', '/donators' %>.
-        <% end %>
-      </div>
-      <div class="tenner">
-        Donators who give £<%= @donation_level_2 %> can chose the next game to be added.
+        <% end %> Donators who give £<%= @donation_level_2 %> can chose the next game to be added.
       </div>
     </span>
   </div>
   <div class="col-xs-12 col-sm-5">
     <div class="row">
       <%= render partial: 'common/paypal_button' %>
-      <div class="col-xs-6 btc-donation-holder">
-        <span class="btc-donation-image">
-          <a class="coinbase-button" data-code="e8f8c8233d32310169df5c0470fae3d3" data-button-style="custom_small" href="https://www.coinbase.com/checkouts/e8f8c8233d32310169df5c0470fae3d3">Donate Bitcoin</a>
-        </span>
+      <div class="col-xs-6">
+        <div class="latest-donator">Latest donator: <div class="donator-name"><%= @latest_donator_name %></div></div>
       </div>
     </div>
   </div>
