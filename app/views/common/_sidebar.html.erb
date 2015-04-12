@@ -8,6 +8,9 @@
             <a href="/">Game Index</a>
         </li>
         <li>
+            <a href="http://steam.scenariogenerator.net">Steam Library Randomizer</a>
+        </li>
+        <li>
             <a href="/donators">Donators</a>
         </li>
         <li>
@@ -15,6 +18,10 @@
         </li>
         <li>
             <a href="https://github.com/Lockyy/scenario-generator", class: 'sidebar-github-link'>Github Repo</a>
+        </li>
+        <hr>
+        <li>
+            <%= link_to 'Random game', random_generator_path %>
         </li>
         <hr>
         <% @games.each do |key, value| %>

@@ -6,6 +6,7 @@ DfScenario::Application.routes.draw do
   get 'game/:game_name/accept', to: 'scenario#accept', as: 'accept'
   get 'game/:game_name/reroll', to: 'scenario#reroll'
   get 'game/:game_name/reroll/column', to: 'scenario#reroll_column'
+  get 'random', to: 'scenario#random', as: 'random_generator'
 
   post 'game/:game_name/save', to: 'scenario#save', as: 'scenario_save'
   get 'game/:game_name/scenario/:uuid', to: 'scenario#load', as: 'scenario_load'

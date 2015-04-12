@@ -11,6 +11,12 @@ class ScenarioController < ApplicationController
     @title = 'Scenario Generator'
   end
 
+  def random
+    game = ScenarioGenerator.random_game
+
+    redirect_to generator_path(game_name: game)
+  end
+
   def show
     @game_name = params[:game_name].to_sym
     if ScenarioGenerator.games.include? @game_name

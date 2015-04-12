@@ -187,6 +187,10 @@ module ScenarioGenerator
       GAMES[game][:title]
     end
 
+    def random_game
+      GAMES.keys.sample(1)[0]
+    end
+
     # This is what the generater generates. Examples:
     # Pokemon -> Party
     # Mass Effect -> Playthrough

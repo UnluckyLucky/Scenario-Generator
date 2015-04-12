@@ -1,4 +1,27 @@
 <div class="row generator-links">
+
+  <div class="other-links">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 generator other">
+
+      <a href="<%= random_generator_path %>" class="link-header">
+        <div class="link-text">
+          Random game
+        </div>
+      </a>
+
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator other">
+
+      <a href="http://steam.scenariogenerator.net" class="link-header">
+        <div class="link-text">
+          Steam Library Randomizer
+        </div>
+      </a>
+
+    </div>
+  </div>
+
   <% @games.each do |key, value| %>
     <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 generator<%= ' new' if ScenarioGenerator.new?(key) %><%= ' updated' if ScenarioGenerator.updated_recently?(key) %>">
 
