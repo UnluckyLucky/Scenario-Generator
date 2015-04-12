@@ -162,7 +162,7 @@ GAMES[:dwarffortress] = {
                 :"Dig exactly the amount of stone you need for each task, no more",
                 :"The initial 7 dwarves are prison guards. Lock all immigrants in their cells and keep them alive. After 10 years in their cell each dwarf can be released as a new guard. Native born dwarves become guards",
                 :"Build Venice. Your fort must be above ground with moats between buildings, you can travel between buildings via bridges",
-                :"Build a fort with a task based on the translation of it's randomised name",
+                :"Build a fort with a task based on the translation of it's randomizeed name",
                 :"Treat your nobles like nobility. As soon as the King declares his first stupid mandate, execute every noble in an interesting way",
                 :"Infect all your dwarves with vampirism",
                 :"Turn all your dwarves into werecreatures",
