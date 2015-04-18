@@ -21,8 +21,7 @@ class ApplicationController < ActionController::Base
     end
 
     def setup_donation_bar_info
-      @location = Geocoder.search(request.remote_ip).first
-      @country = @location.country
+      @country = 'United States'
 
       @donation_goal = Donator.get_donation_goal(@country)
 
