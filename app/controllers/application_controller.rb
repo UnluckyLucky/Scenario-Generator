@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     end
 
     def setup_donation_bar_info
-      @country = 'United States'
+      @country = 'United Kingdom'
 
       @donation_goal = Donator.get_donation_goal(@country)
 
