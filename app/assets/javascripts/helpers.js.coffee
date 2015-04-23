@@ -1,11 +1,9 @@
 ready = ->
 
-  setTimeout(( ->
-    headerHeight = $('.header-2').height() - 10
-    positionString = 'center ' + headerHeight + 'px'
+  headerHeight = $('.header-2').height() - 10
+  positionString = 'center ' + headerHeight + 'px'
 
-    $('body').css('background-position', positionString)
-  ), 50)
+  $('body').css('background-position', positionString)
 
   $(document).on 'click', '.item', ->
     $(@).toggleClass('active')
