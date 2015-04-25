@@ -678,9 +678,15 @@ challenges = [
     :"Get on a train with a wanted level, survive for 10 minutes as the cops chase you",
     :"Get on a train with a $9000 bounty, survive the bounty",
     :"Befriend someone, drive around with them, kill people with them. Then betray them and shoot them in the back.",
-    :"Reach level 20",
-    :"Reach level 50",
-    :"Reach level 100"
+    :"Reach rank 25",
+    :"Reach rank 50",
+    :"Reach rank 100",
+    :"Win 10 games of tennis against another player",
+    :"Win all competitive game types",
+    :"Use your custom vehicle win 5 races",
+    :"Complete all survival missions",
+    :"Win a rally race as the co-driver",
+    :"Complete a heist using only crew members"
 ] + weapon_challenges
 
 GAMES[:gta_v_online] = {
