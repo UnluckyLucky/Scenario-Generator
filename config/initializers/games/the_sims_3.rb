@@ -473,7 +473,7 @@ GAMES[:the_sims_3] = {
     },
     title: 'The Sims 3',
     generator_title: 'Sim',
-    background: 'sims3.png',
+    background: 'sims3.jpg',
     added: Date.strptime('20150424',"%Y%m%d"),
     last_updated: Date.strptime('20150424',"%Y%m%d"),
     columns: sim
