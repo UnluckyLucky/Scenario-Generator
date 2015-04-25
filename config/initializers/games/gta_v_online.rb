@@ -588,7 +588,7 @@ challenges = [
     :"Kill 10 people while they're in Ammu-nation",
     :"Kill 10 people while they're in Clothes Store",
     :"Pick a person, kill them till they ragequit",
-    :"Pick someone, harrass them till they quit. Don't kill them",
+    :"Pick someone, harrass them till they quit without killing them",
     :"Steal someones car and destroy it without paying the insurance",
     :"Hijack 10 armoured trucks",
     :"Deliver 10 High Priority Vehicles",
