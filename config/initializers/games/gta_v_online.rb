@@ -561,9 +561,127 @@ weapons = [
     :"Antique Cavalry Dagger"
 ]
 
-challenges = [
-
+weapon_challenges = [
+    :"Kill 10 people with the Flaregun",
+    :"Kill 10 people with the Minigun",
+    :"Kill 10 people with the Rocket Launcher",
+    :"Kill 10 people with the Homing Rocket Launcher"
 ]
+weapons.each do |weapon|
+    weapon_challenges.append :"Kill 10 people with the #{weapon}"
+end
+
+challenges = [
+    :"Run 10 people over",
+    :"Kill 10 people in passive mode",
+    :"Break 10 cars out of the impound",
+    :"Kill 10 people as they come out of their garage",
+    :"Kill 10 people as they come out of Ammu-nation",
+    :"Kill 10 people as they come out of the Barber Shop",
+    :"Kill 10 people as they come out of the Tattoo parlor",
+    :"Kill 10 people as they come out of Modshop",
+    :"Kill 10 people as they come out of Ammu-nation",
+    :"Kill 10 people as they come out of Clothes Store",
+    :"Kill 10 people while they're in Ammu-nation",
+    :"Kill 10 people while they're in the Barber Shop",
+    :"Kill 10 people while they're in the Tattoo parlor",
+    :"Kill 10 people while they're in Ammu-nation",
+    :"Kill 10 people while they're in Clothes Store",
+    :"Pick a person, kill them till they ragequit",
+    :"Pick someone, harrass them till they quit. Don't kill them",
+    :"Steal someones car and destroy it without paying the insurance",
+    :"Hijack 10 armoured trucks",
+    :"Deliver 10 High Priority Vehicles",
+    :"Destroy 10 target airplanes",
+    :"Destroy 10 target vehicles",
+    :"Destroy 10 High Priorty Vehicles as someone is about to deliver them",
+    :"Destroy 10 High Priorty Vehicles",
+    :"Take the High Priority Vehicle to the top of the map",
+    :"Kill someone with a Titan",
+    :"Pick someone up with the Cargobob and drop them in the ocean",
+    :"Pick someone up in their own vehicle with the Cargobob and drop them in the ocean",
+    :"Pick someone up in the High Priority Vehicle with the Cargobob and drop them in the ocean",
+    :"Mug 10 people successfully",
+    :"Piss someone off so much they send mercenaries after you. Beat the mercenaries",
+    :"Snipe someone out of the air whilst they're in a helecopter",
+    :"Snipe someone out of the air whilst they're in a plane",
+    :"Blow 10 people up who are in planes",
+    :"Blow 10 people up who are in helecopters",
+    :"Blow 10 people up who are in cars",
+    :"Blow 10 people up who are in tanks",
+    :"Blow 10 people up with proximity mines",
+    :"Blow up a car with 4 people in it at the same time",
+    :"Blow up 3 people at once who are all in separate cars",
+    :"Kill 10 people with the jet",
+    :"Kill someone by crashing your jet into their car (they must not be afk)",
+    :"Crash your jet into someone else's jet",
+    :"Crash your titan into someone else's jet",
+    :"Blow up an airborne vehicle with your car",
+    :"Kill 10 people whilst parachuting",
+    :"Kill someone with your helecopter's blades",
+    :"Crash your plane into another plane that is about to take off",
+    :"Kill 10 people with $9000 dollar bounties",
+    :"Put a $9000 dollar bounty on someone then collect it yourself",
+    :"Complete The Fleeca Job",
+    :"Complete The Prison Break",
+    :"Complete The Prison Break Elite Challenges: Make sure Rashkovsky takes 1% damageor less, perform the extraction in under 4:40 mins
+ and make sure nobody gets wasted in the finale.",
+    :"Complete The Humane Labs Raid",
+    :"Complete The Humane Labs Raid Elite Challenges: Complete the finale in under 11 minutes, with under 2% vehicle damage, and make sure nobody gets wasted.",
+    :"Complete Series A Funding",
+    :"Complete Series A Funding Elite Challenges: Complete the finale in under 6:30 minutes, kill 75 enemies, and make sure nobody gets wasted",
+    :"Complete The Pacific Standard Job",
+    :"Complete The Pacific Standard Job Elite Challenges: Complete the finale in under 10 minutes, make sure NOOSE is not called, and make sure nobody gets wasted",
+    :"Complete all heist setups and finales in order",
+    :"Complete all heist setups and finales with the same team",
+    :"Complete all heist setups and finales, in order, with the same team and without losing any lives",
+    :"Successfully set up a heist with strangers without breaking your controller or keyboard (Note: this is impossible)",
+    :"Complete all stunt jumps",
+    :"Complete all rockstar missions",
+    :"Hoard $1,000,00 dollars, without microtransactions",
+    :"Hoard $10,000,00 dollars, without microtransactions",
+    :"Hoard $20,000,00 dollars, without microtransactions",
+    :"Buy two high-end apartments",
+    :"Complete every parachute mission",
+    :"Come first in every race",
+    :"Fully upgrade your car",
+    :"Acquire every car in your primary cars class",
+    :"Acquire every car in your primary cars class, fully upgrade them",
+    :"Kill someone as they attempt to leave the Military Base with a jet",
+    :"Kill someone in a jet with a helecopter",
+    :"Purchase every non-garage vehicle",
+    :"Put a $9000 bounty on someone and watch them be hunted down in your TV",
+    :"Complete every heist as the leader, convince everyone to let you take the maximum possible cut",
+    :"Complete every heist as the leader",
+    :"Parachute from a Skyscraper in the middle of LS to the impound lot",
+    :"Complete every gang attack",
+    :"Win every deathmatch",
+    :"Collect 10 crate drops",
+    :"Be a bad enough dude that you get kicked to the bad sport lobby",
+    :"Run over and kill 5 people on your bike",
+    :"Take a taxi from the north tip of the map to the airport, don't get killed on your way there and don't spook the taxi driver",
+    :"Survive 10 bounties, without just sitting in your apartment",
+    :"Survive for 10 minutes driving around in the High Priority Vehicle",
+    :"Survive for 30 minutes driving around in the High Priority Vehicle",
+    :"Survive for an hour driving around in the High Priority Vehicle",
+    :"Rob every store on the map in a row without dying to the cops, using a helecopter, or removing your wanted level",
+    :"Win 10 1-on-1 deathmatches",
+    :"Win 10 bets on jobs/races",
+    :"Kill 5 people with mercenaries",
+    :"Successfully mug 5 people",
+    :"Win a race that you created",
+    :"Solve the Mt Chilead Mystery",
+    :"Make $100,000 selling stolen cars",
+    :"Pick up a car in the cargo bob and kill someone by using it as a wrecking ball",
+    :"Pick up a car in the cargo bob and kill someone by dropping it on them",
+    :"Pick up a car in the cargo bob and kill someone by dropping it and making it blow up their car",
+    :"Get on a train with a wanted level, survive for 10 minutes as the cops chase you",
+    :"Get on a train with a $9000 bounty, survive the bounty",
+    :"Befriend someone, drive around with them, kill people with them. Then betray them and shoot them in the back.",
+    :"Reach level 20",
+    :"Reach level 50",
+    :"Reach level 100"
+] + weapon_challenges
 
 GAMES[:gta_v_online] = {
     buy_link: {
@@ -611,6 +729,12 @@ GAMES[:gta_v_online] = {
         primary_weapon: {
             help: "You may only use this weapon, except when absolutely necessary",
             options: weapons
+        },
+        challenges: {
+            min: 4,
+            max: 6,
+            chance_of_multiple: 25,
+            options: challenges
         }
     }
 }
