@@ -1,10 +1,5 @@
 ready = ->
 
-  headerHeight = $('.header-2').height() - 10
-  positionString = 'center ' + headerHeight + 'px'
-
-  $('body').css('background-position', positionString)
-
   $(document).on 'click', '.item', ->
     $(@).toggleClass('active')
 

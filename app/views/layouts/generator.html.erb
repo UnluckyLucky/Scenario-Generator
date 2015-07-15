@@ -17,7 +17,17 @@
     <%= render 'layouts/inspectlet' %>
     <%= render 'layouts/pleasant_analytics' %>
   </head>
-  <body class="generator" style="background-image: url(<%= asset_path(@background) %>); background-size: 100% auto">
+  <body class="generator">
+
+    <style>
+        body {
+            background: url(<%= asset_url(@background) %>) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
 
     <div id="wrapper">
       <%= render 'common/sidebar' %>
