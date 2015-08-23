@@ -1,5 +1,6 @@
-<span><%= link_to 'Got a game or feature suggestion?', '#', class: 'show-suggestion btn btn-primary', id: 'suggestion-link' %></span>
-<span><%= link_to 'Want to email me?', 'mailto:daniel@scenariogenerator.net', class: 'btn btn-primary email-button' %></span>
+<span><%= link_to 'Make a Suggestion', '#', class: 'show-suggestion btn btn-primary', id: 'suggestion-link' %></span>
+<span><%= link_to 'Email me', 'mailto:daniel@scenariogenerator.net', class: 'btn btn-primary email-button' %></span>
+<span><%= render 'common/paypal_button' %>
 <%= form_for Suggestion.new, url: suggestion_submit_path(page_name: params[:game_name] || :index), remote: true do |f| %>
   <div class="suggestion">
     <span class="suggestion-title">
