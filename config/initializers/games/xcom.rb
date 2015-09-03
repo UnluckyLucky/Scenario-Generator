@@ -1,8 +1,6 @@
 GAMES[:xcom] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B008IYCVK2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008IYCVK2&linkCode=as2&tag=scen-gen-21&linkId=PEXMH5LQWPS2I2YX',
-        us: 'http://www.amazon.com/gp/product/B006WQR3OM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B006WQR3OM&linkCode=as2&tag=scen-gen-20&linkId=PM2B254O5RLAKY3H'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/strategy/xcom-enemy-unknown/#b',
+    site: 'gmg',
     title: 'X-Com: Enemy Unknown',
     generator_title: 'Challenge',
     background: 'xcom.jpg',

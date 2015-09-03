@@ -25,9 +25,8 @@ civs = [
 ]
 
 GAMES[:age_of_empires_2] = {
-    buy_link: {
-        us: 'http://store.steampowered.com/app/221380/'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/strategy/age-empires-ii-hd-edition/',
+    site: 'gmg',
     title: 'Age of Empires 2',
     generator_title: 'Scenario',
     background: 'age_of_empires.jpg',

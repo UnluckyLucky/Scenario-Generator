@@ -39,10 +39,8 @@ def expeditions_stats
 end
 
 GAMES[:expeditions_conquistador] = {
-    buy_link: {
-        us: 'http://store.steampowered.com/app/237430/',
-        uk: 'http://store.steampowered.com/app/237430/',
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/indie/expeditions-conquistador/',
+    site: 'gmg',
     title: 'Expeditions: Conquistador',
     generator_title: 'Scenario',
     background: 'expeditions_conquistador.jpg',

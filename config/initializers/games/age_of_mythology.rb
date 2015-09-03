@@ -1,7 +1,6 @@
 GAMES[:age_of_mythology] = {
-    buy_link: {
-        us: 'http://store.steampowered.com/app/266840/'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/simulation/age-mythology-extended-edition/',
+    site: 'gmg',
     title: 'Age of Mythology',
     generator_title: 'Scenario',
     background: 'age_of_mythology.jpg',

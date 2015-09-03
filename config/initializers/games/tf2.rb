@@ -1,7 +1,6 @@
 GAMES[:tf2] = {
-    buy_link: {
-        us: 'http://store.steampowered.com/app/440'
-    },
+    buy_link: 'http://store.steampowered.com/app/440',
+    site: 'steam',
     title: 'Team Fortress 2',
     generator_title: 'Loadout',
     background: 'tf2.jpg',

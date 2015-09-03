@@ -18,4 +18,6 @@ DfScenario::Application.routes.draw do
   get 'donators', to: 'donator#index', as: 'donator_index'
   get 'faq', to: 'static#faq', as: 'faq'
 
+  get 'get', to: 'static#get', as: 'get'
+
 end

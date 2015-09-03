@@ -182,10 +182,8 @@ sim = {
 }
 
 GAMES[:the_sims_4] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B00KHJLXN2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00KHJLXN2&linkCode=as2&tag=talefromthefo-21&linkId=EEX5KZJ5GNFC3MB5',
-        us: 'http://www.amazon.co.uk/gp/product/B00KHJLXN2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00KHJLXN2&linkCode=as2&tag=talefromthefo-21&linkId=EEX5KZJ5GNFC3MB5'
-    },
+    buy_link: 'http://www.amazon.co.uk/gp/product/B00KHJLXN2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00KHJLXN2&linkCode=as2&tag=talefromthefo-21&linkId=EEX5KZJ5GNFC3MB5',
+    site: 'amazon',
     title: 'The Sims 4',
     generator_title: 'Sim',
     background: 'sims4.jpg',

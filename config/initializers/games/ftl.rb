@@ -1,7 +1,6 @@
 GAMES[:ftl] = {
-    buy_link: {
-        us: 'http://www.ftlgame.com/'
-    },
+    buy_link: 'http://www.ftlgame.com/',
+    site: 'ftlgame',
     title: 'FTL: Faster Than Light',
     background: 'ftl.png',
     added: Date.strptime('20150323',"%Y%m%d"),

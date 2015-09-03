@@ -30,10 +30,8 @@ def new_vegas_specials
 end
 
 GAMES[:falloutnewvegas] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B004Q7D9LU/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B004Q7D9LU&linkCode=as2&tag=scen-gen-21&linkId=K766N4ZZ5KBJEPTZ',
-        us: 'http://www.amazon.com/gp/product/B002SU4QG4/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002SU4QG4&linkCode=as2&tag=scen-gen-20&linkId=UGZWL6T6IJIHZYLZ'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/action/fallout-new-vegas-ultimate-edition/',
+    site: 'gmg',
     title: 'Fallout: New Vegas',
     generator_title: 'Character',
     background: 'newvegas.jpg',

@@ -247,10 +247,8 @@ troop_types = [
 ]
 
 GAMES[:mount_and_blade_warband] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B002RL9RKY/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B002RL9RKY&linkCode=as2&tag=scen-gen-21&linkId=4VLHW5R4LRCLGXZK',
-        us: 'http://www.amazon.com/gp/product/B002XNW6T0/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B002XNW6T0&linkCode=as2&tag=scen-gen-20&linkId=QJBQJ5PS2DA35NHF'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/action/mount-blade-warband-taleworlds/#b',
+    site: 'gmg',
     title: 'Mount and Blade',
     generator_title: 'Character',
     background: 'mountain_glade.jpg',

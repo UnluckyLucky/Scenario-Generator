@@ -1,7 +1,6 @@
 GAMES[:minecraft] = {
-    buy_link: {
-        us: 'https://minecraft.net/'
-    },
+    buy_link: 'https://minecraft.net/',
+    site: 'minecraft',
     title: 'Minecraft',
     generator_title: 'Challenge',
     background: 'minecraft.png',

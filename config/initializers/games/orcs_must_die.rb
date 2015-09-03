@@ -1,8 +1,6 @@
 GAMES[:orcs_must_die] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B008AGWEO6/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008AGWEO6&linkCode=as2&tag=scen-gen-21&linkId=ZCWUKMZ2ZLNKIXWD',
-        us: 'http://www.amazon.com/gp/product/B008IHKNA4/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B008IHKNA4&linkCode=as2&tag=scen-gen-20&linkId=7XCYIPZDUXIH7GFF'
-    },
+    buy_link: 'http://www.amazon.com/gp/product/B008IHKNA4/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B008IHKNA4&linkCode=as2&tag=scen-gen-20&linkId=7XCYIPZDUXIH7GFF',
+    site: 'amazon',
     title: 'Orcs Must Die',
     generator_title: 'Loadout',
     background: 'omd1.jpg',

@@ -1,7 +1,12 @@
 <div class="row controls unselectable">
   <div class="col-xs-4 col-sm-3">
     <% if @buy_link %>
-      <%= link_to 'Get this game', @buy_link, class: 'button box blue', id: 'buy-game-link' %>
+      <%= link_to 'Get this game',
+                  get_path( url: @buy_link,
+                            site: @buy_site,
+                            location: 'scenario'),
+                  class: 'button box blue',
+                  id: 'buy-game-link' %>
     <% end %>
   </div>
   <div class="col-xs-8 col-sm-4 col-sm-offset-1">

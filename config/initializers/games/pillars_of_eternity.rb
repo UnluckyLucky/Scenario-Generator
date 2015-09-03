@@ -272,10 +272,8 @@ voices = [
 ]
 
 GAMES[:pillars_of_eternity] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B00QGNX0P2/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00QGNX0P2&linkCode=as2&tag=scen-gen-21&linkId=OATNHOVIHPYPL6VY',
-        us: 'http://store.steampowered.com/app/291650/'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/rpgs/pillars-eternity-hero-edition/',
+    site: 'gmg',
     title: 'Pillars of Eternity',
     generator_title: 'Character',
     background: 'pillars_of_eternity.jpg',

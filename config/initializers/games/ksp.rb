@@ -1,7 +1,6 @@
 GAMES[:kerbal_space_program] = {
-    buy_link: {
-        us: 'http://store.steampowered.com/app/220200/'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/simulation/kerbal-space-program/',
+    site: 'gmg',
     title: 'Kerbal Space Program',
     generator_title: 'Challenge',
     background: 'ksp.jpg',

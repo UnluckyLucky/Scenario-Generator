@@ -1,8 +1,6 @@
 GAMES[:skyrim] = {
-    buy_link: {
-        uk: 'http://www.amazon.co.uk/gp/product/B00CJ8X24C/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00CJ8X24C&linkCode=as2&tag=scen-gen-21&linkId=JRDY7MK6ABH72P2P',
-        us: 'http://www.amazon.com/gp/product/B004HYIAPM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004HYIAPM&linkCode=as2&tag=scen-gen-20&linkId=OKMVLKBZGCL3QGGG'
-    },
+    buy_link: 'http://www.greenmangaming.com/s/gb/en/pc/games/rpgs/elder-scrolls-v-skyrim-legendary-edition/#b',
+    site: 'gmg',
     title: 'Skyrim',
     generator_title: 'Character',
     background: 'skyrim.jpg',
